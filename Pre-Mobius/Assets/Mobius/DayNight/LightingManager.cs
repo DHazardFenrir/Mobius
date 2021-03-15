@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System;
 
 [ExecuteAlways]
 public class LightingManager : MonoBehaviour
@@ -25,6 +26,11 @@ public class LightingManager : MonoBehaviour
         else
         {
             UpdateLighting(TimeOfDay / 600f);
+        }
+
+        if(Input.GetKeyDown(KeyCode.W))
+        {
+            Debug.Log(TimeSpan.FromSeconds(TimeOfDay).ToString("mm\\:ss"));
         }
     }
 
