@@ -7,7 +7,7 @@ public class LightingManager : MonoBehaviour
     [SerializeField] private Light DirectionalLight;
     [SerializeField] private LightingPreset Preset;
     //Variables
-    [SerializeField, Range(0, 24)] private float TimeOfDay;
+    [SerializeField, Range(0, 600)] private float TimeOfDay;
 
 
     private void Update()
@@ -19,12 +19,12 @@ public class LightingManager : MonoBehaviour
         {
             //(Replace with a reference to the game time)
             TimeOfDay += Time.deltaTime;
-            TimeOfDay %= 24; //Modulus to ensure always between 0-24
-            UpdateLighting(TimeOfDay / 24f);
+            TimeOfDay %= 600; //Modulus to ensure always between 0-24
+            UpdateLighting(TimeOfDay / 600f);
         }
         else
         {
-            UpdateLighting(TimeOfDay / 24f);
+            UpdateLighting(TimeOfDay / 600f);
         }
     }
 
@@ -35,7 +35,7 @@ public class LightingManager : MonoBehaviour
         RenderSettings.ambientLight = Preset.AmbientColor.Evaluate(timePercent);
         RenderSettings.fogColor = Preset.FogColor.Evaluate(timePercent);
 
-        //If the directional light is set then rotate and set it's color, I actually rarely use the rotation because it casts tall shadows unless you clamp the value
+        //If the directional light is set then rotate and set it's color, rarely use the rotation because it casts tall shadows unless you clamp the value
         if (DirectionalLight != null)
         {
             DirectionalLight.color = Preset.DirectionalColor.Evaluate(timePercent);
