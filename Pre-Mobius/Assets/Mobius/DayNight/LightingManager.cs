@@ -13,28 +13,16 @@ public class LightingManager : MonoBehaviour
     const int DayInMinutes=10;
     [SerializeField, Range(0, DayInMinutes*60)] float TimeOfDay;
 
+
+
     private void Awake()
     {
-        if(player==null)
+        if (player == null)
         {
             player = GameObject.Find("Cube");
         }
-        
     }
 
-    private void Start()
-    {
-        Debug.Log(player.transform.position.x);
-    }
-    public void GetPlayer(GameObject originalPlayer)
-    {
-        Debug.Log(player.name+"1");
-        Destroy(player);
-        player = originalPlayer;
-        player.GetComponent<Player>().DontDestroyPlayer();
-        Debug.Log(player.name+"2");
-
-    }
 
     private void Update()
     {
@@ -53,6 +41,11 @@ public class LightingManager : MonoBehaviour
             UpdateLighting(TimeOfDay / (60 * DayInMinutes));
         }
 
+        if(TimeOfDay>=((60*DayInMinutes))-1)
+        {
+            Loop();
+        }
+
         if(Input.GetKeyDown(KeyCode.W))
         {
             Debug.Log(TimeSpan.FromSeconds(TimeOfDay).ToString("mm\\:ss"));
@@ -64,6 +57,12 @@ public class LightingManager : MonoBehaviour
             SceneManager.LoadScene(0);
         }
 
+    }
+
+    void Loop()
+    {
+        DontDestroyOnLoad(player);
+        SceneManager.LoadScene(0);
     }
 
 

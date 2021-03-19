@@ -8,16 +8,14 @@ public class Player : MonoBehaviour
     void Start()
     {
         lManager = FindObjectOfType<LightingManager>();
-   
+        DestroyImpostor();
 
     }
-   public void DontDestroyPlayer()
+   public void DestroyImpostor()
     {
-        Debug.Log(lManager.player.name + "3");
         if (lManager.player != this.gameObject)
         {
-            lManager.GetPlayer(this.gameObject);
-            Debug.Log(lManager.player.name + "4");
+            Destroy(this.gameObject);
         }
     }
 
