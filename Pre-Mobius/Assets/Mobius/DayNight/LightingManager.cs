@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
 
 [ExecuteAlways]
 public class LightingManager : MonoBehaviour
@@ -7,10 +8,33 @@ public class LightingManager : MonoBehaviour
     //Scene References
     [SerializeField] private Light DirectionalLight;
     [SerializeField] private LightingPreset Preset;
+    public GameObject player { get; private set;}
     //Variables
     const int DayInMinutes=10;
     [SerializeField, Range(0, DayInMinutes*60)] float TimeOfDay;
-    
+
+    private void Awake()
+    {
+        if(player==null)
+        {
+            player = GameObject.Find("Cube");
+        }
+        
+    }
+
+    private void Start()
+    {
+        Debug.Log(player.transform.position.x);
+    }
+    public void GetPlayer(GameObject originalPlayer)
+    {
+        Debug.Log(player.name+"1");
+        Destroy(player);
+        player = originalPlayer;
+        player.GetComponent<Player>().DontDestroyPlayer();
+        Debug.Log(player.name+"2");
+
+    }
 
     private void Update()
     {
@@ -33,7 +57,15 @@ public class LightingManager : MonoBehaviour
         {
             Debug.Log(TimeSpan.FromSeconds(TimeOfDay).ToString("mm\\:ss"));
         }
+        
+        if(Input.GetKeyDown(KeyCode.X))
+        {
+            DontDestroyOnLoad(player);
+            SceneManager.LoadScene(0);
+        }
+
     }
+
 
 
     private void UpdateLighting(float timePercent)
