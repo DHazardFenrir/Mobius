@@ -19,7 +19,7 @@ public class LightingManager : MonoBehaviour
     {
         if (player == null)
         {
-            player = GameObject.Find("Cube");
+            player = GameObject.Find("Player");
         }
     }
 
