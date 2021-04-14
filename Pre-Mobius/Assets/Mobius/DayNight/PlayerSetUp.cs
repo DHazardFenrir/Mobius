@@ -9,7 +9,6 @@ public class PlayerSetUp : MonoBehaviour
     {
         lManager = FindObjectOfType<LightingManager>();
         DestroyImpostor();
-
     }
    public void DestroyImpostor()
     {
@@ -18,6 +17,4 @@ public class PlayerSetUp : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
-
 }
-

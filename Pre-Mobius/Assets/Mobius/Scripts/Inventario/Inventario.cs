@@ -5,7 +5,7 @@ using UnityEngine;
 public class Inventario : MonoBehaviour
 {
 
-    [SerializeField] List<Items> inventory;
+    public List<Items> inventory;
 
     private void Update()
     {
@@ -13,9 +13,8 @@ public class Inventario : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.T))
         {
             inventory.Add(FindObjectOfType<ItemToPick>().item);
-        }
-        
-       
+            Destroy(FindObjectOfType<ItemToPick>().gameObject);
+        }    
 
     }
 

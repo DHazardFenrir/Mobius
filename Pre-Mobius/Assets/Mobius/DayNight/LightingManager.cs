@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System;
 using UnityEngine.SceneManagement;
 
 [ExecuteAlways]
@@ -46,10 +45,6 @@ public class LightingManager : MonoBehaviour
             Loop();
         }
 
-        if(Input.GetKeyDown(KeyCode.W))
-        {
-            Debug.Log(TimeSpan.FromSeconds(TimeOfDay).ToString("mm\\:ss"));
-        }
         
         if(Input.GetKeyDown(KeyCode.X))
         {
