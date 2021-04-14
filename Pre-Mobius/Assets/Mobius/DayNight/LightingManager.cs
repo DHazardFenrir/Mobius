@@ -11,7 +11,7 @@ public class LightingManager : MonoBehaviour
     //Variables
     const int DayInMinutes=10;
     [SerializeField, Range(0, DayInMinutes*60)] float TimeOfDay;
-
+    public float timeToGet { get; private set;}
 
 
     private void Awake()
@@ -51,6 +51,9 @@ public class LightingManager : MonoBehaviour
             DontDestroyOnLoad(player);
             SceneManager.LoadScene(0);
         }
+
+        timeToGet = TimeOfDay;
+
 
     }
 
