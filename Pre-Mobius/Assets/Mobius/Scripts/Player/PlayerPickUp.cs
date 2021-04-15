@@ -27,6 +27,8 @@ public class PlayerPickUp : MonoBehaviour
     [Header("Rotation")]
     [SerializeField] float rotationSpeed = 100f;
     Quaternion lookRot;
+    [SerializeField] Inventario inventario;
+    
 
     private void Start()
     {
@@ -101,9 +103,18 @@ public class PlayerPickUp : MonoBehaviour
         pickupRB.constraints = RigidbodyConstraints.FreezeRotation;
        
         physicsObject.playerInteractions = this;
+        inventario = currentlyPickedObject.GetComponent<Inventario>();
+
+        if(inventario != null)
+        {
+            inventario.Save();
+        }
+
+        
         StartCoroutine(physicsObject.PickUp());
 
-      
+          
+
 
     }
 
@@ -114,7 +125,7 @@ public class PlayerPickUp : MonoBehaviour
         physicsObject.pickedUp = false;
        
         currentDist = 0;
-
+        StopAllCoroutines();
     }
 
 }

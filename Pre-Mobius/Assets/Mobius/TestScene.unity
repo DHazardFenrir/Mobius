@@ -232,6 +232,25 @@ MonoBehaviour:
   textLabel: {fileID: 1085759672}
   dialog: {fileID: 11400000, guid: 199bf4a929d96ae46886513009db4dbc, type: 2}
   timeWait: 5
+--- !u!1 &74166992 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100006, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+    type: 3}
+  m_PrefabInstance: {fileID: 1047524652}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &74166999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74166992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89b4b45974e72d845801032ecc594885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: []
 --- !u!1 &247049888
 GameObject:
   m_ObjectHideFlags: 0
@@ -744,6 +763,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.6787332, y: 3.2214382, z: 1.351283}
   m_Center: {x: 0.2533948, y: 1.5573004, z: -0.12879182}
+--- !u!1 &999936578
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 999936579}
+  m_Layer: 0
+  m_Name: TimeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &999936579
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999936578}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 180.9375, y: 142.3375, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1046027312
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,6 +807,7 @@ GameObject:
   - component: {fileID: 1046027314}
   - component: {fileID: 1046027313}
   - component: {fileID: 1046027318}
+  - component: {fileID: 1046027319}
   m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
@@ -871,6 +921,20 @@ MonoBehaviour:
   breakForce: 100
   pickedUp: 0
   playerInteractions: {fileID: 0}
+--- !u!114 &1046027319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046027312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 831973ce58947e24bb37abf093aba3a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: c0e4964fa147ec544993e225ea973c28, type: 2}
+  inventario: {fileID: 74166999}
 --- !u!1001 &1047524652
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -930,6 +994,10 @@ PrefabInstance:
       propertyPath: minSpeed
       value: 300
       objectReference: {fileID: 0}
+    - target: {fileID: 377065789, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: inventario
+      value: 
+      objectReference: {fileID: 74166999}
     - target: {fileID: 377065789, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: rotationSpeed
       value: 1000

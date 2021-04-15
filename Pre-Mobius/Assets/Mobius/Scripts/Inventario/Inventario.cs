@@ -9,13 +9,8 @@ public class Inventario : MonoBehaviour
 
     private void Update()
     {
-    
-        if(Input.GetKeyDown(KeyCode.T))
-        {
-            inventory.Add(FindObjectOfType<ItemToPick>().item);
-            Destroy(FindObjectOfType<ItemToPick>().gameObject);
-        }    
 
+        Save();
     }
 
     public bool check(Items item)
@@ -30,4 +25,13 @@ public class Inventario : MonoBehaviour
         }
     }
 
+    public void Save()
+    {
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            inventory.Add(FindObjectOfType<ItemToPick>().item);
+            Destroy(FindObjectOfType<ItemToPick>().gameObject);
+        }
+
+    }
 }
