@@ -15,7 +15,7 @@ public class PlayerInteract : MonoBehaviour
     {
         var nearestGameObject = GetNearestGameObject();
         if (nearestGameObject == null) return;
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.H))
         {
             
             var interactable = nearestGameObject.GetComponent<IInteractable>();

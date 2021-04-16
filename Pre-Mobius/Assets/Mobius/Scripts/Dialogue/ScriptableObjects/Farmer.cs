@@ -15,6 +15,8 @@ public class Farmer : MonoBehaviour, IInteractable
     {
         imageBox.SetActive(true);
         StartCoroutine(waitInterDialogues());
+       
+
         
 
      
@@ -28,15 +30,22 @@ public class Farmer : MonoBehaviour, IInteractable
         {
           
             textLabel.text = dialog.messages[i].text;
+
            
-            yield return new WaitForSeconds(timeWait);
+           yield return new WaitForSeconds(timeWait);
 
-
+           
         }
-      
 
-       
+        StartCoroutine(DissapearBox());
 
+
+    }
+
+    IEnumerator DissapearBox()
+    {
+        imageBox.SetActive(false);
+        yield return new WaitForSeconds(8f);
     }
 
 }
