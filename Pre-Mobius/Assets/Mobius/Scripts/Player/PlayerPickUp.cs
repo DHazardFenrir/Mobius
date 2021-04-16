@@ -28,6 +28,7 @@ public class PlayerPickUp : MonoBehaviour
     [SerializeField] float rotationSpeed = 100f;
     Quaternion lookRot;
     [SerializeField] Inventario inventario;
+    SlowMotionTime slowMo;
     
 
     private void Start()
@@ -112,6 +113,7 @@ public class PlayerPickUp : MonoBehaviour
 
         
         StartCoroutine(physicsObject.PickUp());
+      
 
           
 

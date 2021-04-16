@@ -12,12 +12,19 @@ public class SlowMoPlayer : MonoBehaviour
     void Update()
     {
 
-        if(Input.GetKeyDown(KeyCode.E))
-        SlowTime();
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            SlowTime();
+        }
+       
+
+
+     
     }
 
     void SlowTime()
     {
         slowMotion.DoSlowMotion();
+       
     }
 }
