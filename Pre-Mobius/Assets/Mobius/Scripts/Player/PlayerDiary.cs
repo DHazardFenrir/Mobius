@@ -5,9 +5,15 @@ using UnityEngine;
 
 public class PlayerDiary : MonoBehaviour
 {
-    [SerializeField] GameObject canvasDiary;
+    [SerializeField] CanvasGroup canvasDiary;
     [SerializeField] private bool canvasTrue;
-    
+
+    private void Start()
+    {
+        canvasDiary.alpha = 0;
+        canvasTrue = false;
+    }
+
 
     // Update is called once per frame
     void Update()
@@ -20,19 +26,26 @@ public class PlayerDiary : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.C))
         {
-            canvasDiary.SetActive(true);
-            canvasTrue = true;
+            if (!canvasTrue)
+            {
+                Debug.Log("FFFFFFF");
+                canvasDiary.alpha = 1;
+                canvasTrue = true;
+
+            }
+
+
         }
     }
 
     void HiddenDiary()
     {
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.F))
         {
-            if (canvasDiary)
+            if (canvasTrue)
             {
-                
-                    canvasDiary.SetActive(false);
+                Debug.Log("GGGGGGGGGG");
+                canvasDiary.alpha = 0;
                     canvasTrue = false;
                 
             }
