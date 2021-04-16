@@ -20,7 +20,7 @@ public class TreeFalling : MonoBehaviour
     private void TreeFall()
     {
         treeAnimator.SetBool("Active", true);
-        //textDiary.text = "The tree fell";
+        textDiary.text = "The tree fell";
     }
 
 
