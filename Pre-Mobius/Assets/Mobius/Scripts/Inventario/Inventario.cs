@@ -7,10 +7,17 @@ public class Inventario : MonoBehaviour
 
     public List<Items> inventory;
 
+
+    private void Start()
+    {
+    }
+
     private void Update()
     {
 
-        Save();
+        //Save();
+
+
     }
 
     public bool check(Items item)
@@ -29,8 +36,10 @@ public class Inventario : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.T))
         {
+ 
             inventory.Add(FindObjectOfType<ItemToPick>().item);
             Destroy(FindObjectOfType<ItemToPick>().gameObject);
+
         }
 
     }

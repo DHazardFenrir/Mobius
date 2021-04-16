@@ -18,6 +18,8 @@ public class ButtonSetUp : MonoBehaviour
 
     OpenInventory openInventory;
 
+    GameObject itemToDestroy;
+
     private void Start()
     {
         inventory = FindObjectOfType<Inventario>();
@@ -31,7 +33,7 @@ public class ButtonSetUp : MonoBehaviour
         {
             SetButtons();
         }
-        Instanciar();
+
     }
 
     void SetButtons()
@@ -50,26 +52,20 @@ public class ButtonSetUp : MonoBehaviour
         inspectCamera.SetActive(true);
         inventoryCanvas.SetActive(false);
         GameObject itemToInspect = Instantiate(item.itemPrefab, itemPosition.position, itemPosition.rotation);
+        itemToDestroy = itemToInspect;
         Debug.Log(itemToInspect.name);
         descriptionText.text = item.itemDescription;
     }
 
-    public void Instanciar()
-    {
-        if(Input.GetKeyDown(KeyCode.H))
-        {
 
-            GameObject itemToInspect = Instantiate(item.itemPrefab, itemPosition.position, itemPosition.rotation);
-
-        }
-    }
 
     public void Back()
     {
         descriptionText.text = " ";
         inspectCanvas.SetActive(false);
         inspectCamera.SetActive(false);
-        inventoryCanvas.SetActive(true);       
+        inventoryCanvas.SetActive(true);
+        Destroy(itemToDestroy); ;
     }
 
 

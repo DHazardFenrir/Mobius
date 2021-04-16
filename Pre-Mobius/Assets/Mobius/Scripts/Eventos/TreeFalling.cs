@@ -30,7 +30,6 @@ public class TreeFalling : MonoBehaviour
         if(other.CompareTag("Destruible"))
         {
             Debug.Log("Jaja");
-
             Destroy(other.gameObject);
         }
     }

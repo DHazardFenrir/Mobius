@@ -5,7 +5,7 @@ using UnityEngine;
 public class AnimationInteract : MonoBehaviour, IInteractable
 {
     Inventario inventario;
-    Items item;
+    [SerializeField] Items item;
     Animator anim;
 
     private void Start()
