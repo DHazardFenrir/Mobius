@@ -25,6 +25,7 @@ public class ButtonSetUp : MonoBehaviour
         inventory = FindObjectOfType<Inventario>();
         openInventory = FindObjectOfType<OpenInventory>();
         inspectCamera = GameObject.Find("InspectCamera");
+        itemPosition = GameObject.Find("InspectSpawn").GetComponent<Transform>();
 
     }
 
@@ -36,6 +37,7 @@ public class ButtonSetUp : MonoBehaviour
         }
 
     }
+
 
     void SetButtons()
     {
