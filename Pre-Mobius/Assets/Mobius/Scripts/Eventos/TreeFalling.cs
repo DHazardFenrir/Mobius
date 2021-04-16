@@ -20,7 +20,19 @@ public class TreeFalling : MonoBehaviour
     private void TreeFall()
     {
         treeAnimator.SetBool("Active", true);
-        textDiary.text = "The tree fell";
+        //textDiary.text = "The tree fell";
+    }
+
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Destruible"))
+        {
+            Debug.Log("Jaja");
+
+            Destroy(other.gameObject);
+        }
     }
 
 }
