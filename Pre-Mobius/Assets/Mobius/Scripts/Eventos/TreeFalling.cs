@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class TreeFalling : MonoBehaviour
 {
 
     [SerializeField] EventManager eventManager;
     [SerializeField] Animator treeAnimator;
+    public TMP_Text textDiary;
 
 
 
@@ -18,6 +20,7 @@ public class TreeFalling : MonoBehaviour
     private void TreeFall()
     {
         treeAnimator.SetBool("Active", true);
+        textDiary.text = "The tree fell";
     }
 
 }
