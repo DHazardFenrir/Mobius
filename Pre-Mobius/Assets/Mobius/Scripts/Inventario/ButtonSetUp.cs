@@ -18,12 +18,13 @@ public class ButtonSetUp : MonoBehaviour
 
     OpenInventory openInventory;
 
-    GameObject itemToDestroy;
+    public GameObject itemToDestroy;
 
     private void Start()
     {
         inventory = FindObjectOfType<Inventario>();
         openInventory = FindObjectOfType<OpenInventory>();
+        inspectCamera = GameObject.Find("InspectCamera");
 
     }
 
@@ -48,8 +49,9 @@ public class ButtonSetUp : MonoBehaviour
     
     public void InspecItem()
     {
+        Destroy(itemToDestroy);
         inspectCanvas.SetActive(true);
-        inspectCamera.SetActive(true);
+        inspectCamera.GetComponent<Camera>().enabled = true;
         inventoryCanvas.SetActive(false);
         GameObject itemToInspect = Instantiate(item.itemPrefab, itemPosition.position, itemPosition.rotation);
         itemToDestroy = itemToInspect;
@@ -63,9 +65,9 @@ public class ButtonSetUp : MonoBehaviour
     {
         descriptionText.text = " ";
         inspectCanvas.SetActive(false);
-        inspectCamera.SetActive(false);
+        inspectCamera.GetComponent<Camera>().enabled=false;
         inventoryCanvas.SetActive(true);
-        Destroy(itemToDestroy); ;
+        Destroy(itemToDestroy); 
     }
 
 

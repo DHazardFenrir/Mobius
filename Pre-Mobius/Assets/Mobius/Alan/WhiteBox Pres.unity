@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.000017033939, g: 0.000000025772884, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.000017033932, g: 0.000000025772884, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4202,6 +4202,7 @@ MonoBehaviour:
   inspectCamera: {fileID: 1358418455}
   itemPosition: {fileID: 721608923}
   descriptionText: {fileID: 1376984403}
+  itemToDestroy: {fileID: 0}
 --- !u!114 &731565553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7095,12 +7096,12 @@ GameObject:
   - component: {fileID: 1358418458}
   - component: {fileID: 1358418457}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: InspectCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1358418456
 Transform:
   m_ObjectHideFlags: 0
@@ -7131,7 +7132,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1358418455}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -9665,6 +9666,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 731565552}
+        m_MethodName: Back
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1730685994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10751,6 +10763,7 @@ MonoBehaviour:
   inspectCamera: {fileID: 1358418455}
   itemPosition: {fileID: 721608923}
   descriptionText: {fileID: 1376984403}
+  itemToDestroy: {fileID: 0}
 --- !u!114 &1812287333
 MonoBehaviour:
   m_ObjectHideFlags: 0
