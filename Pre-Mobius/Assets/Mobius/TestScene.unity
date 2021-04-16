@@ -232,52 +232,18 @@ MonoBehaviour:
   textLabel: {fileID: 1085759672}
   dialog: {fileID: 11400000, guid: 199bf4a929d96ae46886513009db4dbc, type: 2}
   timeWait: 5
---- !u!1 &74166992 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100006, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+--- !u!114 &74166999 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 74166999, guid: c6453f8e1f814744d8b94e5a6d1f9942,
     type: 3}
   m_PrefabInstance: {fileID: 1047524652}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &74166993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 74166992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da32392575d4ea9428be3b789ba9d176, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slowMotion: {fileID: 999936580}
---- !u!114 &74166994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 74166992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0050d49f2e7d654eb6a0c599beb01ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvasDiary: {fileID: 2098496922}
-  canvasTrue: 0
---- !u!114 &74166999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 74166992}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 89b4b45974e72d845801032ecc594885, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: []
 --- !u!1 &229039029
 GameObject:
   m_ObjectHideFlags: 0
@@ -1298,27 +1264,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 377065789, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
-      propertyPath: minSpeed
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 377065789, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
-      propertyPath: inventario
+    - target: {fileID: 74166993, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: slowMotion
       value: 
-      objectReference: {fileID: 74166999}
-    - target: {fileID: 377065789, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
-      propertyPath: rotationSpeed
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 377065789, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
-      propertyPath: sphereCastRadius
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5060531614958337004, guid: c6453f8e1f814744d8b94e5a6d1f9942,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 999936580}
+    - target: {fileID: 74166994, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: canvasDiary
+      value: 
+      objectReference: {fileID: 2098496922}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
 --- !u!1001 &1063046533
