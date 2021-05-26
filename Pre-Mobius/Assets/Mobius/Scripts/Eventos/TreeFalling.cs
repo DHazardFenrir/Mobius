@@ -12,10 +12,7 @@ public class TreeFalling : MonoBehaviour
 
 
 
-    private void OnEnable()
-    {
-        eventManager.TreeFallEvent+=TreeFall;
-    }
+ 
 
     private void TreeFall()
     {
