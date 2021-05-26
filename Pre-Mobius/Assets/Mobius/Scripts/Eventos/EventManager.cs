@@ -22,37 +22,62 @@ public class EventManager : MonoBehaviour
     private void Update()
     {
         //Activa el evento si se llega a la hora especifica
-        timer += Time.deltaTime;
-        if(timer>=1)
-        {
-            if(eventos[GetEventToActive()].active==false)
-            {
-                if(lightingManager.timeToGet >= eventos[GetEventToActive()].eventData.horaDeActivacion)
-                {
-                //    Debug.Log(eventos[GetEventToActive()].eventData.horaDeActivacion);
-                //    Debug.Log(lightingManager.timeToGet);
-                    ActiveEvent();
-                    timer = 0;
-                }
-                else
-                {
-                    timer = 0;
-                }
-            }
-            else
-            {
-                timer = 0;
-            }
-        }
-        //Comprobar orden de eventos
-        if(Input.GetKeyDown(KeyCode.M))
-        {
-            for (int i = 0; i < eventos.Length; i++)
-            {
-                Debug.Log(eventos[i].gameObject.name+ ": "+eventos[i].eventData.name);
-            }
-        }
+        //timer += Time.deltaTime;
+        //if(timer>=1)
+        //{
+        //    if(eventos[GetEventToActive()].active==false)
+        //    {
+        //        if(lightingManager.timeToGet >= eventos[GetEventToActive()].eventData.horaDeActivacion)
+        //        {
+        //        //    Debug.Log(eventos[GetEventToActive()].eventData.horaDeActivacion);
+        //        //    Debug.Log(lightingManager.timeToGet);
+        //            ActiveEvent();
+        //            timer = 0;
+        //        }
+        //        else
+        //        {
+        //            timer = 0;
+        //        }
+        //    }
+        //    else
+        //    {
+        //        timer = 0;
+        //    }
+        //}
+        ////Comprobar orden de eventos
+        //if(Input.GetKeyDown(KeyCode.M))
+        //{
+        //    for (int i = 0; i < eventos.Length; i++)
+        //    {
+        //        Debug.Log(eventos[i].gameObject.name+ ": "+eventos[i].eventData.name);
+        //    }
+        //}
     }
+
+    IEnumerator CheckEvent()
+    {
+        var i = 0;
+        while (i<eventos.Length)
+        {
+            yield return new WaitForSeconds(5);
+            //Debug.Log("i = "+i);
+            if (eventos[GetEventToActive()].active == false)
+             {
+                  if (lightingManager.timeToGet >= eventos[GetEventToActive()].eventData.horaDeActivacion)
+                  {
+                    //Debug.Log("El evento se debe activar en: " + eventos[GetEventToActive()].eventData.horaDeActivacion + " y se activó en: " + lightingManager.timeToGet);
+                    ActiveEvent();
+                    i++;
+
+                  }
+            }
+        }
+        Debug.Log("Ya no hay eventos");
+    }
+
+       
+    
+
 
     //Obtiene los eventos del mapa
     void GetEvents()
@@ -76,6 +101,7 @@ public class EventManager : MonoBehaviour
                 }
             }
         }
+        StartCoroutine(CheckEvent());
     }
 
     //Obtiene el evento a esperar
