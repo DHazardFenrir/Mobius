@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
+  m_Name: New Dialogue
+  m_EditorClassIdentifier: 
+  nodes:
+  - uniqueID: qq
+    text: qqqqqqqqq
+    children:
+    - 111
+    - 222
+    rect:
+      serializedVersion: 2
+      x: 25
+      y: 17
+      width: 200
+      height: 200
+  - uniqueID: 111
+    text: 11111
+    children:
+    - asdlkadlkas
+    - asdlkadlkas
+    rect:
+      serializedVersion: 2
+      x: 326
+      y: 154
+      width: 200
+      height: 100
+  - uniqueID: 222
+    text: 11111
+    children:
+    - asdlkadlkas
+    - asdlkadlkas
+    rect:
+      serializedVersion: 2
+      x: 306
+      y: 5
+      width: 200
+      height: 100
+  - uniqueID: ec82a032-bd9a-4269-ac2a-81d5e8926d01
+    text: asdad
+    children:
+    - b5528f9c-b7e7-4ed0-818f-29cc9626e988
+    - 7cd6c575-b458-4b15-89a3-262496db0848
+    rect:
+      serializedVersion: 2
+      x: 563
+      y: 332
+      width: 200
+      height: 100
+  - uniqueID: 7cd6c575-b458-4b15-89a3-262496db0848
+    text: asdasdsada
+    children: []
+    rect:
+      serializedVersion: 2
+      x: 839
+      y: 381
+      width: 200
+      height: 100
+  - uniqueID: b5528f9c-b7e7-4ed0-818f-29cc9626e988
+    text: 
+    children: []
+    rect:
+      serializedVersion: 2
+      x: 830
+      y: 234
+      width: 200
+      height: 100

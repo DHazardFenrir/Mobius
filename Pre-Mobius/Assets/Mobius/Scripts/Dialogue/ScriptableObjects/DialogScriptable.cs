@@ -3,28 +3,96 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-[CreateAssetMenu(fileName = "NPCDialog", menuName = "NPC Dialogues", order = 1)]
+using System;
 
-[System.Serializable]
-public class DialogScriptable : ScriptableObject
+
+namespace DialogueSystem
 {
+    [CreateAssetMenu(fileName = "New Dialogue", menuName = "NPC Dialogues", order = 1)]
+    public class DialogScriptable : ScriptableObject
+    {
+        [SerializeField] List<DialogueNode> nodes = new List<DialogueNode>();
 
-    public int npcID;
-    public string npcName;
-    public Message[] messages;
+        Dictionary<string, DialogueNode> nodeLookup = new Dictionary<string, DialogueNode>();
+
+#if UNITY_EDITOR
+        private void Awake()
+        {
+            if(nodes.Count ==0)
+            {
+                DialogueNode rootNode = new DialogueNode();
+                rootNode.uniqueID = Guid.NewGuid().ToString();
+                nodes.Add(rootNode);
+            }
+
+            OnValidate();
+        }
+#endif
+        private void OnValidate()
+        {
+            nodeLookup.Clear();
+            foreach(DialogueNode node in GetAllNodes())
+            {
+                nodeLookup[node.uniqueID] = node;
+                
+            }
+        }
+
+        public IEnumerable<DialogueNode> GetAllNodes()
+        {
+            return nodes;
+        }
+
+        public DialogueNode GetRootNode()
+        {
+            return nodes[0];
+        }
+
+        public IEnumerable<DialogueNode> GetAllChildren(DialogueNode parentNode)
+        {
+           
+            foreach(string childID in parentNode.children)
+            {
+               if(nodeLookup.ContainsKey(childID))
+                {
+                    yield return nodeLookup[childID];
+                }
+               
+            }
+            
+        }
+
+        public void CreateNode(DialogueNode parent)
+        {
+            DialogueNode newNode = new DialogueNode();
+            newNode.uniqueID = Guid.NewGuid().ToString();
+            parent.children.Add(newNode.uniqueID);
+            nodes.Add(newNode);
+            OnValidate();
+        }
+
+        public void DeleteNode(DialogueNode nodeToDelete)
+        {
+            nodes.Remove(nodeToDelete);
+            OnValidate();
+            CleanDanglingChildren(nodeToDelete);
+            
+        }
+
+        private void CleanDanglingChildren(DialogueNode nodeToDelete)
+        {
+            foreach (DialogueNode node in GetAllNodes())
+            {
+                node.children.Remove(nodeToDelete.uniqueID);
+            }
+        }
 
 
 
-
+    }
 
 }
 
-[System.Serializable]
-public class Message
-{
-    public string text;
-   
-}
 
 
 
