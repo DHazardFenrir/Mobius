@@ -7,7 +7,7 @@ public class RemoveEvent : Evento
     [SerializeField] GameObject gameObj;
     protected override void ActiveEvent()
     {
-        Destroy(gameObject);
+        Destroy(gameObj);
         base.ActiveEvent();
     }
 
