@@ -24,6 +24,7 @@ public class FirstPuzzle : MonoBehaviour
         }
     }
 
+    //es m[as que nada para verificar que todo se este llevando a cabo aun cuando se hacen los pasos
     void CheckEvents()
     {
         for(int i=0;i<puzzleData.puzzleEvents.Length;)
@@ -63,17 +64,30 @@ public class FirstPuzzle : MonoBehaviour
             {
                 puzzleData.puzzleCompleted = true;
             }
-        }
-        
+        }       
+    }
+
+    void StepOne()
+    {
+        //hablar granjero
+        step[0] = true;
+        CheckSteps();
+    }
+
+    void StepTwo()
+    {
+        //Cerrar presa
+        step[1] = true;
+        CheckSteps();
     }
 
     void FinalStep()
     {
+        // obtener ofrenda
         if(inventario.inventory.Contains(puzzleData.ofrenda))
         {
-            step[0] = true;
+            step[3] = true;
         }
         CheckSteps();
     }
-
 }

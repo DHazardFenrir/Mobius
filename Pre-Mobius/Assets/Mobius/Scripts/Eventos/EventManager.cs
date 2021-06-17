@@ -61,15 +61,18 @@ public class EventManager : MonoBehaviour
         {
             yield return new WaitForSeconds(5);
             //Debug.Log("i = "+i);
-            if (eventos[GetEventToActive()].active == false)
-             {
-                  if (lightingManager.timeToGet >= eventos[GetEventToActive()].eventData.horaDeActivacion)
-                  {
-                    //Debug.Log("El evento se debe activar en: " + eventos[GetEventToActive()].eventData.horaDeActivacion + " y se activó en: " + lightingManager.timeToGet);
-                    ActiveEvent();
-                    i++;
+            for (int j = 0; j < eventos.Length; j++)
+            {
+                if (eventos[j].active == false)
+                {
+                    if (lightingManager.timeToGet >= eventos[j].eventData.horaDeActivacion)
+                    {
+                        //Debug.Log("El evento se debe activar en: " + eventos[GetEventToActive()].eventData.horaDeActivacion + " y se activó en: " + lightingManager.timeToGet);
+                        eventos[j].InvokeEvent();
+                        i++;
 
-                  }
+                    }
+                }
             }
         }
         Debug.Log("Ya no hay eventos");
