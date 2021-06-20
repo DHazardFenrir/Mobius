@@ -3,16 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using System;
+using DialogueSystem.AIDialogue;
+
 
 namespace DialogueSystem.API
 {
 
     public class PlayerConversant : MonoBehaviour
     {
+        [SerializeField] string playerName;
         DialogScriptable currentDialogue;
         DialogueNode currentNode = null;
         bool isChoosing = false;
-
+        AIConversant currentConversant = null;
         
 
 
@@ -40,24 +43,41 @@ namespace DialogueSystem.API
             if(numPlayerResponses > 0)
             {
                 isChoosing = true;
+                TriggerExitAction();
                 onConversationUpdated();
                 return;
             }
 
             DialogueNode[] children = currentDialogue.GetAIChildren(currentNode).ToArray();
             int randomIndex = UnityEngine.Random.Range(0, children.Length);
+            TriggerExitAction();
             currentNode = children[randomIndex];
+            TriggerEnterAction();
 
             onConversationUpdated();
         }
+
+        public string GetCurrentConversantName()
+        {
+            if (isChoosing)
+            {
+                return playerName;
+            }
+            else
+            {
+                return currentConversant.GetName();
+            }
+        }
+
         public IEnumerable<DialogueNode> GetChoices()
         {
             return currentDialogue.GetPlayerChildren(currentNode);
         }
 
         public void SelectChoice(DialogueNode chosenNode)
-        {
+        {   
             currentNode = chosenNode;
+            TriggerEnterAction();
             isChoosing = false;
             Next();
         }
@@ -67,10 +87,12 @@ namespace DialogueSystem.API
             return currentDialogue.GetAllChildren(currentNode).Count() > 0 ;
         }
 
-        public void StartDialogue(DialogScriptable newDialogue)
+        public void StartDialogue(AIConversant newConversant, DialogScriptable newDialogue)
         {
+            currentConversant = newConversant;
             currentDialogue = newDialogue;
             currentNode = currentDialogue.GetRootNode();
+            TriggerEnterAction();
             onConversationUpdated();
         }
 
@@ -81,11 +103,39 @@ namespace DialogueSystem.API
 
         public void Quit()
         {
+           
             currentDialogue = null;
+            TriggerExitAction();
             currentNode = null;
             isChoosing = false;
+            currentConversant = null;
 
             onConversationUpdated();
+        }
+
+        private void TriggerEnterAction()
+        {
+            if(currentNode != null )
+            {
+                TriggerAction(currentNode.GetOnEnterAction());
+            }
+        }
+
+        private void TriggerExitAction()
+        {
+            if (currentNode != null )
+            {
+                TriggerAction(currentNode.GetOnExitAction());
+            }
+        }
+
+        public void TriggerAction(string action)
+        {
+            if (action == "") return;
+            foreach (DialogueTrigger trigger in currentConversant.GetComponents<DialogueTrigger>())
+            {
+                trigger.Trigger(action);
+            }
         }
 
 

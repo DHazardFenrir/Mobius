@@ -19,10 +19,12 @@ MonoBehaviour:
   - 9c963fa2-2b16-4fde-80c3-78cfce4bd3fa
   rect:
     serializedVersion: 2
-    x: 0
+    x: 2
     y: 0
     width: 200
     height: 100
+  onExitAction: 
+  onEnterAction: roottest
 --- !u!114 &-6231045611203278107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45,6 +47,8 @@ MonoBehaviour:
     y: 3
     width: 200
     height: 100
+  onExitAction: TestAIExit
+  onEnterAction: 
 --- !u!114 &-2324770984977430671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,10 +67,12 @@ MonoBehaviour:
   - 9510f7fe-11ab-45b2-81a4-4f9de0b84141
   rect:
     serializedVersion: 2
-    x: 308
-    y: 210
+    x: 347
+    y: 238
     width: 200
     height: 100
+  onExitAction: 
+  onEnterAction: TestAction
 --- !u!114 &-1812429190502803268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,10 +92,12 @@ MonoBehaviour:
   - 553e3b2a-4aa4-4ad1-a157-a03552f08108
   rect:
     serializedVersion: 2
-    x: 311
-    y: 4
+    x: 385
+    y: 3
     width: 200
     height: 100
+  onExitAction: 
+  onEnterAction: 
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,10 +137,12 @@ MonoBehaviour:
   - afa23ff3-40fc-447b-8e38-48ebe1a614f7
   rect:
     serializedVersion: 2
-    x: 555
-    y: 202
+    x: 574
+    y: 238
     width: 200
     height: 100
+  onExitAction: 
+  onEnterAction: 
 --- !u!114 &6754383779919150835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,9 +161,11 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 1119
-    y: 98
+    y: 97
     width: 200
     height: 100
+  onExitAction: Angery Action
+  onEnterAction: 
 --- !u!114 &7065483600566041561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,3 +188,5 @@ MonoBehaviour:
     y: 213
     width: 200
     height: 100
+  onExitAction: 
+  onEnterAction: 

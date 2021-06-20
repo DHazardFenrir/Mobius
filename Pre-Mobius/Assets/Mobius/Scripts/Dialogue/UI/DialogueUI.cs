@@ -19,6 +19,8 @@ namespace DialogueSystem.UI
 
         [SerializeField] Button quitButton;
 
+        [SerializeField] TextMeshProUGUI conversantName;
+
         // Start is called before the first frame update
         void Start()
         {
@@ -43,6 +45,7 @@ namespace DialogueSystem.UI
             {
                 return;
             }
+            conversantName.text = playerConversant.GetCurrentConversantName();
             AIResponse.SetActive(!playerConversant.IsChoosing());
             choiceRoot.gameObject.SetActive(playerConversant.IsChoosing());
 
