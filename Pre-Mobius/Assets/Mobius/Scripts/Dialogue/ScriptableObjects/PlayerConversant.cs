@@ -13,17 +13,12 @@ namespace DialogueSystem.API
         DialogueNode currentNode = null;
         bool isChoosing = false;
 
-        [SerializeField] DialogScriptable testDialogue;
+        
 
 
         public event Action onConversationUpdated;
 
-        IEnumerator Start()
-        {
-            yield return new WaitForSeconds(2);
-            StartDialogue(testDialogue);
-        }
-
+      
         public bool IsChoosing()
         {
             return isChoosing;
@@ -84,8 +79,15 @@ namespace DialogueSystem.API
             return currentDialogue != null;
         }
 
-        
+        public void Quit()
+        {
+            currentDialogue = null;
+            currentNode = null;
+            isChoosing = false;
 
-        
+            onConversationUpdated();
+        }
+
+
     }
 }

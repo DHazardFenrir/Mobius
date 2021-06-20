@@ -17,12 +17,15 @@ namespace DialogueSystem.UI
         [SerializeField] GameObject choicePrefab;
         [SerializeField] GameObject AIResponse;
 
+        [SerializeField] Button quitButton;
+
         // Start is called before the first frame update
         void Start()
         {
            playerConversant =   GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerConversant>();
             playerConversant.onConversationUpdated += UpdateUI;
-            nextButton.onClick.AddListener(Next);
+            nextButton.onClick.AddListener(() => playerConversant.Next());
+            quitButton.onClick.AddListener(() => playerConversant.Quit());
             
             
             UpdateUI();
@@ -30,14 +33,11 @@ namespace DialogueSystem.UI
         }
           
 
-        void Next()
-        {
-            playerConversant.Next();
-          
-        }
+       
 
         void UpdateUI()
         {
+            gameObject.SetActive(playerConversant.IsActive());
 
             if (!playerConversant.IsActive())
             {
