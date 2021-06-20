@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8452477093495840998
+--- !u!114 &-6967103725361436927
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
-  m_Name: 6c004ba7-cc17-4f38-893a-90635e1741e0
+  m_Name: f2c839ce-f4ec-4c0d-ba11-daaaf1996312
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 
+  text: You seem strange, kid
   children:
-  - 19704a83-a8f5-43b1-ad15-33b16b48aa0c
-  - 6725a042-4f84-4908-aeb9-a4530afbcaa0
+  - 553e3b2a-4aa4-4ad1-a157-a03552f08108
+  - 9c963fa2-2b16-4fde-80c3-78cfce4bd3fa
   rect:
     serializedVersion: 2
-    x: 50
-    y: 93
+    x: 0
+    y: 0
     width: 200
     height: 100
---- !u!114 &-6214212662783678535
+--- !u!114 &-6231045611203278107
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -33,19 +33,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
-  m_Name: 4782db68-38ac-4fde-8c15-36f924e499c0
+  m_Name: b76a648c-093d-445f-9f9f-63ba038d81fd
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 
+  text: That's a lie
   children:
-  - 12f5b430-d9a1-43e5-a759-3e1d159acfd2
+  - fe80bc51-6b00-4f28-b608-8ac220fe14bd
   rect:
     serializedVersion: 2
-    x: 919
-    y: 256
+    x: 694
+    y: 3
     width: 200
     height: 100
---- !u!114 &-4758056412608389601
+--- !u!114 &-2324770984977430671
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -55,15 +55,39 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
-  m_Name: 7f60e582-da55-4f02-a374-322643b571e3
+  m_Name: 553e3b2a-4aa4-4ad1-a157-a03552f08108
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 
-  children: []
+  text: Nah, i would remeber you if i had seen you.
+  children:
+  - 9510f7fe-11ab-45b2-81a4-4f9de0b84141
   rect:
     serializedVersion: 2
-    x: 380
-    y: 209
+    x: 308
+    y: 210
+    width: 200
+    height: 100
+--- !u!114 &-1812429190502803268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 9c963fa2-2b16-4fde-80c3-78cfce4bd3fa
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: But i was born here!
+  children:
+  - b76a648c-093d-445f-9f9f-63ba038d81fd
+  - 553e3b2a-4aa4-4ad1-a157-a03552f08108
+  rect:
+    serializedVersion: 2
+    x: 311
+    y: 4
     width: 200
     height: 100
 --- !u!114 &11400000
@@ -76,17 +100,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
-  m_Name: New Dialogue
+  m_Name: You seem strange
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: -8452477093495840998}
-  - {fileID: 1044046315062813119}
-  - {fileID: 4631461262698923772}
-  - {fileID: 8829469395536509927}
-  - {fileID: -6214212662783678535}
-  - {fileID: 3119602614489915565}
+  - {fileID: -6967103725361436927}
+  - {fileID: -2324770984977430671}
+  - {fileID: -1812429190502803268}
+  - {fileID: -6231045611203278107}
+  - {fileID: 789035496707602807}
+  - {fileID: 7065483600566041561}
+  - {fileID: 6754383779919150835}
   newNodeOffset: {x: 250, y: 0}
---- !u!114 &1044046315062813119
+--- !u!114 &789035496707602807
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,18 +121,40 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
-  m_Name: 19704a83-a8f5-43b1-ad15-33b16b48aa0c
+  m_Name: 9510f7fe-11ab-45b2-81a4-4f9de0b84141
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I'm Cyril!
+  children:
+  - afa23ff3-40fc-447b-8e38-48ebe1a614f7
+  rect:
+    serializedVersion: 2
+    x: 555
+    y: 202
+    width: 200
+    height: 100
+--- !u!114 &6754383779919150835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: fe80bc51-6b00-4f28-b608-8ac220fe14bd
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 
+  text: So what are you doing here?
   children: []
   rect:
     serializedVersion: 2
-    x: 406
-    y: 12
+    x: 1119
+    y: 98
     width: 200
     height: 100
---- !u!114 &3119602614489915565
+--- !u!114 &7065483600566041561
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -117,58 +164,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
-  m_Name: 12f5b430-d9a1-43e5-a759-3e1d159acfd2
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: 
-  children: []
-  rect:
-    serializedVersion: 2
-    x: 1276
-    y: 235
-    width: 200
-    height: 100
---- !u!114 &4631461262698923772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
-  m_Name: 6725a042-4f84-4908-aeb9-a4530afbcaa0
+  m_Name: afa23ff3-40fc-447b-8e38-48ebe1a614f7
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 
+  text: Doesn't ring a bell
   children:
-  - 1c75b38d-bed4-4f47-95da-eddea790b66a
+  - fe80bc51-6b00-4f28-b608-8ac220fe14bd
   rect:
     serializedVersion: 2
-    x: 305
-    y: 177
-    width: 200
-    height: 100
---- !u!114 &8829469395536509927
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
-  m_Name: 1c75b38d-bed4-4f47-95da-eddea790b66a
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: 
-  children:
-  - 4782db68-38ac-4fde-8c15-36f924e499c0
-  rect:
-    serializedVersion: 2
-    x: 612
-    y: 265
+    x: 868
+    y: 213
     width: 200
     height: 100
