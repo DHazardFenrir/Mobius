@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 namespace Quests
 {
     
@@ -11,11 +12,28 @@ namespace Quests
          Quest quest;
          List<string> completedObjectives = new List<string>();
 
+        [System.Serializable]
+        class QuestStatusRecord
+        {
+            public string questName;
+            public  List<string> completedObjectives;
+        }
+
+
 
         public QuestStatus (Quest quest)
         {
             this.quest = quest;
         }
+
+        public QuestStatus(object objectState)
+        {
+            QuestStatusRecord state = objectState as QuestStatusRecord;
+            quest = Quest.GetByName(state.questName);
+
+            completedObjectives = state.completedObjectives;
+        }
+
         public Quest GetQuest()
         {
             return quest;
@@ -40,6 +58,14 @@ namespace Quests
             }
            
 
+        }
+
+        public object CaptureState()
+        {
+            QuestStatusRecord state = new QuestStatusRecord();
+            state.questName = quest.name;
+            state.completedObjectives = completedObjectives;
+            return state;
         }
     }
 

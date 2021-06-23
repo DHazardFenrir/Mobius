@@ -8,6 +8,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
     [RequireComponent(typeof (CapsuleCollider))]
     public class RigidbodyFirstPersonController : MonoBehaviour
     {
+        public GameObject talkNPC = default;
+        public bool lockCursor = true;
         [Serializable]
         public class MovementSettings
         {
@@ -19,6 +21,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
             public float JumpForce = 30f;
             public AnimationCurve SlopeCurveModifier = new AnimationCurve(new Keyframe(-90.0f, 1.0f), new Keyframe(0.0f, 1.0f), new Keyframe(90.0f, 0.0f));
             [HideInInspector] public float CurrentTargetSpeed = 8f;
+
+            
 
 #if !MOBILE_INPUT
             private bool m_Running;
@@ -141,22 +145,24 @@ namespace UnityStandardAssets.Characters.FirstPerson
         {
             GroundCheck();
             Vector2 input = GetInput();
-
-            if ((Mathf.Abs(input.x) > float.Epsilon || Mathf.Abs(input.y) > float.Epsilon) && (advancedSettings.airControl || m_IsGrounded))
-            {
-                // always move along the camera forward as it is the direction that it being aimed at
-                Vector3 desiredMove = cam.transform.forward*input.y + cam.transform.right*input.x;
-                desiredMove = Vector3.ProjectOnPlane(desiredMove, m_GroundContactNormal).normalized;
-
-                desiredMove.x = desiredMove.x*movementSettings.CurrentTargetSpeed;
-                desiredMove.z = desiredMove.z*movementSettings.CurrentTargetSpeed;
-                desiredMove.y = desiredMove.y*movementSettings.CurrentTargetSpeed;
-                if (m_RigidBody.velocity.sqrMagnitude <
-                    (movementSettings.CurrentTargetSpeed*movementSettings.CurrentTargetSpeed))
+            
+                if ((Mathf.Abs(input.x) > float.Epsilon || Mathf.Abs(input.y) > float.Epsilon) && (advancedSettings.airControl || m_IsGrounded))
                 {
-                    m_RigidBody.AddForce(desiredMove*SlopeMultiplier(), ForceMode.Impulse);
+                    // always move along the camera forward as it is the direction that it being aimed at
+                    Vector3 desiredMove = cam.transform.forward * input.y + cam.transform.right * input.x;
+                    desiredMove = Vector3.ProjectOnPlane(desiredMove, m_GroundContactNormal).normalized;
+
+                    desiredMove.x = desiredMove.x * movementSettings.CurrentTargetSpeed;
+                    desiredMove.z = desiredMove.z * movementSettings.CurrentTargetSpeed;
+                    desiredMove.y = desiredMove.y * movementSettings.CurrentTargetSpeed;
+                    if (m_RigidBody.velocity.sqrMagnitude <
+                        (movementSettings.CurrentTargetSpeed * movementSettings.CurrentTargetSpeed))
+                    {
+                        m_RigidBody.AddForce(desiredMove * SlopeMultiplier(), ForceMode.Impulse);
+                    }
                 }
-            }
+            
+           
 
             if (m_IsGrounded)
             {
@@ -227,17 +233,29 @@ namespace UnityStandardAssets.Characters.FirstPerson
             //avoids the mouse looking if the game is effectively paused
             if (Mathf.Abs(Time.timeScale) < float.Epsilon) return;
 
-            // get the rotation before it's changed
-            float oldYRotation = transform.eulerAngles.y;
+            Cursor.visible = true;
 
-            mouseLook.LookRotation (transform, cam.transform);
-
-            if (m_IsGrounded || advancedSettings.airControl)
+            if (talkNPC != null) //works..ish. Still need fixes.
             {
-                // Rotate the rigidbody velocity to match the new direction that the character is looking
-                Quaternion velRotation = Quaternion.AngleAxis(transform.eulerAngles.y - oldYRotation, Vector3.up);
-                m_RigidBody.velocity = velRotation*m_RigidBody.velocity;
+                // get the rotation before it's changed
+                
+                float oldYRotation = transform.eulerAngles.y;
+                mouseLook.LookRotation(transform, cam.transform);
+                Cursor.visible = false;
+               
+               
+
+                if (m_IsGrounded || advancedSettings.airControl)
+                {
+                    // Rotate the rigidbody velocity to match the new direction that the character is looking
+                    Quaternion velRotation = Quaternion.AngleAxis(transform.eulerAngles.y - oldYRotation, Vector3.up);
+                    m_RigidBody.velocity = velRotation * m_RigidBody.velocity;
+                }
             }
+
+
+
+           
         }
 
         /// sphere cast down just beyond the bottom of the capsule to see if the capsule is colliding round the bottom

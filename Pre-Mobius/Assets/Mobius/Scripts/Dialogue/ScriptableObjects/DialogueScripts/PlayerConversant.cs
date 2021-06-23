@@ -4,6 +4,7 @@ using UnityEngine;
 using System.Linq;
 using System;
 using DialogueSystem.AIDialogue;
+using UnityStandardAssets.Characters.FirstPerson;
 
 
 namespace DialogueSystem.API
@@ -16,6 +17,7 @@ namespace DialogueSystem.API
         DialogueNode currentNode = null;
         bool isChoosing = false;
         AIConversant currentConversant = null;
+      
         
 
 
@@ -38,6 +40,8 @@ namespace DialogueSystem.API
 
         public void Next()
         {
+            
+            Debug.Log("Next");
             int numPlayerResponses =   currentDialogue.GetPlayerChildren(currentNode).Count();
 
             if(numPlayerResponses > 0)
@@ -50,11 +54,15 @@ namespace DialogueSystem.API
 
             DialogueNode[] children = currentDialogue.GetAIChildren(currentNode).ToArray();
             int randomIndex = UnityEngine.Random.Range(0, children.Length);
+            
             TriggerExitAction();
             currentNode = children[randomIndex];
+
             TriggerEnterAction();
 
             onConversationUpdated();
+
+            
         }
 
         public string GetCurrentConversantName()
@@ -89,11 +97,15 @@ namespace DialogueSystem.API
 
         public void StartDialogue(AIConversant newConversant, DialogScriptable newDialogue)
         {
+           
             currentConversant = newConversant;
             currentDialogue = newDialogue;
             currentNode = currentDialogue.GetRootNode();
             TriggerEnterAction();
             onConversationUpdated();
+          
+            GetComponent<RigidbodyFirstPersonController>().enabled = false;
+        
         }
 
         public bool IsActive()
@@ -103,7 +115,7 @@ namespace DialogueSystem.API
 
         public void Quit()
         {
-           
+            
             currentDialogue = null;
             TriggerExitAction();
             currentNode = null;
@@ -111,6 +123,9 @@ namespace DialogueSystem.API
             currentConversant = null;
 
             onConversationUpdated();
+            GetComponent<RigidbodyFirstPersonController>().enabled = true;
+
+
         }
 
         private void TriggerEnterAction()
