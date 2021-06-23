@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 7051800659061248739}
   - component: {fileID: 6573147703390370197}
   - component: {fileID: 1562673122721665968}
+  - component: {fileID: 5302611991681015799}
+  - component: {fileID: 7394184543583924482}
   m_Layer: 0
   m_Name: Soul
   m_TagString: Untagged
@@ -106,3 +108,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acd6278a911ca7942b9c2e6b88dd4b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogue: {fileID: 0}
+  conversantName: 
+--- !u!114 &5302611991681015799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8809314316356447090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fb5fae37fe043348aef8ff2dd37835a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: {fileID: 11400000, guid: c2686a415036fab4cae29f73e13be0e0, type: 2}
+--- !u!114 &7394184543583924482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8809314316356447090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4578ddcfff5c4414fb56b584417578c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: GiveQuest
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5302611991681015799}
+        m_MethodName: GiveQuest
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

@@ -186,6 +186,7 @@ GameObject:
   - component: {fileID: 74166999}
   - component: {fileID: 1981486006895326599}
   - component: {fileID: 1914301253}
+  - component: {fileID: 7663268016243451880}
   m_Layer: 0
   m_Name: RigidBodyFPSController
   m_TagString: Untagged
@@ -394,7 +395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc3824074ca879f4dbfe3f7ac45315ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentDialogue: {fileID: 11400000, guid: aaffd0d31b228764ab6cf8220ad6771e, type: 2}
+  playerName: 
 --- !u!114 &1914301253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -407,6 +408,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed0cf690302924341ac324751494bd96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7663268016243451880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a54122ab938fbee409c5d8f4dd0d4f2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statuses:
+  - quest: {fileID: 11400000, guid: c2686a415036fab4cae29f73e13be0e0, type: 2}
+    completedObjectives:
+    - a
+    - b
+  - quest: {fileID: 11400000, guid: 1aba76e209827494f8b86358668f97ce, type: 2}
+    completedObjectives:
+    - ff
 --- !u!1 &721608922
 GameObject:
   m_ObjectHideFlags: 0
