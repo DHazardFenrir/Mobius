@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 
 public class PlayerDiary : MonoBehaviour
 {
     [SerializeField] CanvasGroup canvasDiary;
     [SerializeField] private bool canvasTrue;
+    [SerializeField] TextMeshProUGUI textEvent;
+    [SerializeField] ScriptableEvent eventos;
 
     private void Start()
     {
@@ -28,7 +30,9 @@ public class PlayerDiary : MonoBehaviour
         {
             if (!canvasTrue)
             {
-                Debug.Log("FFFFFFF");
+                
+                    textEvent.text = eventos.entradaDelDiario;
+                
                 canvasDiary.alpha = 1;
                 canvasTrue = true;
 
@@ -44,7 +48,7 @@ public class PlayerDiary : MonoBehaviour
         {
             if (canvasTrue)
             {
-                Debug.Log("GGGGGGGGGG");
+               
                 canvasDiary.alpha = 0;
                     canvasTrue = false;
                 

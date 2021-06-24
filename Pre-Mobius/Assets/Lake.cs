@@ -11,7 +11,7 @@ public class Lake : MonoBehaviour
 
     public void Update()
     {
-        float y = Mathf.PingPong(Time.time * speed, 1) * 4 - 2;
+        float y = Mathf.PingPong(Time.time * speed, 1) * 5 - 1;
         lake.transform.position = new Vector3(this.transform.position.x, y, this.transform.position.z);
     }
 }
