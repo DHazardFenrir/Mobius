@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AnimEvent : Evento
+public class ActivateEvent : Evento
 {
+    
+    [SerializeField] GameObject gameObj;
+
     protected override void ActiveEvent()
     {
 
-        var anim = GetComponent<Animator>();
-        anim.SetBool("Active", true);
+        gameObj.SetActive(true);
         base.ActiveEvent();
 
     }
