@@ -169,14 +169,8 @@ namespace DialogueSystem
 
         public void OnAfterDeserialize()
         {
-           
+#if UNITY_EDITOR
         }
+#endif
     }
-
 }
-
-
-
-
-
-

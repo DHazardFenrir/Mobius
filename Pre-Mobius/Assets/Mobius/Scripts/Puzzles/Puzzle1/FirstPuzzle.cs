@@ -16,7 +16,7 @@ public class FirstPuzzle : MonoBehaviour
         inventario = FindObjectOfType<Inventario>();
     }
 
- 
+    
     public void CerrarPresa()
     {
         //Cerrar presa

@@ -37,9 +37,10 @@ MonoBehaviour:
   m_Name: f2c839ce-f4ec-4c0d-ba11-daaaf1996312
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Oh.. hello there. Need someething?
+  text: You seem strange, kid
   children:
   - 553e3b2a-4aa4-4ad1-a157-a03552f08108
+  - 9c963fa2-2b16-4fde-80c3-78cfce4bd3fa
   rect:
     serializedVersion: 2
     x: 2
@@ -157,14 +158,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
   m_Name: 553e3b2a-4aa4-4ad1-a157-a03552f08108
   m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: Have you seen something odd?
+  isPlayerSpeaking: 0
+  text: Nah, i would remeber you if i had seen you.
   children:
   - 9510f7fe-11ab-45b2-81a4-4f9de0b84141
   rect:
     serializedVersion: 2
-    x: 310
-    y: 144
+    x: 292
+    y: 197
     width: 200
     height: 100
   onExitAction: 
@@ -235,15 +236,11 @@ MonoBehaviour:
   nodes:
   - {fileID: -6967103725361436927}
   - {fileID: -2324770984977430671}
+  - {fileID: -1812429190502803268}
+  - {fileID: -6231045611203278107}
   - {fileID: 789035496707602807}
   - {fileID: 7065483600566041561}
   - {fileID: 6754383779919150835}
-  - {fileID: -1818581568665320966}
-  - {fileID: -8966096385927966792}
-  - {fileID: 1753387746977099826}
-  - {fileID: -4505750738761925891}
-  - {fileID: -2886713523760677581}
-  - {fileID: -4557265390896153882}
   newNodeOffset: {x: 250, y: 0}
 --- !u!114 &789035496707602807
 MonoBehaviour:
@@ -257,8 +254,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
   m_Name: 9510f7fe-11ab-45b2-81a4-4f9de0b84141
   m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: 'Something odd? No... I don''t think so, kid. '
+  isPlayerSpeaking: 1
+  text: I'm Cyril!
   children:
   - afa23ff3-40fc-447b-8e38-48ebe1a614f7
   rect:
@@ -305,13 +302,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
   m_Name: fe80bc51-6b00-4f28-b608-8ac220fe14bd
   m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: 'Sure. '
+  isPlayerSpeaking: 0
+  text: So what are you doing here?
   children: []
   rect:
     serializedVersion: 2
-    x: 2157
-    y: 216
+    x: 1119
+    y: 97
     width: 200
     height: 100
   onExitAction: GiveQuest
@@ -329,14 +326,13 @@ MonoBehaviour:
   m_Name: afa23ff3-40fc-447b-8e38-48ebe1a614f7
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: But ya kno' kid, there were better times, where the goddess used to bless
-    us with abundant harvest.
+  text: Doesn't ring a bell
   children:
-  - 64541e4a-2bd1-45fb-9884-968a03e635e8
+  - fe80bc51-6b00-4f28-b608-8ac220fe14bd
   rect:
     serializedVersion: 2
-    x: 796
-    y: 215
+    x: 868
+    y: 213
     width: 200
     height: 100
   onExitAction: 
