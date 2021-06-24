@@ -11,6 +11,8 @@ public class MoveEvent : Evento
     {
         gameObj.transform.position = spawnPoint.position;
         base.ActiveEvent();
+        EventManager eventManager = FindObjectOfType<EventManager>();
+        eventManager.GetEvents();
     }
 
 }

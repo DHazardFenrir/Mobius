@@ -12,6 +12,8 @@ public class DeActivateEvent : Evento
 
         gameObj.SetActive(false);
         base.ActiveEvent();
+        EventManager eventManager = FindObjectOfType<EventManager>();
+        eventManager.GetEvents();
 
     }
 

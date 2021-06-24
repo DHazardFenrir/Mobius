@@ -10,6 +10,8 @@ public class AnimEvent : Evento
         var anim = GetComponent<Animator>();
         anim.SetBool("Active", true);
         base.ActiveEvent();
+        EventManager eventManager = FindObjectOfType<EventManager>();
+        eventManager.GetEvents();
 
     }
 

@@ -19,40 +19,7 @@ public class EventManager : MonoBehaviour
         GetEvents();
     }
 
-    private void Update()
-    {
-        //Activa el evento si se llega a la hora especifica
-        //timer += Time.deltaTime;
-        //if(timer>=1)
-        //{
-        //    if(eventos[GetEventToActive()].active==false)
-        //    {
-        //        if(lightingManager.timeToGet >= eventos[GetEventToActive()].eventData.horaDeActivacion)
-        //        {
-        //        //    Debug.Log(eventos[GetEventToActive()].eventData.horaDeActivacion);
-        //        //    Debug.Log(lightingManager.timeToGet);
-        //            ActiveEvent();
-        //            timer = 0;
-        //        }
-        //        else
-        //        {
-        //            timer = 0;
-        //        }
-        //    }
-        //    else
-        //    {
-        //        timer = 0;
-        //    }
-        //}
-        ////Comprobar orden de eventos
-        //if(Input.GetKeyDown(KeyCode.M))
-        //{
-        //    for (int i = 0; i < eventos.Length; i++)
-        //    {
-        //        Debug.Log(eventos[i].gameObject.name+ ": "+eventos[i].eventData.name);
-        //    }
-        //}
-    }
+
 
     IEnumerator CheckEvent()
     {
@@ -83,7 +50,7 @@ public class EventManager : MonoBehaviour
 
 
     //Obtiene los eventos del mapa
-    void GetEvents()
+    public void GetEvents()
     {
         eventos = FindObjectsOfType<Evento>();
         SortEvents();

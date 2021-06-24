@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Lake : MonoBehaviour
 {
+
+    [SerializeField] Evento evento;
+    [SerializeField] EventManager eventManager;
     public GameObject lake;
     public float speed;
 
@@ -11,5 +14,7 @@ public class Lake : MonoBehaviour
     {
         float y = Mathf.PingPong(Time.time * speed, 1) * 4 - 2;
         lake.transform.position = new Vector3(this.transform.position.x, y, this.transform.position.z);
+
+
     }
 }

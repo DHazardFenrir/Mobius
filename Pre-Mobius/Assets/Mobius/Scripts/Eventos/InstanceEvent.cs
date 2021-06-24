@@ -11,6 +11,8 @@ public class InstanceEvent : Evento
     {
         GameObject spawnedObject = Instantiate(prefab, spawnPoint.position, spawnPoint.rotation);
         base.ActiveEvent();
+        EventManager eventManager = FindObjectOfType<EventManager>();
+        eventManager.GetEvents();
     }
 
 }

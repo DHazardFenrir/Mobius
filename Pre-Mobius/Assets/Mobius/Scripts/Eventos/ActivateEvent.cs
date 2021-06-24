@@ -12,6 +12,8 @@ public class ActivateEvent : Evento
 
         gameObj.SetActive(true);
         base.ActiveEvent();
+        EventManager eventManager = FindObjectOfType<EventManager>();
+        eventManager.GetEvents();
 
     }
 

@@ -9,6 +9,8 @@ public class RemoveEvent : Evento
     {
         Destroy(gameObj);
         base.ActiveEvent();
+        EventManager eventManager = FindObjectOfType<EventManager>();
+        eventManager.GetEvents();
     }
 
 }
