@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class AbrirCasaSabios : MonoBehaviour
 {
+    [SerializeField] EventManager eventManager;
+
+    private void Start()
+    {
+        eventManager = FindObjectOfType<EventManager>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -12,6 +18,7 @@ public class AbrirCasaSabios : MonoBehaviour
             Debug.Log("ChocoConLaPuerta");
             Animator anim = GetComponent<Animator>();
             anim.SetBool("Active", true);
+            eventManager.GetEvents();
             Destroy(other.gameObject);
         }
     }

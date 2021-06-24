@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 5334209928405965395}
   - component: {fileID: 4304927771520485162}
   - component: {fileID: 3722040237115931288}
-  m_Layer: 0
+  - component: {fileID: 2193492401520926465}
+  m_Layer: 8
   m_Name: pCube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,6 +80,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &2193492401520926465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3122061753494926553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 940ae09f1b496804085a086e9bd48bf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InspectCam: {fileID: 0}
 --- !u!1 &7962789158345819370
 GameObject:
   m_ObjectHideFlags: 0
