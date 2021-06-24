@@ -7,7 +7,7 @@ public class PlayerDiary : MonoBehaviour
 {
     [SerializeField] CanvasGroup canvasDiary;
     [SerializeField] private bool canvasTrue;
-    [SerializeField] TextMeshProUGUI textEvent;
+    public TextMeshProUGUI textEvent;
     [SerializeField] ScriptableEvent eventos;
 
     private void Start()
@@ -31,8 +31,7 @@ public class PlayerDiary : MonoBehaviour
             if (!canvasTrue)
             {
                 
-                    textEvent.text = eventos.entradaDelDiario;
-                
+                 
                 canvasDiary.alpha = 1;
                 canvasTrue = true;
 

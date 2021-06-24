@@ -9,6 +9,7 @@ public class Evento : MonoBehaviour
     public bool active = false;
     public ScriptableEvent eventData;
     public event Action onExecuteEvent;
+    PlayerDiary diary;
 
     void Start()
     {
@@ -17,6 +18,8 @@ public class Evento : MonoBehaviour
             {
             Debug.Log("El objeto: " + this.gameObject.name + "no contiene scriptable object del evento");
             }
+
+        diary = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerDiary>();
     }
 
     //Activa el evento (Se llama desde el EventManager)
@@ -44,8 +47,10 @@ public class Evento : MonoBehaviour
 
 
 
-    void DiaryEntry()
+     void DiaryEntry()
     {
+        diary.textEvent.text = eventData.entradaDelDiario;
+
         Debug.Log(eventData.entradaDelDiario);
     }
   
