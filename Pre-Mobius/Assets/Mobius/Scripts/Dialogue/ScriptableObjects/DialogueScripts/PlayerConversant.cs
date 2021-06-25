@@ -41,7 +41,7 @@ namespace DialogueSystem.API
         public void Next()
         {
             
-            Debug.Log("Next");
+       
             int numPlayerResponses =   currentDialogue.GetPlayerChildren(currentNode).Count();
 
             if(numPlayerResponses > 0)
@@ -104,7 +104,7 @@ namespace DialogueSystem.API
             TriggerEnterAction();
             onConversationUpdated();
           
-            GetComponent<RigidbodyFirstPersonController>().enabled = false;
+           //GetComponent<RigidbodyFirstPersonController>().enabled = false;
         
         }
 
@@ -123,7 +123,7 @@ namespace DialogueSystem.API
             currentConversant = null;
 
             onConversationUpdated();
-            GetComponent<RigidbodyFirstPersonController>().enabled = true;
+            //GetComponent<RigidbodyFirstPersonController>().enabled = true;
 
 
         }

@@ -17,7 +17,7 @@ namespace DialogueSystem
 
         Dictionary<string, DialogueNode> nodeLookup = new Dictionary<string, DialogueNode>();
 
-
+#if UNITY_EDITOR
         private void OnValidate()
         {
             if (nodes.Count == 0)
@@ -33,7 +33,7 @@ namespace DialogueSystem
                 
             }
         }
-
+#endif
         public IEnumerable<DialogueNode> GetAllNodes()
         {
             return nodes;
@@ -161,16 +161,18 @@ namespace DialogueSystem
                         AssetDatabase.AddObjectToAsset(node, this);
                     }
                 }
+
             }
+#endif
         }
 
 
-#endif
+
 
         public void OnAfterDeserialize()
         {
-#if UNITY_EDITOR
+
         }
-#endif
+
     }
 }

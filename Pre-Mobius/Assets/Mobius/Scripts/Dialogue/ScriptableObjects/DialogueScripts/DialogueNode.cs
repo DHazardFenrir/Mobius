@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.Callbacks;
+
 using System;
 using UnityEditor;
 
@@ -33,14 +33,16 @@ namespace DialogueSystem
 
         public void SetText(string newText)
         {
+#if UNITY_EDITOR       
             if(newText != text)
             {
                 Undo.RecordObject(this, "Update Dialogue Text");
                 text = newText;
                 EditorUtility.SetDirty(this);
             }
-        }
+#endif
 
+        }
         public List<string> GetChildren()
         {
             return children;
