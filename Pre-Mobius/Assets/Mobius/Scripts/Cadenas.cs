@@ -8,6 +8,12 @@ public class Cadenas : MonoBehaviour, IInteractable
     [SerializeField] GameObject presaVieja;
     [SerializeField] GameObject nuevaPresa;
 
+     void Start()
+    {
+        inundacion = GameObject.FindGameObjectWithTag("Inundacion");
+        presaVieja = GameObject.FindGameObjectWithTag("PresaRota");
+        nuevaPresa = GameObject.FindGameObjectWithTag("PresaCompleta");
+    }
     public void Interact()
     {
         DryLake();

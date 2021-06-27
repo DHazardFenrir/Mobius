@@ -127,11 +127,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_RigidBody = GetComponent<Rigidbody>();
             m_Capsule = GetComponent<CapsuleCollider>();
             mouseLook.Init (transform, cam.transform);
+           
         }
 
 
         private void Update()
         {
+            talkNPC = GameObject.FindGameObjectWithTag("Dialogue");
             RotateView();
 
             if (CrossPlatformInputManager.GetButtonDown("Jump") && !m_Jump)
@@ -234,28 +236,30 @@ namespace UnityStandardAssets.Characters.FirstPerson
             if (Mathf.Abs(Time.timeScale) < float.Epsilon) return;
 
             Cursor.visible = true;
-
-            if (talkNPC != null) //works..ish. Still need fixes.
-            {
-                // get the rotation before it's changed
+            float oldYRotation = transform.eulerAngles.y;
+            mouseLook.LookRotation(transform, cam.transform);
+            //if (talkNPC != null) //works..ish. Still need fixes.
+            //{
+            //    // get the rotation before it's changed
                 
-                float oldYRotation = transform.eulerAngles.y;
-                mouseLook.LookRotation(transform, cam.transform);
-                Cursor.visible = false;
+               
+            //    Cursor.visible = false;
                
                
 
-                if (m_IsGrounded || advancedSettings.airControl)
-                {
-                    // Rotate the rigidbody velocity to match the new direction that the character is looking
-                    Quaternion velRotation = Quaternion.AngleAxis(transform.eulerAngles.y - oldYRotation, Vector3.up);
-                    m_RigidBody.velocity = velRotation * m_RigidBody.velocity;
-                }
+                
+            //}
+
+            if (m_IsGrounded || advancedSettings.airControl)
+            {
+                // Rotate the rigidbody velocity to match the new direction that the character is looking
+                Quaternion velRotation = Quaternion.AngleAxis(transform.eulerAngles.y - oldYRotation, Vector3.up);
+                m_RigidBody.velocity = velRotation * m_RigidBody.velocity;
             }
 
 
 
-           
+
         }
 
         /// sphere cast down just beyond the bottom of the capsule to see if the capsule is colliding round the bottom

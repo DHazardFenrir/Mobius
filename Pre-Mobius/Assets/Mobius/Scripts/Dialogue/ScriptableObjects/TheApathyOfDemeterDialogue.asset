@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8966096385927966792
+--- !u!114 &-8794872686231401778
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,21 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
-  m_Name: be3ac814-56bf-4a8c-9b26-adb0dcc12f72
+  m_Name: 6ef53dbc-380e-41f4-9e78-b17113f4ba63
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Do you think Demeter is distant?
+  text: Have you seen something off?
   children:
-  - c5e81f1d-bb2f-4ad6-a2e8-1b010e61a30e
+  - 1b2ab10a-b331-4691-a005-75d6a7c048cb
   rect:
     serializedVersion: 2
-    x: 1271
-    y: 210
+    x: 1047
+    y: 56
     width: 200
     height: 100
   onExitAction: 
   onEnterAction: 
---- !u!114 &-6967103725361436927
+--- !u!114 &-5929667145734904954
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -34,46 +34,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
-  m_Name: f2c839ce-f4ec-4c0d-ba11-daaaf1996312
+  m_Name: f50daa01-0d99-48bf-9e7e-d6cbc8eaf275
   m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: You seem strange, kid
+  isPlayerSpeaking: 1
+  text: Looking around time, I recently came back.
   children:
-  - 553e3b2a-4aa4-4ad1-a157-a03552f08108
-  - 9c963fa2-2b16-4fde-80c3-78cfce4bd3fa
+  - 27f0707b-dec9-419e-a267-6540d67dafdb
   rect:
     serializedVersion: 2
-    x: 2
+    x: 250
     y: 0
     width: 200
     height: 100
   onExitAction: 
-  onEnterAction: roottest
---- !u!114 &-6231045611203278107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
-  m_Name: b76a648c-093d-445f-9f9f-63ba038d81fd
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: That's a lie
-  children:
-  - fe80bc51-6b00-4f28-b608-8ac220fe14bd
-  rect:
-    serializedVersion: 2
-    x: 694
-    y: 3
-    width: 200
-    height: 100
-  onExitAction: TestAIExit
   onEnterAction: 
---- !u!114 &-4557265390896153882
+--- !u!114 &-5808435715194555588
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -83,46 +58,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
-  m_Name: 95b9c9aa-58af-4538-968b-a1073e1ebef2
+  m_Name: a253c332-0c1e-48f4-b61f-304c850bf269
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Could you do me a favor? Could you go and see the temple and tell me if something
-    is off? I don't know... but I have a hunch that something is happening around
-    here.
-  children:
-  - fe80bc51-6b00-4f28-b608-8ac220fe14bd
-  rect:
-    serializedVersion: 2
-    x: 1788
-    y: 190
-    width: 200
-    height: 100
-  onExitAction: 
-  onEnterAction: 
---- !u!114 &-4505750738761925891
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
-  m_Name: 1d65f0e9-4f53-4985-888d-af703caa293a
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: Insolent kid! I didn't expect less from you!
+  text: You insolet twat! Sheesh... I don't know why even I bother to tell you this...
   children: []
   rect:
     serializedVersion: 2
-    x: 1682
-    y: 332
+    x: 2555
+    y: 393
     width: 200
     height: 100
   onExitAction: 
   onEnterAction: 
---- !u!114 &-2886713523760677581
+--- !u!114 &-5675019588926717530
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,91 +81,165 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
-  m_Name: c5e81f1d-bb2f-4ad6-a2e8-1b010e61a30e
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: I dunno kid... I have faith in her but...
-  children:
-  - 95b9c9aa-58af-4538-968b-a1073e1ebef2
-  rect:
-    serializedVersion: 2
-    x: 1538
-    y: 190
-    width: 200
-    height: 100
-  onExitAction: 
-  onEnterAction: 
---- !u!114 &-2324770984977430671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
-  m_Name: 553e3b2a-4aa4-4ad1-a157-a03552f08108
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: Nah, i would remeber you if i had seen you.
-  children:
-  - 9510f7fe-11ab-45b2-81a4-4f9de0b84141
-  rect:
-    serializedVersion: 2
-    x: 292
-    y: 197
-    width: 200
-    height: 100
-  onExitAction: 
-  onEnterAction: TestAction
---- !u!114 &-1818581568665320966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
-  m_Name: 64541e4a-2bd1-45fb-9884-968a03e635e8
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: But these days... these days all I do is work, and the earth is not answerin'
-    like it used to
-  children:
-  - be3ac814-56bf-4a8c-9b26-adb0dcc12f72
-  - 72bac8ed-94e5-4f2a-9845-07663b0e127c
-  rect:
-    serializedVersion: 2
-    x: 1021
-    y: 214
-    width: 200
-    height: 100
-  onExitAction: 
-  onEnterAction: 
---- !u!114 &-1812429190502803268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
-  m_Name: 9c963fa2-2b16-4fde-80c3-78cfce4bd3fa
+  m_Name: 4e9e7b81-87dd-4b7c-860b-7531331c3f86
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: But i was born here!
+  text: Do you think Demeter has forsaken you?
   children:
-  - b76a648c-093d-445f-9f9f-63ba038d81fd
-  - 553e3b2a-4aa4-4ad1-a157-a03552f08108
+  - 09fa2589-971a-4140-8817-e5de30c45f94
   rect:
     serializedVersion: 2
-    x: 385
-    y: 3
+    x: 2152
+    y: 277
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-3689300710102778064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: f9026085-eba7-4343-8520-4c3f487f3f20
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Hey kid... whacha doing here?
+  children:
+  - f50daa01-0d99-48bf-9e7e-d6cbc8eaf275
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-3613771698188156034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 40537785-27db-4bce-b7b9-92cdc848ab63
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: So... work harder I suppose?
+  children:
+  - a253c332-0c1e-48f4-b61f-304c850bf269
+  rect:
+    serializedVersion: 2
+    x: 2172
+    y: 401
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-3380999265153151724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: a736381c-5319-4a95-aa56-26a0423d10b9
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: How so?
+  children:
+  - 5889dec9-7629-46fd-b374-5e0ae07981d2
+  rect:
+    serializedVersion: 2
+    x: 1567
+    y: 95
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-2002824511989620876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 5889dec9-7629-46fd-b374-5e0ae07981d2
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Well kid... there were better times, where she used to bless us with abundant
+    harvest. But this days... these days... all I do is work, and the earth is not
+    answerin' like it used to...
+  children:
+  - 2e42ebc1-9c5c-4593-9975-459ff7e69616
+  rect:
+    serializedVersion: 2
+    x: 1607
+    y: 274
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-818347705167232881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 09fa2589-971a-4140-8817-e5de30c45f94
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: No.. I don't think so. We worship her like always, even more. We didn't forget
+    about her...
+  children:
+  - e99672a1-74d1-4dec-9369-11194eabb0be
+  rect:
+    serializedVersion: 2
+    x: 2454
+    y: 277
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-354395805665219096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 2e42ebc1-9c5c-4593-9975-459ff7e69616
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Sometimes... sometimes I just feel that everything I do doesn''t have an
+    impact anymore. I can feel it in my bones. '
+  children:
+  - 4e9e7b81-87dd-4b7c-860b-7531331c3f86
+  - 40537785-27db-4bce-b7b9-92cdc848ab63
+  rect:
+    serializedVersion: 2
+    x: 1902
+    y: 277
     width: 200
     height: 100
   onExitAction: 
@@ -231,18 +254,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
-  m_Name: DemeterApathyDialogue
+  m_Name: TheApathyOfDemeterDialogue
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: -6967103725361436927}
-  - {fileID: -2324770984977430671}
-  - {fileID: -1812429190502803268}
-  - {fileID: -6231045611203278107}
-  - {fileID: 789035496707602807}
-  - {fileID: 7065483600566041561}
-  - {fileID: 6754383779919150835}
+  - {fileID: -3689300710102778064}
+  - {fileID: -5929667145734904954}
+  - {fileID: 6606531282823580772}
+  - {fileID: 2227176893589999745}
+  - {fileID: -8794872686231401778}
+  - {fileID: 5319336274865375985}
+  - {fileID: -3380999265153151724}
+  - {fileID: -2002824511989620876}
+  - {fileID: -354395805665219096}
+  - {fileID: -5675019588926717530}
+  - {fileID: -3613771698188156034}
+  - {fileID: -5808435715194555588}
+  - {fileID: -818347705167232881}
+  - {fileID: 8394123052915503739}
+  - {fileID: 6808618775910457348}
   newNodeOffset: {x: 250, y: 0}
---- !u!114 &789035496707602807
+--- !u!114 &2227176893589999745
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -252,21 +283,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
-  m_Name: 9510f7fe-11ab-45b2-81a4-4f9de0b84141
+  m_Name: be25483a-b56b-4b95-a1b8-ef80e1b79266
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: I'm Cyril!
+  text: 'I left when I was very young, maybe we didn''t knew each other back then. '
   children:
-  - afa23ff3-40fc-447b-8e38-48ebe1a614f7
+  - 6ef53dbc-380e-41f4-9e78-b17113f4ba63
   rect:
     serializedVersion: 2
-    x: 574
-    y: 238
+    x: 782
+    y: 9
     width: 200
     height: 100
   onExitAction: 
   onEnterAction: 
---- !u!114 &1753387746977099826
+--- !u!114 &5319336274865375985
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -276,44 +307,70 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
-  m_Name: 72bac8ed-94e5-4f2a-9845-07663b0e127c
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: So... work more?
-  children:
-  - 1d65f0e9-4f53-4985-888d-af703caa293a
-  rect:
-    serializedVersion: 2
-    x: 1305
-    y: 349
-    width: 200
-    height: 100
-  onExitAction: 
-  onEnterAction: 
---- !u!114 &6754383779919150835
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
-  m_Name: fe80bc51-6b00-4f28-b608-8ac220fe14bd
+  m_Name: 1b2ab10a-b331-4691-a005-75d6a7c048cb
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: So what are you doing here?
+  text: Off? No.. I don't think so.. but hey... you kno' kid? the goddess Demeter
+    is... not quite like before...
+  children:
+  - a736381c-5319-4a95-aa56-26a0423d10b9
+  rect:
+    serializedVersion: 2
+    x: 1317
+    y: 95
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &6606531282823580772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 27f0707b-dec9-419e-a267-6540d67dafdb
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'That''s good kid! But I don''t I remember seeing you before or recently...
+    And I have a very good memory! '
+  children:
+  - be25483a-b56b-4b95-a1b8-ef80e1b79266
+  rect:
+    serializedVersion: 2
+    x: 532
+    y: 9
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &6808618775910457348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: a8009c3e-16c0-41dc-bb75-02e659796674
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Sure!
   children: []
   rect:
     serializedVersion: 2
-    x: 1119
-    y: 97
+    x: 2955
+    y: 278
     width: 200
     height: 100
   onExitAction: GiveQuest
   onEnterAction: 
---- !u!114 &7065483600566041561
+--- !u!114 &8394123052915503739
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -323,16 +380,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
-  m_Name: afa23ff3-40fc-447b-8e38-48ebe1a614f7
+  m_Name: e99672a1-74d1-4dec-9369-11194eabb0be
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Doesn't ring a bell
+  text: Hey kid, could you do me a favor? Can you go to her temple and see if something
+    is off? The last time I looked nothing seemed bad but... maybe you can spot something
   children:
-  - fe80bc51-6b00-4f28-b608-8ac220fe14bd
+  - a8009c3e-16c0-41dc-bb75-02e659796674
   rect:
     serializedVersion: 2
-    x: 868
-    y: 213
+    x: 2705
+    y: 278
     width: 200
     height: 100
   onExitAction: 
