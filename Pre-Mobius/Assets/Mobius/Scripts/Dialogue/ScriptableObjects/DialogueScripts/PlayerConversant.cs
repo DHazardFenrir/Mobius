@@ -91,7 +91,7 @@ namespace DialogueSystem.API
         }
         public bool HasNext()
         {
-            
+           
             return currentDialogue.GetAllChildren(currentNode).Count() > 0 ;
         }
 
@@ -104,7 +104,7 @@ namespace DialogueSystem.API
             TriggerEnterAction();
             onConversationUpdated();
           
-           //GetComponent<RigidbodyFirstPersonController>().enabled = false;
+           GetComponent<RigidbodyFirstPersonController>().enabled = false;
         
         }
 
@@ -123,7 +123,7 @@ namespace DialogueSystem.API
             currentConversant = null;
 
             onConversationUpdated();
-            //GetComponent<RigidbodyFirstPersonController>().enabled = true;
+            GetComponent<RigidbodyFirstPersonController>().enabled = true;
 
 
         }
