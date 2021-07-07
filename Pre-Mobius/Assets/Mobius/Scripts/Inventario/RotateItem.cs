@@ -26,7 +26,7 @@ public class RotateItem : MonoBehaviour
             posLastFame = Input.mousePosition;
 
             var axis = Quaternion.AngleAxis(-90f, Vector3.forward) * delta;
-            transform.rotation = Quaternion.AngleAxis(delta.magnitude * 0.1f, axis) * transform.rotation;
+            transform.rotation = Quaternion.AngleAxis(delta.magnitude * 0.2f, axis) * transform.rotation;
         }
     }
 }
