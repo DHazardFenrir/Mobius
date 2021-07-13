@@ -4,8 +4,9 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: M_SNB_GrassFlower
   m_Shader: {fileID: 4800000, guid: f7835d26e94875f47848e4600cd0ab70, type: 3}
   m_ShaderKeywords: _ALPHATEST_ON
@@ -46,6 +47,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: af8fac321dcd5ac428c4d4efc722c78a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _GrassTexture:
+        m_Texture: {fileID: 2800000, guid: 9bf606c43682e9d488ea2aa0c944418f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 9bf606c43682e9d488ea2aa0c944418f, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -83,6 +88,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _AlphaClip: 0.5
+    - _AlphaCutoff: 0.5
     - _BumpScale: 1
     - _Cutoff: 0.75
     - _DetailNormalMapScale: 1

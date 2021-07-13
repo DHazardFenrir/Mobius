@@ -4,12 +4,13 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: M_SNB_Vegetation_Simple
-  m_Shader: {fileID: 4800000, guid: 1f5312e2845fc8043a8f85df1d840121, type: 3}
+  m_Shader: {fileID: 4800000, guid: 041ed92166f5aa9449994e31aba70f1e, type: 3}
   m_ShaderKeywords: _ALPHATEST_ON
-  m_LightmapFlags: 0
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -79,6 +80,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _AlphaClip: 0.5
+    - _AlphaCutoff: 0.5
     - _BumpScale: 1
     - _Cutoff: 0.75
     - _DetailNormalMapScale: 1
@@ -109,6 +112,7 @@ Material:
     - _Shininess: 0.1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
+    - _Specularity: 0.1
     - _SrcBlend: 1
     - _SubsurfaceDistortionModifier: 0.5
     - _TranslucencyForce: 0.4

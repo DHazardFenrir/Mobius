@@ -56,9 +56,10 @@ namespace DialogueSystem.UI
             else
             {
                 AIText.text = playerConversant.GetText();
-                Debug.Log("Conversant has Next" + playerConversant.HasNext());
+              
                 nextButton.gameObject.SetActive(playerConversant.HasNext());
-                
+                Debug.Log("Conversant has Next" + playerConversant.HasNext());
+
             }
             
         }
