@@ -12,6 +12,7 @@ namespace UnityStandardAssets._2D
             {
                 SceneManager.LoadScene(SceneManager.GetSceneAt(0).name);
             }
+
         }
     }
 }

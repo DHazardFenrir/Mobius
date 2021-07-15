@@ -26,20 +26,21 @@ namespace DialogueSystem
             {
                 CreateNode(null);
             }
-
-            LazyInitializedDictionary();
-            
-        }
-#endif
-        private void LazyInitializedDictionary()
-        {
-            if (isLazyDictionaryInitialized) return;
             nodeLookup.Clear();
             foreach (DialogueNode node in GetAllNodes())
             {
                 nodeLookup[node.name] = node;
 
             }
+
+            //LazyInitializedDictionary();
+            
+        }
+#endif
+        private void LazyInitializedDictionary()
+        {
+            if (isLazyDictionaryInitialized) return;
+            
             isLazyDictionaryInitialized = true;
         }
         public IEnumerable<DialogueNode> GetAllNodes()

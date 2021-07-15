@@ -8,6 +8,7 @@ public class LightingManager : MonoBehaviour
     [SerializeField] private Light DirectionalLight;
     [SerializeField] private LightingPreset Preset;
     public GameObject player { get; private set;}
+   
     //Variables
     const int DayInMinutes=10;
     [SerializeField, Range(0, DayInMinutes*60)] float TimeOfDay;
@@ -19,6 +20,7 @@ public class LightingManager : MonoBehaviour
         if (player == null)
         {
             player = GameObject.Find("Player");
+            
         }
     }
 
@@ -46,9 +48,10 @@ public class LightingManager : MonoBehaviour
         }
 
         
-        if(Input.GetKeyDown(KeyCode.X))
+        if(Input.GetKeyDown(KeyCode.R))
         {
             DontDestroyOnLoad(player);
+            
             SceneManager.LoadScene(0);
         }
 
