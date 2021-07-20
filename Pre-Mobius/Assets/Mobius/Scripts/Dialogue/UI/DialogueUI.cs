@@ -33,9 +33,14 @@ namespace DialogueSystem.UI
             UpdateUI();
 
         }
-          
 
-       
+        private void OnDestroy()
+        {
+            playerConversant.onConversationUpdated -= UpdateUI;
+
+        }
+
+
 
         void UpdateUI()
         {
