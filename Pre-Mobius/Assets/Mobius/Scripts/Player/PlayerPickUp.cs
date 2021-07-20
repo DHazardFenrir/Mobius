@@ -6,7 +6,7 @@ public class PlayerPickUp : MonoBehaviour
 {
     [Header("InteractableInfo")]
     [SerializeField] float sphereCastRadius = 0.5f;
-    [SerializeField] int interactableLayerIndex;
+    [SerializeField] LayerMask interactableLayerIndex;
     private Vector3 raycastPos;
     [SerializeField] GameObject lookObject;
     private PhysicsObject physicsObject;
@@ -47,9 +47,9 @@ public class PlayerPickUp : MonoBehaviour
         raycastPos = mainCamera.ScreenToWorldPoint(new Vector3(Screen.width / 2, Screen.height / 2, 0));
         RaycastHit hit;
 
-        if(Physics.SphereCast(raycastPos, sphereCastRadius, mainCamera.transform.forward, out hit, 1 << interactableLayerIndex))
+        if(Physics.SphereCast(raycastPos, sphereCastRadius, mainCamera.transform.forward, out hit,  interactableLayerIndex))
         {
-            lookObject = hit.collider.transform.root.gameObject;
+            lookObject = hit.collider.transform.gameObject;
             if (lookObject.GetComponent<Rigidbody>() == null) return;
 
         }
@@ -59,7 +59,7 @@ public class PlayerPickUp : MonoBehaviour
         }
 
         //press button
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetMouseButtonDown(1))
         {
             if (currentlyPickedObject == null)
             {
@@ -76,20 +76,22 @@ public class PlayerPickUp : MonoBehaviour
         if (currentlyPickedObject != null && currentDist > maxDistance) BreakConnection();
     }
 
-    private void FixedUpdate()
+    private void LateUpdate()
     {
         if(currentlyPickedObject != null)
         {
-            currentDist = Vector3.Distance(pickupParent.position, pickupRB.position);
-            currentSpeed = Mathf.SmoothStep(minSpeed, maxSpeed, currentDist / maxDistance);
-            currentSpeed *= Time.fixedDeltaTime;
-            Vector3 direction = pickupParent.position - pickupRB.position;
-            pickupRB.velocity = direction.normalized * currentSpeed;
+            //currentDist = Vector3.Distance(pickupParent.position, pickupRB.position);
+            //currentSpeed = Mathf.SmoothStep(minSpeed, maxSpeed, currentDist / maxDistance);
+            //currentSpeed *= Time.fixedDeltaTime;
+            //Vector3 direction = pickupParent.position - pickupRB.position;
+            //pickupRB.velocity = direction.normalized * currentSpeed;
+
+           currentlyPickedObject.transform.position = Vector3.Lerp(currentlyPickedObject.transform.position, pickupParent.position, 10 * Time.deltaTime);
 
             //Rotation
             lookRot = Quaternion.LookRotation(mainCamera.transform.position - pickupRB.position);
             lookRot = Quaternion.Slerp(mainCamera.transform.rotation, lookRot, rotationSpeed * Time.fixedDeltaTime);
-            pickupRB.MoveRotation(lookRot);
+            currentlyPickedObject.transform.rotation = lookRot;
 
         }
         
