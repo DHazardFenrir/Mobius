@@ -19,7 +19,7 @@ public class Evento : MonoBehaviour
             Debug.Log("El objeto: " + this.gameObject.name + "no contiene scriptable object del evento");
             }
 
-        diary = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerDiary>();
+        diary = GameObject.FindGameObjectWithTag("Diary").GetComponent<PlayerDiary>();
     }
 
     //Activa el evento (Se llama desde el EventManager)

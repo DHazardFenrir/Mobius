@@ -5,53 +5,36 @@ using TMPro;
 
 public class PlayerDiary : MonoBehaviour
 {
-    [SerializeField] CanvasGroup canvasDiary;
-    [SerializeField] private bool canvasTrue;
+    
     public TextMeshProUGUI textEvent;
     [SerializeField] ScriptableEvent eventos;
 
-    private void Start()
-    {
-        canvasDiary.alpha = 0;
-        canvasTrue = false;
-    }
+    [SerializeField] GameObject diaryCanvas;
 
-
-    // Update is called once per frame
+    public bool isOpen { get; private set; } = false;
     void Update()
     {
-        ShowDiary();
-        HiddenDiary();
-    }
-
-    void ShowDiary()
-    {
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.O))
         {
-            if (!canvasTrue)
-            {
-                
-                 
-                canvasDiary.alpha = 1;
-                canvasTrue = true;
-
-            }
-
-
+            isOpen = !isOpen;
+            diaryCanvas.SetActive(isOpen);
+            SetSettings();
         }
     }
 
-    void HiddenDiary()
+    void SetSettings()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (isOpen)
         {
-            if (canvasTrue)
-            {
-               
-                canvasDiary.alpha = 0;
-                    canvasTrue = false;
-                
-            }
+            Time.timeScale = 0;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+        else
+        {
+            Time.timeScale = 1;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
     }
 }
