@@ -26,7 +26,7 @@ public class ItemToPick : MonoBehaviour
     private void Update()
     {
         Save();
-        distance = Vector3.Distance(transform.position, player.position);
+        //distance = Vector3.Distance(transform.position, player.position);
     }
 
     public void check()
