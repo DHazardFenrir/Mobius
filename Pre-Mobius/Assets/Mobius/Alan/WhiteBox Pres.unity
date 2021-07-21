@@ -10069,7 +10069,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh22876
+  m_Name: pb_Mesh59970
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10303,11 +10303,11 @@ GameObject:
   - component: {fileID: 121040959}
   m_Layer: 0
   m_Name: Panel
-  m_TagString: Untagged
+  m_TagString: Diary
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &121040958
 RectTransform:
   m_ObjectHideFlags: 0
@@ -32799,21 +32799,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slowMotion: {fileID: 1199791988}
---- !u!114 &548661579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 618257727}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0050d49f2e7d654eb6a0c599beb01ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textEvent: {fileID: 1250164097}
-  eventos: {fileID: 11400000, guid: be0b0a2fbce28834fae8a88bcb8ef6dd, type: 2}
-  diaryCanvas: {fileID: 121040957}
 --- !u!114 &548661582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33310,7 +33295,6 @@ GameObject:
   - component: {fileID: 1106879808}
   - component: {fileID: 849463972}
   - component: {fileID: 548661576}
-  - component: {fileID: 548661579}
   - component: {fileID: 548661582}
   - component: {fileID: 1981486006431346206}
   - component: {fileID: 1455534300}
@@ -45325,9 +45309,10 @@ GameObject:
   - component: {fileID: 1028368265}
   - component: {fileID: 1028368264}
   - component: {fileID: 1028368267}
+  - component: {fileID: 1028368268}
   m_Layer: 0
   m_Name: Diario
-  m_TagString: Untagged
+  m_TagString: Diary
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45425,6 +45410,21 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &1028368268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028368262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0050d49f2e7d654eb6a0c599beb01ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textEvent: {fileID: 1001004910}
+  eventos: {fileID: 11400000, guid: d9bd53f1a9595c443b34b993a6c6b063, type: 2}
+  diaryCanvas: {fileID: 121040957}
 --- !u!1 &1044669534
 GameObject:
   m_ObjectHideFlags: 0
@@ -46523,13 +46523,33 @@ Transform:
   m_Father: {fileID: 1783342907}
   m_RootOrder: 75
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1218119773 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7694331911992972903, guid: 2669cf9ee8cba5f47b8a1b4d0f5dabfa,
+    type: 3}
+  m_PrefabInstance: {fileID: 1761697218}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1218119777
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218119773}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3159924718078260297, guid: 2669cf9ee8cba5f47b8a1b4d0f5dabfa, type: 3}
 --- !u!43 &1226778167
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23478
+  m_Name: pb_Mesh62286
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -47442,7 +47462,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23038
+  m_Name: pb_Mesh60662
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
