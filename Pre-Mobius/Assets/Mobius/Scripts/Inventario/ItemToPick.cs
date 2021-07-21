@@ -8,8 +8,10 @@ public class ItemToPick : MonoBehaviour
     [SerializeField] Inventario inventario;
 
     [SerializeField] float minD;
-    public float distance;
+    //public float distance;
     Transform player;
+    [SerializeField] LayerMask itemMask;
+    RaycastHit hit;
 
     
 
@@ -39,18 +41,27 @@ public class ItemToPick : MonoBehaviour
 
     public void Save()
     {
-        if (Input.GetKeyDown(KeyCode.T))
+        if (Input.GetMouseButtonDown(1))
         {
-            if (distance <= minD)
-            {
-                inventario.inventory.Add(item);
-                Destroy(this.gameObject);
 
-            }
-            else
+            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, minD, itemMask))
             {
-                Debug.Log("ta bien lejos");
+                Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.red);
+                Debug.Log("Did Hit");
+                inventario.inventory.Add(item);
+                 Destroy(this.gameObject);
             }
+
+
+            //if (distance <= minD)
+            //{
+            //    
+
+            //}
+            //else
+            //{
+            //    Debug.Log("ta bien lejos");
+            //}
         }
     }
 

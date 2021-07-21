@@ -34,7 +34,7 @@ public class Inventario : MonoBehaviour
 
     public void Save()
     {
-        if (Input.GetKeyDown(KeyCode.T))
+        if (Input.GetMouseButtonDown(1))
         {
  
             inventory.Add(FindObjectOfType<ItemToPick>().item);
