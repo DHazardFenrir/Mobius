@@ -52,7 +52,6 @@ public class ItemToPick : MonoBehaviour
                 Debug.Log("ta bien lejos");
             }
         }
-
     }
 
 }
