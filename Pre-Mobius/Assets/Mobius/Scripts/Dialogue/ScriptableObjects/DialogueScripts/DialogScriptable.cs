@@ -18,6 +18,8 @@ namespace DialogueSystem
         Dictionary<string, DialogueNode> nodeLookup = new Dictionary<string, DialogueNode>();
 
         private bool isLazyDictionaryInitialized;
+
+#if UNITY_EDITOR
         private void OnValidate()
         {
             if (nodes.Count == 0)
@@ -35,12 +37,7 @@ namespace DialogueSystem
 
         }
 
-        private void Awake()
-        {
-            OnValidate();
-        }
-#if UNITY_EDITOR
-
+      
 #endif
         private void LazyInitializedDictionary()
         {
