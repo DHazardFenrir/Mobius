@@ -19,31 +19,31 @@ namespace DialogueSystem
 
         private bool isLazyDictionaryInitialized;
 
-#if UNITY_EDITOR
+        private void Awake()
+        {
+            OnValidate();
+        }
         private void OnValidate()
         {
+#if UNITY_EDITOR
             if (nodes.Count == 0)
             {
                 CreateNode(null);
             }
+#endif
+            InitializeDictionary();
+
+        }
+
+        private void InitializeDictionary()
+        {
+
             nodeLookup.Clear();
             foreach (DialogueNode node in GetAllNodes())
             {
                 nodeLookup[node.name] = node;
 
             }
-
-            //LazyInitializedDictionary();
-
-        }
-
-      
-#endif
-        private void LazyInitializedDictionary()
-        {
-            if (isLazyDictionaryInitialized) return;
-            
-            isLazyDictionaryInitialized = true;
         }
         public IEnumerable<DialogueNode> GetAllNodes()
         {
@@ -79,7 +79,7 @@ namespace DialogueSystem
 
         public IEnumerable<DialogueNode> GetAllChildren(DialogueNode parentNode)
         {
-            LazyInitializedDictionary();
+            InitializeDictionary();
            
             foreach(string childID in parentNode.GetChildren())
             {
