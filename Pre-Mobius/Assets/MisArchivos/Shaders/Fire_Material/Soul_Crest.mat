@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Fire
+  m_Name: Soul_Crest
   m_Shader: {fileID: -6465566751694194690, guid: 34d30f88938f80040a88a85ea66fc765,
     type: 3}
   m_ShaderKeywords: 
@@ -19,11 +19,24 @@ Material:
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
-    m_TexEnvs: []
+    m_TexEnvs:
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_6AD0DC12: 1
-    - Vector1_AB9A1FCC: 1.3
-    - Vector1_E60AA806: 1
+    - Vector1_6AD0DC12: 2
+    - Vector1_AB9A1FCC: 0.5
+    - Vector1_E60AA806: 1.66
     m_Colors:
-    - Color_805385E1: {r: 1.0520856, g: 0.3625832, b: 0, a: 0}
+    - Color_805385E1: {r: 0.87058824, g: 0.7764706, b: 0.99215686, a: 1}
     - Vector2_17343D80: {r: 1, g: 1, b: 0, a: 0}
+  m_BuildTextureStacks: []
