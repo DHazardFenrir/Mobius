@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8290512818361709941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 0b9a1c0a-2ebf-434f-b01a-823ff31dfd8a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Talk about yourself about that! I don''t why, but today all the fish appear
+    to be hiding. I feel like I''ve been fishing for like an eternity with no luck
+    so far. '
+  children:
+  - e5536ec8-e9b3-4d94-9a40-c37fba3cb6a0
+  rect:
+    serializedVersion: 2
+    x: 804
+    y: 12
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-4762414592645915300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: e5536ec8-e9b3-4d94-9a40-c37fba3cb6a0
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Tell those little guys to let me capture them! I'm hungry!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1054
+    y: 12
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-2323769322588364743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: fd759332-9308-4e1d-8725-25966c1faecd
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Oh, hello Syril, how''s your day going? I hope its better than mine. '
+  children:
+  - d249c84f-1bdf-4240-8f9e-feffad6002e6
+  rect:
+    serializedVersion: 2
+    x: 299
+    y: 21
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-1477379828388453783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: d249c84f-1bdf-4240-8f9e-feffad6002e6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: You luck can't be that bad..
+  children:
+  - 0b9a1c0a-2ebf-434f-b01a-823ff31dfd8a
+  rect:
+    serializedVersion: 2
+    x: 549
+    y: 21
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
+  m_Name: NPC Fisherman 48
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 6860771263022743754}
+  - {fileID: -2323769322588364743}
+  - {fileID: -1477379828388453783}
+  - {fileID: -8290512818361709941}
+  - {fileID: -4762414592645915300}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &6860771263022743754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 761ea24f-a941-4e48-9267-a8d5377012d3
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: '*sighs* Empty again?'
+  children:
+  - fd759332-9308-4e1d-8725-25966c1faecd
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 

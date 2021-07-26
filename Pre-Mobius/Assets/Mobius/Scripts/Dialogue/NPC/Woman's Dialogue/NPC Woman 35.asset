@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4964334007256385875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: e088385a-0c4a-44a0-844d-46a925f4872d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'My husband went to explore the seas and ever since I feel useless and alone
+    in the house. '
+  children:
+  - c32d54d1-c039-482b-8302-3ed644f4fa0c
+  rect:
+    serializedVersion: 2
+    x: 262
+    y: 12
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-188486052416139833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: c32d54d1-c039-482b-8302-3ed644f4fa0c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Do you think he will ever come back?
+  children:
+  - 404576f7-3dc4-4954-8bb0-e224701666cd
+  rect:
+    serializedVersion: 2
+    x: 517
+    y: 20
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
+  m_Name: NPC Woman 35
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 3699603691987839225}
+  - {fileID: -4964334007256385875}
+  - {fileID: -188486052416139833}
+  - {fileID: 1316813584837445208}
+  - {fileID: 362622279874987632}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &362622279874987632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 546e7568-04e5-4525-828d-598ea72ced02
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: And, in the meantime I want to help in anyway I can!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1065
+    y: 62
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &1316813584837445208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 404576f7-3dc4-4954-8bb0-e224701666cd
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Yes! Please, don't misunderstand, he usually comes back after a few months.
+  children:
+  - 546e7568-04e5-4525-828d-598ea72ced02
+  rect:
+    serializedVersion: 2
+    x: 815
+    y: 62
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &3699603691987839225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 580987db-a3ce-4f77-b5a0-c28485a8367c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Even if I'm a woman, I would like to help in anyway I can!
+  children:
+  - e088385a-0c4a-44a0-844d-46a925f4872d
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 

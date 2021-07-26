@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7143488701743660619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: b357f622-88b3-4b00-9f00-9dc480fd5c83
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Excuse me.... '
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 796
+    y: 51
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-6979560271407932314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 1e41bdc2-6f69-42e8-9d70-ec3ca092925c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: '*gasp* How embarassing, didn''t notice you lingering around Syril.'
+  children:
+  - b357f622-88b3-4b00-9f00-9dc480fd5c83
+  rect:
+    serializedVersion: 2
+    x: 546
+    y: 51
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-604882587174833710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: d07705aa-d829-4f81-a944-c562df5e35b8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I don't know what is it about this temple that soothes me so much. I wish
+    I could stay here forever, just floating in honor of Selene.
+  children:
+  - 76b97fe7-672d-4a7c-b34b-2e19b731e095
+  rect:
+    serializedVersion: 2
+    x: 2
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
+  m_Name: NPC Woman 44
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -604882587174833710}
+  - {fileID: 4980850870911648386}
+  - {fileID: -6979560271407932314}
+  - {fileID: -7143488701743660619}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &4980850870911648386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 76b97fe7-672d-4a7c-b34b-2e19b731e095
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Mmh...
+  children:
+  - 1e41bdc2-6f69-42e8-9d70-ec3ca092925c
+  rect:
+    serializedVersion: 2
+    x: 270
+    y: 35
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
