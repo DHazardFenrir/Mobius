@@ -1,0 +1,220 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8148200236342101524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: c2f78f78-55a5-4add-bfc1-6f99e4309e50
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: The lady next door asked me for some collars, pots and so on for this afternoon.
+    Why don't you come back later?
+  children:
+  - 1a75a140-eebe-46f1-84f9-91634f4d5d1d
+  rect:
+    serializedVersion: 2
+    x: 751
+    y: 13
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-6979131032289184435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: f1c48e8e-09f1-4504-9f05-c1597c9861a8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Have you seen something strange lately?
+  children:
+  - d5ec8b20-259f-41ae-9863-40a58b34920a
+  rect:
+    serializedVersion: 2
+    x: 1450
+    y: 74
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-4618600206421983857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: c87cdca7-ce44-48b2-bbcc-83a0b3129a6b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Hey Syril! What brings you here? Wanna buy some pottery or jewelry for your
+    mother? I think she would like that a lot!
+  children:
+  - 5ea135bf-0bc4-4caf-ad31-6b74a4fd8910
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-1314688119882388929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 5ea135bf-0bc4-4caf-ad31-6b74a4fd8910
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Eh... Look
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 261
+    y: 48
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-284954600210273905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 9565df14-a367-4bf4-b6a2-e4d6b5cb1c54
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Pst! Say no more, boy! But you will have to excuse me, right now I'm kinda
+    busy!
+  children:
+  - 5ea135bf-0bc4-4caf-ad31-6b74a4fd8910
+  - c2f78f78-55a5-4add-bfc1-6f99e4309e50
+  rect:
+    serializedVersion: 2
+    x: 489
+    y: 29
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
+  m_Name: Artesan 46
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -4618600206421983857}
+  - {fileID: -284954600210273905}
+  - {fileID: -1314688119882388929}
+  - {fileID: -8148200236342101524}
+  - {fileID: 2806782367417520469}
+  - {fileID: 3694486677146940707}
+  - {fileID: -6979131032289184435}
+  - {fileID: 2729351548220630914}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &2729351548220630914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: d5ec8b20-259f-41ae-9863-40a58b34920a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Strange? No! Even if there was something strange going on right now, I''m
+    too busy to even mind that. Let the Hight Priest and their Acolytes deal with
+    that stuff, Syril. Don''t bother yourself. '
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1804
+    y: 110
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &2806782367417520469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 1a75a140-eebe-46f1-84f9-91634f4d5d1d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: 'Sure but! I just want to make you a question. '
+  children:
+  - c7630635-9618-4ece-ac71-f7ce81b4995c
+  rect:
+    serializedVersion: 2
+    x: 989
+    y: 29
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &3694486677146940707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: c7630635-9618-4ece-ac71-f7ce81b4995c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Shoot boy I don't have all day.
+  children:
+  - f1c48e8e-09f1-4504-9f05-c1597c9861a8
+  rect:
+    serializedVersion: 2
+    x: 1218
+    y: 41
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 

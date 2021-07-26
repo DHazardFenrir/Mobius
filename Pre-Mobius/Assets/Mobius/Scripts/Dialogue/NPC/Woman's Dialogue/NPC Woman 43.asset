@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7103260521305938456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: ed9bec78-879a-491a-bee8-31b60aefef56
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: That's great! I'm so glad yo have you with us again!
+  children:
+  - 9d6a300f-a650-429e-b317-ce5390085752
+  rect:
+    serializedVersion: 2
+    x: 471
+    y: -6
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-6218099621100212094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 9b505034-55ff-4444-b45c-49194125a880
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Syril hey! Welcome back! Are you staying until tomorrow?
+  children:
+  - 400f1a30-bff0-4723-a117-5d8c4af015a0
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-1577358870449223402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 400f1a30-bff0-4723-a117-5d8c4af015a0
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: 'Yes, I planned to stay here until the winter ends. '
+  children:
+  - ed9bec78-879a-491a-bee8-31b60aefef56
+  rect:
+    serializedVersion: 2
+    x: 258
+    y: 5
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-918079745737147395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 5a10a893-7788-4a11-b3ca-b32c0bb0d563
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Don't come late!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1265
+    y: 27
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
+  m_Name: NPC Woman 43
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -6218099621100212094}
+  - {fileID: -7103260521305938456}
+  - {fileID: -1577358870449223402}
+  - {fileID: 6681006138945816499}
+  - {fileID: 8738930726998418971}
+  - {fileID: -918079745737147395}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &6681006138945816499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 9d6a300f-a650-429e-b317-ce5390085752
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I will see you tomorrow then! And you will dance with me ok?
+  children:
+  - 1f17a659-b01c-4449-bb33-5ecacd61d247
+  rect:
+    serializedVersion: 2
+    x: 721
+    y: -6
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &8738930726998418971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 1f17a659-b01c-4449-bb33-5ecacd61d247
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: 'Of course! '
+  children:
+  - 5a10a893-7788-4a11-b3ca-b32c0bb0d563
+  rect:
+    serializedVersion: 2
+    x: 972
+    y: -6
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 

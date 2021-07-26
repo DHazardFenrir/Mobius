@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9104800614466835650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: f07e985e-a1a7-4ee7-bd17-33e4f69423a1
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Its been a lot quiter around here since yesterday... I wonder if the celebration
+    has something to do with it? (whisper)
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 95
+    y: 14
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
+  m_Name: NPC Woman 38
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -9104800614466835650}
+  newNodeOffset: {x: 250, y: 0}

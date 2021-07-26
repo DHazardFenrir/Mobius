@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6466313220114264379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 9d5c7a44-4f4a-4589-8fec-d13e0a325701
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Maybe in the river? I cannot remeber...
+  children:
+  - 7246e068-8f00-4657-82e5-28044dc27700
+  rect:
+    serializedVersion: 2
+    x: 731
+    y: 7
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-3130227311328995179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 0f540375-d751-4ca8-b060-0b21ea93519a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Uh... Uh... Uh...
+  children:
+  - f99f00bb-8173-41f3-8c3d-68c39e0a8d75
+  rect:
+    serializedVersion: 2
+    x: 231
+    y: 7
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
+  m_Name: Presero
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 1330502898017311516}
+  - {fileID: -3130227311328995179}
+  - {fileID: 7666384077787162350}
+  - {fileID: -6466313220114264379}
+  - {fileID: 1981547785573932138}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &1330502898017311516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: bc4eae77-ca94-409f-bfb2-3631d7e85ee3
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I... I must close the gates of the dam...
+  children:
+  - 0f540375-d751-4ca8-b060-0b21ea93519a
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &1981547785573932138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 7246e068-8f00-4657-82e5-28044dc27700
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Where is it?! I cannot remember... I cannot remember...
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 984
+    y: 9
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &7666384077787162350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: f99f00bb-8173-41f3-8c3d-68c39e0a8d75
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I can't find the key!! Why I can't find the key? I must have dropped it my
+    way to the sages house...
+  children:
+  - 9d5c7a44-4f4a-4589-8fec-d13e0a325701
+  rect:
+    serializedVersion: 2
+    x: 481
+    y: 7
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
