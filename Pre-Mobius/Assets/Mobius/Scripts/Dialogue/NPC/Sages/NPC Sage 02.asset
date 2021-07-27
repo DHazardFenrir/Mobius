@@ -1,0 +1,244 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8274684445820470331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 8d2e5c31-9ecb-49a7-9dbd-e7ffb193ffef
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: In the back?
+  children:
+  - c3f5ffd7-64fb-46f1-9282-457ca7381baf
+  rect:
+    serializedVersion: 2
+    x: 1766
+    y: 167
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-5680948573074211466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 9a7d5f01-e8b4-43aa-92ed-77480ba9b6b6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Mmm... if it makes you go... Yesterday I saw some young punk outside the
+    house. '
+  children:
+  - 8d2e5c31-9ecb-49a7-9dbd-e7ffb193ffef
+  rect:
+    serializedVersion: 2
+    x: 1527
+    y: 160
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-3665904055271942257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 374cdd1e-b997-4456-b002-e81af7c507e7
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Well... I do have one. Have you notice something strange?
+  children:
+  - b3e7d16d-0c85-454e-a558-7095ec7d5414
+  rect:
+    serializedVersion: 2
+    x: 795
+    y: 72
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-2999008333942956320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 23eddc50-a0e0-4867-afe8-042a9dee8231
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: 'Because, if you tell me, I will leave you alone. '
+  children:
+  - 9a7d5f01-e8b4-43aa-92ed-77480ba9b6b6
+  rect:
+    serializedVersion: 2
+    x: 1263
+    y: 138
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-950605389590264676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 0251bacf-bba5-4ba2-b07c-de921fdb6f16
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: 'Oh como on! I was just saying hi since my return. '
+  children:
+  - b4c77aba-5368-4779-a1ef-c3f773a0355e
+  rect:
+    serializedVersion: 2
+    x: 284
+    y: -11
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
+  m_Name: NPC Sage 02
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 7488870446043912549}
+  - {fileID: -950605389590264676}
+  - {fileID: 3959467797425695969}
+  - {fileID: -3665904055271942257}
+  - {fileID: 5288159329563928256}
+  - {fileID: -2999008333942956320}
+  - {fileID: -5680948573074211466}
+  - {fileID: -8274684445820470331}
+  - {fileID: 3618949010937038954}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &3618949010937038954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: c3f5ffd7-64fb-46f1-9282-457ca7381baf
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Yes, in the back. Now off you go!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1993
+    y: 109
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &3959467797425695969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: b4c77aba-5368-4779-a1ef-c3f773a0355e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Nosense! Whyt a non believer like you wants to say "Hi" to us? You don''t
+    have any business here. '
+  children:
+  - 374cdd1e-b997-4456-b002-e81af7c507e7
+  rect:
+    serializedVersion: 2
+    x: 545
+    y: 72
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &5288159329563928256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: b3e7d16d-0c85-454e-a558-7095ec7d5414
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Huh? What? Something strange? And why on earth should I tell you anything?
+  children:
+  - 23eddc50-a0e0-4867-afe8-042a9dee8231
+  rect:
+    serializedVersion: 2
+    x: 1013
+    y: 138
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &7488870446043912549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 4eb4ef90-71bf-4cf1-96bb-7a7d41b770d7
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'What are you doing inside, kid? Must I remind you the rules of this town?
+    Get your non believer ass out of our home. Only those granted and audience can
+    stand here. '
+  children:
+  - 0251bacf-bba5-4ba2-b07c-de921fdb6f16
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 

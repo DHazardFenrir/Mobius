@@ -1,0 +1,218 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8078991073479824032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: db6c8f2e-74e0-4cdd-ae45-cb1271693845
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: 'Yes! I missed you guys. '
+  children:
+  - 123c45c7-8e6f-426e-a421-806ffa6dbe49
+  rect:
+    serializedVersion: 2
+    x: 252
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-8034814140506977022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: e15efa54-54ed-4a4e-8cfd-ff3e9fad254f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Heh... not really, but I could just pass by and not say 'Hi' at least.
+  children:
+  - 9c5c1f2d-60fc-4008-aea4-833d35932043
+  rect:
+    serializedVersion: 2
+    x: 259
+    y: 136
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-4917598207862993112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 36131390-a7ef-4952-87e0-c9b5c47e0f44
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I think you should not get too close, I am feeling a little light on my body.
+    Maybe I will get sick. So do not wander for long here boy.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1099
+    y: 9
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-2359355193331358484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 4c1c3b38-fca7-4e45-b54f-6958ce8bb804
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Tell me about it...
+  children:
+  - 36131390-a7ef-4952-87e0-c9b5c47e0f44
+  rect:
+    serializedVersion: 2
+    x: 798
+    y: -6
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
+  m_Name: NPC Sage 03
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 504072208656267833}
+  - {fileID: -8078991073479824032}
+  - {fileID: -8034814140506977022}
+  - {fileID: 4412740311471096143}
+  - {fileID: 631573155260238089}
+  - {fileID: -2359355193331358484}
+  - {fileID: -4917598207862993112}
+  - {fileID: 2618175750820375998}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &504072208656267833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: e29fad82-71b7-45a8-bbd0-a8a21b99d31f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Ha! Syril! Welcome back my boy! I see you made haste and came first to visit
+    these old hags. '
+  children:
+  - db6c8f2e-74e0-4cdd-ae45-cb1271693845
+  - e15efa54-54ed-4a4e-8cfd-ff3e9fad254f
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &631573155260238089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 123c45c7-8e6f-426e-a421-806ffa6dbe49
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Heh. I do appreciate the gesture. Through I myself can not speak for the
+    other sages, you know? '
+  children:
+  - 4c1c3b38-fca7-4e45-b54f-6958ce8bb804
+  rect:
+    serializedVersion: 2
+    x: 548
+    y: -6
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &2618175750820375998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: d12a9e06-24aa-4c06-a7d0-2d6a06b040da
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'I think I''m getting sick. Please not linger more than necessary boy. '
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 827
+    y: 174
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &4412740311471096143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 9c5c1f2d-60fc-4008-aea4-833d35932043
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Oh I see.. I appreciate the gesture nonethless.
+  children:
+  - d12a9e06-24aa-4c06-a7d0-2d6a06b040da
+  rect:
+    serializedVersion: 2
+    x: 577
+    y: 174
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
