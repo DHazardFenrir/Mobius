@@ -60,7 +60,7 @@ public class LightingManager : MonoBehaviour
 
     }
 
-    void Loop()
+    public void Loop()
     {
         DontDestroyOnLoad(player);
         SceneManager.LoadScene(0);
