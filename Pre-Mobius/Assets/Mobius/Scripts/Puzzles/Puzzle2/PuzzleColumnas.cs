@@ -8,7 +8,7 @@ public class PuzzleColumnas : MonoBehaviour
 
 
     [SerializeField] int[] combinación;
-    public int[] clave { get; private set; }
+    public int[] clave;
 
 
     private void Start()
@@ -27,19 +27,31 @@ public class PuzzleColumnas : MonoBehaviour
                 clave[i] = num;
             }
             i++;
+            if (i == clave.Length)
+            {
+                Debug.Log("Comprobar clave");
+                ComprobarClave();
+            }
+            Debug.Log(i);
         }
-        else if(i>=clave.Length)
-        {
-            ComprobarClave();
-        }       
+            
     }
 
+    public void ResetearClave()
+    {
+        for(int i=0;i<clave.Length;i++ )
+        {
+            clave[i] = 0;
+        }
+        i = 0;
+    }
 
     void ComprobarClave()
     {
+        Debug.Log("Comprobando");
         if(combinación[0]==clave[0] && combinación[1] == clave[1] && combinación[2] == clave[2] && combinación[3] == clave[3] && combinación[4] == clave[4] && combinación[5] == clave[5])
         {
-            
+            Debug.Log("Jala");
         }
         else
         {
