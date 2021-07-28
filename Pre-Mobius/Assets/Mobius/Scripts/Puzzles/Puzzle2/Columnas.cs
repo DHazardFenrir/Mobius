@@ -24,7 +24,10 @@ public class Columnas : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        ActivarColumna();
+        if (!active)
+            ActivarColumna();
+        else
+            Debug.Log("Ya esta activada");
     }
 
     void ActivarColumna()
