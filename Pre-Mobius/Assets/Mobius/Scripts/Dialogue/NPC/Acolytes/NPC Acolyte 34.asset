@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8882663177265906104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 2cb75377-1c20-45a8-9ce4-29b8e09d873b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'I''m going to be honest with you, boy. Lord Hades is pissed. I don''t know
+    why, but he is. '
+  children:
+  - 4ed93b6a-76ce-486b-8b62-c58eec82a31c
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-1991626571737076518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 78a789ed-6a39-4f36-b5e0-b632e64af019
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Do you think maybe...?
+  children:
+  - 9bc2112f-a430-439d-b628-e6b30ca20e10
+  rect:
+    serializedVersion: 2
+    x: 500
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
+  m_Name: NPC Acolyte 34
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -8882663177265906104}
+  - {fileID: 1637833391342605991}
+  - {fileID: -1991626571737076518}
+  - {fileID: 1988052461089253394}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &1637833391342605991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 4ed93b6a-76ce-486b-8b62-c58eec82a31c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'He is the more calm of the primordial gods, but now he seems restless, uneasy.
+    Don''t ask me why I know this, boy... Priests and Acolytes of Lord Hades have
+    a more strong sense for this than others. '
+  children:
+  - 78a789ed-6a39-4f36-b5e0-b632e64af019
+  rect:
+    serializedVersion: 2
+    x: 250
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &1988052461089253394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 9bc2112f-a430-439d-b628-e6b30ca20e10
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Sheesh. Don''t interrumpt me. I hope this gets better soon... if not *shrivers*
+    You don''t want to know what will happen. '
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 775
+    y: -12
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 

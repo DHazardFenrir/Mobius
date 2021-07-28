@@ -1,0 +1,272 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8138031917739829083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 6df26f00-e14b-4ba9-ae78-9dc820e4aa6e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Not really...
+  children:
+  - 7108e094-4133-4cab-a279-65afafe96279
+  rect:
+    serializedVersion: 2
+    x: 1825
+    y: 116
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-6826064506171801231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 4e65de4b-0421-4a26-a258-1cf770ccf250
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'It was good to see you Syril! Take care, have a great day; this old man
+    is going to work for the day. '
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2265
+    y: 254
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-4439923822262658444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 092f562d-e175-4243-ba88-14f141530e98
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'We do our offerings on time. Why would she be angry? Maybe I''m just too
+    old and this work isn''t for me anymore! But with no children that can relieve
+    me, I will do all I can to produce a better harvest. '
+  children:
+  - b5f917bf-4020-47b1-a1bf-a7972e38f6b3
+  rect:
+    serializedVersion: 2
+    x: 795
+    y: 97
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-2880419655861212170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 5e64f5cb-58ab-4a81-a53b-e505a60aee5f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Mm... I haven''t been regarded with silence since this old town came to
+    be. It''s a little weird. Are you going deaf too? Hahahahaha. '
+  children:
+  - 6df26f00-e14b-4ba9-ae78-9dc820e4aa6e
+  rect:
+    serializedVersion: 2
+    x: 1575
+    y: 116
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
+  m_Name: NPC Farmer Calix 10
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 6491917874591642420}
+  - {fileID: 2828158636370062893}
+  - {fileID: 3968271221271877998}
+  - {fileID: -4439923822262658444}
+  - {fileID: 2882181752664690505}
+  - {fileID: 7249292157824438414}
+  - {fileID: -2880419655861212170}
+  - {fileID: -8138031917739829083}
+  - {fileID: 7246163322995451234}
+  - {fileID: -6826064506171801231}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &2828158636370062893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: c128c648-7c8d-4ee9-85fe-d957d8198a23
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Winter is coming soon, and the harvest hasn't been too good this year. We
+    have to prepare now that we can! I have full faith in our goddess.
+  children:
+  - 4e58f138-9003-4add-9acb-142e09acf37e
+  rect:
+    serializedVersion: 2
+    x: 248
+    y: 92
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &2882181752664690505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: b5f917bf-4020-47b1-a1bf-a7972e38f6b3
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Maybe I'm not young anymore, but I still have some tricks left in my sleeve!
+  children:
+  - cbcaeb51-675b-402a-b471-74048d609d3d
+  rect:
+    serializedVersion: 2
+    x: 1045
+    y: 97
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &3968271221271877998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 4e58f138-9003-4add-9acb-142e09acf37e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Why the harvest hasn't been good? Demeter is angry?
+  children:
+  - 092f562d-e175-4243-ba88-14f141530e98
+  rect:
+    serializedVersion: 2
+    x: 498
+    y: 92
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &6491917874591642420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 121c0f97-d41e-48a9-803c-83fb81ba2ea3
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Syril! What a handsome boy you have become. I was recollecting some grain
+    to seed in this season. '
+  children:
+  - c128c648-7c8d-4ee9-85fe-d957d8198a23
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &7246163322995451234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 7108e094-4133-4cab-a279-65afafe96279
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Hahahaha! Don''t worry. Take a little walk, maybe is just the town''s people
+    is reserving their energies for the party tomorrow. Don''t overthink it too much. '
+  children:
+  - 4e65de4b-0421-4a26-a258-1cf770ccf250
+  rect:
+    serializedVersion: 2
+    x: 2015
+    y: 254
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &7249292157824438414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: cbcaeb51-675b-402a-b471-74048d609d3d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: The plaza has been very quiet since I returned, do you know why?
+  children:
+  - 5e64f5cb-58ab-4a81-a53b-e505a60aee5f
+  rect:
+    serializedVersion: 2
+    x: 1295
+    y: 97
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 

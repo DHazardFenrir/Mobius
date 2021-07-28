@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7894485751364779473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 74ccdfcb-c36e-44fe-9640-6968cec38305
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Well, a little rest isn't bad after all!
+  children:
+  - 892ca13b-fb9d-4e21-b560-63803bb359b9
+  rect:
+    serializedVersion: 2
+    x: 250
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-5980135996473933236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 0f0226f5-4e8d-404e-9c79-af4401db126c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Well, if it isn''t Syrul, the pretty helper boy! You did not send a word
+    of your return!! If so we would have a great party with special wine... or did
+    you just arrive for the festival? '
+  children:
+  - 74ccdfcb-c36e-44fe-9640-6968cec38305
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-4127403078475399147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 892ca13b-fb9d-4e21-b560-63803bb359b9
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Ha! I knew it. '
+  children:
+  - dac4f146-9710-4b35-9335-ace4dc3a46dd
+  rect:
+    serializedVersion: 2
+    x: 482
+    y: 33
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-315252132356858484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: dac4f146-9710-4b35-9335-ace4dc3a46dd
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Talk to you later boy, we are kinda busy!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 191
+    y: 143
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
+  m_Name: NPC Stonecutter 55
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -5980135996473933236}
+  - {fileID: -315252132356858484}
+  - {fileID: -7894485751364779473}
+  - {fileID: -4127403078475399147}
+  newNodeOffset: {x: 250, y: 0}

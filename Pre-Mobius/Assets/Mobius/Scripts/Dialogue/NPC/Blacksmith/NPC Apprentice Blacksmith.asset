@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5258855309096799929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: b8b988a9-a744-469d-8f48-6bc67eb01ad7
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'So I can''t talk right now! See ya! I''m on my way! '
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 234
+    y: 22
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-3604443864854394689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 5ab8c9f0-b33a-4db7-8e55-b5b9bf00b647
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Hello, Syril! You talked to master? I''m a bit busy ritght now you see?
+    Master is making a new legendary sword, and needs a lot of materials. It''s my
+    duty to provide my master with them! '
+  children:
+  - b8b988a9-a744-469d-8f48-6bc67eb01ad7
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
+  m_Name: NPC Apprentice Blacksmith
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -3604443864854394689}
+  - {fileID: -5258855309096799929}
+  newNodeOffset: {x: 250, y: 0}
