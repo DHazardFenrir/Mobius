@@ -21,8 +21,10 @@ public class GasVenenoso : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            if(item!=null && !inventory.inventory.Contains(item))
+            Debug.Log("El player entro al incendio");
+            if(item==null || !inventory.inventory.Contains(item))
             {
+                Debug.Log("Aggghh me estoy que mando");
                 timer += Time.deltaTime;
                 if (timer >= maxTime)
                     {
