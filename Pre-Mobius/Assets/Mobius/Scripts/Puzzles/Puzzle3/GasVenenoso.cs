@@ -8,20 +8,26 @@ public class GasVenenoso : MonoBehaviour
     float timer;
     [SerializeField] float maxTime;
     LightingManager lM;
+    Inventario inventory;
+    [SerializeField] Items item;
 
     private void Start()
     {
         lM = FindObjectOfType<LightingManager>();
+        inventory = FindObjectOfType<Inventario>();
     }
 
     private void OnTriggerStay(Collider other)
     {
         if(other.CompareTag("Player"))
         {
-            timer += Time.deltaTime;
-            if (timer >= maxTime)
+            if(item!=null && !inventory.inventory.Contains(item))
             {
-                lM.Loop();
+                timer += Time.deltaTime;
+                if (timer >= maxTime)
+                    {
+                    lM.Loop();
+                    }
             }
         }
         
