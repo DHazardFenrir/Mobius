@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8083268471936080612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: f42abc30-5a2c-4611-b2de-3ce8abbdb761
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Zeus didn''t have another affair in this town, right? This is supposed to
+    be a sacred place... '
+  children:
+  - e9d53993-ceac-4fc2-b298-49a437ebc2aa
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
+  m_Name: NPC Acolyte 32
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -8083268471936080612}
+  - {fileID: 5810722753201424192}
+  - {fileID: 3370519654465829619}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &3370519654465829619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 47a44c32-0d8d-44e8-bd27-9163a8ffd5d4
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: So why? Why do I feel her presence so far away, like she was unreachable?
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 500
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &5810722753201424192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: e9d53993-ceac-4fc2-b298-49a437ebc2aa
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Even so... Lady Hera wouldn''t punish us, at least, not the entire town.
+    We are the chosen ones, right? Right? '
+  children:
+  - 47a44c32-0d8d-44e8-bd27-9163a8ffd5d4
+  rect:
+    serializedVersion: 2
+    x: 250
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 

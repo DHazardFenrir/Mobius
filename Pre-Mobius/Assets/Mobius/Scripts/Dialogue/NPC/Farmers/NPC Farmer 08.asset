@@ -1,0 +1,293 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8336655112761109156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: afd5493a-3466-4073-beaf-56bdb64b4766
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: You can't see I'm working on this crop field and you are smashing it with
+    your stinky feet? Be more careful!
+  children:
+  - 5e39ed0f-6314-4554-9636-fde5fe2d746d
+  rect:
+    serializedVersion: 2
+    x: 303
+    y: 54
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-7966075428590317661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 4c88be70-79f9-461b-8000-bb6a15c117fe
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: '*mumbles* uh... these seems like something off...'
+  children:
+  - 35d1caeb-37d9-4396-aa75-a468db054d5b
+  rect:
+    serializedVersion: 2
+    x: 1597
+    y: 51
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-5728465177017050328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 2f0985fe-e69a-4f45-94a1-f0152705874b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'I think he is somewhere in the temple of our goddess Demeter. '
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2706
+    y: 110
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-939632209134284808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 5e39ed0f-6314-4554-9636-fde5fe2d746d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: 'Oh, sorry. '
+  children:
+  - 1340070a-a6c2-4cd6-9c17-1d7157b88320
+  rect:
+    serializedVersion: 2
+    x: 553
+    y: 54
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
+  m_Name: NPC Farmer 08
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 4912583748877245812}
+  - {fileID: -8336655112761109156}
+  - {fileID: -939632209134284808}
+  - {fileID: 1398229818878039403}
+  - {fileID: 8965437524990882602}
+  - {fileID: 1688972849311350554}
+  - {fileID: -7966075428590317661}
+  - {fileID: 7814255032515135275}
+  - {fileID: 3984488763563562734}
+  - {fileID: 7455043102778606782}
+  - {fileID: -5728465177017050328}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &1398229818878039403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 1340070a-a6c2-4cd6-9c17-1d7157b88320
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Sorry? SORRY? A mere ''sorry'' doesn''t make my crop field grow again! '
+  children:
+  - 74426202-a5da-450a-bf35-a0cc9ea0e53b
+  rect:
+    serializedVersion: 2
+    x: 811
+    y: 45
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &1688972849311350554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 734c52a4-a8c3-4894-81df-6d5227dccf57
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Friend? I don''t ever know nor remeber you. You are a weird kid. '
+  children:
+  - 4c88be70-79f9-461b-8000-bb6a15c117fe
+  rect:
+    serializedVersion: 2
+    x: 1347
+    y: 51
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &3984488763563562734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: bc4bd545-c1ff-48e2-8443-669cb49bf69c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Woah! Listening to others conversations is rude!
+  children:
+  - 68c5d5a1-8829-4d95-bc27-6fb48cd7d264
+  rect:
+    serializedVersion: 2
+    x: 2150
+    y: 91
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &4912583748877245812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 3859e912-1ea7-4232-acbf-435933b4152d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Hey! You there! Watch out! '
+  children:
+  - afd5493a-3466-4073-beaf-56bdb64b4766
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &7455043102778606782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 68c5d5a1-8829-4d95-bc27-6fb48cd7d264
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'We are the only ones here! Anyway, if you want to know, all the days are
+    the same to me. But I think Calix was mumbling something recently. Go and pester
+    him off. '
+  children:
+  - 2f0985fe-e69a-4f45-94a1-f0152705874b
+  rect:
+    serializedVersion: 2
+    x: 2456
+    y: 110
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &7814255032515135275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 35d1caeb-37d9-4396-aa75-a468db054d5b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Eh? Somethin off? Are you crazy?
+  children:
+  - bc4bd545-c1ff-48e2-8443-669cb49bf69c
+  rect:
+    serializedVersion: 2
+    x: 1871
+    y: 54
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &8965437524990882602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 74426202-a5da-450a-bf35-a0cc9ea0e53b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Hey! stop it! You caa't be like that to an old friend!
+  children:
+  - 734c52a4-a8c3-4894-81df-6d5227dccf57
+  rect:
+    serializedVersion: 2
+    x: 1061
+    y: 45
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 

@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3766176893927076965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 2b096fe4-874a-4748-8bb5-b1490a7f25ce
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Is something wrong in the temple?
+  children:
+  - d815baae-8bf5-4ef9-940b-bb9f05a1b30b
+  rect:
+    serializedVersion: 2
+    x: 502
+    y: 21
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-2444693485600203191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 0c36ab5c-4af5-4e78-8d1e-0f6dd37d67d3
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Ah... it's you again. Good to see you?
+  children:
+  - 007dc786-77a0-4479-a385-f7389a0f5187
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
+  m_Name: NPC Acolyte 27
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -2444693485600203191}
+  - {fileID: 1342649029715868013}
+  - {fileID: -3766176893927076965}
+  - {fileID: 4254143783832193799}
+  - {fileID: 1624125698220497280}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &1342649029715868013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 007dc786-77a0-4479-a385-f7389a0f5187
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'The Great Priest of Demeter is kind of... in a trance, you know? Trying
+    to talk with the goddess about our situation. '
+  children:
+  - 2b096fe4-874a-4748-8bb5-b1490a7f25ce
+  rect:
+    serializedVersion: 2
+    x: 252
+    y: 21
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &1624125698220497280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: caba5f6f-88b1-4207-bdbd-dbdc4fc88942
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'I could be wrong... I don''t have a strong bond with her like the Great
+    Priest. '
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1048
+    y: 44
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &4254143783832193799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: d815baae-8bf5-4ef9-940b-bb9f05a1b30b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Don't tell the High Priest I told you this but... I have a feeling that the
+    offering in this temple is kind of messed up. Maybe that's why Lady Demeter is
+    punishing us?
+  children:
+  - caba5f6f-88b1-4207-bdbd-dbdc4fc88942
+  rect:
+    serializedVersion: 2
+    x: 798
+    y: 44
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 

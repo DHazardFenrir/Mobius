@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Columnas : MonoBehaviour, IInteractable
 {
-    public int num { get; private set; }
+    public int num;
 
-    bool active=false;
+    bool active = false;
 
     PuzzleColumnas manager;
 
@@ -19,6 +19,7 @@ public class Columnas : MonoBehaviour, IInteractable
         pocion = FindObjectOfType<UsarPocion>();
         manager = FindObjectOfType<PuzzleColumnas>();
         meshR = GetComponent<MeshRenderer>();
+        meshR.enabled = false;
     }
 
     public void Interact()
@@ -28,6 +29,7 @@ public class Columnas : MonoBehaviour, IInteractable
 
     void ActivarColumna()
     {
+        Debug.Log("ActivarColumna");
         if(pocion.efectoActivo)
         {
             meshR.enabled = false;

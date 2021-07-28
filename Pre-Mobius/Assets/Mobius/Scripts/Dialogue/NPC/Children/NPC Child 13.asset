@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4537807719348674614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: efeba336-4001-4306-8321-2bdcf6e05efc
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'I still like the fire. '
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1035
+    y: 59
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-2834091532146224989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: e425b590-ca23-425d-a3b1-478a50e0931e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: WAAAH!
+  children:
+  - 6fed5946-ce91-46e3-820e-303b83606c0d
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-981668708892983908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 6fed5946-ce91-46e3-820e-303b83606c0d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Please don't scare me like that! I thought an evil spirit came for my soul!
+    What are you doing all the way here? You came to see the pretty fire to?
+  children:
+  - c0b8eaf6-ea76-4a23-bb01-1a8056b991cf
+  rect:
+    serializedVersion: 2
+    x: 284
+    y: 60
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
+  m_Name: NPC Child 13
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -2834091532146224989}
+  - {fileID: -981668708892983908}
+  - {fileID: 4793650411727496949}
+  - {fileID: 4996237898734012745}
+  - {fileID: -4537807719348674614}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &4793650411727496949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: c0b8eaf6-ea76-4a23-bb01-1a8056b991cf
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: 'Yes... I suppose so. '
+  children:
+  - 4956a0d9-85e7-4924-b91e-937fd07fe615
+  rect:
+    serializedVersion: 2
+    x: 534
+    y: 60
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &4996237898734012745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 4956a0d9-85e7-4924-b91e-937fd07fe615
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Today's a different color though.
+  children:
+  - efeba336-4001-4306-8321-2bdcf6e05efc
+  rect:
+    serializedVersion: 2
+    x: 785
+    y: 59
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 

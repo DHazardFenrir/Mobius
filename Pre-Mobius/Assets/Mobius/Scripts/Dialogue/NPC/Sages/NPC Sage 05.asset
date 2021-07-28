@@ -1,0 +1,244 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8530090817856432308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: c2369ecb-0ad2-4fb5-b20e-fbff605c42c2
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Even if you did not find anything, I'm sure that journey left some wisdom
+    in your heart and I would love to hear it at the party tomorrow!
+  children:
+  - b5cb5092-28b1-4885-a2f8-b6da3ef0e52a
+  rect:
+    serializedVersion: 2
+    x: 808
+    y: 24
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-7419361226247632543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 51a7c649-e09e-4fb4-9bab-87c7acb9871b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Well...
+  children:
+  - c2369ecb-0ad2-4fb5-b20e-fbff605c42c2
+  rect:
+    serializedVersion: 2
+    x: 500
+    y: 9
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-5591887330069181127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: b5cb5092-28b1-4885-a2f8-b6da3ef0e52a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Party?
+  children:
+  - 8baa115d-de6a-4417-ae49-4c40958e9fae
+  rect:
+    serializedVersion: 2
+    x: 1154
+    y: 39
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-5287735962977093278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 25b6ba3e-a2f5-4de3-84c2-3a80e607613b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I wouldn't dare to skip it!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1811
+    y: 79
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
+  m_Name: NPC Sage 05
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 4475094521732254734}
+  - {fileID: 4518970133859168207}
+  - {fileID: -7419361226247632543}
+  - {fileID: 5956796008952398837}
+  - {fileID: 2365283438022248959}
+  - {fileID: -8530090817856432308}
+  - {fileID: -5591887330069181127}
+  - {fileID: 7299006076068697538}
+  - {fileID: -5287735962977093278}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &2365283438022248959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: b8d36423-706e-455d-a81d-434280e1f2dc
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Don''t make me jealous, Syril. If you want to tell me, wait to the party
+    tomorrow! '
+  children:
+  - b5cb5092-28b1-4885-a2f8-b6da3ef0e52a
+  rect:
+    serializedVersion: 2
+    x: 895
+    y: 189
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &4475094521732254734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: c33d6eda-95bb-49bb-9089-d418dd8acdec
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Heeeeeeeeeeeeeey!! Welcomee!!
+  children:
+  - 95f7e534-1421-4307-9ab2-db8fda8de59b
+  rect:
+    serializedVersion: 2
+    x: -1
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &4518970133859168207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 95f7e534-1421-4307-9ab2-db8fda8de59b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: So? How did it go, Syril? You found what was missing? Wait, don't tell me!
+  children:
+  - 51a7c649-e09e-4fb4-9bab-87c7acb9871b
+  - f34e1259-9781-4079-8e1c-00a377890cc0
+  rect:
+    serializedVersion: 2
+    x: 240
+    y: 21
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &5956796008952398837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: f34e1259-9781-4079-8e1c-00a377890cc0
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Really you don't me to tell you?
+  children:
+  - b8d36423-706e-455d-a81d-434280e1f2dc
+  rect:
+    serializedVersion: 2
+    x: 504
+    y: 166
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &7299006076068697538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 8baa115d-de6a-4417-ae49-4c40958e9fae
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Did you forget? Tomorrow is the equinox! Helio''s and Selene''s lovely celebration
+    for equity and safety. Please be there! '
+  children:
+  - 25b6ba3e-a2f5-4de3-84c2-3a80e607613b
+  rect:
+    serializedVersion: 2
+    x: 1561
+    y: 79
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
