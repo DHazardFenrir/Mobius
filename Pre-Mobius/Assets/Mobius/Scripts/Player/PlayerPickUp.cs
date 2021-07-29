@@ -115,11 +115,7 @@ public class PlayerPickUp : MonoBehaviour
 
         
         StartCoroutine(physicsObject.PickUp());
-      
-
-          
-
-
+     
     }
 
    public void BreakConnection()

@@ -61,7 +61,7 @@ public class UsarPocion : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             Debug.Log("Presiona K para usar la poción");
-            if (Input.GetKeyDown(KeyCode.K))
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 if (lM.timeToGet >= horaRequerida && inventory.inventory.Contains(pocionItem) && efectoActivo==false)
                 {                
