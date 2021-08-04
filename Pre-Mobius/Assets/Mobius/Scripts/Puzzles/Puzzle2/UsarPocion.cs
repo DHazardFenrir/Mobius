@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UsarPocion : MonoBehaviour
+public class UsarPocion : MonoBehaviour, IInteractable
 {
     [SerializeField] MeshRenderer[] runas;
 
@@ -56,45 +56,55 @@ public class UsarPocion : MonoBehaviour
         DesactivarEfecto();
     }
 
-    private void OnTriggerStay(Collider other)
+    public void Interact()
     {
-        if(other.CompareTag("Player"))
-        {
-            Debug.Log("Presiona K para usar la poción");
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                if (lM.timeToGet >= horaRequerida && inventory.inventory.Contains(pocionItem) && efectoActivo==false)
-                {                
+        if (lM.timeToGet >= horaRequerida && inventory.inventory.Contains(pocionItem) && efectoActivo == false)
+               {                
                     ActivarEfecto();
                     StartCoroutine(duracion());
-                }
-                else
-                {
-                    if(lM.timeToGet< horaRequerida)
-                    {
-                        Debug.Log("No es hora de la hora");
-                    }
-                    
-                    if(inventory.inventory.Contains(pocionItem))
-                    {
-                        Debug.Log("Hay pocion");
-                    }
-                    else
-                    {
-                        Debug.Log("No hay pocion");
-                    }
-
-                    if(efectoActivo)
-                    {
-                        Debug.Log("Efecto activo");
-                    }
-                    else
-                    {
-                        Debug.Log("Efecto no activo");
-                    }
-                }
-            }
-        }
+               }
     }
+
+
+    //private void OnTriggerStay(Collider other)
+    //{
+    //    if(other.CompareTag("Player"))
+    //    {
+    //        Debug.Log("Presiona K para usar la poción");
+    //        if (Input.GetKeyDown(KeyCode.E))
+    //        {
+    //            if (lM.timeToGet >= horaRequerida && inventory.inventory.Contains(pocionItem) && efectoActivo==false)
+    //            {                
+    //                ActivarEfecto();
+    //                StartCoroutine(duracion());
+    //            }
+    //            else
+    //            {
+    //                if(lM.timeToGet< horaRequerida)
+    //                {
+    //                    Debug.Log("No es hora de la hora");
+    //                }
+
+    //                if(inventory.inventory.Contains(pocionItem))
+    //                {
+    //                    Debug.Log("Hay pocion");
+    //                }
+    //                else
+    //                {
+    //                    Debug.Log("No hay pocion");
+    //                }
+
+    //                if(efectoActivo)
+    //                {
+    //                    Debug.Log("Efecto activo");
+    //                }
+    //                else
+    //                {
+    //                    Debug.Log("Efecto no activo");
+    //                }
+    //            }
+    //        }
+    //    }
+    //}
 
 }

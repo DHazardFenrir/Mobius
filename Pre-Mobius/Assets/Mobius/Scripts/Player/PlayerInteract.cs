@@ -16,8 +16,7 @@ public class PlayerInteract : MonoBehaviour
         var nearestGameObject = GetNearestGameObject();
         if (nearestGameObject == null) return;
         if (Input.GetKeyDown(KeyCode.H))
-        {
-            
+        {            
             var interactable = nearestGameObject.GetComponent<IInteractable>();
             interactable?.Interact();
         }
@@ -33,4 +32,18 @@ public class PlayerInteract : MonoBehaviour
         }
         return result;
     }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if(other.CompareTag("Interactable"))
+        {
+            Debug.Log("Se entro en un Interactable");
+            if(Input.GetKeyDown(KeyCode.E))
+            {
+                other.GetComponent<IInteractable>().Interact();
+            }
+        }
+
+    }
+
 }
