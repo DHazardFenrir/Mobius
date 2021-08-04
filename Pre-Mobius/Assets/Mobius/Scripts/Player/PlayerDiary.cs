@@ -14,7 +14,7 @@ public class PlayerDiary : MonoBehaviour
     public bool isOpen { get; private set; } = false;
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.O))
+        if (Input.GetKeyDown(KeyCode.J))
         {
             isOpen = !isOpen;
             diaryCanvas.SetActive(isOpen);

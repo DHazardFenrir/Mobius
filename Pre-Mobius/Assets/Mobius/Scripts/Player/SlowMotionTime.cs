@@ -9,7 +9,7 @@ public class SlowMotionTime : MonoBehaviour
 
     public void DoSlowMotion()
     {
-        if (Input.GetKeyDown((KeyCode.E)))
+        if (Input.GetKeyDown((KeyCode.V)))
         {
             Time.timeScale /= 4;
             Time.fixedDeltaTime = Time.unscaledDeltaTime;
