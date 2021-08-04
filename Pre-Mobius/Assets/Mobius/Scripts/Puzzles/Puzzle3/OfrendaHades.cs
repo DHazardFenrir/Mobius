@@ -5,8 +5,8 @@ using UnityEngine;
 public class OfrendaHades : MonoBehaviour, IInteractable
 {
 
-    [SerializeField] Transform[] spawnFrutas;
-    [SerializeField] Items[] frutas;
+    [SerializeField] GameObject[] frutas;
+    [SerializeField] Items[] frutasItems;
     [SerializeField] bool[] frutaColocada;
     Inventario inventory;
 
@@ -22,17 +22,14 @@ public class OfrendaHades : MonoBehaviour, IInteractable
 
     void ColocarFruta()
     {
-        for(int i=0;i<spawnFrutas.Length;i++)
+        for(int i=0;i<frutas.Length;i++)
         {
-            if(inventory.inventory.Contains(frutas[i]) && frutaColocada[i]==false)
+            if(inventory.inventory.Contains(frutasItems[i]) && frutaColocada[i]==false)
             {
-                Instantiate(frutas[i].itemPrefab, spawnFrutas[i].position, spawnFrutas[i].rotation);
+                frutas[i].SetActive(true);
                 frutaColocada[i]= true;
             }
         }
     }
-
-
-
 
 }

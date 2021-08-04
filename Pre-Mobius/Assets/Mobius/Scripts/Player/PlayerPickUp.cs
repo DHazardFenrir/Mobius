@@ -59,7 +59,7 @@ public class PlayerPickUp : MonoBehaviour
         }
 
         //press button
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             if (currentlyPickedObject == null)
             {
@@ -115,11 +115,7 @@ public class PlayerPickUp : MonoBehaviour
 
         
         StartCoroutine(physicsObject.PickUp());
-      
-
-          
-
-
+     
     }
 
    public void BreakConnection()
