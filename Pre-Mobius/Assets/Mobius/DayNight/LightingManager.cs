@@ -14,6 +14,7 @@ public class LightingManager : MonoBehaviour
     [SerializeField, Range(0, DayInMinutes*60)] float TimeOfDay;
     public float timeToGet { get; private set;}
 
+    [SerializeField]Transform playerSpawn;
 
     private void Awake()
     {
@@ -22,6 +23,11 @@ public class LightingManager : MonoBehaviour
             player = GameObject.Find("Player");
             
         }
+    }
+
+    private void Start()
+    {
+        player.transform.position = playerSpawn.position;
     }
 
 
@@ -64,6 +70,7 @@ public class LightingManager : MonoBehaviour
     {
         DontDestroyOnLoad(player);
         SceneManager.LoadScene(0);
+        player.transform.position = playerSpawn.position;
     }
 
 

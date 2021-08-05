@@ -10,9 +10,12 @@ public class OfrendaHades : MonoBehaviour, IInteractable
     [SerializeField] bool[] frutaColocada;
     bool puzzleCompleted;
     Inventario inventory;
+    LightingManager lM;
+
 
     private void Start()
     {
+        lM = FindObjectOfType<LightingManager>();
         inventory = FindObjectOfType<Inventario>();
     }
 
@@ -26,50 +29,35 @@ public class OfrendaHades : MonoBehaviour, IInteractable
     {
         for(int i=0;i<frutas.Length;i++)
         {
-            Debug.Log("1");
             if (inventory.inventory.Contains(frutasItems[i]) && frutaColocada[i]==false)
             {
-                Debug.Log("2");
                 frutas[i].SetActive(true);
-                Debug.Log("3");
                 frutaColocada[i]= true;
-                Debug.Log("4");
                 ComprobarFrutero();
             }
             else
             {
                 continue;
-            }           
+            }
         }
     }
 
+
     void ComprobarFrutero()
     {
-        for(int i=0;i<frutaColocada.Length;)
-        {
-            if(frutaColocada[i]==true)
-            {
-                i++;
-            }
-            else
-            {
-                //aqui te mueres
-                break;
-            }
 
-            if(i<frutaColocada.Length)
+
+            if(frutaColocada[0] && frutaColocada[1] && frutaColocada[2] && frutaColocada[3])
             {
                 puzzleCompleted = true;
-                Debug.Log("Completado");
+                Debug.Log("Completado puzzle3");
                 GetComponent<BoxCollider>().enabled = false;
             }
             else
             {
-                //aqui te mueres tambien
-                break;
+                Debug.Log("Aun te falta morro");
+                //lM.Loop();
             }
-        }
-
     }
 
 }
