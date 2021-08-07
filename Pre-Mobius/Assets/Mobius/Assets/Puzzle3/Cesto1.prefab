@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &56122048551485957
 Transform:
   m_ObjectHideFlags: 0
@@ -134,9 +134,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3145828505994228225}
   - component: {fileID: 5603532951427072618}
+  - component: {fileID: 2194828312502376264}
   m_Layer: 0
   m_Name: Cesto1
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -179,6 +180,19 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 99b32d27e5313c24994ae5aaa47407a2, type: 2}
   - {fileID: 11400000, guid: 2d88721210a86304fa6844bda2e3eba2, type: 2}
   frutaColocada: 00000000
+--- !u!65 &2194828312502376264
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2369996177562478779}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.65, y: 2.58, z: 2.05}
+  m_Center: {x: 0.24, y: 1.09, z: -1.47}
 --- !u!1 &3832479159537395586
 GameObject:
   m_ObjectHideFlags: 0
@@ -194,7 +208,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3823794687348135047
 Transform:
   m_ObjectHideFlags: 0
@@ -228,7 +242,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3849721963013545343
 Transform:
   m_ObjectHideFlags: 0
@@ -263,7 +277,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1224003542133117376
 Transform:
   m_ObjectHideFlags: 0

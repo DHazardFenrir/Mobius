@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7980845050874154374}
   - component: {fileID: 5945423041891602426}
   - component: {fileID: 6710655386526814514}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Frasco:pCylinder2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,6 +55,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -79,6 +80,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &6739779050422430614
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,7 +92,7 @@ GameObject:
   - component: {fileID: 7548833593168927650}
   - component: {fileID: 3235641312163913711}
   - component: {fileID: 1091002370820699477}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Frasco:polySurface4pCylinder3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -134,6 +136,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -158,6 +161,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &8167805043599032686
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,7 +173,7 @@ GameObject:
   - component: {fileID: 3298708394508984916}
   - component: {fileID: 3683161765351245073}
   - component: {fileID: 2282590396127262226}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: liquido
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -213,6 +217,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -237,6 +242,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &8398329795986840357
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,7 +254,7 @@ GameObject:
   - component: {fileID: 9207342087701234079}
   - component: {fileID: 8398329795986840347}
   - component: {fileID: 8398329795986840356}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pocion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -300,4 +306,6 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: 6c025998e28539a46a71890ef4d31ba7, type: 2}
   inventario: {fileID: 0}
   minD: 5
-  distance: 0
+  itemMask:
+    serializedVersion: 2
+    m_Bits: 1024
