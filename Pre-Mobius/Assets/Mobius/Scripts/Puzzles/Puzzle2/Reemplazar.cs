@@ -24,10 +24,16 @@ public class Reemplazar : MonoBehaviour,IInteractable
         ofrendaReal.SetActive(true);
 
         inventory.inventory.Add(ofrendaFalsa.GetComponent<ItemToPick>().item);
-        inventory.inventory.Remove(itemRequerido);
+            this.gameObject.GetComponent<BoxCollider>().enabled = false;
         }
     }
 
-
+    private void OnTriggerStay(Collider other)
+    {
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            Interact();
+        }
+    }
 
 }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8525859285374113507}
   - component: {fileID: 8081495641309567275}
   - component: {fileID: 4655024518649187554}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: durazno:pSphere1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5923347705208450107}
-  m_Layer: 0
+  - component: {fileID: 8980105745858677052}
+  m_Layer: 8
   m_Name: Durazno
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,3 +113,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8980105745858677052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6446944606425937537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 940ae09f1b496804085a086e9bd48bf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InspectCam: {fileID: 0}

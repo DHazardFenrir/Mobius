@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4029775145855983115
+--- !u!1 &1296267563042286893
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,44 +8,44 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4370588993079854257}
-  - component: {fileID: 740222140629560987}
+  - component: {fileID: 1924889544408135575}
+  - component: {fileID: 7675231112069454687}
   m_Layer: 8
-  m_Name: Maiz
+  m_Name: Mascara
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4370588993079854257
+--- !u!4 &1924889544408135575
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4029775145855983115}
+  m_GameObject: {fileID: 1296267563042286893}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.9649007, y: 4.4150333, z: 9.15943}
+  m_LocalPosition: {x: -45.627758, y: 5.191, z: 0.6904526}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 7119553780448710282}
+  - {fileID: 7968219150437267482}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &740222140629560987
+--- !u!114 &7675231112069454687
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4029775145855983115}
+  m_GameObject: {fileID: 1296267563042286893}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 940ae09f1b496804085a086e9bd48bf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   InspectCam: {fileID: 0}
---- !u!1 &4268122559962753329
+--- !u!1 &7719825754536656638
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -53,45 +53,45 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7119553780448710282}
-  - component: {fileID: 2499940289907536931}
-  - component: {fileID: 7723500499409324069}
+  - component: {fileID: 7968219150437267482}
+  - component: {fileID: 8079055353390274807}
+  - component: {fileID: 6420069791205098638}
   m_Layer: 8
-  m_Name: Maiz:Maiz
+  m_Name: MascaraLP:Group21713
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7119553780448710282
+--- !u!4 &7968219150437267482
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4268122559962753329}
+  m_GameObject: {fileID: 7719825754536656638}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4370588993079854257}
+  m_Father: {fileID: 1924889544408135575}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &2499940289907536931
+--- !u!33 &8079055353390274807
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4268122559962753329}
-  m_Mesh: {fileID: -3124003983811333990, guid: 773efb6a33646db4f9d8ed7d05568fa9, type: 3}
---- !u!23 &7723500499409324069
+  m_GameObject: {fileID: 7719825754536656638}
+  m_Mesh: {fileID: 1567337612770654637, guid: 653e680a3ec3941409117950aa387ebd, type: 3}
+--- !u!23 &6420069791205098638
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4268122559962753329}
+  m_GameObject: {fileID: 7719825754536656638}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -104,7 +104,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bac49339a7c12be4294b382b9d03b0e5, type: 2}
+  - {fileID: 2100000, guid: 2595b25aae166044195596438c786b59, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

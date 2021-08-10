@@ -58,7 +58,7 @@ public class LightingManager : MonoBehaviour
         {
             DontDestroyOnLoad(player);
             
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
 
         timeToGet = TimeOfDay;

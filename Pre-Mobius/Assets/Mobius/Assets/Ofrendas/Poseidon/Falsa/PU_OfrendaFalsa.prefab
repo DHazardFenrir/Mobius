@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7802783826223367272}
   - component: {fileID: 2146678535186639274}
   - component: {fileID: 5984058704325835618}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 790107b407d7daf43a7056d671f7ffc7, type: 2}
+  - {fileID: 2100000, guid: 1e0f57f03ec0d6c4ca5bd1085cfb0b9c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 6208880801253664833}
   - component: {fileID: 2211704853605463629}
   - component: {fileID: 1497528134906495663}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pSphere1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140,7 +140,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 17b6e593d517a0b4c9d481b354d5e0bc, type: 2}
+  - {fileID: 2100000, guid: a95db7376798b9543a4dc73d15f7b118, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -171,10 +171,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8004722906834576692}
-  - component: {fileID: 3268180934146170395}
-  - component: {fileID: 6419341417091596654}
-  m_Layer: 0
-  m_Name: OfrendaReal
+  - component: {fileID: 7273384837907167095}
+  m_Layer: 8
+  m_Name: PU_OfrendaFalsa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -196,20 +195,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &3268180934146170395
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7232127609021071246}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.23705193, y: 0.28914613, z: 0.25837332}
-  m_Center: {x: 0.0057246885, y: 0.10542695, z: 0.00027912855}
---- !u!114 &6419341417091596654
+--- !u!114 &7273384837907167095
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -218,13 +204,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7232127609021071246}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 831973ce58947e24bb37abf093aba3a7, type: 3}
+  m_Script: {fileID: 11500000, guid: 940ae09f1b496804085a086e9bd48bf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 0a0835654d0086f4dbb2ae1194446073, type: 2}
-  inventario: {fileID: 0}
-  player: {fileID: 0}
-  minD: 5
-  itemMask:
-    serializedVersion: 2
-    m_Bits: 512
+  InspectCam: {fileID: 0}
