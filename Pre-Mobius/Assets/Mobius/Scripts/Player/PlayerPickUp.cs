@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerPickUp : MonoBehaviour
+public class PlayerPickUp : MonoBehaviour, IInteractable
 {
     [Header("InteractableInfo")]
     [SerializeField] float sphereCastRadius = 0.5f;
@@ -59,21 +59,7 @@ public class PlayerPickUp : MonoBehaviour
         }
 
         //press button
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            if (currentlyPickedObject == null)
-            {
-                if (lookObject != null)
-                {
-                    PickupObject();
-                }
-            }
-            else
-            {
-                BreakConnection();
-            }
-        }
-        if (currentlyPickedObject != null && currentDist > maxDistance) BreakConnection();
+       
     }
 
     private void LateUpdate()
@@ -128,4 +114,21 @@ public class PlayerPickUp : MonoBehaviour
         StopAllCoroutines();
     }
 
+    public void Interact()
+    {
+        
+            if (currentlyPickedObject == null)
+            {
+                if (lookObject != null)
+                {
+                    PickupObject();
+                }
+            }
+            else
+            {
+                BreakConnection();
+            }
+        
+        if (currentlyPickedObject != null && currentDist > maxDistance) BreakConnection();
+    }
 }
