@@ -2,32 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemToPick : MonoBehaviour
+public class ItemToPick : MonoBehaviour, IInteractable
 {
     public Items item;
     [SerializeField] Inventario inventario;
+    [SerializeField] GameObject player;
+    
 
     [SerializeField] float minD;
     //public float distance;
-    Transform player;
+  
     [SerializeField] LayerMask itemMask;
     RaycastHit hit;
 
-    
+    private void Awake()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
 
     private void Start()
     {
-        player = GameObject.Find("Player").GetComponent<Transform>();
+     
 
         inventario = FindObjectOfType<Inventario>().GetComponent<Inventario>();
         check();
     }
 
-    private void Update()
-    {
-        Save();
-        //distance = Vector3.Distance(transform.position, player.position);
-    }
+    
 
     public void check()
     {
@@ -39,14 +40,20 @@ public class ItemToPick : MonoBehaviour
         }
     }
 
+
+    public void Interact()
+    {
+        Save();
+    }
+
     public void Save()
     {
-        if (Input.GetMouseButtonDown(1))
-        {
+        var camera = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<Camera>();
+      
 
-            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, minD, itemMask))
+        if (Physics.Raycast(camera.transform.position, camera.transform.TransformDirection(Vector3.forward), out hit, minD, itemMask))
             {
-                Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.red);
+               
                 Debug.Log("Did Hit");
                 inventario.inventory.Add(item);
                  Destroy(this.gameObject);
@@ -62,7 +69,8 @@ public class ItemToPick : MonoBehaviour
             //{
             //    Debug.Log("ta bien lejos");
             //}
-        }
-    }
+     }
+    
 
+  
 }

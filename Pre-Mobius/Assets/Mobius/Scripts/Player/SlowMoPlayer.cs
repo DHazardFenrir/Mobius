@@ -15,7 +15,7 @@ public class SlowMoPlayer : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.L))
         {
             SlowTime();
         }
