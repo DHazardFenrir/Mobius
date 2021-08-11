@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8611445924878162163}
   - component: {fileID: 7490071687554544277}
   - component: {fileID: 168454781632465812}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3267611434593565233}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.431, y: 0, z: 0.273}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3597320739084518476}
@@ -90,7 +90,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3597320739084518476}
-  m_Layer: 0
+  - component: {fileID: 7719038515085509407}
+  - component: {fileID: 6367030925595500917}
+  m_Layer: 9
   m_Name: PU_Berenjena
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,10 +107,42 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4226505704249695990}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.9104054, y: 4.2769856, z: 8.96458}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8611445924878162163}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7719038515085509407
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4226505704249695990}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.22096407, y: 0.31390783, z: 0.24022615}
+  m_Center: {x: 0.2815396, y: 0.25557947, z: -0.08754647}
+--- !u!114 &6367030925595500917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4226505704249695990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 831973ce58947e24bb37abf093aba3a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 11223d166ceb0394fba0f3a98aece2e7, type: 2}
+  inventario: {fileID: 0}
+  player: {fileID: 0}
+  minD: 5
+  itemMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
