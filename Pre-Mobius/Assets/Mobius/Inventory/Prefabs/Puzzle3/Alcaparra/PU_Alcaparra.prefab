@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2651476299837044849}
   - component: {fileID: 6858831639767519570}
   - component: {fileID: 5398571351471561810}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Alcaparra:pSphere3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2960281191776689920}
-  m_Layer: 0
+  - component: {fileID: 5511223713378404945}
+  - component: {fileID: 2702825966172083361}
+  m_Layer: 9
   m_Name: PU_Alcaparra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,3 +114,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5511223713378404945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2476655043410838970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 831973ce58947e24bb37abf093aba3a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 2d88721210a86304fa6844bda2e3eba2, type: 2}
+  inventario: {fileID: 0}
+  player: {fileID: 0}
+  minD: 5
+  itemMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!65 &2702825966172083361
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2476655043410838970}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08830047, y: 0.16909838, z: 0.08039093}
+  m_Center: {x: 1.2713357, y: 0.34439635, z: -0.35131264}
