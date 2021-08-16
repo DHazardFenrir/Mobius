@@ -69,7 +69,7 @@ public class LightingManager : MonoBehaviour
     public void Loop()
     {
         DontDestroyOnLoad(player);
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
         player.transform.position = playerSpawn.position;
     }
 
