@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 using DialogueSystem.API;
 
 
@@ -10,7 +11,8 @@ namespace DialogueSystem.AIDialogue
     {
         [SerializeField] DialogScriptable dialogue = null;
         [SerializeField] string conversantName;
-        
+     
+
         public void Interact()
         {
             Talk();
@@ -24,6 +26,7 @@ namespace DialogueSystem.AIDialogue
          if (dialogue != null)
          {
           GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerConversant>().StartDialogue(this, dialogue);
+               
          }
 
 
