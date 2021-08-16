@@ -298,6 +298,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1518883804}
     m_Modifications:
+    - target: {fileID: 1562673122721665968, guid: 6d681f9a7f5744946967d29658e84bc9,
+        type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: c1373c26320453342bccbeaff975b026,
+        type: 2}
     - target: {fileID: 3193886629856990531, guid: 6d681f9a7f5744946967d29658e84bc9,
         type: 3}
       propertyPath: m_RootOrder
@@ -5459,12 +5465,12 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue
       value: 
-      objectReference: {fileID: 11400000, guid: be1afadc1650dbc469feb6d7b7d7cb82,
+      objectReference: {fileID: 11400000, guid: 05ab3f6c3b4047b49b1b8704003a8ef0,
         type: 2}
     - target: {fileID: 1562673122721665968, guid: 6d681f9a7f5744946967d29658e84bc9,
         type: 3}
       propertyPath: conversantName
-      value: Farmer
+      value: Sage 04
       objectReference: {fileID: 0}
     - target: {fileID: 3193886629856990531, guid: 6d681f9a7f5744946967d29658e84bc9,
         type: 3}
@@ -11752,6 +11758,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -7.258
+      objectReference: {fileID: 0}
+    - target: {fileID: 1580222858210526197, guid: 8fc28368712d08b499e773386909940e,
+        type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 61e106bcfdbeed54c80c279e931f5e52,
+        type: 2}
+    - target: {fileID: 1580222858210526197, guid: 8fc28368712d08b499e773386909940e,
+        type: 3}
+      propertyPath: conversantName
+      value: 46
       objectReference: {fileID: 0}
     - target: {fileID: 8596772466887962468, guid: 8fc28368712d08b499e773386909940e,
         type: 3}
@@ -20011,6 +20028,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -7.258
       objectReference: {fileID: 0}
+    - target: {fileID: 1580222858210526197, guid: 8fc28368712d08b499e773386909940e,
+        type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: d483f19fbf5fc8342aa18effe3d4aefd,
+        type: 2}
+    - target: {fileID: 1580222858210526197, guid: 8fc28368712d08b499e773386909940e,
+        type: 3}
+      propertyPath: conversantName
+      value: Presero
+      objectReference: {fileID: 0}
     - target: {fileID: 8596772466887962468, guid: 8fc28368712d08b499e773386909940e,
         type: 3}
       propertyPath: m_Name
@@ -20191,6 +20219,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1518883804}
     m_Modifications:
+    - target: {fileID: 1562673122721665968, guid: 6d681f9a7f5744946967d29658e84bc9,
+        type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 61e106bcfdbeed54c80c279e931f5e52,
+        type: 2}
+    - target: {fileID: 1562673122721665968, guid: 6d681f9a7f5744946967d29658e84bc9,
+        type: 3}
+      propertyPath: conversantName
+      value: 46
+      objectReference: {fileID: 0}
     - target: {fileID: 3193886629856990531, guid: 6d681f9a7f5744946967d29658e84bc9,
         type: 3}
       propertyPath: m_RootOrder
@@ -30597,7 +30636,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: c8122703ff5a5ac4e982798026ec2eb3, type: 2}
+      objectReference: {fileID: 2100000, guid: 9f8324f7a6bbcbb4490def027325d502, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2669cf9ee8cba5f47b8a1b4d0f5dabfa, type: 3}
 --- !u!4 &369213461 stripped
@@ -31581,6 +31620,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1518883804}
     m_Modifications:
+    - target: {fileID: 1562673122721665968, guid: 6d681f9a7f5744946967d29658e84bc9,
+        type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: c5a3ec95535519449821a6a1a616be60,
+        type: 2}
     - target: {fileID: 3193886629856990531, guid: 6d681f9a7f5744946967d29658e84bc9,
         type: 3}
       propertyPath: m_RootOrder
@@ -39246,7 +39291,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   talkNPC: {fileID: 554824127}
-  lockCursor: 1
   cam: {fileID: 617013017}
   movementSettings:
     ForwardSpeed: 8
@@ -39506,6 +39550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef0f221a069b83a45bfa7ff75bfd634d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  conversantIsActive: 1
 --- !u!114 &618257729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40342,6 +40387,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1518883804}
     m_Modifications:
+    - target: {fileID: 1562673122721665968, guid: 6d681f9a7f5744946967d29658e84bc9,
+        type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: c715b745e49f78c47bb6a361615e5a29,
+        type: 2}
+    - target: {fileID: 1562673122721665968, guid: 6d681f9a7f5744946967d29658e84bc9,
+        type: 3}
+      propertyPath: conversantName
+      value: 27
+      objectReference: {fileID: 0}
     - target: {fileID: 3193886629856990531, guid: 6d681f9a7f5744946967d29658e84bc9,
         type: 3}
       propertyPath: m_RootOrder
@@ -54554,6 +54610,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -7.228
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860841010543259377, guid: de4e6b5b708662a47985333715460b52,
+        type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 77062df8dc305744982b07f0f83f5462,
+        type: 2}
+    - target: {fileID: 4860841010543259377, guid: de4e6b5b708662a47985333715460b52,
+        type: 3}
+      propertyPath: conversantName
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5845548820204285727, guid: de4e6b5b708662a47985333715460b52,
         type: 3}
@@ -68955,6 +69022,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -7.258
       objectReference: {fileID: 0}
+    - target: {fileID: 1580222858210526197, guid: 8fc28368712d08b499e773386909940e,
+        type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: bf5f81cc5eb2f6a4c9e74d8247f151db,
+        type: 2}
+    - target: {fileID: 1580222858210526197, guid: 8fc28368712d08b499e773386909940e,
+        type: 3}
+      propertyPath: conversantName
+      value: 47
+      objectReference: {fileID: 0}
     - target: {fileID: 8596772466887962468, guid: 8fc28368712d08b499e773386909940e,
         type: 3}
       propertyPath: m_Name
@@ -68996,7 +69074,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.4917551, g: 0.4917551, b: 0.4917551, a: 1}
+  m_Color: {r: 0.95117944, g: 0.95117944, b: 0.95117944, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -70457,6 +70535,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -7.228
       objectReference: {fileID: 0}
+    - target: {fileID: 4860841010543259377, guid: de4e6b5b708662a47985333715460b52,
+        type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 13ffa0bca825e47488bf47ee4f1faf84,
+        type: 2}
+    - target: {fileID: 4860841010543259377, guid: de4e6b5b708662a47985333715460b52,
+        type: 3}
+      propertyPath: conversantName
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5845548820204285727, guid: de4e6b5b708662a47985333715460b52,
         type: 3}
       propertyPath: m_Name
@@ -71243,6 +71332,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1518883804}
     m_Modifications:
+    - target: {fileID: 1562673122721665968, guid: 6d681f9a7f5744946967d29658e84bc9,
+        type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 9e98dbe81d2312e4d81232fa30207289,
+        type: 2}
+    - target: {fileID: 1562673122721665968, guid: 6d681f9a7f5744946967d29658e84bc9,
+        type: 3}
+      propertyPath: conversantName
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 3193886629856990531, guid: 6d681f9a7f5744946967d29658e84bc9,
         type: 3}
       propertyPath: m_RootOrder
@@ -71606,6 +71706,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -1.555
       objectReference: {fileID: 0}
+    - target: {fileID: 4860841010543259377, guid: 8c6098c663859234fbf94c211d3b8afd,
+        type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: d16c1e69a104858469d5c2a71f985339,
+        type: 2}
     - target: {fileID: 5845548820204285727, guid: 8c6098c663859234fbf94c211d3b8afd,
         type: 3}
       propertyPath: m_Name
@@ -72718,12 +72824,12 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue
       value: 
-      objectReference: {fileID: 11400000, guid: be1afadc1650dbc469feb6d7b7d7cb82,
+      objectReference: {fileID: 11400000, guid: 52d89490f42d9c94bb6327579cd3c837,
         type: 2}
     - target: {fileID: 1562673122721665968, guid: 6d681f9a7f5744946967d29658e84bc9,
         type: 3}
       propertyPath: conversantName
-      value: Farmer
+      value: Sage 03
       objectReference: {fileID: 0}
     - target: {fileID: 3193886629856990531, guid: 6d681f9a7f5744946967d29658e84bc9,
         type: 3}
@@ -75941,6 +76047,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -7.241
       objectReference: {fileID: 0}
+    - target: {fileID: 4860841010543259377, guid: 69322ad5d237abe459e176b324694487,
+        type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 831fc0cdee851e54e81b0450a75e91fc,
+        type: 2}
+    - target: {fileID: 4860841010543259377, guid: 69322ad5d237abe459e176b324694487,
+        type: 3}
+      propertyPath: conversantName
+      value: 09
+      objectReference: {fileID: 0}
     - target: {fileID: 5845548820204285727, guid: 69322ad5d237abe459e176b324694487,
         type: 3}
       propertyPath: m_Name
@@ -76693,6 +76810,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -7.228
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860841010543259377, guid: de4e6b5b708662a47985333715460b52,
+        type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 5bd3870c792229e42817a3489d6b22be,
+        type: 2}
+    - target: {fileID: 4860841010543259377, guid: de4e6b5b708662a47985333715460b52,
+        type: 3}
+      propertyPath: conversantName
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 5845548820204285727, guid: de4e6b5b708662a47985333715460b52,
         type: 3}
@@ -91695,6 +91823,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -7.241
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860841010543259377, guid: 69322ad5d237abe459e176b324694487,
+        type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 8dc10d84bd8441a4591e2c954d4ca57a,
+        type: 2}
+    - target: {fileID: 4860841010543259377, guid: 69322ad5d237abe459e176b324694487,
+        type: 3}
+      propertyPath: conversantName
+      value: 08
       objectReference: {fileID: 0}
     - target: {fileID: 5845548820204285727, guid: 69322ad5d237abe459e176b324694487,
         type: 3}
