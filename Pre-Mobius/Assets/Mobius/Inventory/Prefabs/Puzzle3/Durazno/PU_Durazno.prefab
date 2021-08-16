@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8525859285374113507}
   - component: {fileID: 8081495641309567275}
   - component: {fileID: 4655024518649187554}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: durazno:pSphere1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 5923347705208450107}
   - component: {fileID: 6645365227311794318}
   - component: {fileID: 3556078759034765150}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PU_Durazno
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,7 +141,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 575f74d3f05be75419782dbe32f9a9d1, type: 2}
   inventario: {fileID: 0}
-  minD: 2
+  player: {fileID: 0}
+  minD: 5
   itemMask:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 4294967295
