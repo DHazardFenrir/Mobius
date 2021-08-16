@@ -17,13 +17,22 @@ namespace DialogueSystem.API
         DialogueNode currentNode = null;
         bool isChoosing = false;
         AIConversant currentConversant = null;
-      
-        
+        GetMouse mouse;
+
+        private void Awake()
+        {
+            mouse = GetComponent<GetMouse>();
+        }
+
+
+
+
+
 
 
         public event Action onConversationUpdated;
 
-      
+       
         public bool IsChoosing()
         {
             return isChoosing;
@@ -102,10 +111,15 @@ namespace DialogueSystem.API
             currentDialogue = newDialogue;
             currentNode = currentDialogue.GetRootNode();
             TriggerEnterAction();
+
+
+
+            mouse.isTalking(!mouse.conversantIsActive);
+            Debug.Log(!mouse.conversantIsActive + "1");
             onConversationUpdated();
-          
-           GetComponent<RigidbodyFirstPersonController>().enabled = false;
-        
+            GetComponent<RigidbodyFirstPersonController>().enabled = false;
+            
+            
         }
 
         public bool IsActive()
@@ -121,9 +135,11 @@ namespace DialogueSystem.API
             currentNode = null;
             isChoosing = false;
             currentConversant = null;
-
+            mouse.isTalking(mouse.conversantIsActive);
             onConversationUpdated();
             GetComponent<RigidbodyFirstPersonController>().enabled = true;
+
+
 
 
         }
