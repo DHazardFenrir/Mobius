@@ -2,14 +2,20 @@ using System;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
+
+
+
 namespace UnityStandardAssets.Characters.FirstPerson
 {
     [RequireComponent(typeof (Rigidbody))]
     [RequireComponent(typeof (CapsuleCollider))]
+    
     public class RigidbodyFirstPersonController : MonoBehaviour
     {
+        
         public GameObject talkNPC = default;
-        public bool lockCursor = true;
+      
+       
         [Serializable]
         public class MovementSettings
         {
@@ -127,7 +133,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_RigidBody = GetComponent<Rigidbody>();
             m_Capsule = GetComponent<CapsuleCollider>();
             mouseLook.Init (transform, cam.transform);
-           
+            
         }
 
 
@@ -140,8 +146,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 m_Jump = true;
             }
-
-            mouseLook.SetCursorLock(true);
+           
+           
         }
 
 
@@ -236,21 +242,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
         {
             //avoids the mouse looking if the game is effectively paused
             if (Mathf.Abs(Time.timeScale) < float.Epsilon) return;
-
             Cursor.visible = true;
+           
             float oldYRotation = transform.eulerAngles.y;
             mouseLook.LookRotation(transform, cam.transform);
-            //if (talkNPC != null) //works..ish. Still need fixes.
-            //{
-            //    // get the rotation before it's changed
-                
-               
-            //    Cursor.visible = false;
-               
-               
-
-                
-            //}
+            
+           
 
             if (m_IsGrounded || advancedSettings.airControl)
             {
@@ -285,5 +282,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 m_Jumping = false;
             }
         }
+
+        
     }
 }

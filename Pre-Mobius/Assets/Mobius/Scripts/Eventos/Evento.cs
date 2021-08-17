@@ -21,7 +21,7 @@ public class Evento : MonoBehaviour
            
 
         }
-        diary = GameObject.FindGameObjectWithTag("Diary").GetComponent<PlayerDiary>();
+        diary = FindObjectOfType<PlayerDiary>();
 
     }
 
