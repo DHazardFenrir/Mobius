@@ -54,7 +54,6 @@ public class PlayerInteract : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        texto = GameObject.FindGameObjectWithTag("InteractiveText");
         if (other.CompareTag("Interactable"))
         {
             texto.SetActive(false);
