@@ -659,15 +659,15 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 5
-    angle: 5
-    length: 5
+    type: 2
+    angle: 7.2
+    length: 6
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 1, y: 2.2, z: 1}
+    m_Scale: {x: 2, y: 2, z: 2}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -746,7 +746,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 0.25
+      value: 0.36
       mode: 0
       spread: 0
       speed:
@@ -805,7 +805,7 @@ ParticleSystem:
     arc:
       value: 360
       mode: 0
-      spread: 0
+      spread: 0.55
       speed:
         serializedVersion: 2
         minMaxState: 0
@@ -990,22 +990,22 @@ ParticleSystem:
           inWeight: 0
           outWeight: 0
         - serializedVersion: 3
-          time: 0.5046216
-          value: 0.7076931
-          inSlope: 0.9755764
-          outSlope: 0.9755764
+          time: 0.50083745
+          value: 0.4153843
+          inSlope: -0.6478527
+          outSlope: -0.6478527
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
-          outWeight: 0.33333334
+          outWeight: 0.20101087
         - serializedVersion: 3
-          time: 0.98669434
-          value: 0
-          inSlope: 0
-          outSlope: 0
+          time: 1
+          value: 1
+          inSlope: 2.1838543
+          outSlope: 2.1838543
           tangentMode: 0
           weightedMode: 0
-          inWeight: 0
+          inWeight: 0.2103944
           outWeight: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
