@@ -15,12 +15,12 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 0
-  m_FogColor: {r: 0.7638126, g: 0.8373416, b: 0.7009392, a: 1}
+  m_FogColor: {r: 0.6303797, g: 0.52250373, b: 0.23774129, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.8968731, g: 0.8968731, b: 0.8968731, a: 1}
+  m_AmbientSkyColor: {r: 0.78097034, g: 0.71940064, b: 0.6190535, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18033648, g: 0.22577834, b: 0.30695358, a: 1}
+  m_IndirectSpecularColor: {r: 0.16142605, g: 0.18751827, b: 0.20863736, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -30832,7 +30832,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 0
   eventData: {fileID: 11400000, guid: be0b0a2fbce28834fae8a88bcb8ef6dd, type: 2}
-  gameObj: {fileID: 844123635}
+  gameObj: {fileID: 0}
 --- !u!4 &353184641
 Transform:
   m_ObjectHideFlags: 0
@@ -30843,8 +30843,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -13.004639, y: -34.1, z: -53.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 844123640}
+  m_Children: []
   m_Father: {fileID: 1799808498}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -42318,7 +42317,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 721825374}
   m_LocalRotation: {x: -0, y: -0.6222279, z: -0, w: 0.7828362}
-  m_LocalPosition: {x: 37.5, y: -39.7, z: -66.2}
+  m_LocalPosition: {x: 37.5, y: -43.24, z: -66.2}
   m_LocalScale: {x: 1.6541752, y: 1.6541752, z: 1.6541752}
   m_Children:
   - {fileID: 7544478}
@@ -53998,117 +53997,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 843432766}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &844123635
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 844123640}
-  - component: {fileID: 844123639}
-  - component: {fileID: 844123638}
-  - component: {fileID: 844123637}
-  - component: {fileID: 844123636}
-  m_Layer: 0
-  m_Name: "Inundaci\xF3nObj"
-  m_TagString: Inundacion
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &844123636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844123635}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c8310369c93691419beb49102f581ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  eventManager: {fileID: 0}
-  lake: {fileID: 844123635}
-  speed: 0.08
---- !u!65 &844123637
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844123635}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &844123638
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844123635}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 1f45ed19ad5ddf3469fecf018ac7d38b, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &844123639
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844123635}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &844123640
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844123635}
-  m_LocalRotation: {x: -0, y: -0, z: -0.046075482, w: 0.99893796}
-  m_LocalPosition: {x: 13.132654, y: 8.299925, z: -9.7888565}
-  m_LocalScale: {x: 209.55695, y: 49.789005, z: 22.960356}
-  m_Children: []
-  m_Father: {fileID: 353184641}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -5.282}
 --- !u!1001 &845179092
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71038,7 +70926,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.9873008, g: 0.9873008, b: 0.9873008, a: 1}
+  m_Color: {r: 0.95268446, g: 0.95268446, b: 0.95268446, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -71096,7 +70984,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1470614694}
-  m_LocalRotation: {x: 0.07905416, y: 0.41943353, z: -0.9035925, w: 0.036695708}
+  m_LocalRotation: {x: 0.004561386, y: 0.9948294, z: -0.052136846, w: 0.08703636}
   m_LocalPosition: {x: 17.47897, y: 30.402845, z: -17.937897}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -81424,7 +81312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DirectionalLight: {fileID: 1470614695}
   Preset: {fileID: 11400000, guid: 90c3c66ae35e3b840be125e2619555e4, type: 2}
-  TimeOfDay: 367
+  TimeOfDay: 160
   playerSpawn: {fileID: 207365360}
 --- !u!4 &2031910732
 Transform:
@@ -94121,7 +94009,7 @@ PrefabInstance:
         type: 3}
       propertyPath: inundacion
       value: 
-      objectReference: {fileID: 844123635}
+      objectReference: {fileID: 0}
     - target: {fileID: 120254500756786812, guid: 6f25915af060df74e861e46aee9f2a84,
         type: 3}
       propertyPath: nuevaPresa
