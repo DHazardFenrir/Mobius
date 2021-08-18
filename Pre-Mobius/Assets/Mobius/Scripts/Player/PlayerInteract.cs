@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerInteract : MonoBehaviour
 {
     private Camera _camera;
+    [SerializeField] GameObject texto;
 
     private void Start()
     {
@@ -41,9 +42,17 @@ public class PlayerInteract : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.E))
             {
                 other.GetComponent<IInteractable>().Interact();
+                texto.SetActive(true);
             }
         }
+    }
 
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.CompareTag("Interactable"))
+        {
+            texto.SetActive(false);
+        }
     }
 
 }
