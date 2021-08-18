@@ -303,9 +303,10 @@ GameObject:
   - component: {fileID: 8522396400480050965}
   - component: {fileID: 7977167154260316583}
   - component: {fileID: 9162874273051615698}
+  - component: {fileID: 1039308745448772882}
   m_Layer: 0
   m_Name: Soul 01
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -317,8 +318,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8230871872340203097}
-  m_LocalRotation: {x: -0.2002235, y: -0.004888836, z: -0.06523077, w: 0.9775641}
-  m_LocalPosition: {x: 13.03, y: 7.3, z: -31.2}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.029948, y: 7.3001666, z: -31.197777}
   m_LocalScale: {x: 1.3175995, y: 1.5778159, z: 1.4587798}
   m_Children:
   - {fileID: 6240039126407474621}
@@ -326,7 +327,7 @@ Transform:
   - {fileID: 2432780235937800703}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -23.085, y: 1.032, z: -7.846}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5687207473613268938
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -445,3 +446,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!65 &1039308745448772882
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8230871872340203097}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.53, y: 3.79, z: 3.77}
+  m_Center: {x: 0, y: 0, z: 0}

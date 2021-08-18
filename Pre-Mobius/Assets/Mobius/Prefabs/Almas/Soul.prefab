@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 1562673122721665968}
   - component: {fileID: 5302611991681015799}
   - component: {fileID: 7394184543583924482}
+  - component: {fileID: 1253455437}
   m_Layer: 0
   m_Name: Soul
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 128e3d04ec5c54742b57ae7d9b8e45b4, type: 2}
+  - {fileID: 2100000, guid: ab3f61c7b1d2d6643a1f3fa0a9326609, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -110,8 +111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acd6278a911ca7942b9c2e6b88dd4b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
-  conversantName: 
+  dialogue: {fileID: 11400000, guid: be1afadc1650dbc469feb6d7b7d7cb82, type: 2}
+  conversantName: Farmer
 --- !u!114 &5302611991681015799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,7 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fb5fae37fe043348aef8ff2dd37835a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quest: {fileID: 11400000, guid: c2686a415036fab4cae29f73e13be0e0, type: 2}
+  quest: {fileID: 11400000, guid: c31ec857edc1d934ab05f0ac07b4df6d, type: 2}
 --- !u!114 &7394184543583924482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,3 +154,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!65 &1253455437
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8809314316356447090}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.53, y: 3.79, z: 3.77}
+  m_Center: {x: 0, y: 0, z: 0}

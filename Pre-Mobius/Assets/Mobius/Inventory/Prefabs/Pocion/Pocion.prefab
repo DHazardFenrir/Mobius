@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7980845050874154374}
   - component: {fileID: 5945423041891602426}
   - component: {fileID: 6710655386526814514}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Frasco:pCylinder2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 7548833593168927650}
   - component: {fileID: 3235641312163913711}
   - component: {fileID: 1091002370820699477}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Frasco:polySurface4pCylinder3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 3298708394508984916}
   - component: {fileID: 3683161765351245073}
   - component: {fileID: 2282590396127262226}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: liquido
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,9 +254,10 @@ GameObject:
   - component: {fileID: 9207342087701234079}
   - component: {fileID: 8398329795986840347}
   - component: {fileID: 8398329795986840356}
-  m_Layer: 10
+  - component: {fileID: 103207605636130525}
+  m_Layer: 11
   m_Name: Pocion
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -268,7 +269,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8398329795986840357}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -20.726435, y: 29.226826, z: 76.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -305,7 +306,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 6c025998e28539a46a71890ef4d31ba7, type: 2}
   inventario: {fileID: 0}
-  minD: 5
+  player: {fileID: 0}
+  minD: 40
   itemMask:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 4294967295
+--- !u!65 &103207605636130525
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8398329795986840357}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
