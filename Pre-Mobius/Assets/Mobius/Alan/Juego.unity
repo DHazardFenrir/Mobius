@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.16142605, g: 0.18751827, b: 0.20863736, a: 1}
+  m_IndirectSpecularColor: {r: 0.16142572, g: 0.1875179, b: 0.20863687, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5660,6 +5660,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Soul (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8809314316356447090, guid: 6d681f9a7f5744946967d29658e84bc9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d681f9a7f5744946967d29658e84bc9, type: 3}
@@ -14632,7 +14637,7 @@ PrefabInstance:
     - target: {fileID: 8596772466887962468, guid: 8fc28368712d08b499e773386909940e,
         type: 3}
       propertyPath: m_Name
-      value: Soul 02 (7)
+      value: Sage of South
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fc28368712d08b499e773386909940e, type: 3}
@@ -31755,57 +31760,57 @@ PrefabInstance:
     - target: {fileID: 961770020961987205, guid: 8fc28368712d08b499e773386909940e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -53.34
+      value: -32.8
       objectReference: {fileID: 0}
     - target: {fileID: 961770020961987205, guid: 8fc28368712d08b499e773386909940e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.2
+      value: 4.99
       objectReference: {fileID: 0}
     - target: {fileID: 961770020961987205, guid: 8fc28368712d08b499e773386909940e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 56.83
+      value: 29.7
       objectReference: {fileID: 0}
     - target: {fileID: 961770020961987205, guid: 8fc28368712d08b499e773386909940e,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9964074
+      value: 0.9966757
       objectReference: {fileID: 0}
     - target: {fileID: 961770020961987205, guid: 8fc28368712d08b499e773386909940e,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.053789552
+      value: 0.048565548
       objectReference: {fileID: 0}
     - target: {fileID: 961770020961987205, guid: 8fc28368712d08b499e773386909940e,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.014460308
+      value: -0.007849027
       objectReference: {fileID: 0}
     - target: {fileID: 961770020961987205, guid: 8fc28368712d08b499e773386909940e,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.063795395
+      value: -0.06494112
       objectReference: {fileID: 0}
     - target: {fileID: 961770020961987205, guid: 8fc28368712d08b499e773386909940e,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -6.26
+      value: 5.497
       objectReference: {fileID: 0}
     - target: {fileID: 961770020961987205, guid: 8fc28368712d08b499e773386909940e,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -1.265
+      value: -1.264
       objectReference: {fileID: 0}
     - target: {fileID: 961770020961987205, guid: 8fc28368712d08b499e773386909940e,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -7.258
+      value: -7.517
       objectReference: {fileID: 0}
     - target: {fileID: 8596772466887962468, guid: 8fc28368712d08b499e773386909940e,
         type: 3}
       propertyPath: m_Name
-      value: Soul 02 (5)
+      value: 'Sage of the West. '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fc28368712d08b499e773386909940e, type: 3}
@@ -47717,7 +47722,7 @@ PrefabInstance:
     - target: {fileID: 8596772466887962468, guid: 8fc28368712d08b499e773386909940e,
         type: 3}
       propertyPath: m_Name
-      value: Soul 02 (6)
+      value: 'Sage of the North. '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fc28368712d08b499e773386909940e, type: 3}
@@ -48608,7 +48613,7 @@ PrefabInstance:
     - target: {fileID: 8230871872340203097, guid: cd64b951a0bed544ca00620efe0967ef,
         type: 3}
       propertyPath: m_Name
-      value: Soul 01 (6)
+      value: Sage of the East
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd64b951a0bed544ca00620efe0967ef, type: 3}
@@ -54567,7 +54572,7 @@ PrefabInstance:
     - target: {fileID: 8809314316356447090, guid: 6d681f9a7f5744946967d29658e84bc9,
         type: 3}
       propertyPath: m_Name
-      value: Soul (13)
+      value: 'Poseidon High Priest. '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d681f9a7f5744946967d29658e84bc9, type: 3}
@@ -73520,6 +73525,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 982556004}
     m_Modifications:
+    - target: {fileID: 1562673122721665968, guid: 6d681f9a7f5744946967d29658e84bc9,
+        type: 3}
+      propertyPath: conversantName
+      value: Demeter High Priest
+      objectReference: {fileID: 0}
+    - target: {fileID: 1562673122721665968, guid: 6d681f9a7f5744946967d29658e84bc9,
+        type: 3}
+      propertyPath: dialogue.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3193886629856990531, guid: 6d681f9a7f5744946967d29658e84bc9,
         type: 3}
       propertyPath: m_RootOrder
@@ -73543,12 +73558,12 @@ PrefabInstance:
     - target: {fileID: 3193886629856990531, guid: 6d681f9a7f5744946967d29658e84bc9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 72.1
+      value: -2.9
       objectReference: {fileID: 0}
     - target: {fileID: 3193886629856990531, guid: 6d681f9a7f5744946967d29658e84bc9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -18.4
+      value: 13.3
       objectReference: {fileID: 0}
     - target: {fileID: 3193886629856990531, guid: 6d681f9a7f5744946967d29658e84bc9,
         type: 3}
@@ -73598,7 +73613,7 @@ PrefabInstance:
     - target: {fileID: 8809314316356447090, guid: 6d681f9a7f5744946967d29658e84bc9,
         type: 3}
       propertyPath: m_Name
-      value: Soul (12)
+      value: Demeter High Priest
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d681f9a7f5744946967d29658e84bc9, type: 3}
@@ -74960,7 +74975,7 @@ PrefabInstance:
     - target: {fileID: 5845548820204285727, guid: 8c6098c663859234fbf94c211d3b8afd,
         type: 3}
       propertyPath: m_Name
-      value: Soul 05 (1)
+      value: 'Hades Stonecutter. '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c6098c663859234fbf94c211d3b8afd, type: 3}
@@ -76176,6 +76191,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Soul (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8809314316356447090, guid: 6d681f9a7f5744946967d29658e84bc9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d681f9a7f5744946967d29658e84bc9, type: 3}
@@ -82433,7 +82453,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2031910730}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 423d03fd2b3902e4ebab7d2f51a773a6, type: 3}
   m_Name: 
@@ -82442,6 +82462,7 @@ MonoBehaviour:
   Preset: {fileID: 11400000, guid: 90c3c66ae35e3b840be125e2619555e4, type: 2}
   TimeOfDay: 160
   playerSpawn: {fileID: 207365360}
+  loopLight: {fileID: 0}
 --- !u!4 &2031910732
 Transform:
   m_ObjectHideFlags: 0
