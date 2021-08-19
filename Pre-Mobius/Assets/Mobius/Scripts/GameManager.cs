@@ -87,6 +87,7 @@ public class GameManager : MonoBehaviour
     public void puzzleFinished(int num)
     {
         puzzle[num] = true;
+        GameOver();
     }
 
     #endregion

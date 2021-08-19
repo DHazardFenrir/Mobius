@@ -11,6 +11,7 @@ public class PlayerInteract : MonoBehaviour
     private void Awake()
     {
         texto = GameObject.FindGameObjectWithTag("InteractiveText");
+        texto.SetActive(false);
         
     }
 
@@ -38,7 +39,6 @@ public class PlayerInteract : MonoBehaviour
 
     private GameObject GetNearestGameObject()
     {
-        texto = GameObject.FindGameObjectWithTag("InteractiveText");
         GameObject result = null;
         var ray = _camera.ScreenPointToRay(Input.mousePosition);
         if(Physics.Raycast(ray, out var hit, 5f))
@@ -61,7 +61,6 @@ public class PlayerInteract : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        texto = GameObject.FindGameObjectWithTag("InteractiveText");
         if (other.CompareTag("Interactable"))
         {
           

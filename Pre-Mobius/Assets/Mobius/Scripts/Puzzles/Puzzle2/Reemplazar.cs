@@ -8,6 +8,7 @@ public class Reemplazar : MonoBehaviour,IInteractable
     [SerializeField] GameObject ofrendaFalsa;
 
     [SerializeField] Items itemRequerido;
+    [SerializeField] Items itemADar;
 
     Inventario inventory;
 
@@ -23,11 +24,15 @@ public class Reemplazar : MonoBehaviour,IInteractable
     {
         if(inventory.inventory.Contains(itemRequerido))
         {
+            inventory.inventory.Add(itemADar);
             Destroy(ofrendaFalsa);
+            Debug.Log("Se destruye");
             ofrendaReal.SetActive(true);
-            inventory.inventory.Add(ofrendaFalsa.GetComponent<ItemToPick>().item);
+            Debug.Log("Se activa");
             this.gameObject.GetComponent<BoxCollider>().enabled = false;
+            Debug.Log("Se desactiva");
             gm.puzzleFinished(1);
+            Debug.Log("pal gm");
         }
     }
 

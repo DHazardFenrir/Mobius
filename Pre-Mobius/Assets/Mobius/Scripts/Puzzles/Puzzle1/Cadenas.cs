@@ -25,7 +25,7 @@ public class Cadenas : MonoBehaviour, IInteractable
         Debug.Log("enter");
         inundacion.SetActive(false);
         presaVieja.SetActive(false);
-        nuevaPresa.SetActive(true);
         altar.GetComponent<BoxCollider>().enabled = true;
+        nuevaPresa.SetActive(true);
     }
 }

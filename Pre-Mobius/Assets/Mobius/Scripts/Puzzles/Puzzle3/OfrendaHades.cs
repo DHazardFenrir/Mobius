@@ -54,7 +54,7 @@ public class OfrendaHades : MonoBehaviour, IInteractable
                 puzzleCompleted = true;
                 Debug.Log("Completado puzzle3");
                 GetComponent<BoxCollider>().enabled = false;
-            gm.puzzleFinished(2);
+                gm.puzzleFinished(2);
             }
             else
             {

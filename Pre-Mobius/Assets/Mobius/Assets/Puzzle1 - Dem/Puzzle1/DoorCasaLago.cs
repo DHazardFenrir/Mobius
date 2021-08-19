@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DoorCasaLago : MonoBehaviour
+public class DoorCasaLago : MonoBehaviour, IInteractable
 {
     [SerializeField] Animator anim;
     [SerializeField] Items llave;

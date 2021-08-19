@@ -62,6 +62,7 @@ public class PuzzleColumnas : MonoBehaviour
         }
         else
         {
+            Debug.Log("No jaló");
             for (int j = 0; i < clave.Length; i++)
             {
                 columnas[j].DesactivarColumna();
