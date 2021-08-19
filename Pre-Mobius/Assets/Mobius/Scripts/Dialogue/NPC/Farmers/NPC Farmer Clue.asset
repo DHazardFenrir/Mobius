@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-3665904055271942257
+--- !u!114 &-3373093973112799115
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
-  m_Name: 374cdd1e-b997-4456-b002-e81af7c507e7
+  m_Name: 660d7617-46b2-406b-a600-3ca8087f509c
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: ...
+  text: 
   children: []
   rect:
     serializedVersion: 2
-    x: 274
-    y: 108
+    x: 377
+    y: 37
     width: 200
     height: 100
   onExitAction: 
@@ -33,13 +33,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
-  m_Name: NPC Sage 02_2Dialogue
+  m_Name: NPC Farmer Clue
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: 7488870446043912549}
-  - {fileID: -3665904055271942257}
+  - {fileID: 3627766034250580657}
+  - {fileID: -3373093973112799115}
   newNodeOffset: {x: 250, y: 0}
---- !u!114 &7488870446043912549
+--- !u!114 &3627766034250580657
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -49,16 +49,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
-  m_Name: 4eb4ef90-71bf-4cf1-96bb-7a7d41b770d7
+  m_Name: fc281157-98f1-4219-bb26-00479f60fd90
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: I told you to go, Syril.
-  children:
-  - 374cdd1e-b997-4456-b002-e81af7c507e7
+  text: 
+  children: []
   rect:
     serializedVersion: 2
-    x: 58
-    y: 7
+    x: 0
+    y: 0
     width: 200
     height: 100
   onExitAction: 

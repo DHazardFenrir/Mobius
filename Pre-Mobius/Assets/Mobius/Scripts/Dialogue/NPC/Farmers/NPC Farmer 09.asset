@@ -96,6 +96,30 @@ MonoBehaviour:
     height: 100
   onExitAction: 
   onEnterAction: 
+--- !u!114 &-1652625713479620712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: f643cd32-08bf-4832-b8b1-95881e67ac8f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'I''m tired. I''m a working old man, you insolent kid. '
+  children:
+  - eb16b546-7922-4d5d-819c-3c9a4ef3f40a
+  rect:
+    serializedVersion: 2
+    x: 252
+    y: -1
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,12 +134,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodes:
   - {fileID: 6860413911660089838}
-  - {fileID: -7137027715715327144}
-  - {fileID: 2706752993119843765}
-  - {fileID: -9183072869359968825}
-  - {fileID: 2945106455795732285}
-  - {fileID: -5633703611320692280}
-  - {fileID: -6642142130941048263}
+  - {fileID: -1652625713479620712}
+  - {fileID: 5402421712242265722}
   newNodeOffset: {x: 250, y: 0}
 --- !u!114 &2706752993119843765
 MonoBehaviour:
@@ -167,6 +187,30 @@ MonoBehaviour:
     height: 100
   onExitAction: 
   onEnterAction: 
+--- !u!114 &5402421712242265722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: eb16b546-7922-4d5d-819c-3c9a4ef3f40a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'That old hag Calix is conventiently sick. The harvest is approaching soon!
+    He says that something is wrong with the temple... excuses! '
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 510
+    y: -1
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
 --- !u!114 &6860413911660089838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,14 +224,13 @@ MonoBehaviour:
   m_Name: 7e94c8e1-b7e5-4960-bd1f-ad108195604b
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Mm... Watching this kid run in circles is really annoying to me... Oh! Hey
-    there! Care to lend me a hand here? I have to work, but my '
+  text: 'Hey, watch out! '
   children:
-  - 0304542a-a3c5-4d1a-9843-dfb4b623f521
+  - f643cd32-08bf-4832-b8b1-95881e67ac8f
   rect:
     serializedVersion: 2
-    x: 0
-    y: 0
+    x: 2
+    y: -1
     width: 200
     height: 100
   onExitAction: 

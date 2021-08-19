@@ -27,5 +27,6 @@ public class Cadenas : MonoBehaviour, IInteractable
         presaVieja.SetActive(false);
         altar.GetComponent<BoxCollider>().enabled = true;
         nuevaPresa.SetActive(true);
+        Debug.Log("Dry Lake");
     }
 }
