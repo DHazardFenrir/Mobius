@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-6466313220114264379
+--- !u!114 &-6863876229160349219
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,20 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
-  m_Name: 9d5c7a44-4f4a-4589-8fec-d13e0a325701
+  m_Name: f28d156f-91c6-4d25-9890-b2023e8142d7
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Maybe in the river? I cannot remeber...
-  children: []
+  text: 'For your well being... I hope  not. '
+  children:
+  - 79a7e8a2-cd38-490a-aca3-a833d8682625
   rect:
     serializedVersion: 2
-    x: 731
-    y: 6
+    x: 313
+    y: 2
     width: 200
     height: 100
   onExitAction: 
   onEnterAction: 
---- !u!114 &-3130227311328995179
+--- !u!114 &-2986390045847377819
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -33,16 +34,41 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
-  m_Name: 0f540375-d751-4ca8-b060-0b21ea93519a
+  m_Name: 8cbadf77-1141-408b-b451-6ba6e14e4a12
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Uh... Uh... Uh...
-  children:
-  - f99f00bb-8173-41f3-8c3d-68c39e0a8d75
+  text: We made an offereing yesterday... so why? Maybe it is something wrong with
+    it?
+  children: []
   rect:
     serializedVersion: 2
-    x: 231
-    y: 7
+    x: 814
+    y: -1
+    width: 200
+    height: 100
+  onExitAction: GiveQuest
+  onEnterAction: 
+--- !u!114 &-1420299860890132674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 79a7e8a2-cd38-490a-aca3-a833d8682625
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'The last man that tried to enter the realm when Lord Hades was in this state...
+    never came back. Or so I was told. '
+  children:
+  - 8cbadf77-1141-408b-b451-6ba6e14e4a12
+  rect:
+    serializedVersion: 2
+    x: 564
+    y: -1
     width: 200
     height: 100
   onExitAction: 
@@ -57,15 +83,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
-  m_Name: Presero
+  m_Name: NPC Hades Acolythe 02
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: 1330502898017311516}
-  - {fileID: -3130227311328995179}
-  - {fileID: 7666384077787162350}
-  - {fileID: -6466313220114264379}
+  - {fileID: 4573664683246688757}
+  - {fileID: -6863876229160349219}
+  - {fileID: -1420299860890132674}
+  - {fileID: -2986390045847377819}
   newNodeOffset: {x: 250, y: 0}
---- !u!114 &1330502898017311516
+--- !u!114 &4573664683246688757
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -75,64 +101,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
-  m_Name: bc4eae77-ca94-409f-bfb2-3631d7e85ee3
+  m_Name: 6508c73a-a7c6-4692-9cb8-ca2339ab39f6
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: I... I must close the gates of the dam...
+  text: Are you planning on enter the realm of the dead?
   children:
-  - 0f540375-d751-4ca8-b060-0b21ea93519a
+  - f28d156f-91c6-4d25-9890-b2023e8142d7
   rect:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 200
-    height: 100
-  onExitAction: 
-  onEnterAction: 
---- !u!114 &1981547785573932138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
-  m_Name: 7246e068-8f00-4657-82e5-28044dc27700
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: Where is it?! I cannot remember... I cannot remember...
-  children: []
-  rect:
-    serializedVersion: 2
-    x: 984
-    y: 9
-    width: 200
-    height: 100
-  onExitAction: 
-  onEnterAction: 
---- !u!114 &7666384077787162350
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
-  m_Name: f99f00bb-8173-41f3-8c3d-68c39e0a8d75
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: I can't find the key!! Why I can't find the key? I must have dropped it my
-    way to the sages house...
-  children:
-  - 9d5c7a44-4f4a-4589-8fec-d13e0a325701
-  rect:
-    serializedVersion: 2
-    x: 481
-    y: 7
+    y: -2
     width: 200
     height: 100
   onExitAction: 

@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5098835227577050217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: d10fadcc-6817-478c-9160-f1581121d828
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Looking for something?
+  children:
+  - 662e8128-32f9-499f-8a19-2dfc3b6d95de
+  rect:
+    serializedVersion: 2
+    x: 218
+    y: 17
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
+  m_Name: Presero 02
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 2106816494545463899}
+  - {fileID: -5098835227577050217}
+  - {fileID: 6105585378206088777}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &2106816494545463899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: f863b8ba-f03b-47a3-bf75-533f665eb697
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Sheeesh! You can't see I'm busy?
+  children:
+  - d10fadcc-6817-478c-9160-f1581121d828
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &6105585378206088777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 662e8128-32f9-499f-8a19-2dfc3b6d95de
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'None of your business, boy! '
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 494
+    y: 34
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 

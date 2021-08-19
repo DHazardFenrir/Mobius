@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-6466313220114264379
+--- !u!114 &-4962939837867226179
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,20 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
-  m_Name: 9d5c7a44-4f4a-4589-8fec-d13e0a325701
+  m_Name: 1f86e34d-9c18-42a8-a386-69e939a77c62
   m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: Maybe in the river? I cannot remeber...
-  children: []
+  isPlayerSpeaking: 1
+  text: Yes
+  children:
+  - 7db24cdd-f91d-422a-bcc9-d1320b752d3b
   rect:
     serializedVersion: 2
-    x: 731
-    y: 6
+    x: 308
+    y: 17
     width: 200
     height: 100
   onExitAction: 
   onEnterAction: 
---- !u!114 &-3130227311328995179
+--- !u!114 &-4243662612801575273
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -33,16 +34,39 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
-  m_Name: 0f540375-d751-4ca8-b060-0b21ea93519a
+  m_Name: 9d468070-0b4a-458c-bddc-fc643b8d0eb2
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Uh... Uh... Uh...
-  children:
-  - f99f00bb-8173-41f3-8c3d-68c39e0a8d75
+  text: 'You are as well as dead if you enter, boy. '
+  children: []
   rect:
     serializedVersion: 2
-    x: 231
-    y: 7
+    x: 511
+    y: 144
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-396868141454605493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 71ce80d5-9d05-4dcd-9022-c79c3728e2f9
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: No
+  children:
+  - 9d468070-0b4a-458c-bddc-fc643b8d0eb2
+  rect:
+    serializedVersion: 2
+    x: 253
+    y: 119
     width: 200
     height: 100
   onExitAction: 
@@ -57,15 +81,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
-  m_Name: Presero
+  m_Name: NPC Acolyte Hades 03
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: 1330502898017311516}
-  - {fileID: -3130227311328995179}
-  - {fileID: 7666384077787162350}
-  - {fileID: -6466313220114264379}
+  - {fileID: 3744188909389583854}
+  - {fileID: -4962939837867226179}
+  - {fileID: -396868141454605493}
+  - {fileID: -4243662612801575273}
+  - {fileID: 77111316526373785}
   newNodeOffset: {x: 250, y: 0}
---- !u!114 &1330502898017311516
+--- !u!114 &77111316526373785
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -75,44 +100,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
-  m_Name: bc4eae77-ca94-409f-bfb2-3631d7e85ee3
+  m_Name: 7db24cdd-f91d-422a-bcc9-d1320b752d3b
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: I... I must close the gates of the dam...
-  children:
-  - 0f540375-d751-4ca8-b060-0b21ea93519a
-  rect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 200
-    height: 100
-  onExitAction: 
-  onEnterAction: 
---- !u!114 &1981547785573932138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
-  m_Name: 7246e068-8f00-4657-82e5-28044dc27700
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: Where is it?! I cannot remember... I cannot remember...
+  text: 'Maybe... you could try to  enter. '
   children: []
   rect:
     serializedVersion: 2
-    x: 984
-    y: 9
+    x: 602
+    y: 18
     width: 200
     height: 100
   onExitAction: 
   onEnterAction: 
---- !u!114 &7666384077787162350
+--- !u!114 &3744188909389583854
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,17 +123,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
-  m_Name: f99f00bb-8173-41f3-8c3d-68c39e0a8d75
+  m_Name: c58fab84-86de-4239-91d0-0acc75ca8b8d
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: I can't find the key!! Why I can't find the key? I must have dropped it my
-    way to the sages house...
+  text: Do you have an offering?
   children:
-  - 9d5c7a44-4f4a-4589-8fec-d13e0a325701
+  - 1f86e34d-9c18-42a8-a386-69e939a77c62
+  - 71ce80d5-9d05-4dcd-9022-c79c3728e2f9
   rect:
     serializedVersion: 2
-    x: 481
-    y: 7
+    x: 4
+    y: 3
     width: 200
     height: 100
   onExitAction: 
