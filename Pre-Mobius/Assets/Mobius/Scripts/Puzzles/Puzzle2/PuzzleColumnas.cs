@@ -57,6 +57,7 @@ public class PuzzleColumnas : MonoBehaviour
         {
             altar.GetComponent<BoxCollider>().enabled = true;
             altarAnim.SetBool("Abierto", true);
+            
             Debug.Log("Jala");
         }
         else

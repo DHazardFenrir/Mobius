@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject pauseMenu;
     public bool onOtherScreen;
 
+    [SerializeField] bool[] puzzle;
+
+
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape) && !onOtherScreen)
@@ -54,7 +57,26 @@ public class GameManager : MonoBehaviour
 
     #endregion
 
+    #region EndGame
 
+    public void GameOver()
+    {
+        if(puzzle[0] && puzzle[1] && puzzle[3])
+        {
+            
+        }
+    }
+
+    public void puzzleFinished(int num)
+    {
+        puzzle[num] = true;
+    }
+
+
+
+
+
+    #endregion
 
 
 }

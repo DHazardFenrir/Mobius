@@ -31060,6 +31060,39 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 360252613}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &362040496 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d324dc17013981541b0bc7436cb79b7e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1660492305}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &362040497
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362040496}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 2.56, y: 2.02, z: 2.1}
+  m_Center: {x: 9.04, y: 2.45, z: 13.4}
+--- !u!114 &362040498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362040496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6924c9ccb7e68244287c40db8e099749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemRequerido: {fileID: 11400000, guid: eb7b4eb24c160344dbfe151382b1789b, type: 2}
+  ofrendaSpawn: {fileID: 1596371763}
 --- !u!1001 &365802150
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -73692,6 +73725,36 @@ Transform:
   m_Father: {fileID: 1799679141}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1596371762
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1596371763}
+  m_Layer: 0
+  m_Name: OfrendaSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1596371763
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596371762}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.506, y: 2.755, z: 13.422}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1456994191}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1596465488
 GameObject:
   m_ObjectHideFlags: 0
@@ -74342,6 +74405,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: "Altar_D\xE9meter"
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d324dc17013981541b0bc7436cb79b7e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d324dc17013981541b0bc7436cb79b7e, type: 3}
@@ -94600,6 +94668,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1136720941}
     m_Modifications:
+    - target: {fileID: 120254500756786812, guid: 6f25915af060df74e861e46aee9f2a84,
+        type: 3}
+      propertyPath: altar
+      value: 
+      objectReference: {fileID: 362040496}
     - target: {fileID: 120254500756786812, guid: 6f25915af060df74e861e46aee9f2a84,
         type: 3}
       propertyPath: inundacion

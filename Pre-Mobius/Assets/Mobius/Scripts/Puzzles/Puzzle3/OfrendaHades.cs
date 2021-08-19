@@ -12,11 +12,13 @@ public class OfrendaHades : MonoBehaviour, IInteractable
     Inventario inventory;
     LightingManager lM;
 
+    GameManager gm;
 
     private void Start()
     {
         lM = FindObjectOfType<LightingManager>();
         inventory = FindObjectOfType<Inventario>();
+        gm = FindObjectOfType<GameManager>();
     }
 
     public void Interact()
@@ -52,6 +54,7 @@ public class OfrendaHades : MonoBehaviour, IInteractable
                 puzzleCompleted = true;
                 Debug.Log("Completado puzzle3");
                 GetComponent<BoxCollider>().enabled = false;
+            gm.puzzleFinished(2);
             }
             else
             {
