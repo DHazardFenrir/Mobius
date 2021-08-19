@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5302611991681015799}
   - component: {fileID: 7394184543583924482}
   - component: {fileID: 1253455437}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Soul
   m_TagString: Interactable
   m_Icon: {fileID: 0}
@@ -111,7 +111,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acd6278a911ca7942b9c2e6b88dd4b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: be1afadc1650dbc469feb6d7b7d7cb82, type: 2}
+  dialogue:
+  - {fileID: 11400000, guid: bf5f81cc5eb2f6a4c9e74d8247f151db, type: 2}
+  - {fileID: 11400000, guid: 44eb03ec0211ae14b8c2e4bbc92473bd, type: 2}
   conversantName: Farmer
 --- !u!114 &5302611991681015799
 MonoBehaviour:

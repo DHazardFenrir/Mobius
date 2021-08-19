@@ -15,9 +15,11 @@ namespace DialogueSystem.API
         [SerializeField] string playerName;
         DialogScriptable currentDialogue;
         DialogueNode currentNode = null;
-        bool isChoosing = false;
+        [SerializeField] bool isChoosing = false;
         AIConversant currentConversant = null;
         GetMouse mouse;
+        
+        public bool canAdvance;
 
         private void Awake()
         {
@@ -100,12 +102,13 @@ namespace DialogueSystem.API
         }
         public bool HasNext()
         {
-           
+            
             return currentDialogue.GetAllChildren(currentNode).Count() > 0 ;
         }
 
         public void StartDialogue(AIConversant newConversant, DialogScriptable newDialogue)
         {
+            canAdvance = false;
            
             currentConversant = newConversant;
             currentDialogue = newDialogue;
@@ -129,7 +132,7 @@ namespace DialogueSystem.API
 
         public void Quit()
         {
-            
+           
             currentDialogue = null;
             TriggerExitAction();
             currentNode = null;
@@ -167,6 +170,21 @@ namespace DialogueSystem.API
             {
                 trigger.Trigger(action);
             }
+        }
+
+        public bool isDialogueFinished()
+        {
+            if(!isChoosing && currentDialogue.GetAllChildren(currentNode).Count() == 0)
+            {
+                canAdvance = true;
+            }
+            if (isChoosing && currentDialogue.GetAllChildren(currentNode).Count() > 0)
+            {
+                canAdvance = false;
+            }
+
+
+            return canAdvance;
         }
 
 

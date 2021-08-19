@@ -12315,6 +12315,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 935643815}
     m_Modifications:
+    - target: {fileID: 1562673122721665968, guid: 6d681f9a7f5744946967d29658e84bc9,
+        type: 3}
+      propertyPath: dialogue.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 77062df8dc305744982b07f0f83f5462,
+        type: 2}
+    - target: {fileID: 1562673122721665968, guid: 6d681f9a7f5744946967d29658e84bc9,
+        type: 3}
+      propertyPath: dialogue.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 13ffa0bca825e47488bf47ee4f1faf84,
+        type: 2}
     - target: {fileID: 3193886629856990531, guid: 6d681f9a7f5744946967d29658e84bc9,
         type: 3}
       propertyPath: m_RootOrder
@@ -13230,6 +13242,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1212417441}
     m_Modifications:
+    - target: {fileID: 1562673122721665968, guid: 6d681f9a7f5744946967d29658e84bc9,
+        type: 3}
+      propertyPath: conversantName
+      value: dasdas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1562673122721665968, guid: 6d681f9a7f5744946967d29658e84bc9,
+        type: 3}
+      propertyPath: dialogue.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1562673122721665968, guid: 6d681f9a7f5744946967d29658e84bc9,
+        type: 3}
+      propertyPath: dialogue.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: bf5f81cc5eb2f6a4c9e74d8247f151db,
+        type: 2}
+    - target: {fileID: 1562673122721665968, guid: 6d681f9a7f5744946967d29658e84bc9,
+        type: 3}
+      propertyPath: dialogue.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 44eb03ec0211ae14b8c2e4bbc92473bd,
+        type: 2}
+    - target: {fileID: 1562673122721665968, guid: 6d681f9a7f5744946967d29658e84bc9,
+        type: 3}
+      propertyPath: dialogue.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 5184f084aabe884409eb3f7f2d10945f,
+        type: 2}
     - target: {fileID: 3193886629856990531, guid: 6d681f9a7f5744946967d29658e84bc9,
         type: 3}
       propertyPath: m_RootOrder
@@ -13289,6 +13329,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Soul (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8809314316356447090, guid: 6d681f9a7f5744946967d29658e84bc9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d681f9a7f5744946967d29658e84bc9, type: 3}
@@ -54834,7 +54879,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &934848378
 RectTransform:
   m_ObjectHideFlags: 0
@@ -58484,6 +58529,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   texto: {fileID: 934848377}
+  interactableMask:
+    serializedVersion: 2
+    m_Bits: 513
+  defaultMask:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!1001 &1110132926
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59647,6 +59698,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BasicHouse (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 30659e3ea19b64f41a713a4197d3a4a1,
+        type: 3}
+      propertyPath: m_TagString
+      value: NoInteractable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30659e3ea19b64f41a713a4197d3a4a1, type: 3}
@@ -63282,6 +63338,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SignleTop (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6528c0d78c25ad3428619e08acf36384,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4599689438931278920, guid: 6528c0d78c25ad3428619e08acf36384,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6528c0d78c25ad3428619e08acf36384, type: 3}
@@ -75518,6 +75584,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: river01
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eed53c5ea75e7a74b84ba3dfb70efb8c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: eed53c5ea75e7a74b84ba3dfb70efb8c,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -75542,6 +75613,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -2.834
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eed53c5ea75e7a74b84ba3dfb70efb8c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eed53c5ea75e7a74b84ba3dfb70efb8c, type: 3}
@@ -79890,7 +79966,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1986233878
 Transform:
   m_ObjectHideFlags: 0
@@ -93096,6 +93172,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: Syril
+  isChoosing: 0
+  canAdvance: 0
 --- !u!1 &2104118308171005518
 GameObject:
   m_ObjectHideFlags: 0
