@@ -71,7 +71,11 @@ public class LightingManager : MonoBehaviour
     }
 
     
+    public void StartLoopFadeForOthers()
+    {
+        StartCoroutine(LoopFade());
 
+    }
 
     public void Loop()
     {

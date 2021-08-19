@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class GasVenenoso : MonoBehaviour
 {
@@ -10,11 +11,13 @@ public class GasVenenoso : MonoBehaviour
     LightingManager lM;
     Inventario inventory;
     [SerializeField] Items item;
+    [SerializeField]CanvasGroup damageCanvas;
 
     private void Start()
     {
         lM = FindObjectOfType<LightingManager>();
         inventory = FindObjectOfType<Inventario>();
+        damageCanvas = GameObject.Find("Damage").GetComponent<CanvasGroup>();
     }
 
     private void OnTriggerStay(Collider other)
@@ -26,9 +29,10 @@ public class GasVenenoso : MonoBehaviour
             {
                 Debug.Log("Aggghh me estoy ahogando alv");
                 timer += Time.deltaTime;
+                damageCanvas.DOFade(1f, maxTime);
                 if (timer >= maxTime)
                     {
-                    lM.Loop();
+                        lM.StartLoopFadeForOthers();
                     }
             }
         }
@@ -39,6 +43,7 @@ public class GasVenenoso : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         timer = 0;
+        damageCanvas.DOFade(0f, maxTime);
     }
 
 
