@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7984760276314518630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 301c0f58-75c2-4ba8-a6c8-8ba823a02a63
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I was... making something...
+  children:
+  - 4e83c878-3d96-49f8-b4b6-a6f06bcc5b95
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: -1
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-4790660382554163045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 4e83c878-3d96-49f8-b4b6-a6f06bcc5b95
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: A mask... I think...
+  children:
+  - 5255b68b-0d9c-46f9-bdaa-477de1bb6fd1
+  rect:
+    serializedVersion: 2
+    x: 285
+    y: 23
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-3763597974497750982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: d19cc3d4-a909-43b6-9f5b-0b7a8a6fb69a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: No... I deliver it to someone... in the Observatory...
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 785
+    y: 23
+    width: 200
+    height: 100
+  onExitAction: GiveQuest
+  onEnterAction: 
+--- !u!114 &-2967265144697296965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 5255b68b-0d9c-46f9-bdaa-477de1bb6fd1
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'But I think I lost it? '
+  children:
+  - d19cc3d4-a909-43b6-9f5b-0b7a8a6fb69a
+  rect:
+    serializedVersion: 2
+    x: 535
+    y: 23
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
+  m_Name: NPC Hades Stonecutter
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -7984760276314518630}
+  - {fileID: -4790660382554163045}
+  - {fileID: -2967265144697296965}
+  - {fileID: -3763597974497750982}
+  newNodeOffset: {x: 250, y: 0}
