@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using DG.Tweening;
 
 public class GameManager : MonoBehaviour
 {
@@ -21,6 +22,12 @@ public class GameManager : MonoBehaviour
             pauseMenu.SetActive(isPaused);
             Pause();
         }
+
+        if(Input.GetKeyDown(KeyCode.L))
+        {
+            GameOver();
+        }
+
     }
     #region Pausa
     void Pause()
@@ -59,22 +66,27 @@ public class GameManager : MonoBehaviour
 
     #region EndGame
 
+    [SerializeField] CanvasGroup gameOverCanvasGroup;
+
     public void GameOver()
     {
-        if(puzzle[0] && puzzle[1] && puzzle[3])
+        if(puzzle[0] && puzzle[1] && puzzle[2])
         {
-            
+            StartCoroutine(GameOverScreen());
         }
+    }
+
+    IEnumerator GameOverScreen()
+    {
+        gameOverCanvasGroup.DOFade(1f, 2f);
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene(0);
     }
 
     public void puzzleFinished(int num)
     {
         puzzle[num] = true;
     }
-
-
-
-
 
     #endregion
 
