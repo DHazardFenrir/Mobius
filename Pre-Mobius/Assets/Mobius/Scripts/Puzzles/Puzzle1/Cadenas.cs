@@ -7,6 +7,7 @@ public class Cadenas : MonoBehaviour, IInteractable
     [SerializeField] GameObject inundacion;
     [SerializeField] GameObject presaVieja;
     [SerializeField] GameObject nuevaPresa;
+    [SerializeField] GameObject altar;
 
      void Start()
     {
@@ -25,6 +26,6 @@ public class Cadenas : MonoBehaviour, IInteractable
         inundacion.SetActive(false);
         presaVieja.SetActive(false);
         nuevaPresa.SetActive(true);
-
+        altar.GetComponent<BoxCollider>().enabled = true;
     }
 }
