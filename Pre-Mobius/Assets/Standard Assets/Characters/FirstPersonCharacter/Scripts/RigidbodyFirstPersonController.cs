@@ -171,8 +171,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
                         m_RigidBody.AddForce(desiredMove * SlopeMultiplier(), ForceMode.Impulse);
                     }
                 }
-            
-           
+
+
 
             if (m_IsGrounded)
             {

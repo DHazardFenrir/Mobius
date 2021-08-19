@@ -1,5 +1,8 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.SceneManagement;
+using DG.Tweening;
 
 [ExecuteAlways]
 public class LightingManager : MonoBehaviour
@@ -16,18 +19,22 @@ public class LightingManager : MonoBehaviour
 
     [SerializeField]Transform playerSpawn;
 
+    [SerializeField] CanvasGroup loopLight;
+
+
     private void Awake()
     {
         if (player == null)
         {
             player = GameObject.Find("Player");
-            
+            loopLight = GameObject.Find("Destello").GetComponent<CanvasGroup>();
         }
     }
 
     private void Start()
     {
         player.transform.position = playerSpawn.position;
+        loopLight.DOFade(0f, 2f);
     }
 
 
@@ -50,30 +57,36 @@ public class LightingManager : MonoBehaviour
 
         if(TimeOfDay>=((60*DayInMinutes))-1)
         {
-            Loop();
+            StartCoroutine(LoopFade());
         }
 
-        
-        if(Input.GetKeyDown(KeyCode.R))
+
+        if (Input.GetKeyDown(KeyCode.R))
         {
-            DontDestroyOnLoad(player);
-            
-            SceneManager.LoadScene(1);
+            StartCoroutine(LoopFade());
         }
 
         timeToGet = TimeOfDay;
-
-
     }
+
+    
+
 
     public void Loop()
     {
+        loopLight.DOFade(1f, 2f);
         DontDestroyOnLoad(player);
+        DontDestroyOnLoad(loopLight);
         SceneManager.LoadScene(1);
         player.transform.position = playerSpawn.position;
     }
 
-
+    IEnumerator LoopFade()
+    {
+        loopLight.DOFade(1f, 2f);
+        yield return new WaitForSeconds(2f);
+        Loop();
+    }
 
     private void UpdateLighting(float timePercent)
     {
