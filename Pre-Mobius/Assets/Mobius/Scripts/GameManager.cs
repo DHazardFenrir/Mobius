@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject pauseMenu;
     public bool onOtherScreen;
 
+
     [SerializeField] bool[] puzzle;
 
 
@@ -90,5 +91,9 @@ public class GameManager : MonoBehaviour
 
     #endregion
 
+    public void DestroyItem(GameObject itemToDestroy)
+    {
+        Destroy(itemToDestroy);
+    }
 
 }

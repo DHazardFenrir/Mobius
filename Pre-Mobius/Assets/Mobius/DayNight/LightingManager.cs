@@ -35,6 +35,7 @@ public class LightingManager : MonoBehaviour
     {
         player.transform.position = playerSpawn.position;
         loopLight.DOFade(0f, 2f);
+        Debug.Log("doing fade");
     }
 
 

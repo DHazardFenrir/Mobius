@@ -5,15 +5,21 @@ using UnityEngine;
 public class PlayerInteract : MonoBehaviour
 {
     private Camera _camera;
-    [SerializeField] GameObject texto;
+    [SerializeField] GameObject texto = default;
     [SerializeField] LayerMask interactableMask;
-    [SerializeField] LayerMask defaultMask;
 
- 
+    private void Awake()
+    {
+        texto = GameObject.FindGameObjectWithTag("InteractiveText");
+        
+    }
+
+
 
     private void Start()
     {
         _camera = Camera.main;
+       
     }
 
     void Update()
@@ -21,6 +27,7 @@ public class PlayerInteract : MonoBehaviour
         var nearestGameObject = GetNearestGameObject();
         
         if (nearestGameObject == null) return;
+        
         if (Input.GetKeyDown(KeyCode.E))
         {
            
@@ -34,24 +41,19 @@ public class PlayerInteract : MonoBehaviour
         texto = GameObject.FindGameObjectWithTag("InteractiveText");
         GameObject result = null;
         var ray = _camera.ScreenPointToRay(Input.mousePosition);
-        if(Physics.Raycast(ray, out var hit, 5f, interactableMask))
+        if(Physics.Raycast(ray, out var hit, 5f))
         {
             result = hit.transform.gameObject;
            
-            if (result.CompareTag("Interactable") && interactableMask.value.Equals(9))
-            {
-                texto.SetActive(true);
-            }
+          
+           
 
-            if (result && interactableMask.value.Equals(0))
-            {
-                texto.SetActive(false);
-                Debug.Log("mascara default");
-            }
 
            
 
         }
+       
+        
         return result;
     }
 
@@ -59,11 +61,13 @@ public class PlayerInteract : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if(other.CompareTag("Interactable"))
+        texto = GameObject.FindGameObjectWithTag("InteractiveText");
+        if (other.CompareTag("Interactable"))
         {
           
             Debug.Log("Se entro en un Interactable");
-            
+
+            texto.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))
             {
                
@@ -75,9 +79,10 @@ public class PlayerInteract : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        texto = GameObject.FindGameObjectWithTag("InteractiveText");
         if (other.CompareTag("Interactable"))
         {
-            
+            texto.SetActive(false);
         }
     }
 
