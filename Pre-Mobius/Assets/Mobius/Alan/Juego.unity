@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.004911984, g: 0.0042498237, b: 0.00000794269, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0.99999905, b: 0.99999905, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -108545,6 +108545,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Temple_Demeter
       objectReference: {fileID: 0}
+    - target: {fileID: 8069014079991805227, guid: 3ecc722fc52915448bcb3104831c89a7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dbf3ad7f0c8bad745b755200b388cad2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ecc722fc52915448bcb3104831c89a7, type: 3}
 --- !u!1 &6084676497645529405
