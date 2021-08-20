@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0049119904, g: 0.0042498223, b: 0.000007942682, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0.99999905, b: 0.99999905, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -107980,7 +107980,6 @@ GameObject:
   - component: {fileID: 9039498219558535107}
   - component: {fileID: 5686424359253257160}
   - component: {fileID: 3572452217228338575}
-  - component: {fileID: 3092812117003049294}
   m_Layer: 11
   m_Name: DoubleTop
   m_TagString: Untagged
@@ -107988,20 +107987,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &3092812117003049294
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3092812117003049293}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5609311104685304770, guid: 76135f07ae35cc24a91474d40201cad5, type: 3}
 --- !u!114 &3292338505350591808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108560,6 +108545,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Temple_Demeter
       objectReference: {fileID: 0}
+    - target: {fileID: 8069014079991805227, guid: 3ecc722fc52915448bcb3104831c89a7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dbf3ad7f0c8bad745b755200b388cad2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ecc722fc52915448bcb3104831c89a7, type: 3}
 --- !u!1 &6084676497645529405
