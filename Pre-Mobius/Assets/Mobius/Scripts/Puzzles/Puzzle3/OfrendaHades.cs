@@ -27,6 +27,8 @@ public class OfrendaHades : MonoBehaviour, IInteractable
     }
 
 
+    [SerializeField] AudioSource audioColocarFruta;
+
     void ColocarFruta()
     {
         for(int i=0;i<frutas.Length;i++)
@@ -35,6 +37,10 @@ public class OfrendaHades : MonoBehaviour, IInteractable
             {
                 frutas[i].SetActive(true);
                 frutaColocada[i]= true;
+                if (audioColocarFruta != null)
+                {
+                    audioColocarFruta.Play();
+                }
                 ComprobarFrutero();
             }
             else
@@ -44,6 +50,7 @@ public class OfrendaHades : MonoBehaviour, IInteractable
         }
     }
 
+    [SerializeField] AudioSource audioFinal;
 
     void ComprobarFrutero()
     {
@@ -54,7 +61,11 @@ public class OfrendaHades : MonoBehaviour, IInteractable
                 puzzleCompleted = true;
                 Debug.Log("Completado puzzle3");
                 GetComponent<BoxCollider>().enabled = false;
-                gm.puzzleFinished(2);
+            if (audioFinal != null)
+            {
+                audioFinal.Play();
+            }
+            gm.puzzleFinished(2);
             }
             else
             {

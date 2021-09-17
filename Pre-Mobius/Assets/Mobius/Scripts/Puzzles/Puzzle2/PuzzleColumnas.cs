@@ -50,12 +50,18 @@ public class PuzzleColumnas : MonoBehaviour
 
     [SerializeField]GameObject altar;
 
+    [SerializeField] AudioSource audio;
+
     void ComprobarClave()
     {
         Debug.Log("Comprobando");
         if(combinación[0]==clave[0] && combinación[1] == clave[1] && combinación[2] == clave[2] && combinación[3] == clave[3] && combinación[4] == clave[4] && combinación[5] == clave[5])
         {
             altar.GetComponent<BoxCollider>().enabled = true;
+            if (audio != null)
+            {
+                audio.Play();
+            }
             altarAnim.SetBool("Abierto", true);
             
             Debug.Log("Jala");

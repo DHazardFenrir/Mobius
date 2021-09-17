@@ -14,6 +14,9 @@ public class Columnas : MonoBehaviour, IInteractable
 
     MeshRenderer meshR;
 
+    [SerializeField] AudioSource audio;
+
+
     private void Start()
     {
         pocion = FindObjectOfType<UsarPocion>();
@@ -36,6 +39,10 @@ public class Columnas : MonoBehaviour, IInteractable
         if(pocion.efectoActivo)
         {
             meshR.enabled = false;
+            if (audio != null)
+            {
+                audio.Play();
+            }
             active = true;
             manager.Clave(num);
         }

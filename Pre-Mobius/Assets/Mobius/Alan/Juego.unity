@@ -15,7 +15,7 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 0
-  m_FogColor: {r: 0.03773582, g: 0.03773582, b: 0.03773582, a: 1}
+  m_FogColor: {r: 0.041422494, g: 0.041422494, b: 0.041422494, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.03
   m_LinearFogStart: 0
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0049119904, g: 0.0042498223, b: 0.000007942682, a: 1}
+  m_IndirectSpecularColor: {r: 0.0049123764, g: 0.0042505376, b: 0.000007943884, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -12771,6 +12771,7 @@ MonoBehaviour:
   eventData: {fileID: 11400000, guid: a9fa4a605fdcb1f4fa9c940a1478a3c4, type: 2}
   prefab: {fileID: 7707794149679260220, guid: 41cbe30bf9d82134e99b866670db0d21, type: 3}
   spawnPoint: {fileID: 111997923}
+  particles: {fileID: 0}
 --- !u!1 &112884371
 GameObject:
   m_ObjectHideFlags: 0
@@ -32811,6 +32812,7 @@ MonoBehaviour:
   active: 0
   eventData: {fileID: 11400000, guid: be0b0a2fbce28834fae8a88bcb8ef6dd, type: 2}
   gameObj: {fileID: 1914787467}
+  particles: {fileID: 0}
 --- !u!4 &353184641
 Transform:
   m_ObjectHideFlags: 0
@@ -67684,7 +67686,7 @@ Transform:
   m_LocalScale: {x: 3.3665664, y: 3.3665664, z: 3.3665679}
   m_Children: []
   m_Father: {fileID: 1683288326}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 126.035995, y: 94.104, z: 0}
 --- !u!95 &1114736198
 Animator:
@@ -67718,7 +67720,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 0.7075472, g: 0.44253483, b: 0.2236116, a: 1}
   m_Intensity: 1.42
-  m_Range: 3.1
+  m_Range: 5.84
   m_SpotAngle: 98.23381
   m_InnerSpotAngle: 32.416225
   m_CookieSize: 10
@@ -68315,119 +68317,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1149374433}
   m_Mesh: {fileID: 6099800089077584851, guid: 72d44dad14168784cacee48e27d28755, type: 3}
---- !u!1 &1150324034
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1150324035}
-  - component: {fileID: 1150324037}
-  - component: {fileID: 1150324036}
-  m_Layer: 11
-  m_Name: Spot Light (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1150324035
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1150324034}
-  m_LocalRotation: {x: 0.6071706, y: 0.3321037, z: -0.6522964, w: 0.30912873}
-  m_LocalPosition: {x: 11.11, y: 8.08, z: 1.93}
-  m_LocalScale: {x: 3.3665664, y: 3.3665664, z: 3.3665679}
-  m_Children: []
-  m_Father: {fileID: 1683288326}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 126.035995, y: 94.104, z: 0}
---- !u!95 &1150324036
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1150324034}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 40cd3881a354a724b93661245a5e60e6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!108 &1150324037
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1150324034}
-  m_Enabled: 1
-  serializedVersion: 10
-  m_Type: 0
-  m_Shape: 0
-  m_Color: {r: 0.7075472, g: 0.44253483, b: 0.2236116, a: 1}
-  m_Intensity: 41
-  m_Range: 5.91
-  m_SpotAngle: 98.23381
-  m_InnerSpotAngle: 32.416225
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 2
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 2048
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 1
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
-  m_ShadowRadius: 1
-  m_ShadowAngle: 0
 --- !u!1001 &1150951960
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80858,7 +80747,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1470614694}
-  m_LocalRotation: {x: -0.061628457, y: 0.70441604, z: 0.70441604, w: 0.061628457}
+  m_LocalRotation: {x: -0.060324293, y: 0.71901375, z: 0.68950933, w: 0.062905595}
   m_LocalPosition: {x: 17.47897, y: 30.402845, z: -17.937897}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -88069,6 +87958,7 @@ MonoBehaviour:
   active: 0
   eventData: {fileID: 11400000, guid: be0b0a2fbce28834fae8a88bcb8ef6dd, type: 2}
   gameObj: {fileID: 1856181144}
+  particles: {fileID: 0}
 --- !u!1 &1760719439
 GameObject:
   m_ObjectHideFlags: 0
@@ -94480,7 +94370,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DirectionalLight: {fileID: 1470614695}
   Preset: {fileID: 11400000, guid: 90c3c66ae35e3b840be125e2619555e4, type: 2}
-  TimeOfDay: 0
+  TimeOfDay: 4
   playerSpawn: {fileID: 207365360}
   loopLight: {fileID: 1045752647}
 --- !u!4 &2031910732
@@ -108600,6 +108490,7 @@ MonoBehaviour:
   eventData: {fileID: 11400000, guid: 3d350e94972f39a4aaf9f5250044fdc3, type: 2}
   prefab: {fileID: 8716544400575092732, guid: a6c3120f89ff2df42b1d29b8dc80db04, type: 3}
   spawnPoint: {fileID: 6084676497645529407}
+  particles: {fileID: 0}
 --- !u!4 &6084676497645529407
 Transform:
   m_ObjectHideFlags: 0

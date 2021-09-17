@@ -8,6 +8,9 @@ public class Portal : MonoBehaviour
     [SerializeField] Transform punto;
     Transform player;
 
+    [SerializeField] AudioSource audio;
+
+
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
@@ -18,6 +21,10 @@ public class Portal : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             other.transform.position = punto.position;
+            if (audio != null)
+            {
+                audio.Play();
+            }
         }
     }
 

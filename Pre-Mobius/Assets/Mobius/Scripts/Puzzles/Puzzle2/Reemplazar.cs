@@ -10,6 +10,9 @@ public class Reemplazar : MonoBehaviour,IInteractable
     [SerializeField] Items itemRequerido;
     [SerializeField] Items itemADar;
 
+    [SerializeField] AudioSource audio;
+
+
     Inventario inventory;
 
     GameManager gm;
@@ -29,6 +32,10 @@ public class Reemplazar : MonoBehaviour,IInteractable
             Debug.Log("Se destruye");
             ofrendaReal.SetActive(true);
             Debug.Log("Se activa");
+            if (audio != null)
+            {
+                audio.Play();
+            }
             this.gameObject.GetComponent<BoxCollider>().enabled = false;
             Debug.Log("Se desactiva");
             gm.puzzleFinished(1);

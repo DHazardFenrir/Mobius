@@ -18,6 +18,9 @@ public class UsarPocion : MonoBehaviour, IInteractable
 
     Inventario inventory;
 
+    [SerializeField] AudioSource audio;
+
+
     private void Start()
     {
         lM = FindObjectOfType<LightingManager>();
@@ -30,8 +33,11 @@ public class UsarPocion : MonoBehaviour, IInteractable
     {
         Debug.Log("ActivarEfecto");
         efectoActivo = true;
-
-        for(int i=0;i<runas.Length;i++)
+        if (audio != null)
+        {
+            audio.Play();
+        }
+        for (int i=0;i<runas.Length;i++)
         {
             runas[i].enabled=true;
         }
