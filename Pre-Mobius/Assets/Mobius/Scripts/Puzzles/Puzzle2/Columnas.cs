@@ -16,7 +16,6 @@ public class Columnas : MonoBehaviour, IInteractable
 
     [SerializeField] AudioSource audio;
 
-
     private void Start()
     {
         pocion = FindObjectOfType<UsarPocion>();

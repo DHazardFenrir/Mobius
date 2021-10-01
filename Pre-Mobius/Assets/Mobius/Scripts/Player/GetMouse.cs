@@ -23,7 +23,7 @@ public class GetMouse : MonoBehaviour
        
        
         isTalking(conversantIsActive);
-        Debug.Log(conversantIsActive);
+        //Debug.Log(conversantIsActive);
     }
 
     public void isTalking(bool mouse)

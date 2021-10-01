@@ -34,9 +34,7 @@ public class ItemToPick : MonoBehaviour, IInteractable
     {
         if (inventario.inventory.Contains(item))
         {
-            Debug.Log("1");
             Destroy(this.gameObject);
-            Debug.Log("2");
         }
     }
 

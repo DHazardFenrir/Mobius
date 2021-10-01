@@ -49,7 +49,6 @@ public class Evento : MonoBehaviour
     }
 
 
-
      void DiaryEntry()
     {
         diary.textEvent.text = eventData.entradaDelDiario;

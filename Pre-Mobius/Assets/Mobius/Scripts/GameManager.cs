@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public bool isPaused { get; private set; } = false;
     [SerializeField] GameObject pauseMenu;
     public bool onOtherScreen;
-
 
     [SerializeField] bool[] puzzle;
 
@@ -30,6 +30,12 @@ public class GameManager : MonoBehaviour
         }
 
     }
+
+    private void Start()
+    {
+        
+    }
+
     #region Pausa
     void Pause()
     {
@@ -92,9 +98,30 @@ public class GameManager : MonoBehaviour
 
     #endregion
 
-    public void DestroyItem(GameObject itemToDestroy)
+
+    public GameObject itemToDestroy;
+    public void DestroyItem()
     {
+        if(itemToDestroy!=null)
+        {
         Destroy(itemToDestroy);
+        Debug.Log("ItemDestroyed");
+        }
+    }
+
+    public Text descriptionText;
+    [SerializeField] GameObject inspectCanvas;
+    [SerializeField] GameObject inventoryCanvas;
+    [SerializeField] GameObject inspectCamera;
+
+    public void Back()
+    {
+        descriptionText.text = " ";
+        inspectCanvas.SetActive(false);
+        inspectCamera.GetComponent<Camera>().enabled = false;
+        inventoryCanvas.SetActive(true);
+
+
     }
 
 }
