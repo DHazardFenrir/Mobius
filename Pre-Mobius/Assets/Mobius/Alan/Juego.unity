@@ -15,7 +15,7 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 0
-  m_FogColor: {r: 0.041422494, g: 0.041422494, b: 0.041422494, a: 1}
+  m_FogColor: {r: 0.03773582, g: 0.03773582, b: 0.03773582, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.03
   m_LinearFogStart: 0
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0049123764, g: 0.0042505376, b: 0.000007943884, a: 1}
+  m_IndirectSpecularColor: {r: 0.0049119904, g: 0.0042498223, b: 0.000007942682, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -33137,7 +33137,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 9f8324f7a6bbcbb4490def027325d502, type: 2}
+      objectReference: {fileID: 2100000, guid: 539d4564ea9c3cc42b066b43278e3ba2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2669cf9ee8cba5f47b8a1b4d0f5dabfa, type: 3}
 --- !u!4 &369213461 stripped
@@ -79218,7 +79218,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1470614694}
-  m_LocalRotation: {x: -0.060324293, y: 0.71901375, z: 0.68950933, w: 0.062905595}
+  m_LocalRotation: {x: -0.061628457, y: 0.70441604, z: 0.70441604, w: 0.061628457}
   m_LocalPosition: {x: 17.47897, y: 30.402845, z: -17.937897}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -92081,7 +92081,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DirectionalLight: {fileID: 1470614695}
   Preset: {fileID: 11400000, guid: 90c3c66ae35e3b840be125e2619555e4, type: 2}
-  TimeOfDay: 4
+  TimeOfDay: 0
   playerSpawn: {fileID: 207365360}
   loopLight: {fileID: 1045752647}
 --- !u!4 &2031910732
