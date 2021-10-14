@@ -14,6 +14,8 @@ public class ItemToPick : MonoBehaviour, IInteractable
     [SerializeField] LayerMask itemMask;
     RaycastHit hit;
 
+    [SerializeField]Mesh myMesh;
+
     private void Awake()
     {
 
@@ -25,6 +27,7 @@ public class ItemToPick : MonoBehaviour, IInteractable
 
         inventario = FindObjectOfType<Inventario>().GetComponent<Inventario>();
         check();
+        //thisMesh = GetComponentInChildren<MeshFilter>();
     }
 
     
@@ -36,7 +39,7 @@ public class ItemToPick : MonoBehaviour, IInteractable
             Destroy(this.gameObject);
         }
     }
-
+    
 
     public void Interact()
     {
@@ -53,7 +56,9 @@ public class ItemToPick : MonoBehaviour, IInteractable
             Debug.Log("Did Hit");
             inventario.inventory.Add(item);
             GameObject particulas = Instantiate(particles, transform.position, transform.rotation);
-            particulas.GetComponent<ParticleSystem>().GetComponent<ParticleSystemRenderer>().mesh = this.gameObject.GetComponentInChildren<MeshFilter>().mesh;
+            var sh = particulas.GetComponent<ParticleSystem>().shape;
+            sh.shapeType = ParticleSystemShapeType.Mesh;
+            sh.mesh = myMesh;
             particulas.SetActive(true);
             particulas.GetComponent<ParticleSystem>().Play();
             Destroy(particulas, 2f);
