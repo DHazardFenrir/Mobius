@@ -13,11 +13,13 @@ namespace DialogueSystem.AIDialogue
         [SerializeField] string conversantName;
         PlayerConversant dialogueIsFinished;
         int i;
-       
-        
+        [SerializeField]private LightingManager timeDialogues;
+   
         private void Awake()
         {
             dialogueIsFinished = GameObject.FindObjectOfType<PlayerConversant>();
+            timeDialogues = GameObject.FindObjectOfType<LightingManager>();
+           
         }
 
         public void Interact()
