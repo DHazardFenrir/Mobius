@@ -5,6 +5,7 @@ using UnityEngine;
 public class ColocarOfrenda : MonoBehaviour, IInteractable
 {
     [SerializeField] Items itemRequerido;
+    [SerializeField] GameObject hozDemeter;
     [SerializeField] Transform ofrendaSpawn;
     Inventario inventory;
 
@@ -21,7 +22,7 @@ public class ColocarOfrenda : MonoBehaviour, IInteractable
     {
         if(inventory.inventory.Contains(itemRequerido))
         {
-            Instantiate(itemRequerido.itemPrefab, ofrendaSpawn.position, ofrendaSpawn.rotation);
+            Instantiate(hozDemeter, ofrendaSpawn.position, ofrendaSpawn.rotation);
             gm.puzzleFinished(0);
         }
     }

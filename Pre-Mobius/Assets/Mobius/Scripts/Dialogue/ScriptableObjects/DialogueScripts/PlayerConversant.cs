@@ -24,6 +24,7 @@ namespace DialogueSystem.API
         private void Awake()
         {
             mouse = GetComponent<GetMouse>();
+           
         }
 
 

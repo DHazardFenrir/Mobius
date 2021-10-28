@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public bool onOtherScreen;
 
     [SerializeField] bool[] puzzle;
+    [SerializeField] GameObject luzFinal;
 
 
     void Update()
@@ -26,6 +27,7 @@ public class GameManager : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.L))
         {
+            luzFinal.SetActive(true);
             GameOver();
         }
 
@@ -79,14 +81,15 @@ public class GameManager : MonoBehaviour
     {
         if(puzzle[0] && puzzle[1] && puzzle[2])
         {
-            StartCoroutine(GameOverScreen());
+            luzFinal.SetActive(true);
+            //StartCoroutine(GameOverScreen());
         }
     }
 
-    IEnumerator GameOverScreen()
+    public IEnumerator GameOverScreen()
     {
-        gameOverCanvasGroup.DOFade(1f, 2f);
-        yield return new WaitForSeconds(0.5f);
+        gameOverCanvasGroup.DOFade(1f, 8f);
+        yield return new WaitForSeconds(8f);
         SceneManager.LoadScene(0);
     }
 

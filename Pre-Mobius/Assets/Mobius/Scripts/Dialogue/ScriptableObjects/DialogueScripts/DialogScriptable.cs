@@ -12,12 +12,18 @@ namespace DialogueSystem
     [CreateAssetMenu(fileName = "New Dialogue", menuName = "NPC Dialogues", order = 1)]
     public class DialogScriptable : ScriptableObject, ISerializationCallbackReceiver
     {
-        [SerializeField] List<DialogueNode> nodes = new List<DialogueNode>();
+        [SerializeField] private List<DialogueNode> nodes = new List<DialogueNode>();
+       
         [SerializeField] Vector2 newNodeOffset = new Vector2(250, 0);
 
         Dictionary<string, DialogueNode> nodeLookup = new Dictionary<string, DialogueNode>();
 
         private bool isLazyDictionaryInitialized;
+        [Range(0,600)] public float maxTime;
+        [Range(0,600)] public float minTime;
+       
+
+       
 
         private void Awake()
         {

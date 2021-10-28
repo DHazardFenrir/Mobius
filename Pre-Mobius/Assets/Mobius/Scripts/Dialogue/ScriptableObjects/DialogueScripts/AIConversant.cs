@@ -13,11 +13,13 @@ namespace DialogueSystem.AIDialogue
         [SerializeField] string conversantName;
         PlayerConversant dialogueIsFinished;
         int i;
-       
-        
+        [SerializeField]private LightingManager lightManager;
+   
         private void Awake()
         {
             dialogueIsFinished = GameObject.FindObjectOfType<PlayerConversant>();
+            lightManager = GameObject.FindObjectOfType<LightingManager>();
+           
         }
 
         public void Interact()
@@ -35,8 +37,8 @@ namespace DialogueSystem.AIDialogue
 
 
 
-
-                StartCoroutine(NextDialogue());
+             StartCoroutine(NextDialogue());
+                
          
                
          }
@@ -53,18 +55,25 @@ namespace DialogueSystem.AIDialogue
         IEnumerator NextDialogue()
         {
 
-            if(i <= dialogue.Length - 1)
+            for (int i = 0; i <= dialogue.Length-1; i++)
             {
-                GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerConversant>().StartDialogue(this, dialogue[i]);
-                i++;
-            }
-            if(i > dialogue.Length - 1)
-            {
+                if (lightManager.timeToGet >= dialogue[i].minTime)
+                {
+                    
+                        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerConversant>().StartDialogue(this, dialogue[i]);
+                }
+                
+                if (lightManager.timeToGet >= dialogue[i].maxTime)
+                {
 
-                i = dialogue.Length - 1;
-                GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerConversant>().StartDialogue(this, dialogue[i]);
-               
+                    break;
+                }
             }
+            
+            
+          
+            
+            
 
           
 
@@ -90,6 +99,30 @@ namespace DialogueSystem.AIDialogue
 
 
 
+        }
+
+        public void CheckTime()
+        {
+            foreach (var container in dialogue)
+            {
+                //if (lightManager.timeToGet >= container.minTime)
+                //{
+                    //StartCoroutine(NextDialogue());
+                //}
+                
+                if(i <= dialogue.Length - 1)
+                {
+                    GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerConversant>().StartDialogue(this, dialogue[i]);
+                    i++;
+                }
+                if(i > dialogue.Length - 1)
+                {
+
+                    i = dialogue.Length - 1;
+                    GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerConversant>().StartDialogue(this, dialogue[i]);
+               
+                }
+            }
         }
     }
 }
