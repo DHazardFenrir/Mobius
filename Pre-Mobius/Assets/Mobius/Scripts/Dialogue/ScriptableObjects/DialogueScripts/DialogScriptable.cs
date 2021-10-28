@@ -19,6 +19,8 @@ namespace DialogueSystem
         Dictionary<string, DialogueNode> nodeLookup = new Dictionary<string, DialogueNode>();
 
         private bool isLazyDictionaryInitialized;
+        [Range(0,600)] public float maxTime;
+        [Range(0,600)] public float minTime;
        
 
        

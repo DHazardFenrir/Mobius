@@ -18,12 +18,13 @@ namespace DialogueSystem.API
         [SerializeField] bool isChoosing = false;
         AIConversant currentConversant = null;
         GetMouse mouse;
-     
+        
         public bool canAdvance;
 
         private void Awake()
         {
             mouse = GetComponent<GetMouse>();
+           
         }
 
 
