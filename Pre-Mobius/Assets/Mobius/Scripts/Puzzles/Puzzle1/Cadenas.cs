@@ -4,16 +4,12 @@ using UnityEngine;
 
 public class Cadenas : MonoBehaviour, IInteractable
 {
-    [SerializeField] GameObject inundacion;
-    [SerializeField] GameObject presaVieja;
-    [SerializeField] GameObject nuevaPresa;
+    [SerializeField] Animator anim;
     [SerializeField] GameObject altar;
 
      void Start()
     {
-        inundacion = GameObject.FindGameObjectWithTag("Inundacion");
-        presaVieja = GameObject.FindGameObjectWithTag("PresaRota");
-        nuevaPresa = GameObject.FindGameObjectWithTag("PresaCompleta");
+        
     }
     public void Interact()
     {
@@ -23,10 +19,8 @@ public class Cadenas : MonoBehaviour, IInteractable
     void DryLake()
     {
         Debug.Log("enter");
-        inundacion.SetActive(false);
-        presaVieja.SetActive(false);
+        anim.SetBool("Active", false);
         altar.GetComponent<BoxCollider>().enabled = true;
-        nuevaPresa.SetActive(true);
         Debug.Log("Dry Lake");
     }
 }
