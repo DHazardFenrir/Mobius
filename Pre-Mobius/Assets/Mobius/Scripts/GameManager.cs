@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
             Pause();
         }
 
-        if(Input.GetKeyDown(KeyCode.L))
+        if (Input.GetKeyDown(KeyCode.L))
         {
             luzFinal.SetActive(true);
             GameOver();
