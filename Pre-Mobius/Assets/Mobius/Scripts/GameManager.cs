@@ -25,11 +25,11 @@ public class GameManager : MonoBehaviour
             Pause();
         }
 
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            luzFinal.SetActive(true);
-            GameOver();
-        }
+        //if (Input.GetKeyDown(KeyCode.L))
+        //{
+        //    luzFinal.SetActive(true);
+        //    GameOver();
+        //}
 
     }
 
