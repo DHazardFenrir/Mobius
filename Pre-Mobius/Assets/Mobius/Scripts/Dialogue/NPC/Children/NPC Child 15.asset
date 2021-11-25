@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 21fdeab2-f006-4b3e-928b-862151a21da3
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: I should go for the medicine... but I feel tired too...
+  text: "Deber\xEDa ir por medicina... pero yo tambi\xE9n me siento bastante cansado..."
   children: []
   rect:
     serializedVersion: 2
@@ -36,13 +36,14 @@ MonoBehaviour:
   m_Name: 1ad5203b-9394-4533-8b62-46bf59e08aea
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'I think my dad is ill. He says he''s feeling tired, and he is never tired. '
+  text: "Creo que pap\xE1 est\xE1 enfermo. Dice que est\xE1 cansado... \xA1pero el
+    nunca se siente cansado! "
   children:
   - 21fdeab2-f006-4b3e-928b-862151a21da3
   rect:
     serializedVersion: 2
     x: 0
-    y: 0
+    y: -2
     width: 200
     height: 100
   onExitAction: 
@@ -63,3 +64,5 @@ MonoBehaviour:
   - {fileID: -2290181190605616509}
   - {fileID: -3406965278789061401}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0

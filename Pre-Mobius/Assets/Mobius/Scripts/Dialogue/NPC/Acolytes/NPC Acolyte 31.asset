@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: ceaa7acc-4be0-47bd-a533-e7116f92eafe
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: The fire looks more vicious, almost black. We didn't do anything to anger
-    the Great Goddess Hestia...
+  text: "El fuego se ha vuelto casi negro, m\xE1s cruel ante nuestra presecia. No
+    entiendo... no hemos hecho nada para enfurecer a la gran diosa Hestia..."
   children: []
   rect:
     serializedVersion: 2
-    x: 250
-    y: 0
+    x: 249
+    y: 37
     width: 200
     height: 100
   onExitAction: 
@@ -37,9 +37,10 @@ MonoBehaviour:
   m_Name: 500c6187-d831-4628-839a-45ff4d315147
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: There was a time when the fire was more warm.  Like it had life in it...
-    It was more red, too. Now everytime I see it dance in the plate of ages, I cannot
-    feel that this isn't right..
+  text: "Hubo un tiempo donde el fuego se sent\xEDa m\xE1s c\xE1lido, vas vivo y
+    tambi\xE9n se ve\xEDa m\xE1s rojo. Sin embargo, ahora que lo veo danzar en el
+    gran plat\xF3 de las edades, no siento nada de su calor; se ve fr\xEDo, apagado.
+    Esto no est\xE1 bien..."
   children:
   - ceaa7acc-4be0-47bd-a533-e7116f92eafe
   rect:
@@ -66,3 +67,5 @@ MonoBehaviour:
   - {fileID: -4162697596529977416}
   - {fileID: -7093493566742210381}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0

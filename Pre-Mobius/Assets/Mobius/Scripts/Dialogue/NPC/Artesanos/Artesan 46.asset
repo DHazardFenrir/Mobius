@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: c2f78f78-55a5-4add-bfc1-6f99e4309e50
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: The lady next door asked me for some collars, pots and so on for this afternoon.
-    Why don't you come back later?
+  text: "La mujer de al lado me hizo varios encargos; unso collares y unas cuantas
+    vasijas. \xBFPor qu\xE9 no vienes mejor m\xE1s tarde?"
   children:
   - 1a75a140-eebe-46f1-84f9-91634f4d5d1d
   rect:
@@ -38,7 +38,7 @@ MonoBehaviour:
   m_Name: f1c48e8e-09f1-4504-9f05-c1597c9861a8
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Have you seen something strange lately?
+  text: "\xBFHas visto algo extra\xF1o \xFAltimamente?"
   children:
   - d5ec8b20-259f-41ae-9863-40a58b34920a
   rect:
@@ -62,8 +62,8 @@ MonoBehaviour:
   m_Name: c87cdca7-ce44-48b2-bbcc-83a0b3129a6b
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Hey Syril! What brings you here? Wanna buy some pottery or jewelry for your
-    mother? I think she would like that a lot!
+  text: "\xA1Hola Syril! \xBFQu\xE9 te trae por ac\xE1? Oye, \xBFquisieras llevarle
+    algo de c\xE9ramica o joyas a tu madre? Creo que eso le gustar\xEDa mucho. "
   children:
   - 5ea135bf-0bc4-4caf-ad31-6b74a4fd8910
   rect:
@@ -87,7 +87,7 @@ MonoBehaviour:
   m_Name: 5ea135bf-0bc4-4caf-ad31-6b74a4fd8910
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Eh... Look
+  text: Eh, no, no creo
   children: []
   rect:
     serializedVersion: 2
@@ -110,8 +110,8 @@ MonoBehaviour:
   m_Name: 9565df14-a367-4bf4-b6a2-e4d6b5cb1c54
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Pst! Say no more, boy! But you will have to excuse me, right now I'm kinda
-    busy!
+  text: "\xA1Pst! No digas m\xE1s, muchacho, pero por el momento tendr\xE1s que disculparme.
+    Estoy algo ocupado. "
   children:
   - 5ea135bf-0bc4-4caf-ad31-6b74a4fd8910
   - c2f78f78-55a5-4add-bfc1-6f99e4309e50
@@ -144,7 +144,10 @@ MonoBehaviour:
   - {fileID: 3694486677146940707}
   - {fileID: -6979131032289184435}
   - {fileID: 2729351548220630914}
+  - {fileID: 9023918748211308930}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
 --- !u!114 &2729351548220630914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,10 +161,9 @@ MonoBehaviour:
   m_Name: d5ec8b20-259f-41ae-9863-40a58b34920a
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Strange? No! Even if there was something strange going on right now, I''m
-    too busy to even mind that. Let the Hight Priest and their Acolytes deal with
-    that stuff, Syril. Don''t bother yourself. '
-  children: []
+  text: "\xBFAlgo extra\xF1o? \xA1Jajaja! \xA1Claro que no! "
+  children:
+  - 580af6eb-384a-4ec4-8496-8fa9fb234bb9
   rect:
     serializedVersion: 2
     x: 1804
@@ -183,7 +185,7 @@ MonoBehaviour:
   m_Name: 1a75a140-eebe-46f1-84f9-91634f4d5d1d
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: 'Sure but! I just want to make you a question. '
+  text: "\xA1Claro, pero! Quisiera solamente hacerte una pregunta antes de irme. "
   children:
   - c7630635-9618-4ece-ac71-f7ce81b4995c
   rect:
@@ -207,13 +209,39 @@ MonoBehaviour:
   m_Name: c7630635-9618-4ece-ac71-f7ce81b4995c
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Shoot boy I don't have all day.
+  text: "\xA1Vamos, vamos pregunta Syril! \xA1No tengo todo el d\xEDa!"
   children:
   - f1c48e8e-09f1-4504-9f05-c1597c9861a8
   rect:
     serializedVersion: 2
     x: 1218
     y: 41
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &9023918748211308930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 580af6eb-384a-4ec4-8496-8fa9fb234bb9
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Este pueblo es tan tranquilo y aburrido como siempre. Incluso aunque estuviera
+    pasando algo extra\xF1o, estoy demasiado ocupado c\xF3mo para darme cuenta. No
+    te preocupes por eso, Syril, d\xE9jale ese trabajo a los Grandes Sacerdotes y
+    sus Ac\xF3litos."
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2054
+    y: 110
     width: 200
     height: 100
   onExitAction: 

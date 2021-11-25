@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: aea8cd6e-56a8-4c0d-8d3d-9255237483af
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Just kidding! I already have one! Have you meet Claus?
+  text: "\xA1S\xF3lo bromeo! Ya tengo uno, no te preocupes. \xBFConoces a Claus?"
   children:
   - 6d7b9f68-915f-40c7-bad9-9140abf26459
   rect:
@@ -37,13 +37,13 @@ MonoBehaviour:
   m_Name: 46d4615d-6498-4ce8-834a-d821b119d0a0
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: 'Not yet! '
+  text: "\xA1A\xFAn no, Acis! "
   children:
   - aea8cd6e-56a8-4c0d-8d3d-9255237483af
   rect:
     serializedVersion: 2
     x: 238
-    y: -1
+    y: 0
     width: 200
     height: 100
   onExitAction: 
@@ -120,6 +120,8 @@ MonoBehaviour:
   - {fileID: -5770778053375170426}
   - {fileID: -1134851158883837761}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
 --- !u!114 &5122175850989784873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,7 +135,7 @@ MonoBehaviour:
   m_Name: 6d7b9f68-915f-40c7-bad9-9140abf26459
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: I remember some Claus before I departed!
+  text: "\xA1Creo que s\xED! O al menos recuerdo a un Claus antes de marcharme. "
   children:
   - 97fbb751-2da5-4b27-b98c-d05b13bc560a
   rect:
@@ -157,7 +159,8 @@ MonoBehaviour:
   m_Name: a0bd8537-0975-46a2-9f6d-619467a5faa8
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Hey Syril! Haven''t seen you in a whille? Ready to be my apprentice? Hahahahaahaha! '
+  text: "\xA1Syril! Hace tiempo que no te ve\xEDa. \xBFListo para ser mi aprendiz?
+    \xA1Jajajajaja!"
   children:
   - 46d4615d-6498-4ce8-834a-d821b119d0a0
   rect:

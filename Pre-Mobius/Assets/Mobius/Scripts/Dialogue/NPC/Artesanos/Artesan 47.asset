@@ -1,5 +1,29 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9042930119372079491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: ae17bd0f-df6e-4087-a7d6-b56422de7117
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "\xBFPor qu\xE9 esta preciosa vista no me calma y levanta mi esp\xEDritu
+    como antes? \xBFPor qu\xE9 todo se ve gris ahora, ante mis ojos, si nada ha cambiado?"
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1401
+    y: 112
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
 --- !u!114 &-5464104178259974742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13,7 +37,7 @@ MonoBehaviour:
   m_Name: f148365c-48fe-44d5-9886-3024dcc0d249
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Everything is the same...
+  text: Pero nada ha cambiado...
   children:
   - 95ccb954-6f85-4923-8658-ad705f4b3d69
   rect:
@@ -37,8 +61,8 @@ MonoBehaviour:
   m_Name: d164dc17-88c9-4147-8efc-5540d96f4606
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'But... instead of inspiration, a feeling of dread and nostalgia washes over
-    me. '
+  text: "Pero en lugaar de conseguir inspiraci\xF3n, una sensaci\xF3n de incertidumbre
+    y nostalgia me carcome. "
   children:
   - 6460cfe6-47e4-454b-8022-83a436cc56ed
   rect:
@@ -62,10 +86,9 @@ MonoBehaviour:
   m_Name: 95ccb954-6f85-4923-8658-ad705f4b3d69
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Yes.. everything it's the same... so why I don't feel inspired? Why does
-    this place feel like it has darkned my mood when it used to bring me so much
-    joy and lift my spirits?
-  children: []
+  text: "S\xED... nada ha cambiado... \xBFEntonces porque no me siento inspirado?"
+  children:
+  - ae17bd0f-df6e-4087-a7d6-b56422de7117
   rect:
     serializedVersion: 2
     x: 1151
@@ -92,7 +115,10 @@ MonoBehaviour:
   - {fileID: -3368396886656506108}
   - {fileID: -5464104178259974742}
   - {fileID: -1640127208870319371}
+  - {fileID: -9042930119372079491}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
 --- !u!114 &353309117660043470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,8 +132,7 @@ MonoBehaviour:
   m_Name: 4153deb4-69c1-481b-9976-06f73f727a26
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: I came here to gather some inspiratior for my art piecesI came here to gather
-    some inspiration for my art pieces...
+  text: "Vine aqu\xED a inspirarme. "
   children:
   - d164dc17-88c9-4147-8efc-5540d96f4606
   rect:
@@ -131,8 +156,8 @@ MonoBehaviour:
   m_Name: 6460cfe6-47e4-454b-8022-83a436cc56ed
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'I feel sad, this beach used to be a beautiful place. Nothing has changed,
-    I can see that... '
+  text: "Me siento desconsolado y triste. Este playa siempre ha sido hermosa y con
+    el paso de a\xF1os nunca ha cambiado. Lo s\xE9, puedo verlo. "
   children:
   - f148365c-48fe-44d5-9886-3024dcc0d249
   rect:

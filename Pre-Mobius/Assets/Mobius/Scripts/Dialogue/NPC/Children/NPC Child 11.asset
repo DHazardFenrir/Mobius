@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: 83870e02-f02e-4f52-9c5d-527ff3cae397
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Hello! '
+  text: "\xA1Hola!"
   children:
   - 85bf211e-8677-4511-8557-21ec514ded2b
   rect:
     serializedVersion: 2
-    x: 1
-    y: 0
+    x: 14
+    y: 26
     width: 200
     height: 100
   onExitAction: 
@@ -37,7 +37,7 @@ MonoBehaviour:
   m_Name: ad998870-6263-468f-a680-36a21e93747f
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: I don't know this Syril person.
+  text: No, no conozco a este tal "Syril".
   children:
   - 52aaa8ee-def1-440c-8dd3-54a3b23803c6
   rect:
@@ -61,13 +61,13 @@ MonoBehaviour:
   m_Name: c0cdebd0-ae1d-4177-b7ac-e0d362fa9295
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Syril? Did you know him?
+  text: "\xBFSyril? \xBFLo conoces, ni\xF1o?"
   children:
   - ad998870-6263-468f-a680-36a21e93747f
   rect:
     serializedVersion: 2
     x: 549
-    y: 93
+    y: 137
     width: 200
     height: 100
   onExitAction: 
@@ -91,6 +91,8 @@ MonoBehaviour:
   - {fileID: -8582694462406488201}
   - {fileID: 7333380973250939605}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
 --- !u!114 &5999952022193324083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,9 +106,9 @@ MonoBehaviour:
   m_Name: 85bf211e-8677-4511-8557-21ec514ded2b
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'My dad works very hard from morning until sunset. He says that since Syril
-    left there are not many good helpers around. I think that is the reason he is
-    in a bad mood. '
+  text: "Mi padre trabaja muy duro desde el amanecer hasta el anochecer. Dice que
+    desde que se fue un tal Syril, no hay buenos ayudantes por aqu\xED. Creo que
+    esa es una de las razones por la que siempre est\xE1 de malhumor."
   children:
   - c0cdebd0-ae1d-4177-b7ac-e0d362fa9295
   rect:
@@ -130,7 +132,8 @@ MonoBehaviour:
   m_Name: 52aaa8ee-def1-440c-8dd3-54a3b23803c6
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'So I will try to help my dad so he can relax a little bit. '
+  text: 'Pero voy a intentar ayudar a mi padre en todo lo que pueda para que pueda
+    relajarse un poco.  '
   children: []
   rect:
     serializedVersion: 2

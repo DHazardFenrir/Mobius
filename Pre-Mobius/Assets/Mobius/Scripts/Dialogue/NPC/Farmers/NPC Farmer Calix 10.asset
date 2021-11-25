@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 6df26f00-e14b-4ba9-ae78-9dc820e4aa6e
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Not really...
+  text: No realmente...
   children:
   - 7108e094-4133-4cab-a279-65afafe96279
   rect:
@@ -37,8 +37,8 @@ MonoBehaviour:
   m_Name: 4e65de4b-0421-4a26-a258-1cf770ccf250
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'It was good to see you Syril! Take care, have a great day; this old man
-    is going to work for the day. '
+  text: "Fue bueno verte, Syril. Cu\xEDdate, este viejo ir\xE1 a trabajar por el
+    resto del d\xEDa. "
   children: []
   rect:
     serializedVersion: 2
@@ -61,9 +61,10 @@ MonoBehaviour:
   m_Name: 092f562d-e175-4243-ba88-14f141530e98
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'We do our offerings on time. Why would she be angry? Maybe I''m just too
-    old and this work isn''t for me anymore! But with no children that can relieve
-    me, I will do all I can to produce a better harvest. '
+  text: "Ofrecemos nuestras ofrendas a tiempo. \xBFPor qu\xE9 estar\xEDa enojada?
+    Quiz\xE1s simplemente ya estoy demasiado viejo, Syril y no tengo hijos que me
+    releven de mi labor. \xA1Pero har\xE9 todo lo que est\xE9 en mis manos para que
+    la siguiente cosecha sea mejor! "
   children:
   - b5f917bf-4020-47b1-a1bf-a7972e38f6b3
   rect:
@@ -87,8 +88,8 @@ MonoBehaviour:
   m_Name: 5e64f5cb-58ab-4a81-a53b-e505a60aee5f
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Mm... I haven''t been regarded with silence since this old town came to
-    be. It''s a little weird. Are you going deaf too? Hahahahaha. '
+  text: "Mm... nunca me ha recibido el silencio en la plaza desde que se fund\xF3
+    el pueblo. \xBFTe estar\xE1s volviendo sordo tu tambi\xE9n? \xA1Ja! "
   children:
   - 6df26f00-e14b-4ba9-ae78-9dc820e4aa6e
   rect:
@@ -123,6 +124,8 @@ MonoBehaviour:
   - {fileID: 7246163322995451234}
   - {fileID: -6826064506171801231}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
 --- !u!114 &2828158636370062893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,13 +139,15 @@ MonoBehaviour:
   m_Name: c128c648-7c8d-4ee9-85fe-d957d8198a23
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Winter is coming soon, and the harvest hasn't been too good this year. We
-    have to prepare now that we can! I have full faith in our goddess.
+  text: "El invierno se acerca y la cosecha pasada no fue muy buena que digamos.
+    \xA1Por eso debemos ser precavidos y aprovechar! Conf\xEDo en que la siguiente
+    cosecha ser\xE1 mucho mejor, s\xE9 que nuestra Diosa Demeter nos ayudar\xE1 con
+    eso. "
   children:
   - 4e58f138-9003-4add-9acb-142e09acf37e
   rect:
     serializedVersion: 2
-    x: 248
+    x: 247
     y: 92
     width: 200
     height: 100
@@ -161,7 +166,8 @@ MonoBehaviour:
   m_Name: b5f917bf-4020-47b1-a1bf-a7972e38f6b3
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Maybe I'm not young anymore, but I still have some tricks left in my sleeve!
+  text: "Quiz\xE1s ya no soy tan joven... \xA1Pero a\xFAn tengo varios trucos bajo
+    la manga! "
   children:
   - cbcaeb51-675b-402a-b471-74048d609d3d
   rect:
@@ -185,7 +191,8 @@ MonoBehaviour:
   m_Name: 4e58f138-9003-4add-9acb-142e09acf37e
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Why the harvest hasn't been good? Demeter is angry?
+  text: "\xBFPor qu\xE9 la cosecha no fue buena este a\xF1o? \xBFDemeter est\xE1
+    enojada acaso?"
   children:
   - 092f562d-e175-4243-ba88-14f141530e98
   rect:
@@ -209,8 +216,9 @@ MonoBehaviour:
   m_Name: 121c0f97-d41e-48a9-803c-83fb81ba2ea3
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Syril! What a handsome boy you have become. I was recollecting some grain
-    to seed in this season. '
+  text: "\xA1Oh Syril! Nada m\xE1s m\xEDrate. \xA1En que muchacho tan guarpo te has
+    convertido! Pero, como puedes ver, estoy algo ocupado, recogiendo un poco de
+    grano para sembrar. "
   children:
   - c128c648-7c8d-4ee9-85fe-d957d8198a23
   rect:
@@ -234,8 +242,9 @@ MonoBehaviour:
   m_Name: 7108e094-4133-4cab-a279-65afafe96279
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Hahahaha! Don''t worry. Take a little walk, maybe is just the town''s people
-    is reserving their energies for the party tomorrow. Don''t overthink it too much. '
+  text: "Je, no te preocupes. Camina un poco, quiz\xE1s la gente del pueblo est\xE9
+    reservando su energ\xEDa para el festival de ma\xF1ana. No le des demasiadas
+    vueltas. "
   children:
   - 4e65de4b-0421-4a26-a258-1cf770ccf250
   rect:
@@ -259,7 +268,8 @@ MonoBehaviour:
   m_Name: cbcaeb51-675b-402a-b471-74048d609d3d
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: The plaza has been very quiet since I returned, do you know why?
+  text: "La plaza ha estado bastante silenciosa desde que volv\xED. \xBFSabr\xE1s
+    la raz\xF3n de ello?"
   children:
   - 5e64f5cb-58ab-4a81-a53b-e505a60aee5f
   rect:
