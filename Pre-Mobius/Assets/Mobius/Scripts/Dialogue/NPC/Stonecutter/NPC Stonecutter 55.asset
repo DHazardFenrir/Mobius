@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 74ccdfcb-c36e-44fe-9640-6968cec38305
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Well, a little rest isn't bad after all!
+  text: "Bueno, \xA1un peque\xF1o descanso no viene nada mal! "
   children:
   - 892ca13b-fb9d-4e21-b560-63803bb359b9
   rect:
@@ -37,9 +37,9 @@ MonoBehaviour:
   m_Name: 0f0226f5-4e8d-404e-9c79-af4401db126c
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Well, if it isn''t Syrul, the pretty helper boy! You did not send a word
-    of your return!! If so we would have a great party with special wine... or did
-    you just arrive for the festival? '
+  text: "Miren nada m\xE1s qui\xE9n es \xA1Syril, nuestro lindo ayudante! No dijiste
+    una palabra de tu regreso. \xA1De haberlo sabido hubieramos hecho una fiesta
+    con vino especial! Aunque... no me digas... \xBFs\xF3lo regresaste por el festival? "
   children:
   - 74ccdfcb-c36e-44fe-9640-6968cec38305
   rect:
@@ -63,7 +63,7 @@ MonoBehaviour:
   m_Name: 892ca13b-fb9d-4e21-b560-63803bb359b9
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Ha! I knew it. '
+  text: "Ja, lo sab\xEDa. "
   children:
   - dac4f146-9710-4b35-9335-ace4dc3a46dd
   rect:
@@ -87,7 +87,7 @@ MonoBehaviour:
   m_Name: dac4f146-9710-4b35-9335-ace4dc3a46dd
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Talk to you later boy, we are kinda busy!
+  text: Hablamos luego, chico, estamos algo ocupados como puedes ver
   children: []
   rect:
     serializedVersion: 2
@@ -115,3 +115,5 @@ MonoBehaviour:
   - {fileID: -7894485751364779473}
   - {fileID: -4127403078475399147}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0

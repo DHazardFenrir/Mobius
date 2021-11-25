@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 3551a129-a9b4-4dbe-95d8-1c985e754547
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: I mean, why would they create us and let us be on our way. Do you think we
-    are just pet to them?
+  text: "Quiero decir, \xBFpor qu\xE9 nos crearon y nos dieron libre albredr\xEDo
+    para hacer lo que quisieramos? \xBFAcaso seremos como sus mascotas? "
   children:
   - f0fd838b-66f4-4f4f-8ae0-32d669c95e0e
   rect:
@@ -38,7 +38,7 @@ MonoBehaviour:
   m_Name: f0fd838b-66f4-4f4f-8ae0-32d669c95e0e
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: 'I think its a little bit earlier to be drunk. '
+  text: 'Creo que es algo temprano para estar borracho. '
   children: []
   rect:
     serializedVersion: 2
@@ -65,6 +65,8 @@ MonoBehaviour:
   - {fileID: -7266495804207469323}
   - {fileID: -3340577497514244896}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
 --- !u!114 &3823724138893049242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,7 +80,8 @@ MonoBehaviour:
   m_Name: 72684cbe-5aae-49a3-b019-3ee688f6ce1e
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Hey Syril, have you ever wondedred, why the gods let us live? '
+  text: "Oye Syril. \xBFAlguna vez te has preguntado porque los Dioses nos dejan
+    vivir?"
   children:
   - 3551a129-a9b4-4dbe-95d8-1c985e754547
   rect:

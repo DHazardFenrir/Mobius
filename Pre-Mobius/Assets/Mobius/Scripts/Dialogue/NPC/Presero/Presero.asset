@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 9d5c7a44-4f4a-4589-8fec-d13e0a325701
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Maybe in the river? I cannot remeber...
+  text: "\xBFO se me habr\xE1 ca\xEDdo al r\xEDo? Eh... Eh... no puedo recordar..."
   children: []
   rect:
     serializedVersion: 2
@@ -36,7 +36,7 @@ MonoBehaviour:
   m_Name: 0f540375-d751-4ca8-b060-0b21ea93519a
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Uh... Uh... Uh...
+  text: 'Eh... Eh.. Eh... '
   children:
   - f99f00bb-8173-41f3-8c3d-68c39e0a8d75
   rect:
@@ -65,6 +65,8 @@ MonoBehaviour:
   - {fileID: 7666384077787162350}
   - {fileID: -6466313220114264379}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
 --- !u!114 &1330502898017311516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,7 +80,7 @@ MonoBehaviour:
   m_Name: bc4eae77-ca94-409f-bfb2-3631d7e85ee3
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: I... I must close the gates of the dam...
+  text: 'Uh.. Uh.. Yo... debo cerrar las puertas de la presa.. '
   children:
   - 0f540375-d751-4ca8-b060-0b21ea93519a
   rect:
@@ -125,8 +127,8 @@ MonoBehaviour:
   m_Name: f99f00bb-8173-41f3-8c3d-68c39e0a8d75
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: I can't find the key!! Why I can't find the key? I must have dropped it my
-    way to the sages house...
+  text: "\xA1No encuentro la llave! \xBFPor qu\xE9 no encuentro la llave? \xBFLa
+    habr\xE9 dejado en la Casa de los Sabios?"
   children:
   - 9d5c7a44-4f4a-4589-8fec-d13e0a325701
   rect:

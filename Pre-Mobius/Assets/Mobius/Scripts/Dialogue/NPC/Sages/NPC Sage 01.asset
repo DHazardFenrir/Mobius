@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: 398cf269-7fcb-44be-81fa-3cbd8fc91228
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: You look younger. Hey, in these years, something happend?
+  text: "Te ves m\xE1s joven, en serio. Dime, Bazyli, \xBFha pasado algo en estos
+    a\xF1os donde no estuve? "
   children:
   - ede6ea65-edae-4a3c-bdc0-c4221e748e10
   rect:
@@ -37,7 +38,7 @@ MonoBehaviour:
   m_Name: ede6ea65-edae-4a3c-bdc0-c4221e748e10
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'What happened you ask? What is your meaning? '
+  text: "\xBFQu\xE9 ha pasado? \xBFA que te refieres? "
   children:
   - cad0cee9-6243-41e6-9f01-5640018bb07b
   rect:
@@ -61,8 +62,7 @@ MonoBehaviour:
   m_Name: 53d6cf59-e03a-4d53-842b-8a5c9b90f6b3
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: But you know? I do feel something is amiss, recently the crystal in the plaza
-    just sunk. Out of nowhere it just stopped floating and crashed.
+  text: "Pero, \xBFsabes? Siento que algo no cuadra... "
   children:
   - 663c03d6-acc4-4102-a5c4-98ef84ca276b
   rect:
@@ -86,8 +86,8 @@ MonoBehaviour:
   m_Name: 663c03d6-acc4-4102-a5c4-98ef84ca276b
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: It is kind of troubling... like a bad omen. But maybe I'm just being too
-    paranoid?
+  text: "Es  una sensaci\xF3n extra\xF1a... como si viniera un mal presagio.. Pero
+    quiz\xE1s s\xF3lo estoy demasiado paranoico."
   children: []
   rect:
     serializedVersion: 2
@@ -110,8 +110,8 @@ MonoBehaviour:
   m_Name: d049c00c-2763-44b3-94c6-f90e87c615de
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Hey Syril! What a surprise, I did not know you were back in town. I'm glad
-    to see you again after these couple of years. You look great!
+  text: "\xA1Oh Syril! No sab\xEDa que hab\xEDas vuelto, es bueno verte despu\xE9s
+    de estos a\xF1os. \xA1Te ves muy bien! "
   children:
   - 37179cf7-a728-4336-8f10-d939285c399b
   rect:
@@ -145,6 +145,8 @@ MonoBehaviour:
   - {fileID: -6097038345623718291}
   - {fileID: -2039840762090287494}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
 --- !u!114 &4705271383613194584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,7 +160,7 @@ MonoBehaviour:
   m_Name: c5f7f397-978c-4f7b-b0c4-8052ebe7cf09
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Hahaha! No, nothing has happend. The same old song as it always is. '
+  text: "Jajaja, no, nada. Todo est\xE1 igual que siempre. "
   children:
   - 53d6cf59-e03a-4d53-842b-8a5c9b90f6b3
   rect:
@@ -182,7 +184,7 @@ MonoBehaviour:
   m_Name: cad0cee9-6243-41e6-9f01-5640018bb07b
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: You know, something changed in the town while I was gone?
+  text: "Ah, tu sabes. \xBFAlgo cambi\xF3 en el pueblo mientras no estuve? "
   children:
   - c5f7f397-978c-4f7b-b0c4-8052ebe7cf09
   rect:
@@ -206,7 +208,7 @@ MonoBehaviour:
   m_Name: 37179cf7-a728-4336-8f10-d939285c399b
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Surely not as great as you!
+  text: "\xA1No tan bien como tu!"
   children:
   - de97abb8-cf62-4764-8f55-a3242e39184a
   rect:
@@ -230,7 +232,7 @@ MonoBehaviour:
   m_Name: de97abb8-cf62-4764-8f55-a3242e39184a
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Hahahaha! Flatterer. '
+  text: 'Jaja, adulador. '
   children:
   - 398cf269-7fcb-44be-81fa-3cbd8fc91228
   rect:

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 380391c0-092c-4d12-b5f9-8cf52698fb7b
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Syril! How have you been, kid? We kinda miss ya at the quarry y'know? The
-    guys will be so excited when hearin' of your return!
+  text: "\xA1Syril! \xBFC\xF3mo has estado, ni\xF1o? \xA1Te hemos extra\xF1ado por
+    estos lares! Espera ver la reacci\xF3n de los otros al saber que est\xE1s aqu\xED. "
   children:
   - 2c471bf6-1105-40b1-accd-c5554a9ce6e1
   rect:
@@ -38,9 +38,9 @@ MonoBehaviour:
   m_Name: 6770a866-a8e6-4eca-96a5-966d0d69d862
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: What I'm doing here? Well, to be honest I got a little tiread and decided
-    to take a small rest, I just delivered a special granite chunk to Elias, fo the
-    special mask.
+  text: "\xBFEn estos momentos? \xA1Descanso! Me cans\xE9 de estar empujando el granito
+    para El\xEDas, para su m\xE1scara especial. Pero eh... tarde o temprano tendr\xE9
+    que llevarselo.  "
   children:
   - 447145c5-ed37-4870-8b79-bd93726267c5
   rect:
@@ -64,12 +64,12 @@ MonoBehaviour:
   m_Name: 447145c5-ed37-4870-8b79-bd93726267c5
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'You let me here restin'' and I will see you tomorrow, got it kid? '
+  text: "Dejame tendido aqu\xED y te ver\xE9 ma\xF1ana en la fiesta, Syril. "
   children: []
   rect:
     serializedVersion: 2
     x: 1243
-    y: 81
+    y: 80
     width: 200
     height: 100
   onExitAction: 
@@ -94,6 +94,8 @@ MonoBehaviour:
   - {fileID: -2390248425072513391}
   - {fileID: -2222911789697124320}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
 --- !u!114 &108227354573592725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,8 +109,8 @@ MonoBehaviour:
   m_Name: 3216fc78-0abd-402e-9b30-ac2e4585f422
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Please estay until tomorrow, there will be plenty of food, women, men and
-    of course... WINE!! HAHAHAHA
+  text: "Por favor, qu\xE9date hasta ma\xF1ana. \xA1Habr\xE1 un mont\xF3n de hombres,
+    mujeres y por su puesto... VINO! "
   children:
   - 2cb3165e-cd34-4bd3-9963-a8c5648d0bbf
   rect:
@@ -132,7 +134,7 @@ MonoBehaviour:
   m_Name: 2c471bf6-1105-40b1-accd-c5554a9ce6e1
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: 'I missed you too! '
+  text: "\xA1Te extra\xF1\xE9 tambi\xE9n, Arsen! "
   children:
   - 3216fc78-0abd-402e-9b30-ac2e4585f422
   rect:
@@ -156,7 +158,7 @@ MonoBehaviour:
   m_Name: 2cb3165e-cd34-4bd3-9963-a8c5648d0bbf
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: I will stay until the winter ends! So what are you doing here?
+  text: "Me quedar\xE9 hasta que acabe el invierno. Dime, \xBFque has hecho, Arsen? "
   children:
   - 6770a866-a8e6-4eca-96a5-966d0d69d862
   rect:

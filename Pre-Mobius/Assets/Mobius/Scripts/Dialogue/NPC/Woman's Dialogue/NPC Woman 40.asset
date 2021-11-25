@@ -20,6 +20,8 @@ MonoBehaviour:
   - {fileID: 4357387967456619149}
   - {fileID: 2449262971904329014}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
 --- !u!114 &2449262971904329014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33,7 +35,7 @@ MonoBehaviour:
   m_Name: 16a47bdf-e638-4168-a9c5-aa584cf82e9b
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Ah... it''s so relaxing here. '
+  text: "Ah... estar aqu\xED es muy relajante... "
   children: []
   rect:
     serializedVersion: 2
@@ -56,7 +58,7 @@ MonoBehaviour:
   m_Name: 8a4ee8e7-3e41-4f02-93dc-e39075ddf585
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Of course! He needs to learn quickly.
+  text: "\xA1Claro! Tiene que aprenderlo r\xE1pido. "
   children:
   - 16a47bdf-e638-4168-a9c5-aa584cf82e9b
   rect:
@@ -80,7 +82,7 @@ MonoBehaviour:
   m_Name: cd89db99-bd76-406a-a62b-f4670a1e189c
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Syril good day! You caught me taking a little "me" time. '
+  text: "\xA1Syril! \xA1Buenos d\xEDas! Me atrapaste en medio de mi tiempo a solas. "
   children:
   - 0740d31c-653f-464c-9c44-e8d540526872
   rect:
@@ -104,7 +106,7 @@ MonoBehaviour:
   m_Name: d8554b5e-473e-44b6-ae35-20b68e6554e0
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Heh, so he can learn how to fish, also?
+  text: "Oh, \xBFpara que tu  hijo aprenda tambi\xE9n el oficio? "
   children:
   - 8a4ee8e7-3e41-4f02-93dc-e39075ddf585
   rect:
@@ -128,8 +130,9 @@ MonoBehaviour:
   m_Name: 0984e098-31d8-4878-97d8-ceabf64f4775
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Well.. Since my husband has been very busy fishing, our son told me he misses
-    his dad. So today I took the day in advance and left my boy with his father!
+  text: "Bueno, mi esposo ha estado muy ocupado con la pesca y mi hijo me coment\xF3
+    que extra\xF1a a su padre. \xA1As\xED que me tom\xE9 por adelantado el d\xEDa
+    y dej\xE9 al ni\xF1o con su padre! "
   children:
   - d8554b5e-473e-44b6-ae35-20b68e6554e0
   rect:
@@ -153,13 +156,13 @@ MonoBehaviour:
   m_Name: 0740d31c-653f-464c-9c44-e8d540526872
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: And that miracle? Hahaha
+  text: "\xBFY ese milagro? Jajaja"
   children:
   - 0984e098-31d8-4878-97d8-ceabf64f4775
   rect:
     serializedVersion: 2
-    x: 250
-    y: 0
+    x: 241
+    y: 19
     width: 200
     height: 100
   onExitAction: 

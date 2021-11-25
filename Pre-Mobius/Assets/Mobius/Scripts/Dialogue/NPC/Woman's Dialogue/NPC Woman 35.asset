@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: e088385a-0c4a-44a0-844d-46a925f4872d
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'My husband went to explore the seas and ever since I feel useless and alone
-    in the house. '
+  text: "Mi esposo fue a explorar los mares desde hace tiempo y me siento sola e
+    in\xFAtil s\xF3lo haciendo las labores del hogar. "
   children:
   - c32d54d1-c039-482b-8302-3ed644f4fa0c
   rect:
@@ -38,7 +38,7 @@ MonoBehaviour:
   m_Name: c32d54d1-c039-482b-8302-3ed644f4fa0c
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Do you think he will ever come back?
+  text: "\xBFCrees que vuelva? "
   children:
   - 404576f7-3dc4-4954-8bb0-e224701666cd
   rect:
@@ -68,6 +68,8 @@ MonoBehaviour:
   - {fileID: 1316813584837445208}
   - {fileID: 362622279874987632}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
 --- !u!114 &362622279874987632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,7 +83,7 @@ MonoBehaviour:
   m_Name: 546e7568-04e5-4525-828d-598ea72ced02
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: And, in the meantime I want to help in anyway I can!
+  text: "Y, mientras tanto, \xA1quiero ayudar en cualquier cosa que me sea posible! "
   children: []
   rect:
     serializedVersion: 2
@@ -104,7 +106,8 @@ MonoBehaviour:
   m_Name: 404576f7-3dc4-4954-8bb0-e224701666cd
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Yes! Please, don't misunderstand, he usually comes back after a few months.
+  text: "\xA1S\xED! Por favor no me malentiendas, \xE9l usualmente suele regresar
+    despu\xE9s de algunos meses. "
   children:
   - 546e7568-04e5-4525-828d-598ea72ced02
   rect:
@@ -128,13 +131,13 @@ MonoBehaviour:
   m_Name: 580987db-a3ce-4f77-b5a0-c28485a8367c
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Even if I'm a woman, I would like to help in anyway I can!
+  text: "Incluso si soy una mujer \xA1Quiero ayudar en todo lo que pueda! "
   children:
   - e088385a-0c4a-44a0-844d-46a925f4872d
   rect:
     serializedVersion: 2
     x: 0
-    y: 0
+    y: 2
     width: 200
     height: 100
   onExitAction: 
