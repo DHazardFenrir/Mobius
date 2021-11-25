@@ -79,6 +79,8 @@ public class GameManager : MonoBehaviour
 
     public void Menu()
     {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene(0);
     }
 
@@ -101,6 +103,8 @@ public class GameManager : MonoBehaviour
     {
         gameOverCanvasGroup.DOFade(1f, 8f);
         yield return new WaitForSeconds(8f);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene(0);
     }
 
@@ -112,7 +116,7 @@ public class GameManager : MonoBehaviour
 
     #endregion
 
-
+    #region Inventario
     public GameObject itemToDestroy;
     public void DestroyItem()
     {
@@ -127,7 +131,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject inspectCanvas;
     [SerializeField] GameObject inventoryCanvas;
     [SerializeField] GameObject inspectCamera;
-
     public void Back()
     {
         descriptionText.text = " ";
@@ -137,5 +140,8 @@ public class GameManager : MonoBehaviour
 
 
     }
+
+    #endregion
+
 
 }
