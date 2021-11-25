@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] bool[] puzzle;
     [SerializeField] GameObject luzFinal;
 
+     bool inUI=false;
 
     void Update()
     {
@@ -33,10 +34,22 @@ public class GameManager : MonoBehaviour
 
     }
 
-    private void Start()
+    public void OnUI()
     {
-        
+        inUI = !inUI;
+
+        if(inUI)
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
+        else
+        {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
     }
+
 
     #region Pausa
     void Pause()
@@ -44,16 +57,14 @@ public class GameManager : MonoBehaviour
         if(isPaused)
         {
 
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
+            OnUI();
             Time.timeScale = 0;
             isPaused = true;
             Debug.Log("Esta pausado");
         }
         else
         {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            OnUI();
             Time.timeScale = 1;
             isPaused = false;
         }

@@ -242,7 +242,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         {
             //avoids the mouse looking if the game is effectively paused
             if (Mathf.Abs(Time.timeScale) < float.Epsilon) return;
-            Cursor.visible = true;
+            Cursor.visible = false;
            
             float oldYRotation = transform.eulerAngles.y;
             mouseLook.LookRotation(transform, cam.transform);

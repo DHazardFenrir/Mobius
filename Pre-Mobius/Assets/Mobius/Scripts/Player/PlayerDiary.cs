@@ -10,8 +10,16 @@ public class PlayerDiary : MonoBehaviour
     [SerializeField] ScriptableEvent eventos;
 
     [SerializeField] GameObject diaryCanvas;
+    GameManager gm;
 
     public bool isOpen { get; private set; } = false;
+
+
+    private void Start()
+    {
+        gm = FindObjectOfType<GameManager>();
+
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.J))
@@ -26,15 +34,14 @@ public class PlayerDiary : MonoBehaviour
     {
         if (isOpen)
         {
+            gm.OnUI();
             Time.timeScale = 0;
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
+            
         }
         else
         {
+            gm.OnUI();
             Time.timeScale = 1;
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
         }
     }
 }

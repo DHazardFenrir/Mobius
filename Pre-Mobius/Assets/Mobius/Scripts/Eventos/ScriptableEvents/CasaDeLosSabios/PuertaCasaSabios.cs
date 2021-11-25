@@ -6,7 +6,7 @@ public class PuertaCasaSabios : MonoBehaviour, IInteractable
 {
 
     Animator anim;
-    bool soulTrigger;
+    [SerializeField] bool soulTrigger;
     bool opened;
 
     private void Start()
@@ -20,10 +20,12 @@ public class PuertaCasaSabios : MonoBehaviour, IInteractable
         {
             if (opened)
             {
+                opened = !opened;
                 anim.SetBool("Abierta", false);
             }
             else
             {
+                opened = !opened;
                 anim.SetBool("Abierta", true);
             }
         }
@@ -39,6 +41,7 @@ public class PuertaCasaSabios : MonoBehaviour, IInteractable
         {
             anim.SetBool("Abierta", true);
             soulTrigger = true;
+            opened = true;
         }
     }
 
