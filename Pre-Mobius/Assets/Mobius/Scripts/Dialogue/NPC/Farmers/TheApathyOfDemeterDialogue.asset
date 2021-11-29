@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 6ef53dbc-380e-41f4-9e78-b17113f4ba63
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Have you seen something off?
+  text: "Oye, \xBFhas visto algo extra\xF1o \xFAltimamente? "
   children:
   - 1b2ab10a-b331-4691-a005-75d6a7c048cb
   rect:
@@ -37,7 +37,7 @@ MonoBehaviour:
   m_Name: f50daa01-0d99-48bf-9e7e-d6cbc8eaf275
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Looking around time, I recently came back.
+  text: "Dando un vistazo, volv\xED hace poco. "
   children:
   - 27f0707b-dec9-419e-a267-6540d67dafdb
   rect:
@@ -61,12 +61,12 @@ MonoBehaviour:
   m_Name: a253c332-0c1e-48f4-b61f-304c850bf269
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: You insolet twat! Sheesh... I don't know why even I bother to tell you this...
+  text: "\xA1Chiquillo insolente! Ni se porque me  molesto en contarte esto..."
   children: []
   rect:
     serializedVersion: 2
-    x: 2555
-    y: 393
+    x: 2499
+    y: 394
     width: 200
     height: 100
   onExitAction: 
@@ -84,7 +84,7 @@ MonoBehaviour:
   m_Name: 4e9e7b81-87dd-4b7c-860b-7531331c3f86
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Do you think Demeter has forsaken you?
+  text: "\xBFCrees que Demeter los ha abandonado? "
   children:
   - 09fa2589-971a-4140-8817-e5de30c45f94
   rect:
@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Name: f9026085-eba7-4343-8520-4c3f487f3f20
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Hey kid... whacha doing here?
+  text: "Hey, chico, \xBFqu\xE9 haces por ac\xE1?"
   children:
   - f50daa01-0d99-48bf-9e7e-d6cbc8eaf275
   rect:
@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Name: 40537785-27db-4bce-b7b9-92cdc848ab63
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: So... work harder I suppose?
+  text: "Pues... trabaja m\xE1s duro, supongo. "
   children:
   - a253c332-0c1e-48f4-b61f-304c850bf269
   rect:
@@ -156,13 +156,13 @@ MonoBehaviour:
   m_Name: a736381c-5319-4a95-aa56-26a0423d10b9
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: How so?
+  text: "\xBFC\xF3mo? "
   children:
   - 5889dec9-7629-46fd-b374-5e0ae07981d2
   rect:
     serializedVersion: 2
-    x: 1557
-    y: 83
+    x: 1570
+    y: 108
     width: 200
     height: 100
   onExitAction: 
@@ -180,9 +180,9 @@ MonoBehaviour:
   m_Name: 5889dec9-7629-46fd-b374-5e0ae07981d2
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Well kid... there were better times, where she used to bless us with abundant
-    harvest. But this days... these days... all I do is work, and the earth is not
-    answerin' like it used to...
+  text: "Ha habido d\xEDas mejores, chico; d\xEDas donde la diosa nos sol\xEDa bendecir
+    y dar abundante cosecha. Pero recientemente... todo lo que hago es trabajar,
+    de sol a sol y la tierra no suele responder como antes..."
   children:
   - 2e42ebc1-9c5c-4593-9975-459ff7e69616
   rect:
@@ -206,8 +206,7 @@ MonoBehaviour:
   m_Name: 09fa2589-971a-4140-8817-e5de30c45f94
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: No.. I don't think so. We worship her like always, even more. We didn't forget
-    about her...
+  text: "No... no creo. La veneramos como siempre, creo que incluso m\xE1s.... "
   children:
   - e99672a1-74d1-4dec-9369-11194eabb0be
   rect:
@@ -231,8 +230,7 @@ MonoBehaviour:
   m_Name: 2e42ebc1-9c5c-4593-9975-459ff7e69616
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Sometimes... sometimes I just feel that everything I do doesn''t have an
-    impact anymore. I can feel it in my bones. '
+  text: "A veces... a veces siento que todo lo que hago no tiene un impacto \xBFsabes? "
   children:
   - 4e9e7b81-87dd-4b7c-860b-7531331c3f86
   - 40537785-27db-4bce-b7b9-92cdc848ab63
@@ -273,6 +271,8 @@ MonoBehaviour:
   - {fileID: 8394123052915503739}
   - {fileID: 6808618775910457348}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
 --- !u!114 &2227176893589999745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -286,7 +286,8 @@ MonoBehaviour:
   m_Name: be25483a-b56b-4b95-a1b8-ef80e1b79266
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: 'I left when I was very young, maybe we didn''t knew each other back then. '
+  text: "Me fui cuando a\xFAn era muy joven. Quiz\xE1s a\xFAn no nos hab\xEDamos
+    visto o conocido en ese entonces. "
   children:
   - 6ef53dbc-380e-41f4-9e78-b17113f4ba63
   rect:
@@ -310,8 +311,8 @@ MonoBehaviour:
   m_Name: 1b2ab10a-b331-4691-a005-75d6a7c048cb
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Off? No.. I don't think so.. but hey... you kno' kid? the goddess Demeter
-    is... not quite like before...
+  text: "\xBFExtra\xF1o...? \xBFFuera de lugar...? Eh... no creo, chico. Pero \xBFsabes?
+    Siento que la Diosa Demeter no es como antes. "
   children:
   - a736381c-5319-4a95-aa56-26a0423d10b9
   rect:
@@ -335,8 +336,8 @@ MonoBehaviour:
   m_Name: 27f0707b-dec9-419e-a267-6540d67dafdb
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'That''s good kid! But I don''t I remember seeing you before or recently...
-    And I have a very good memory! '
+  text: "\xA1Eso es bueno, chico! Pero no creo haberte visto antes... o recientemente
+    \xA1Y tengo muy buena memoria!"
   children:
   - be25483a-b56b-4b95-a1b8-ef80e1b79266
   rect:
@@ -360,7 +361,7 @@ MonoBehaviour:
   m_Name: a8009c3e-16c0-41dc-bb75-02e659796674
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Sure!
+  text: "\xA1Claro! "
   children: []
   rect:
     serializedVersion: 2
@@ -383,9 +384,9 @@ MonoBehaviour:
   m_Name: e99672a1-74d1-4dec-9369-11194eabb0be
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Hey kid, could you do me a favor? Can you go to her temple and see if something
-    is off? The last time I looked nothing seemed bad but... then again, I'm kind
-    of sick now. My senses are not as sharp, but heymaybe you can spot something
+  text: "Chico, \xBFpodr\xEDas hacerme un favor? \xBFPodrias ir a su templo y ver
+    si hay algo mal? Mis sentidos no son tan agudos como antes, entonces quiz\xE1s
+    tu podr\xEDas ver algo que yo pas\xE9 por alto. "
   children:
   - a8009c3e-16c0-41dc-bb75-02e659796674
   rect:

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 5426966e-7f86-4de8-986f-caf39e3dae9b
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Absent? Why?
+  text: "\xBFAusente? \xBFPor? "
   children:
   - 962b77b9-a2b2-485b-835d-fc7d48523676
   rect:
@@ -37,13 +37,13 @@ MonoBehaviour:
   m_Name: db5dfbee-e242-4c8e-8c36-489bf0605a95
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Hey, its muscle alright?
+  text: "\xA1Oye! Es puro m\xFAsculo. "
   children:
   - baae3b42-a684-490a-9ccf-c519e27ea138
   rect:
     serializedVersion: 2
-    x: 250
-    y: 0
+    x: 229
+    y: 50
     width: 200
     height: 100
   onExitAction: 
@@ -67,6 +67,8 @@ MonoBehaviour:
   - {fileID: -9051044365280094347}
   - {fileID: 2010303204488058841}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
 --- !u!114 &2010303204488058841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,8 +82,8 @@ MonoBehaviour:
   m_Name: 962b77b9-a2b2-485b-835d-fc7d48523676
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Don''t mind me. Anyhow, do not forget to leave some offerins as gratitude
-    for your safe return. '
+  text: 'Ah,  no me hagas caso. Oye, que  no se olvide dejar unas ofrendas por tu
+    regreso a casa. '
   children: []
   rect:
     serializedVersion: 2
@@ -104,8 +106,8 @@ MonoBehaviour:
   m_Name: baae3b42-a684-490a-9ccf-c519e27ea138
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Hehehehe, sorry I was making my day a little brighter at your expense. My
-    apologies for the joke. I am not feeling like myself today. I feel... absent.
+  text: 'Jejeje... lo siento, trataba de sentirme mejor conmigo mismo bromeando un
+    poco contigo. Hoy no me siento bien... me siento ausente. Preocupado. '
   children:
   - 5426966e-7f86-4de8-986f-caf39e3dae9b
   rect:
@@ -129,8 +131,8 @@ MonoBehaviour:
   m_Name: 361f7944-bc4f-470a-ac02-3ef527f1ca56
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Hello Syril, I'm glad to see your pretty face again. Do I notice newly formed
-    muscular body or did you grow fat in your abscense?
+  text: "Hola, Syril. Que bueno verte. \xBFAcaso te volviste m\xE1s fuerte o lo que
+    veo es que has acumulado m\xE1s grasa?"
   children:
   - db5dfbee-e242-4c8e-8c36-489bf0605a95
   rect:

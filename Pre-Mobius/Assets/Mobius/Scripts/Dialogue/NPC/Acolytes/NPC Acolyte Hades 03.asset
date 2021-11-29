@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 1f86e34d-9c18-42a8-a386-69e939a77c62
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Yes
+  text: "S\xED"
   children:
   - 7db24cdd-f91d-422a-bcc9-d1320b752d3b
   rect:
@@ -37,7 +37,7 @@ MonoBehaviour:
   m_Name: 9d468070-0b4a-458c-bddc-fc643b8d0eb2
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'You are as well as dead if you enter, boy. '
+  text: "Vas a morir nada m\xE1s entres, chico. "
   children: []
   rect:
     serializedVersion: 2
@@ -90,6 +90,8 @@ MonoBehaviour:
   - {fileID: -4243662612801575273}
   - {fileID: 77111316526373785}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
 --- !u!114 &77111316526373785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103,7 +105,7 @@ MonoBehaviour:
   m_Name: 7db24cdd-f91d-422a-bcc9-d1320b752d3b
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Maybe... you could try to  enter. '
+  text: "Quiz\xE1s... puedas entrar. "
   children: []
   rect:
     serializedVersion: 2
@@ -126,14 +128,14 @@ MonoBehaviour:
   m_Name: c58fab84-86de-4239-91d0-0acc75ca8b8d
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Do you have an offering?
+  text: "\xBFTienes en tu posesi\xF3n una ofrenda?"
   children:
   - 1f86e34d-9c18-42a8-a386-69e939a77c62
   - 71ce80d5-9d05-4dcd-9022-c79c3728e2f9
   rect:
     serializedVersion: 2
-    x: 4
-    y: 3
+    x: 21
+    y: 40
     width: 200
     height: 100
   onExitAction: 

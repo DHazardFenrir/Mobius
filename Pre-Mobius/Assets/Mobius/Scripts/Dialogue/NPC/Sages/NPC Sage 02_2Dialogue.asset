@@ -39,6 +39,8 @@ MonoBehaviour:
   - {fileID: 7488870446043912549}
   - {fileID: -3665904055271942257}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
 --- !u!114 &7488870446043912549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52,13 +54,13 @@ MonoBehaviour:
   m_Name: 4eb4ef90-71bf-4cf1-96bb-7a7d41b770d7
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: I told you to go, Syril.
+  text: 'Te dije que te fueras, Syril. '
   children:
   - 374cdd1e-b997-4456-b002-e81af7c507e7
   rect:
     serializedVersion: 2
-    x: 58
-    y: 7
+    x: 32
+    y: 64
     width: 200
     height: 100
   onExitAction: 

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: f42abc30-5a2c-4611-b2de-3ce8abbdb761
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Zeus didn''t have another affair in this town, right? This is supposed to
-    be a sacred place... '
+  text: "Zeus no tuvo otro amor\xEDo en este pueblo... \xBFverdad? Se supone que
+    este es un lugara sagrado."
   children:
   - e9d53993-ceac-4fc2-b298-49a437ebc2aa
   rect:
@@ -42,6 +42,8 @@ MonoBehaviour:
   - {fileID: 5810722753201424192}
   - {fileID: 3370519654465829619}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
 --- !u!114 &3370519654465829619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55,7 +57,8 @@ MonoBehaviour:
   m_Name: 47a44c32-0d8d-44e8-bd27-9163a8ffd5d4
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: So why? Why do I feel her presence so far away, like she was unreachable?
+  text: "Entonces \xBFpor qu\xE9?... \xBFPor qu\xE9? siento como si su presencia
+    fuera inalcanzable... "
   children: []
   rect:
     serializedVersion: 2
@@ -78,8 +81,8 @@ MonoBehaviour:
   m_Name: e9d53993-ceac-4fc2-b298-49a437ebc2aa
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Even so... Lady Hera wouldn''t punish us, at least, not the entire town.
-    We are the chosen ones, right? Right? '
+  text: "Incluso si lo hubiera tenido... Lady Hera no nos castigar\xEDa, o al menos,
+    no a todo el pueblo. Somos los elegidos... \xBFverdad? \xBFVerdad?"
   children:
   - 47a44c32-0d8d-44e8-bd27-9163a8ffd5d4
   rect:

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ffe9a71f-b14a-4679-a631-91a79e11ecbd
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Your husband doesn't do the fishing for you?
+  text: "\xBFTu esposo acaso no hace la pesca? "
   children:
   - 42fe2a81-4c26-46e4-887d-306efdf84725
   rect:
@@ -37,7 +37,7 @@ MonoBehaviour:
   m_Name: c6c8ba5c-1dd2-4ce6-90f0-477dbbc10bcb
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Just a day ago
+  text: "Hace un d\xEDa. "
   children:
   - bdbc1b68-93aa-4e32-a067-671472be6937
   rect:
@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Name: 9aba409f-bce7-4789-9a4a-80ce8c576f85
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Oh! So that's how the net is thrown!
+  text: "\xA1Oh! Con que as\xED se tira una red de pesca. "
   children: []
   rect:
     serializedVersion: 2
@@ -84,7 +84,7 @@ MonoBehaviour:
   m_Name: 91db2ba6-4449-4725-91ab-f944b673e31d
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Hello, Syril! I didn''t notice you standing there. When did you came back? '
+  text: "Oh. Hola Syril. No te vi ah\xED parado. \xBFCu\xE1ndo regresaste? "
   children:
   - c6c8ba5c-1dd2-4ce6-90f0-477dbbc10bcb
   rect:
@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Name: bdbc1b68-93aa-4e32-a067-671472be6937
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Well, I hope you can stay a little while, at least until winter passes. '
+  text: 'Bueno, espero te puedas quedar. Al menos hasta que pase el invierno. '
   children:
   - 6d8dfdb0-1877-4875-8bb0-852b12ef8068
   rect:
@@ -132,8 +132,9 @@ MonoBehaviour:
   m_Name: 42fe2a81-4c26-46e4-887d-306efdf84725
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Oh! He died I little while back, and my boy took his place as a hunter.
-    I now I can do more than house chores. '
+  text: "Oh... bueno... ver\xE1s. El muri\xF3 hace un tiempo y mi hijo tom\xF3 su
+    lugar como cazador. Ahora que no lo estoy cuidando, creo que es buen momento
+    para hacer m\xE1s que tareas del hogar. "
   children:
   - c87e8725-6244-4837-b13e-883cdde85d52
   rect:
@@ -168,6 +169,8 @@ MonoBehaviour:
   - {fileID: 3540023092860229833}
   - {fileID: -4147686219013946762}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
 --- !u!114 &1077699504293605401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,8 +189,8 @@ MonoBehaviour:
   - 91db2ba6-4449-4725-91ab-f944b673e31d
   rect:
     serializedVersion: 2
-    x: 0
-    y: 0
+    x: -5
+    y: 2
     width: 200
     height: 100
   onExitAction: 
@@ -229,7 +232,8 @@ MonoBehaviour:
   m_Name: 6d8dfdb0-1877-4875-8bb0-852b12ef8068
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Heh, can't make any promises. Anyway, what are you doing?
+  text: "Je, no puedo prometer nada. Pero, olv\xEDdemenos de eso, \xBFqu\xE9 est\xE1s
+    haciendo? "
   children:
   - b2b0fd3a-3ebd-41d0-909e-23f10c588f04
   rect:
@@ -253,8 +257,8 @@ MonoBehaviour:
   m_Name: b2b0fd3a-3ebd-41d0-909e-23f10c588f04
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: What am I doing? Hehehehe, its a little embarassing but I'm trying to lear
-    a little fishing.
+  text: "\xBFQu\xE9 ando haciendo? Jeje, es un poco vergonzoso, pero estoy aprendiendo
+    a pescar. "
   children:
   - ffe9a71f-b14a-4679-a631-91a79e11ecbd
   rect:

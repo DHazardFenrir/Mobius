@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: f28d156f-91c6-4d25-9890-b2023e8142d7
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'For your well being... I hope  not. '
+  text: Por tu integridad... espero que no.
   children:
   - 79a7e8a2-cd38-490a-aca3-a833d8682625
   rect:
@@ -37,8 +37,8 @@ MonoBehaviour:
   m_Name: 8cbadf77-1141-408b-b451-6ba6e14e4a12
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: We made an offereing yesterday... so why? Maybe it is something wrong with
-    it?
+  text: "Hicimos una ofrenda ayer... \xBFentonces por qu\xE9 est\xE1 pasando esto?
+    \xBFAcaso hab\xEDa algo mal con la ofrenda y no nos dimos cuenta?"
   children: []
   rect:
     serializedVersion: 2
@@ -61,8 +61,9 @@ MonoBehaviour:
   m_Name: 79a7e8a2-cd38-490a-aca3-a833d8682625
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'The last man that tried to enter the realm when Lord Hades was in this state...
-    never came back. Or so I was told. '
+  text: "La \xFAltima persona que intent\xF3 entrar al mundo de los muertos cuando
+    Lord Hades se encontraba en un estado parecido, nunca volvi\xF3 a ser visto con
+    vida. O, al menos, eso me dijeron.  "
   children:
   - 8cbadf77-1141-408b-b451-6ba6e14e4a12
   rect:
@@ -91,6 +92,8 @@ MonoBehaviour:
   - {fileID: -1420299860890132674}
   - {fileID: -2986390045847377819}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
 --- !u!114 &4573664683246688757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,7 +107,7 @@ MonoBehaviour:
   m_Name: 6508c73a-a7c6-4692-9cb8-ca2339ab39f6
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Are you planning on enter the realm of the dead?
+  text: "\xBFAcaso planeas entrar a la morada de los muertos?"
   children:
   - f28d156f-91c6-4d25-9890-b2023e8142d7
   rect:

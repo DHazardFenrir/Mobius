@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] bool[] puzzle;
     [SerializeField] GameObject luzFinal;
 
+     bool inUI=false;
 
     void Update()
     {
@@ -33,10 +34,22 @@ public class GameManager : MonoBehaviour
 
     }
 
-    private void Start()
+    public void OnUI()
     {
-        
+        inUI = !inUI;
+
+        if(inUI)
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
+        else
+        {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
     }
+
 
     #region Pausa
     void Pause()
@@ -44,16 +57,14 @@ public class GameManager : MonoBehaviour
         if(isPaused)
         {
 
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
+            OnUI();
             Time.timeScale = 0;
             isPaused = true;
             Debug.Log("Esta pausado");
         }
         else
         {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            OnUI();
             Time.timeScale = 1;
             isPaused = false;
         }
@@ -68,6 +79,8 @@ public class GameManager : MonoBehaviour
 
     public void Menu()
     {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene(0);
     }
 
@@ -90,6 +103,8 @@ public class GameManager : MonoBehaviour
     {
         gameOverCanvasGroup.DOFade(1f, 8f);
         yield return new WaitForSeconds(8f);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene(0);
     }
 
@@ -101,7 +116,7 @@ public class GameManager : MonoBehaviour
 
     #endregion
 
-
+    #region Inventario
     public GameObject itemToDestroy;
     public void DestroyItem()
     {
@@ -116,7 +131,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject inspectCanvas;
     [SerializeField] GameObject inventoryCanvas;
     [SerializeField] GameObject inspectCamera;
-
     public void Back()
     {
         descriptionText.text = " ";
@@ -126,5 +140,8 @@ public class GameManager : MonoBehaviour
 
 
     }
+
+    #endregion
+
 
 }

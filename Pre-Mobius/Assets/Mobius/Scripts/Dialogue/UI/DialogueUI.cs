@@ -24,7 +24,7 @@ namespace DialogueSystem.UI
         // Start is called before the first frame update
         void Start()
         {
-           playerConversant =   GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerConversant>();
+            playerConversant =   GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerConversant>();
             playerConversant.onConversationUpdated += UpdateUI;
             nextButton.onClick.AddListener(() => playerConversant.Next());
             quitButton.onClick.AddListener(() => playerConversant.Quit());

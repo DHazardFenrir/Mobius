@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 8d2e5c31-9ecb-49a7-9dbd-e7ffb193ffef
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: In the back?
+  text: "\xBFAtr\xE1s de la casa? "
   children:
   - c3f5ffd7-64fb-46f1-9282-457ca7381baf
   rect:
@@ -37,8 +37,8 @@ MonoBehaviour:
   m_Name: 9a7d5f01-e8b4-43aa-92ed-77480ba9b6b6
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Mmm... if it makes you go... Yesterday I saw some young punk outside the
-    house. '
+  text: "Mmm... si con eso te vas, te lo dir\xE9. Ayer vi a un mocoso bastante sospechoso
+    atr\xE1s de la casa. "
   children:
   - 8d2e5c31-9ecb-49a7-9dbd-e7ffb193ffef
   rect:
@@ -62,7 +62,8 @@ MonoBehaviour:
   m_Name: 374cdd1e-b997-4456-b002-e81af7c507e7
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Well... I do have one. Have you notice something strange?
+  text: "De hecho... s\xED. Si tengo un asunto a tratar. \xBFHas visto algo extra\xF1o
+    en el pueblo ultimamente? "
   children:
   - b3e7d16d-0c85-454e-a558-7095ec7d5414
   rect:
@@ -86,7 +87,7 @@ MonoBehaviour:
   m_Name: 23eddc50-a0e0-4867-afe8-042a9dee8231
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: 'Because, if you tell me, I will leave you alone. '
+  text: "Porque, si me dices, te dejar\xE9 en paz. "
   children:
   - 9a7d5f01-e8b4-43aa-92ed-77480ba9b6b6
   rect:
@@ -110,7 +111,8 @@ MonoBehaviour:
   m_Name: 0251bacf-bba5-4ba2-b07c-de921fdb6f16
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: 'Oh como on! I was just saying hi since my return. '
+  text: "\xA1Vamos! S\xF3lo ven\xEDa a decir hola, ya sabes, dado que regres\xE9
+    hace apenas unos d\xEDas. "
   children:
   - b4c77aba-5368-4779-a1ef-c3f773a0355e
   rect:
@@ -144,6 +146,8 @@ MonoBehaviour:
   - {fileID: -8274684445820470331}
   - {fileID: 3618949010937038954}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
 --- !u!114 &3618949010937038954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,7 +161,7 @@ MonoBehaviour:
   m_Name: c3f5ffd7-64fb-46f1-9282-457ca7381baf
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Yes, in the back. Now off you go!
+  text: "S\xED, atr\xE1s de la casa. \xA1Ahora largo! "
   children: []
   rect:
     serializedVersion: 2
@@ -180,14 +184,14 @@ MonoBehaviour:
   m_Name: b4c77aba-5368-4779-a1ef-c3f773a0355e
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Nosense! Whyt a non believer like you wants to say "Hi" to us? You don''t
-    have any business here. '
+  text: "\xA1Patra\xF1as! \xBFPor qu\xE9 un no creyente quiere saludarnos? No tienes
+    ning\xFAn asunto aqu\xED. "
   children:
   - 374cdd1e-b997-4456-b002-e81af7c507e7
   rect:
     serializedVersion: 2
-    x: 545
-    y: 72
+    x: 554
+    y: 80
     width: 200
     height: 100
   onExitAction: 
@@ -205,7 +209,8 @@ MonoBehaviour:
   m_Name: b3e7d16d-0c85-454e-a558-7095ec7d5414
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Huh? What? Something strange? And why on earth should I tell you anything?
+  text: "\xBFHuh? \xBFAlgo extra\xF1o? Y a\xFAn si lo hubiera, \xBFpor qu\xE9 habr\xEDa
+    de decirtelo? "
   children:
   - 23eddc50-a0e0-4867-afe8-042a9dee8231
   rect:
@@ -229,9 +234,9 @@ MonoBehaviour:
   m_Name: 4eb4ef90-71bf-4cf1-96bb-7a7d41b770d7
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'What are you doing inside, kid? Must I remind you the rules of this town?
-    Get your non believer ass out of our home. Only those granted and audience can
-    stand here. '
+  text: "\xBFQu\xE9 est\xE1s haciendo aqu\xED dentro chico? \xBFTe debo recordar
+    las reglas de este pueblo, acaso? S\xF3lo aquellos que tengan una audiencia pueden
+    entrar, ahora l\xE1rgate. "
   children:
   - 0251bacf-bba5-4ba2-b07c-de921fdb6f16
   rect:

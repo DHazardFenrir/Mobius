@@ -10,6 +10,11 @@ public class GetMouse : MonoBehaviour
     RigidbodyFirstPersonController fpmouse;
     public bool conversantIsActive = true;
 
+    private void Start()
+    {
+        Cursor.visible = false;
+    }
+
     private void Awake()
     {
        

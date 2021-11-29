@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: e2d16a58-0e6f-4386-8d96-ab5c0cb61de2
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Good day, Syril, it is such a nice surprise glacing at you! '
+  text: "Buen d\xEDa, Syril. \xA1Qu\xE9 grata sorpresa verte! "
   children:
   - ae0c17d9-11e4-4134-8d8c-d57d38b63daa
   rect:
@@ -37,8 +37,8 @@ MonoBehaviour:
   m_Name: ae0c17d9-11e4-4134-8d8c-d57d38b63daa
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Sorry if I cannot talk too much, I'm just waiting to Caesar to give me a
-    chunk of marble. He must be pushing it around.
+  text: "Lo siento si ahora no puedo hablar mucho. Estoy esperando un bloque de granito
+    que traer\xE1 Caesar, aunque conoci\xE9ndolo, debe estar holgazaneando por ah\xED. "
   children:
   - 3cbb1279-07bb-4e6d-a3db-89f98b55225e
   rect:
@@ -66,6 +66,8 @@ MonoBehaviour:
   - {fileID: -5463204068544399148}
   - {fileID: 7293796913565862491}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
 --- !u!114 &7293796913565862491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79,12 +81,12 @@ MonoBehaviour:
   m_Name: 3cbb1279-07bb-4e6d-a3db-89f98b55225e
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'See you around! '
+  text: "\xA1Nos vemos despu\xE9s! "
   children: []
   rect:
     serializedVersion: 2
-    x: 537
-    y: 53
+    x: 538
+    y: 51
     width: 200
     height: 100
   onExitAction: 

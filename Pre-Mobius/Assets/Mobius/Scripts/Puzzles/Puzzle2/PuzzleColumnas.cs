@@ -5,7 +5,7 @@ using UnityEngine;
 public class PuzzleColumnas : MonoBehaviour
 {
     [SerializeField] Columnas[] columnas;
-
+    [SerializeField] GameObject usarPocion;
 
     [SerializeField] int[] combinación;
     public int[] clave;
@@ -55,7 +55,7 @@ public class PuzzleColumnas : MonoBehaviour
     void ComprobarClave()
     {
         Debug.Log("Comprobando");
-        if(combinación[0]==clave[0] && combinación[1] == clave[1] && combinación[2] == clave[2] && combinación[3] == clave[3] && combinación[4] == clave[4] && combinación[5] == clave[5])
+        if (combinación[0] == clave[0] && combinación[1] == clave[1] && combinación[2] == clave[2] && combinación[3] == clave[3] && combinación[4] == clave[4] && combinación[5] == clave[5])
         {
             altar.GetComponent<BoxCollider>().enabled = true;
             if (audio != null)
@@ -63,7 +63,11 @@ public class PuzzleColumnas : MonoBehaviour
                 audio.Play();
             }
             altarAnim.SetBool("Abierto", true);
+            DesactivarCollidersColumnas();
+            Destroy(usarPocion);
             
+
+
             Debug.Log("Jala");
         }
         else
@@ -76,6 +80,14 @@ public class PuzzleColumnas : MonoBehaviour
                 i = 0;
             }
             
+        }
+    }
+
+    void DesactivarCollidersColumnas()
+    {
+        for (int j = 0; i < clave.Length; i++)
+        {
+            columnas[j].GetComponent<BoxCollider>().enabled = false;
         }
     }
 

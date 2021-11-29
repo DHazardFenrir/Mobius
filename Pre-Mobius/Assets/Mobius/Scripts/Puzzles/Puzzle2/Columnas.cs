@@ -10,7 +10,7 @@ public class Columnas : MonoBehaviour, IInteractable
 
     PuzzleColumnas manager;
 
-    UsarPocion pocion;
+    [SerializeField]UsarPocion pocion;
 
     MeshRenderer meshR;
 
@@ -18,15 +18,15 @@ public class Columnas : MonoBehaviour, IInteractable
 
     private void Start()
     {
-        pocion = FindObjectOfType<UsarPocion>();
         manager = FindObjectOfType<PuzzleColumnas>();
         meshR = GetComponent<MeshRenderer>();
         meshR.enabled = false;
+        
     }
 
     public void Interact()
     {
-        if (!active)
+        if (active==false)
             ActivarColumna();
         else
             Debug.Log("Ya esta activada");
@@ -44,6 +44,8 @@ public class Columnas : MonoBehaviour, IInteractable
             }
             active = true;
             manager.Clave(num);
+            GetComponent<BoxCollider>().enabled = false;
+
         }
     }
 
@@ -51,6 +53,8 @@ public class Columnas : MonoBehaviour, IInteractable
     {
         active = false;
         meshR.enabled = true;
+        GetComponent<BoxCollider>().enabled = true;
+
     }
 
 }

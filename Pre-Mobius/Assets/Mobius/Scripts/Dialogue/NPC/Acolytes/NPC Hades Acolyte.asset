@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 2cb75377-1c20-45a8-9ce4-29b8e09d873b
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'I''m going to be honest with you, boy. Lord Hades is pissed. I don''t know
-    why, but he is. '
+  text: "Ser\xE9 honesto contigo, muchacho. Lord Hades est\xE1 enojado, furioso.
+    No s\xE9 por qu\xE9, pero lo est\xE1. "
   children:
   - 4ed93b6a-76ce-486b-8b62-c58eec82a31c
   rect:
@@ -38,13 +38,13 @@ MonoBehaviour:
   m_Name: 78a789ed-6a39-4f36-b5e0-b632e64af019
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Do you think maybe...?
+  text: "\xBFCrees que quiz\xE1s...?"
   children:
   - 9bc2112f-a430-439d-b628-e6b30ca20e10
   rect:
     serializedVersion: 2
-    x: 500
-    y: 0
+    x: 502
+    y: 37
     width: 200
     height: 100
   onExitAction: 
@@ -67,6 +67,8 @@ MonoBehaviour:
   - {fileID: -1991626571737076518}
   - {fileID: 1988052461089253394}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
 --- !u!114 &1637833391342605991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,9 +82,10 @@ MonoBehaviour:
   m_Name: 4ed93b6a-76ce-486b-8b62-c58eec82a31c
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'He is the more calm of the primordial gods, but now he seems restless, uneasy.
-    Don''t ask me why I know this, boy... Priests and Acolytes of Lord Hades have
-    a more strong sense for this than others. '
+  text: "\xC9l es el m\xE1s calmo de los dioses primordiales, pero \xFAltimamente
+    se encuentr ansioso e inquieto. No me preguntes c\xF3mo s\xE9 esto, chico; los
+    Sacerdotes y Ac\xF3litos de Hades tenemos una conexi\xF3n mucho m\xE1s estrecha
+    con \xE9l que otros sirvientes de los Dioses. "
   children:
   - 78a789ed-6a39-4f36-b5e0-b632e64af019
   rect:
@@ -106,8 +109,8 @@ MonoBehaviour:
   m_Name: 9bc2112f-a430-439d-b628-e6b30ca20e10
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Sheesh. Don''t interrumpt me. I hope this gets better soon... if not *shrivers*
-    You don''t want to know what will happen. '
+  text: 'Shees. No me interrumpas, muchacho. Espero que esto mejore... porque, sino
+    lo hace *Tiembla* no quieres saber lo que puede llegar a pasar.  '
   children: []
   rect:
     serializedVersion: 2

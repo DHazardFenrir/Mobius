@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: 2b096fe4-874a-4748-8bb5-b1490a7f25ce
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Is something wrong in the temple?
+  text: "\xBFPasa algo malo en el templo?"
   children:
   - d815baae-8bf5-4ef9-940b-bb9f05a1b30b
   rect:
     serializedVersion: 2
-    x: 502
-    y: 21
+    x: 516
+    y: 42
     width: 200
     height: 100
   onExitAction: 
@@ -37,7 +37,7 @@ MonoBehaviour:
   m_Name: 0c36ab5c-4af5-4e78-8d1e-0f6dd37d67d3
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Ah... it's you Syril. Good to see you?
+  text: Ah... es tu, Syril. Es bueno verte
   children:
   - 007dc786-77a0-4479-a385-f7389a0f5187
   rect:
@@ -67,6 +67,8 @@ MonoBehaviour:
   - {fileID: 4254143783832193799}
   - {fileID: 1624125698220497280}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
 --- !u!114 &1342649029715868013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,8 +82,8 @@ MonoBehaviour:
   m_Name: 007dc786-77a0-4479-a385-f7389a0f5187
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'The Great Priest of Demeter is kind of... in a trance, you know? Trying
-    to talk with the goddess about our situation. '
+  text: "El Gran Sacerdote de Demeter esta en una especie de... trance, sabes? tratando
+    de comunicarse con la diosa acerca de nuestra situaci\xF3n."
   children:
   - 2b096fe4-874a-4748-8bb5-b1490a7f25ce
   rect:
@@ -105,13 +107,13 @@ MonoBehaviour:
   m_Name: caba5f6f-88b1-4207-bdbd-dbdc4fc88942
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'I could be wrong... I don''t have a strong bond with her like the Great
-    Priest. '
+  text: "Puedo equivocarme... no tengo un v\xEDnculo tan fuerte con la gran Diosa
+    como el Sacerdote..."
   children: []
   rect:
     serializedVersion: 2
-    x: 1048
-    y: 44
+    x: 1115
+    y: 53
     width: 200
     height: 100
   onExitAction: 
@@ -129,15 +131,14 @@ MonoBehaviour:
   m_Name: d815baae-8bf5-4ef9-940b-bb9f05a1b30b
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Don't tell the High Priest I told you this but... I have a feeling that the
-    offering in this temple is kind of messed up. Maybe that's why Lady Demeter is
-    punishing us?
+  text: "No le digas al Gran Sacerdote que te dije esto pero... tengo el presentimiento
+    de que la ofrenda que hay en el templo est\xE1 "
   children:
   - caba5f6f-88b1-4207-bdbd-dbdc4fc88942
   rect:
     serializedVersion: 2
-    x: 798
-    y: 44
+    x: 789
+    y: 75
     width: 200
     height: 100
   onExitAction: 

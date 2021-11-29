@@ -17,17 +17,21 @@ namespace DialogueSystem.API
         DialogueNode currentNode = null;
         [SerializeField] bool isChoosing = false;
         AIConversant currentConversant = null;
-        GetMouse mouse;
+        GameManager gm;
         
         public bool canAdvance;
 
         private void Awake()
         {
-            mouse = GetComponent<GetMouse>();
+
            
         }
 
+        private void Start()
+        {
+            gm = FindObjectOfType<GameManager>();
 
+        }
 
 
 
@@ -118,11 +122,9 @@ namespace DialogueSystem.API
 
 
 
-            mouse.isTalking(!mouse.conversantIsActive);
-            Debug.Log(!mouse.conversantIsActive + "1");
             onConversationUpdated();
             GetComponent<RigidbodyFirstPersonController>().enabled = false;
-            
+            gm.OnUI();
             
         }
 
@@ -139,10 +141,9 @@ namespace DialogueSystem.API
             currentNode = null;
             isChoosing = false;
             currentConversant = null;
-            mouse.isTalking(mouse.conversantIsActive);
             onConversationUpdated();
             GetComponent<RigidbodyFirstPersonController>().enabled = true;
-
+            gm.OnUI();
 
 
 
