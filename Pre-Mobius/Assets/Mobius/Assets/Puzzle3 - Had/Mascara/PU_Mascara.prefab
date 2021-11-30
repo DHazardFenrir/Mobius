@@ -47,11 +47,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: abb8630b8ed8ee64bb1492da31388348, type: 2}
   inventario: {fileID: 0}
-  player: {fileID: 0}
+  particles: {fileID: 0}
   minD: 5
   itemMask:
     serializedVersion: 2
     m_Bits: 4294967295
+  myMesh: {fileID: 0}
 --- !u!65 &2850874641548466391
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -104,7 +105,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7719825754536656638}
-  m_Mesh: {fileID: 1567337612770654637, guid: 653e680a3ec3941409117950aa387ebd, type: 3}
+  m_Mesh: {fileID: -8874901763306778884, guid: a40550b253366d547a76359e6b5fc8f2, type: 3}
 --- !u!23 &6420069791205098638
 MeshRenderer:
   m_ObjectHideFlags: 0
