@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] bool[] puzzle;
     [SerializeField] GameObject luzFinal;
+    [SerializeField] GameObject puntero;
 
      bool inUI=false;
 
@@ -42,11 +43,13 @@ public class GameManager : MonoBehaviour
         {
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
+            puntero.SetActive(false);
         }
         else
         {
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
+            puntero.SetActive(true);
         }
     }
 
