@@ -12,10 +12,10 @@ public class PlayerInteract : MonoBehaviour
         texto = GameObject.FindGameObjectWithTag("InteractiveText");
         texto.SetActive(false);
          rb = GetComponent<Rigidbody>();
-
     }
 
     Rigidbody rb;
+    RaycastHit hit;
 
     private void Start()
     {
