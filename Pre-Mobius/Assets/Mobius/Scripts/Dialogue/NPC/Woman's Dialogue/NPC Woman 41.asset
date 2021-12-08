@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: dfc79b5d-d9a3-4ef7-b629-0c9f941304c6
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Heh, not complaining...
+  text: 'Eh... no me quejo. '
   children:
   - 6d5fcc46-6aa5-4555-8ea0-ec117bbfa289
   rect:
     serializedVersion: 2
-    x: 284
-    y: -3
+    x: 283
+    y: 70
     width: 200
     height: 100
   onExitAction: 
@@ -37,7 +37,7 @@ MonoBehaviour:
   m_Name: 6d5fcc46-6aa5-4555-8ea0-ec117bbfa289
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Did you come for the equinox? This year promises to have a good celebration!
+  text: "\xBFRegresaste por el equinoxio? \xA1Este a\xF1o parece que ser\xE1 bueno! "
   children:
   - 1acbb951-8fba-4a1c-b413-fe2fbd4d65ed
   - 96e804bf-9980-43e9-9060-0c34c49fb41f
@@ -62,7 +62,7 @@ MonoBehaviour:
   m_Name: 7cbff0e2-599f-44bf-846d-7b5fc0ddcf3f
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: I thought it was you! How have you been?
+  text: "\xA1Oh, con que eras tu! \xBFC\xF3mo has estado? "
   children:
   - dfc79b5d-d9a3-4ef7-b629-0c9f941304c6
   rect:
@@ -94,6 +94,8 @@ MonoBehaviour:
   - {fileID: 2260455980536170161}
   - {fileID: 6346735082469797036}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
 --- !u!114 &258685799324981809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,7 +133,7 @@ MonoBehaviour:
   m_Name: 7c3724fe-7fd2-4ed5-9a10-81939d7fa04a
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: That's good! You won't regret it! I'm so glad to see you!
+  text: "\xA1Eso es genial! \xA1No te arrepentiras! \xA1Nos vemos luego! "
   children: []
   rect:
     serializedVersion: 2
@@ -154,7 +156,7 @@ MonoBehaviour:
   m_Name: 1acbb951-8fba-4a1c-b413-fe2fbd4d65ed
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Yes
+  text: "S\xED"
   children:
   - 7c3724fe-7fd2-4ed5-9a10-81939d7fa04a
   rect:
@@ -178,7 +180,7 @@ MonoBehaviour:
   m_Name: 628ca292-e32e-434c-9eaa-4b2bfd86e7ca
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Own...  Well.. tell your mom I said Hi!
+  text: "Own... bueno... \xA1Dile a tu madre que le mando saludos! "
   children: []
   rect:
     serializedVersion: 2

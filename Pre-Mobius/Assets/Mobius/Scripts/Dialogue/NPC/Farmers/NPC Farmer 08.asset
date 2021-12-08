@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: afd5493a-3466-4073-beaf-56bdb64b4766
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: You can't see I'm working on this crop field and you are smashing it with
-    your stinky feet? Be more careful!
+  text: "\xBFAcaso est\xE1s ciego? \xBFNo ves que estoy trabajando en este campo
+    de cultivo? \xA1Y tu lo est\xE1s aplastando con tus pies apestosos!l"
   children:
   - 5e39ed0f-6314-4554-9636-fde5fe2d746d
   rect:
@@ -38,7 +38,7 @@ MonoBehaviour:
   m_Name: 4c88be70-79f9-461b-8000-bb6a15c117fe
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: '*mumbles* uh... these seems like something off...'
+  text: "*murmullo* Eh... parece que algo no est\xE1 bien..."
   children:
   - 35d1caeb-37d9-4396-aa75-a468db054d5b
   rect:
@@ -62,7 +62,8 @@ MonoBehaviour:
   m_Name: 2f0985fe-e69a-4f45-94a1-f0152705874b
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'I think he is somewhere in the temple of our goddess Demeter. '
+  text: "Deber\xEDa estar flojeando en alg\xFAn punto del templo de nuestra Diosa
+    Demeter. "
   children: []
   rect:
     serializedVersion: 2
@@ -85,7 +86,7 @@ MonoBehaviour:
   m_Name: 5e39ed0f-6314-4554-9636-fde5fe2d746d
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: 'Oh, sorry. '
+  text: 'Oh, lo siento. '
   children:
   - 1340070a-a6c2-4cd6-9c17-1d7157b88320
   rect:
@@ -121,6 +122,8 @@ MonoBehaviour:
   - {fileID: 7455043102778606782}
   - {fileID: -5728465177017050328}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
 --- !u!114 &1398229818878039403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,7 +137,8 @@ MonoBehaviour:
   m_Name: 1340070a-a6c2-4cd6-9c17-1d7157b88320
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Sorry? SORRY? A mere ''sorry'' doesn''t make my crop field grow again! '
+  text: "\xBFLo siento? \xA1\xBFLO SIENTO?! \xA1 Un mero \"lo siento\" no har\xE1
+    que mi campo vuelva a crecer!"
   children:
   - 74426202-a5da-450a-bf35-a0cc9ea0e53b
   rect:
@@ -158,7 +162,8 @@ MonoBehaviour:
   m_Name: 734c52a4-a8c3-4894-81df-6d5227dccf57
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Friend? I don''t ever know nor remeber you. You are a weird kid. '
+  text: "\xBFAmigo? \xA1Ni siquiera te recuerdo! Es m\xE1s \xA1Ni te conozco! Eres
+    un chico demasiado raro y molesto."
   children:
   - 4c88be70-79f9-461b-8000-bb6a15c117fe
   rect:
@@ -182,7 +187,7 @@ MonoBehaviour:
   m_Name: bc4bd545-c1ff-48e2-8443-669cb49bf69c
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Woah! Listening to others conversations is rude!
+  text: "\xA1Oye! \xA1Escuchar conversaciones ajenas es grosero!"
   children:
   - 68c5d5a1-8829-4d95-bc27-6fb48cd7d264
   rect:
@@ -206,13 +211,13 @@ MonoBehaviour:
   m_Name: 3859e912-1ea7-4232-acbf-435933b4152d
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Hey! You there! Watch out! '
+  text: "\xA1Hey t\xFA! \xA1Ten cuidado por donde caminas! "
   children:
   - afd5493a-3466-4073-beaf-56bdb64b4766
   rect:
     serializedVersion: 2
-    x: 0
-    y: 0
+    x: 21
+    y: 42
     width: 200
     height: 100
   onExitAction: 
@@ -230,9 +235,9 @@ MonoBehaviour:
   m_Name: 68c5d5a1-8829-4d95-bc27-6fb48cd7d264
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'We are the only ones here! Anyway, if you want to know, all the days are
-    the same to me. But I think Calix was mumbling something recently. Go and pester
-    him off. '
+  text: "\xA1Somos los \xFAnicos aqu\xED! \xA1Y todos los d\xEDas son iguales para
+    m\xED! \xA1Ve a molestar a Calix, mejor! Ese viejo decr\xE9pito siempre est\xE1
+    murmurando para s\xED, sin hacer su trabajo. "
   children:
   - 2f0985fe-e69a-4f45-94a1-f0152705874b
   rect:
@@ -256,7 +261,8 @@ MonoBehaviour:
   m_Name: 35d1caeb-37d9-4396-aa75-a468db054d5b
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Eh? Somethin off? Are you crazy?
+  text: "\xBFEh? \xBFAlgo mal? \xBFAcaso est\xE1s loco? \xA1Tu eres lo \xFAnico mal
+    aqu\xED! "
   children:
   - bc4bd545-c1ff-48e2-8443-669cb49bf69c
   rect:
@@ -280,7 +286,7 @@ MonoBehaviour:
   m_Name: 74426202-a5da-450a-bf35-a0cc9ea0e53b
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Hey! stop it! You caa't be like that to an old friend!
+  text: "\xA1Hey, ya basta! No puedes tratar as\xED a un viejo amigo. "
   children:
   - 734c52a4-a8c3-4894-81df-6d5227dccf57
   rect:

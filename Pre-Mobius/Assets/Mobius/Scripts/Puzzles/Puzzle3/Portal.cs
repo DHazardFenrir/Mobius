@@ -6,14 +6,14 @@ public class Portal : MonoBehaviour
 {
 
     [SerializeField] Transform punto;
-    Transform player;
+   
 
     [SerializeField] AudioSource audio;
 
 
     private void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+       
     }
 
     private void OnTriggerEnter(Collider other)

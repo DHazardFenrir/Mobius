@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: 6dd21dca-f756-45bb-aeba-175305265ac0
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Trapped?
+  text: "\xBFAtrapado?"
   children:
   - fe8b7575-b554-4bb0-bb72-6345a3ce6025
   rect:
     serializedVersion: 2
-    x: 250
-    y: -1
+    x: 235
+    y: 14
     width: 200
     height: 100
   onExitAction: 
@@ -41,6 +41,8 @@ MonoBehaviour:
   - {fileID: -2844923911573434690}
   - {fileID: 5762653229518721896}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
 --- !u!114 &2807144808129499446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,8 +56,8 @@ MonoBehaviour:
   m_Name: 72bde5c5-8059-4e15-99ae-adf28ad845d7
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: It's funny you know? Our Lord Helios is supposedly to be inalterable, but
-    I think he is not the same. Like it's trapped or something..
+  text: "Es gracioso, \xBFsabes? Lord Helios se supone que debe ser inalterable.
+    Pero hay algo extra\xF1o en \xE9l, puedo sentirlo, como si estuviera atrapado. "
   children:
   - 6dd21dca-f756-45bb-aeba-175305265ac0
   rect:
@@ -79,13 +81,13 @@ MonoBehaviour:
   m_Name: fe8b7575-b554-4bb0-bb72-6345a3ce6025
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Hahahaa... It''s ridiculous right? The priest feels the same too. I don''t
-    think it can be possible, right? The sun trapped? '
+  text: "Jajaja.. es algo r\xEDdiculo , incluso el Gran Sacerdote lo piensa. El sol,
+    atrapado? Eso no puede ser posible \xBFverdad?"
   children: []
   rect:
     serializedVersion: 2
-    x: 492
-    y: 5
+    x: 534
+    y: 25
     width: 200
     height: 100
   onExitAction: 

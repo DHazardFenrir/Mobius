@@ -16,6 +16,8 @@ MonoBehaviour:
   - {fileID: 8725977344328425256}
   - {fileID: 2146332717431365642}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
 --- !u!114 &2146332717431365642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29,8 +31,8 @@ MonoBehaviour:
   m_Name: 4f5d70ba-7094-4284-b5da-098ce3ba7d93
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Maybe I''m going blind? Because, our Lady cannot be suffering... It cannot
-    be. '
+  text: "\xBFMe estar\xE9 volviendo ciego? Porque nuestra se\xF1ora no puede estar
+    sufriendo... Simplemente no puede. "
   children: []
   rect:
     serializedVersion: 2
@@ -53,8 +55,8 @@ MonoBehaviour:
   m_Name: 2ace1452-e9dd-474e-9466-d382c5151bc6
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Lady Selene doesn't shine like she used to. Her power, her vitality is disappearing,
-    every night I see her brilliance more dim.
+  text: "Lady Selene no brilla como antes... cada vez que la veo, siento como su
+    luz y su presencia se vuelven m\xE1s tenues..."
   children:
   - 4f5d70ba-7094-4284-b5da-098ce3ba7d93
   rect:

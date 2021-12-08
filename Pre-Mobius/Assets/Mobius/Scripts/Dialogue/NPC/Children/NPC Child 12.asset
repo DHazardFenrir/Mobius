@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: fca79cec-bf98-4e8f-9f6e-4a4682664b55
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Mm.. I''m bored. '
+  text: 'Eh... estoy aburrido. '
   children:
   - a7edc406-cea1-4805-87dc-6f14a8428630
   rect:
     serializedVersion: 2
-    x: 0
-    y: 0
+    x: 58
+    y: 51
     width: 200
     height: 100
   onExitAction: 
@@ -40,6 +40,8 @@ MonoBehaviour:
   - {fileID: -2357074192255034115}
   - {fileID: 4896043801968663960}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
 --- !u!114 &4896043801968663960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53,7 +55,7 @@ MonoBehaviour:
   m_Name: a7edc406-cea1-4805-87dc-6f14a8428630
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'I wish I could grow up and leave this town. '
+  text: 'Ya deseo ser mayor para irme de este pueblucho. '
   children: []
   rect:
     serializedVersion: 2

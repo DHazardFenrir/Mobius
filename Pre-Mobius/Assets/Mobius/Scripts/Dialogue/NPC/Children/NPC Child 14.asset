@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: d9a88a2d-2270-43c2-814e-f2bcf3c0bdf8
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'I like the view from this part of the town. There are no houses. '
+  text: "\xA1Me gusta mucho la vista de esta parte del pueblo! Aqu\xED no hay casas
+    que estorben. "
   children: []
   rect:
     serializedVersion: 2
-    x: 0
+    x: 1
     y: 0
     width: 200
     height: 100
@@ -38,3 +39,5 @@ MonoBehaviour:
   nodes:
   - {fileID: -7054458304336651345}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0

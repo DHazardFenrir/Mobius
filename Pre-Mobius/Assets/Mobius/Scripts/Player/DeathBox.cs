@@ -24,6 +24,7 @@ public class DeathBox : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             lM.StartLoopFadeForOthers();
+            Debug.Log("Entraste a la deathbox");
         }
     }
 }

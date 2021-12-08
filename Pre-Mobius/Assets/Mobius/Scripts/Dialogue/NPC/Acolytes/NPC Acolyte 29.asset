@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: 0acda87e-9364-4622-a189-ba674d36b74d
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Anyways, maybe it's for the better right? The High Priest has this twisted
-    sense of punishment. This town is not that bad...
+  text: "Pero puede que sea lo mejor \xBFno? El Gran Sacerdote tiene una idea un
+    poco torcida sobre el castigo. Este pueblo no es tan malo como lo quiere hacer
+    ver..."
   children: []
   rect:
     serializedVersion: 2
@@ -37,8 +38,9 @@ MonoBehaviour:
   m_Name: 1d08c0fe-7fa4-4fd7-8d62-5ca04f25fd30
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Oh! don't spook me, I was talking more to myself... Anyway. If you want to
-    know, the High Priest doesn't know...
+  text: "\xA1Oh! No me asustes. Hablaba m\xE1s conmigo mismo, pero si quieres saberlo,
+    ni siquiera el Gran Sacerdote sabe la raz\xF3n de este comportamiento tan extra\xF1o.
+    ."
   children:
   - 0acda87e-9364-4622-a189-ba674d36b74d
   rect:
@@ -62,13 +64,13 @@ MonoBehaviour:
   m_Name: 1b092d7f-4c96-4b09-a902-705a86f05bf1
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Why?
+  text: "\xBFPor qu\xE9? "
   children:
   - 1d08c0fe-7fa4-4fd7-8d62-5ca04f25fd30
   rect:
     serializedVersion: 2
-    x: 250
-    y: 0
+    x: 251
+    y: 44
     width: 200
     height: 100
   onExitAction: 
@@ -91,6 +93,8 @@ MonoBehaviour:
   - {fileID: -3125092123933214604}
   - {fileID: -7463400831113724781}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
 --- !u!114 &7942762864395644147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,8 +108,8 @@ MonoBehaviour:
   m_Name: bebacd47-4c21-41d8-813f-1b4d6d0e52db
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Our Lord Poseidon it's calm now. Usually he is more savage, bold if you want.
-    I feel like he is sleeping, I don't feel his presence at all..
+  text: "Nuestro Lord Poseidon ha estado... muy calmo. Usualmente es mucho m\xE1s
+    salvaje, intr\xE9pido, si gustas llamarlo. Siento como si estuviera dormido..."
   children:
   - 1b092d7f-4c96-4b09-a902-705a86f05bf1
   rect:

@@ -23,6 +23,7 @@ public class ColocarOfrenda : MonoBehaviour, IInteractable
         if(inventory.inventory.Contains(itemRequerido))
         {
             Instantiate(hozDemeter, ofrendaSpawn.position, ofrendaSpawn.rotation);
+            GetComponent<BoxCollider>().enabled = false;
             gm.puzzleFinished(0);
         }
     }

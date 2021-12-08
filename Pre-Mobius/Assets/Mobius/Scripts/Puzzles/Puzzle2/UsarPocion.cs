@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class UsarPocion : MonoBehaviour, IInteractable
 {
-    [SerializeField] MeshRenderer[] runas;
+    [SerializeField] GameObject[] runas;
 
     [SerializeField] Items pocionItem;
     public bool efectoActivo { get; private set; } = false;
@@ -33,14 +33,17 @@ public class UsarPocion : MonoBehaviour, IInteractable
     {
         Debug.Log("ActivarEfecto");
         efectoActivo = true;
+        Debug.Log("Usando pocion");
         if (audio != null)
         {
             audio.Play();
         }
         for (int i=0;i<runas.Length;i++)
         {
-            runas[i].enabled=true;
+            runas[i].GetComponent<MeshRenderer>().enabled=true;
+            runas[i].GetComponent<BoxCollider>().enabled = true;
         }
+        GetComponent<BoxCollider>().enabled = false;
     }
 
     void DesactivarEfecto()
@@ -49,9 +52,13 @@ public class UsarPocion : MonoBehaviour, IInteractable
 
         for (int i = 0; i < runas.Length; i++)
         {
-            runas[i].enabled=false;
+            runas[i].GetComponent<MeshRenderer>().enabled = false;
+            runas[i].GetComponent<BoxCollider>().enabled = false;
+
         }
         manager.ResetearClave();
+        GetComponent<BoxCollider>().enabled = true;
+        Debug.Log("Se acaba la pocion");
     }
 
     IEnumerator duracion()
@@ -72,45 +79,6 @@ public class UsarPocion : MonoBehaviour, IInteractable
     }
 
 
-    //private void OnTriggerStay(Collider other)
-    //{
-    //    if(other.CompareTag("Player"))
-    //    {
-    //        Debug.Log("Presiona K para usar la poción");
-    //        if (Input.GetKeyDown(KeyCode.E))
-    //        {
-    //            if (lM.timeToGet >= horaRequerida && inventory.inventory.Contains(pocionItem) && efectoActivo==false)
-    //            {                
-    //                ActivarEfecto();
-    //                StartCoroutine(duracion());
-    //            }
-    //            else
-    //            {
-    //                if(lM.timeToGet< horaRequerida)
-    //                {
-    //                    Debug.Log("No es hora de la hora");
-    //                }
-
-    //                if(inventory.inventory.Contains(pocionItem))
-    //                {
-    //                    Debug.Log("Hay pocion");
-    //                }
-    //                else
-    //                {
-    //                    Debug.Log("No hay pocion");
-    //                }
-
-    //                if(efectoActivo)
-    //                {
-    //                    Debug.Log("Efecto activo");
-    //                }
-    //                else
-    //                {
-    //                    Debug.Log("Efecto no activo");
-    //                }
-    //            }
-    //        }
-    //    }
-    //}
+   
 
 }

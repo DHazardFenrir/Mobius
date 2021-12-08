@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: c2369ecb-0ad2-4fb5-b20e-fbff605c42c2
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Even if you did not find anything, I'm sure that journey left some wisdom
-    in your heart and I would love to hear it at the party tomorrow!
+  text: "\xA1Incluso aunque no hayas encontrado nada! Estoy seguro que ese viaje
+    dej\xF3 algo de sabidur\xEDa en tu coraz\xF3n, \xA1y me encantar\xEDa escuchar
+    tus historias en la fiesta de ma\xF1ana! "
   children:
   - b5cb5092-28b1-4885-a2f8-b6da3ef0e52a
   rect:
@@ -38,7 +39,7 @@ MonoBehaviour:
   m_Name: 51a7c649-e09e-4fb4-9bab-87c7acb9871b
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Well...
+  text: 'Bueno... '
   children:
   - c2369ecb-0ad2-4fb5-b20e-fbff605c42c2
   rect:
@@ -62,7 +63,7 @@ MonoBehaviour:
   m_Name: b5cb5092-28b1-4885-a2f8-b6da3ef0e52a
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Party?
+  text: "\xBFFiesta? "
   children:
   - 8baa115d-de6a-4417-ae49-4c40958e9fae
   rect:
@@ -86,7 +87,7 @@ MonoBehaviour:
   m_Name: 25b6ba3e-a2f5-4de3-84c2-3a80e607613b
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: I wouldn't dare to skip it!
+  text: "\xA1No faltar\xE9 por nada del mundo!"
   children: []
   rect:
     serializedVersion: 2
@@ -119,6 +120,8 @@ MonoBehaviour:
   - {fileID: 7299006076068697538}
   - {fileID: -5287735962977093278}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
 --- !u!114 &2365283438022248959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,8 +135,8 @@ MonoBehaviour:
   m_Name: b8d36423-706e-455d-a81d-434280e1f2dc
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Don''t make me jealous, Syril. If you want to tell me, wait to the party
-    tomorrow! '
+  text: "\xA1No hagas que me vuelva celoso, Syril! Si quieres contarme tus historias,
+    mejor cu\xE9ntamelas en las fiesta de ma\xF1ana. "
   children:
   - b5cb5092-28b1-4885-a2f8-b6da3ef0e52a
   rect:
@@ -157,7 +160,7 @@ MonoBehaviour:
   m_Name: c33d6eda-95bb-49bb-9089-d418dd8acdec
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Heeeeeeeeeeeeeey!! Welcomee!!
+  text: "\xA1Heeeeeeeeeeeey! \xA1Bienvenido! "
   children:
   - 95f7e534-1421-4307-9ab2-db8fda8de59b
   rect:
@@ -181,7 +184,8 @@ MonoBehaviour:
   m_Name: 95f7e534-1421-4307-9ab2-db8fda8de59b
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: So? How did it go, Syril? You found what was missing? Wait, don't tell me!
+  text: "\xBFEntonces, c\xF3mo te fue Syril? \xBFEncontraste lo que te faltaba? \xA1Espera,
+    no me digas! "
   children:
   - 51a7c649-e09e-4fb4-9bab-87c7acb9871b
   - f34e1259-9781-4079-8e1c-00a377890cc0
@@ -206,7 +210,7 @@ MonoBehaviour:
   m_Name: f34e1259-9781-4079-8e1c-00a377890cc0
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Really you don't me to tell you?
+  text: "\xBFEn serio no quieres que te diga? "
   children:
   - b8d36423-706e-455d-a81d-434280e1f2dc
   rect:
@@ -230,8 +234,9 @@ MonoBehaviour:
   m_Name: 8baa115d-de6a-4417-ae49-4c40958e9fae
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Did you forget? Tomorrow is the equinox! Helio''s and Selene''s lovely celebration
-    for equity and safety. Please be there! '
+  text: "\xBFAcaso lo has olvidado? \xA1Ma\xF1ana es el equinoxio! La fiesta especial
+    de Helios y Selene por la equidad y la seguridad. \xA1Por favor, ni se te ocurra
+    faltar!  "
   children:
   - 25b6ba3e-a2f5-4de3-84c2-3a80e607613b
   rect:

@@ -6,17 +6,16 @@ public class PlayerInteract : MonoBehaviour
 {
     private Camera _camera;
     [SerializeField] GameObject texto = default;
-    [SerializeField] LayerMask interactableMask;
 
     private void Awake()
     {
         texto = GameObject.FindGameObjectWithTag("InteractiveText");
         texto.SetActive(false);
          rb = GetComponent<Rigidbody>();
-
     }
 
     Rigidbody rb;
+    RaycastHit hit;
 
     private void Start()
     {
@@ -33,8 +32,7 @@ public class PlayerInteract : MonoBehaviour
         if (nearestGameObject == null) return;
         
         if (Input.GetKeyDown(KeyCode.E))
-        {
-           
+        {          
             var interactable = nearestGameObject.GetComponent<IInteractable>();
             interactable?.Interact();
         }
@@ -50,6 +48,18 @@ public class PlayerInteract : MonoBehaviour
         if(Physics.Raycast(ray, out var hit, 5f))
         {
             result = hit.transform.gameObject;
+            if(result.CompareTag("Interactable"))
+            {
+                texto.SetActive(true);
+            }
+            else
+            {
+                texto.SetActive(false);
+            }
+        }
+        else
+        {
+            texto.SetActive(false);
         }
        
         
@@ -72,28 +82,28 @@ public class PlayerInteract : MonoBehaviour
             
             GameOver();
         }
+
+        if(other.CompareTag("Interactable"))
+        {
+            texto.SetActive(true);
+            Debug.Log("Se entro en un Interactable");
+        }
+
     }
+
+
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Interactable"))
-        {
-          
-            Debug.Log("Se entro en un Interactable");
-
-            texto.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))
-            {
-               
-                other.GetComponent<IInteractable>().Interact();
-                
+            {              
+                other.GetComponent<IInteractable>().Interact();               
             }
-        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        texto = GameObject.FindGameObjectWithTag("InteractiveText");
+        //texto = GameObject.FindGameObjectWithTag("InteractiveText");
         if (other.CompareTag("Interactable"))
         {
             texto.SetActive(false);

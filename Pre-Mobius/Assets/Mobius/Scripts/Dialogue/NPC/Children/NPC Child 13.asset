@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: efeba336-4001-4306-8321-2bdcf6e05efc
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'I still like the fire. '
+  text: "Pero a\xFAn as\xED me gusta este fuego. "
   children: []
   rect:
     serializedVersion: 2
@@ -36,7 +36,7 @@ MonoBehaviour:
   m_Name: e425b590-ca23-425d-a3b1-478a50e0931e
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: WAAAH!
+  text: "\xA1WAAAAAAAAAAH!"
   children:
   - 6fed5946-ce91-46e3-820e-303b83606c0d
   rect:
@@ -60,8 +60,9 @@ MonoBehaviour:
   m_Name: 6fed5946-ce91-46e3-820e-303b83606c0d
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Please don't scare me like that! I thought an evil spirit came for my soul!
-    What are you doing all the way here? You came to see the pretty fire to?
+  text: "\xA1Por favor no me asustes as\xED!  Pens\xE9 que era un espiritu maligno
+    que ven\xEDa a comerse mi alma. Pero \xBFt\xFA que haces aqu\xED? \xBFVienes
+    a ver el fuego tambi\xE9n?"
   children:
   - c0b8eaf6-ea76-4a23-bb01-1a8056b991cf
   rect:
@@ -91,6 +92,8 @@ MonoBehaviour:
   - {fileID: 4996237898734012745}
   - {fileID: -4537807719348674614}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
 --- !u!114 &4793650411727496949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,12 +107,12 @@ MonoBehaviour:
   m_Name: c0b8eaf6-ea76-4a23-bb01-1a8056b991cf
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: 'Yes... I suppose so. '
+  text: "S\xED... eso creo. "
   children:
   - 4956a0d9-85e7-4924-b91e-937fd07fe615
   rect:
     serializedVersion: 2
-    x: 534
+    x: 518
     y: 60
     width: 200
     height: 100
@@ -128,12 +131,12 @@ MonoBehaviour:
   m_Name: 4956a0d9-85e7-4924-b91e-937fd07fe615
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Today's a different color though.
+  text: "Hoy est\xE1 de un color diferente. "
   children:
   - efeba336-4001-4306-8321-2bdcf6e05efc
   rect:
     serializedVersion: 2
-    x: 785
+    x: 783
     y: 59
     width: 200
     height: 100

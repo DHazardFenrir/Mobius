@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: db6c8f2e-74e0-4cdd-ae45-cb1271693845
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: 'Yes! I missed you guys. '
+  text: "\xA1Los extra\xF1\xE9!"
   children:
   - 123c45c7-8e6f-426e-a421-806ffa6dbe49
   rect:
@@ -37,7 +37,7 @@ MonoBehaviour:
   m_Name: e15efa54-54ed-4a4e-8cfd-ff3e9fad254f
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Heh... not really, but I could just pass by and not say 'Hi' at least.
+  text: "Jeh, no realmente. Pero pasaba por aqu\xED y decid\xED saludarlos. "
   children:
   - 9c5c1f2d-60fc-4008-aea4-833d35932043
   rect:
@@ -61,8 +61,8 @@ MonoBehaviour:
   m_Name: 36131390-a7ef-4952-87e0-c9b5c47e0f44
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: I think you should not get too close, I am feeling a little light on my body.
-    Maybe I will get sick. So do not wander for long here boy.
+  text: "Creo que no deber\xEDas quedate m\xE1s de lo necesario, chico. Me estoy
+    sintiendo bastante mal. No me gustar\xEDa que te contagiaras. "
   children: []
   rect:
     serializedVersion: 2
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_Name: 4c1c3b38-fca7-4e45-b54f-6958ce8bb804
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Tell me about it...
+  text: 'Ni que lo digas. '
   children:
   - 36131390-a7ef-4952-87e0-c9b5c47e0f44
   rect:
@@ -118,6 +118,8 @@ MonoBehaviour:
   - {fileID: -4917598207862993112}
   - {fileID: 2618175750820375998}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
 --- !u!114 &504072208656267833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,8 +133,8 @@ MonoBehaviour:
   m_Name: e29fad82-71b7-45a8-bbd0-a8a21b99d31f
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Ha! Syril! Welcome back my boy! I see you made haste and came first to visit
-    these old hags. '
+  text: "\xA1Ja, Syril! \xA1Bienvenido, mi ni\xF1o! Veo que no te olvidaste de estos
+    ancianos decr\xE9pitos. "
   children:
   - db6c8f2e-74e0-4cdd-ae45-cb1271693845
   - e15efa54-54ed-4a4e-8cfd-ff3e9fad254f
@@ -157,8 +159,8 @@ MonoBehaviour:
   m_Name: 123c45c7-8e6f-426e-a421-806ffa6dbe49
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Heh. I do appreciate the gesture. Through I myself can not speak for the
-    other sages, you know? '
+  text: "Jeje, pues aprecio el gesto. Aunque no puedo hablar por los otros sabios,
+    s\xF3lo por m\xED. "
   children:
   - 4c1c3b38-fca7-4e45-b54f-6958ce8bb804
   rect:
@@ -182,7 +184,8 @@ MonoBehaviour:
   m_Name: d12a9e06-24aa-4c06-a7d0-2d6a06b040da
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'I think I''m getting sick. Please not linger more than necessary boy. '
+  text: "Mmmm... creo que me estoy enfermando. Por favor, no te quedes m\xE1s tiempo
+    del necesario. No me gustar\xEDa contagiarte. "
   children: []
   rect:
     serializedVersion: 2
@@ -205,7 +208,7 @@ MonoBehaviour:
   m_Name: 9c5c1f2d-60fc-4008-aea4-833d35932043
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Oh I see.. I appreciate the gesture nonethless.
+  text: "Oh, ya veo. A\xFAn as\xED aprecio el gesto de tu parte. "
   children:
   - d12a9e06-24aa-4c06-a7d0-2d6a06b040da
   rect:

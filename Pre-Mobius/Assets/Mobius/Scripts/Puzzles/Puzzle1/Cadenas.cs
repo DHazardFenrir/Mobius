@@ -22,5 +22,8 @@ public class Cadenas : MonoBehaviour, IInteractable
         anim.SetBool("Active", false);
         altar.GetComponent<BoxCollider>().enabled = true;
         Debug.Log("Dry Lake");
+        GetComponent<BoxCollider>().enabled = false;
+        GetComponent<CapsuleCollider>().enabled = false;
+
     }
 }

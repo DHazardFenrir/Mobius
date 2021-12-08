@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: c30b62dd-7ebd-4a81-8fb7-cd3dbdf4c29e
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'We talk... later kid... '
+  text: "Hablamos despu\xE9s... chico... "
   children: []
   rect:
     serializedVersion: 2
@@ -36,7 +36,7 @@ MonoBehaviour:
   m_Name: b4291131-d96e-4773-9e53-572783f378f2
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Glad... to see you, kid... can't speak... this boulder is giving me trouble...
+  text: 'Que bueno verte... chico... no puedo.. hablar... debo... seguir... empujando... '
   children:
   - c30b62dd-7ebd-4a81-8fb7-cd3dbdf4c29e
   rect:
@@ -63,3 +63,5 @@ MonoBehaviour:
   - {fileID: -6071931170708598845}
   - {fileID: -8493221533216486707}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0

@@ -67,16 +67,14 @@ public class OpenInventory : MonoBehaviour
         if (isOpen)
         {
             Time.timeScale = 0;
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
             gm.onOtherScreen = true;
+            gm.OnUI();
         }
         else
         {
             Time.timeScale = 1;
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
             gm.onOtherScreen = false;
+            gm.OnUI();
         }
     }
 

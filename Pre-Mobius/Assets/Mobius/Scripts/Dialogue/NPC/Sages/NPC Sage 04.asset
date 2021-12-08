@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 4276f969-a40c-4c6a-95ed-98e1362e5a44
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Argh! Forget it, Syril. I am still angry for the way you left, but I''m
-    glad you are safe. '
+  text: "\xA1Argh! \xA1Olv\xEDdalo, Syril! A\xFAn estoy molesto por la forma en que
+    te fueste, pero me alegra que hayas regresado sano y salvo. "
   children: []
   rect:
     serializedVersion: 2
@@ -37,7 +37,7 @@ MonoBehaviour:
   m_Name: 7c301957-d58a-4db4-8ce8-50c0cebd6abc
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Heh, I'm not that lucky. My adventures were more mundane
+  text: "Jejeje. No tengo tanta suerte, mis aventuras han sido m\xE1s... mundanas. "
   children:
   - 82136a7f-5399-49af-bdbe-a036eff9bc85
   rect:
@@ -61,7 +61,8 @@ MonoBehaviour:
   m_Name: 45e60038-9fb0-43d3-810a-8143714305b7
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'So, where are the scales of the slayed dragons or the eyes of a Basilisk? '
+  text: "Entonces, dime. \xBFD\xF3nde tienes las escalas de los dragones que has
+    matado? \xBFO los ojos de los bas\xEDliscos? "
   children:
   - 7c301957-d58a-4db4-8ce8-50c0cebd6abc
   rect:
@@ -95,6 +96,8 @@ MonoBehaviour:
   - {fileID: 9204246347955485900}
   - {fileID: 1565990386505108265}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
 --- !u!114 &1565990386505108265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,8 +111,8 @@ MonoBehaviour:
   m_Name: a4d8eae0-a3a5-476b-ad35-b275ebc7395f
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Puf... so planning on leaving again? And here I was thinking if I should
-    tell you the customary 'Welcome back' quote...
+  text: "Puf... \xBFentonces planeas irte otra vez? Y aqu\xED que pensaba decirte
+    \"bienvenido de vuelta\""
   children: []
   rect:
     serializedVersion: 2
@@ -132,8 +135,8 @@ MonoBehaviour:
   m_Name: 82136a7f-5399-49af-bdbe-a036eff9bc85
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Nothing then? What a shame you did not find the fame and fortune you were
-    seeking. '
+  text: "\xBFNada, entonces? Que l\xE1stima que no hayas encontrado la fama y fortuna
+    que tanto deseabas. "
   children:
   - a4b5ef54-a1bc-4b6d-a4c7-fcfd79085f70
   - 832e58b6-a384-409a-a1fa-e4d21d02cabe
@@ -158,7 +161,8 @@ MonoBehaviour:
   m_Name: a1b198bb-665e-434f-9639-7708e408ef0f
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: 'Not really! I just missed home, so I decided to take a break and come back. '
+  text: "\xA1No realmente! S\xF3lo me sent\xEDa nostalgico y extra\xF1aba mi hogar,
+    as\xED que decid\xED tomarme un peque\xF1o descanso. "
   children:
   - 45e60038-9fb0-43d3-810a-8143714305b7
   rect:
@@ -182,8 +186,8 @@ MonoBehaviour:
   m_Name: a4b5ef54-a1bc-4b6d-a4c7-fcfd79085f70
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: 'We need to start somewhere, don''t you think? the great adventures will
-    come later. '
+  text: "Debemos empezar en alg\xFAn lado, \xBFno crees? Las grandes aventuras vendr\xE1n
+    despu\xE9s. "
   children:
   - a4d8eae0-a3a5-476b-ad35-b275ebc7395f
   rect:
@@ -207,8 +211,8 @@ MonoBehaviour:
   m_Name: bb7dfc92-48f3-4a8d-8296-24de5b8c197b
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Well, well, look who is back from finding himself. The strong and independet
-    Syril. Tired of endless adventures are you not?
+  text: "Miren qui\xE9n regres\xF3. El valiente e independiente Syril. \xBFYa cansado
+    de tus interminables aventuras? "
   children:
   - a1b198bb-665e-434f-9639-7708e408ef0f
   rect:
@@ -232,7 +236,7 @@ MonoBehaviour:
   m_Name: 832e58b6-a384-409a-a1fa-e4d21d02cabe
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: I didn't leave because I wanted that..
+  text: 'No me fui porque quisiera eso... '
   children:
   - 4276f969-a40c-4c6a-95ed-98e1362e5a44
   rect:

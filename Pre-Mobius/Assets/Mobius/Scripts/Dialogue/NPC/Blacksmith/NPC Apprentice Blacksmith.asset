@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: b8b988a9-a744-469d-8f48-6bc67eb01ad7
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'So I can''t talk right now! See ya! I''m on my way! '
+  text: "\xA1Te veo luego! "
   children: []
   rect:
     serializedVersion: 2
@@ -36,9 +36,9 @@ MonoBehaviour:
   m_Name: 5ab8c9f0-b33a-4db7-8e55-b5b9bf00b647
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Hello, Syril! You talked to master? I''m a bit busy ritght now you see?
-    Master is making a new legendary sword, and needs a lot of materials. It''s my
-    duty to provide my master with them! '
+  text: "\xA1Hola Syril! \xBFYa hablaste con el Maestro? Uh, no puedo hablar ahora,
+    \xA1el maestro est\xE1 forjando una espada legendaria! Y debo ir por los materiales
+    necesarios. \xA1Es mi trabajo proveerle! "
   children:
   - b8b988a9-a744-469d-8f48-6bc67eb01ad7
   rect:
@@ -65,3 +65,5 @@ MonoBehaviour:
   - {fileID: -3604443864854394689}
   - {fileID: -5258855309096799929}
   newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
