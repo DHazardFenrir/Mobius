@@ -28,7 +28,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Control0:
-        m_Texture: {fileID: -1785099152398206397, guid: ad3eccd2634a3024895edda95805fb25,
+        m_Texture: {fileID: -9046735226924203042, guid: 47d86862531b5584ab6d6b80d2944ace,
           type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -198,8 +198,8 @@ Material:
     - _GrassCut: 0
     - _GrassSaturation: 2.48
     - _GrassShading: 0.044
-    - _GrassThinness: 0.85
-    - _GrassThinnessIntersection: 0.3
+    - _GrassThinness: 0.77
+    - _GrassThinnessIntersection: 0.01
     - _Metallic: 0
     - _Metallic0: 0
     - _Metallic1: 0
@@ -209,12 +209,12 @@ Material:
     - _Metallic5: 0
     - _Metallic6: 0
     - _Metallic7: 0
-    - _MinimumNumberStacks: 2
+    - _MinimumNumberStacks: 3.6
     - _Mode: 0
     - _NoisePower: 5
     - _NumberOfStacks: 17
     - _OcclusionStrength: 1
-    - _OffsetValue: 10
+    - _OffsetValue: 0.79
     - _Parallax: 0.02
     - _PrioA: 1
     - _PrioB: 1
@@ -222,9 +222,9 @@ Material:
     - _PrioD: 1
     - _PrioGround: 1
     - _RTEffect: 1
-    - _RimMax: 0.591
+    - _RimMax: 0.454
     - _RimMin: 0.11
-    - _RimPower: 3.15
+    - _RimPower: 2.91
     - _ShadowFuziness: 1
     - _ShadowMax: 0
     - _SmoothnessTextureChannel: 0
@@ -249,7 +249,7 @@ Material:
     - _Color: {r: 0.95699996, g: 0.95699996, b: 0.95699996, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _GroundColor: {r: 1, g: 0.81085163, b: 0.6084906, a: 1}
-    - _OffsetVector: {r: 0, g: 0, b: 0, a: 0}
+    - _OffsetVector: {r: 0.5, g: 0.5, b: 0, a: 0}
     - _PJShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ProjectedShadowColor: {r: 0.48900002, g: 0.3268856, b: 0.18728702, a: 1}
     - _RimColor: {r: 0.277, g: 0.25819692, b: 0.1355532, a: 1}
@@ -266,3 +266,4 @@ Material:
     - _Splat5_STn: {r: 1, g: 1, b: 0, a: 1}
     - _Splat6_STn: {r: 1, g: 1, b: 0, a: 1}
     - _Splat7_STn: {r: 1, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []

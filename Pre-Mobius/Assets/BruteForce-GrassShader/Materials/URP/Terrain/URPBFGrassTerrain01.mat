@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: URPBFGrassTerrain01
   m_Shader: {fileID: 4800000, guid: 374b0d9785a06b24bbbe612b37995204, type: 3}
-  m_ShaderKeywords: USE_RT USE_SC _RTEFFECT_ON
+  m_ShaderKeywords: USE_BP USE_RT USE_SC _RTEFFECT_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -28,7 +28,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Control0:
-        m_Texture: {fileID: -3823662097116110742, guid: e35e982e73e6a824f93353bfc3d9d977,
+        m_Texture: {fileID: -9046735226924203042, guid: 47d86862531b5584ab6d6b80d2944ace,
           type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -196,10 +196,10 @@ Material:
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _GrassCut: 0
-    - _GrassSaturation: 2.48
-    - _GrassShading: 0.044
-    - _GrassThinness: 0.85
-    - _GrassThinnessIntersection: 0.3
+    - _GrassSaturation: 2.27
+    - _GrassShading: 0.082
+    - _GrassThinness: 0.51
+    - _GrassThinnessIntersection: 0.36
     - _Metallic: 0
     - _Metallic0: 0
     - _Metallic1: 0
@@ -209,12 +209,12 @@ Material:
     - _Metallic5: 0
     - _Metallic6: 0
     - _Metallic7: 0
-    - _MinimumNumberStacks: 2
+    - _MinimumNumberStacks: 3.2
     - _Mode: 0
     - _NoisePower: 4
-    - _NumberOfStacks: 17
+    - _NumberOfStacks: 14.36
     - _OcclusionStrength: 1
-    - _OffsetValue: 8
+    - _OffsetValue: 1.1
     - _Parallax: 0.02
     - _PrioA: 1
     - _PrioB: 1
@@ -231,25 +231,25 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _TextureScale: 0.25
-    - _TilingN1: 6.78
-    - _TilingN2: 0.05
-    - _TilingN3: 0.4
+    - _TilingN1: 133.32
+    - _TilingN2: 0.32
+    - _TilingN3: 0.11
     - _UVSec: 0
     - _UseAmbientLight: 0
     - _UseBetterModelPrecision: 0
-    - _UseBiplanar: 0
+    - _UseBiplanar: 1
     - _UseRT: 1
     - _UseShadowCast: 1
     - _UseVR: 0
-    - _WindForce: 0.3
-    - _WindMovement: 0.2
+    - _WindForce: 0.1
+    - _WindMovement: 0.1
     - _ZWrite: 1
     - __NumberOfStacks: 17
     m_Colors:
     - _Color: {r: 0.95699996, g: 0.95699996, b: 0.95699996, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _GroundColor: {r: 1, g: 0.81085163, b: 0.6084906, a: 1}
-    - _OffsetVector: {r: 0, g: 0, b: 0, a: 0}
+    - _OffsetVector: {r: 1, g: 1, b: 0, a: 0}
     - _PJShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ProjectedShadowColor: {r: 0.48900002, g: 0.3268856, b: 0.18728702, a: 1}
     - _RimColor: {r: 0.277, g: 0.25819692, b: 0.1355532, a: 1}
@@ -266,3 +266,4 @@ Material:
     - _Splat5_STn: {r: 1, g: 1, b: 0, a: 1}
     - _Splat6_STn: {r: 1, g: 1, b: 0, a: 1}
     - _Splat7_STn: {r: 1, g: 1, b: 0, a: 1}
+  m_BuildTextureStacks: []
