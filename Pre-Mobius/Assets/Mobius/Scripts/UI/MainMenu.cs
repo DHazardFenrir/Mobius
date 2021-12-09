@@ -8,6 +8,8 @@ public class MainMenu : MonoBehaviour
     [SerializeField] GameObject menuGO;
     [SerializeField] GameObject creditosGO;
     [SerializeField] GameObject controlesGO;
+    [SerializeField] private GameObject videoGO;
+    [SerializeField] private GameObject adornos;
 
 
     private void Start()
@@ -24,7 +26,11 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene(1);
+        //SceneManager.LoadScene(1);
+        adornos.gameObject.SetActive(false);
+        menuGO.gameObject.SetActive(false);
+        videoGO.gameObject.SetActive(true);
+        
     }
 
     public void Creditos()

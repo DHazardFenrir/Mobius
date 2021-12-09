@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3506890446094672666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: d74cdbc8-bb03-4722-93e5-8781ba9e8c0c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "A\xFAn si la tuvieramos, el Gran Sacerdote se reh\xFAsa a hablar con \xE9l.
+    No s\xE9 si es resentimiento, desesperanza o locura. "
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1029
+    y: 76
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-2660783999833257240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: a2441889-30fa-43f5-90f5-e5d547a97c0b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "\xBFUh? \xBFPorque te interesa? No si pudieras regresar en el tiempo... "
+  children:
+  - d74cdbc8-bb03-4722-93e5-8781ba9e8c0c
+  rect:
+    serializedVersion: 2
+    x: 779
+    y: 76
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-247703932691017856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 59c23ca4-4e57-4c05-aa50-1579fcb4f5a6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "No hay manera de comunicarse con nuestro Se\xF1or Poseid\xF3n... "
+  children:
+  - b868e8b3-f3b5-43a7-8a9d-6af128717e93
+  rect:
+    serializedVersion: 2
+    x: 279
+    y: 36
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
+  m_Name: AcolythePocion
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 1716809579292053993}
+  - {fileID: -247703932691017856}
+  - {fileID: 643136428829999182}
+  - {fileID: -2660783999833257240}
+  - {fileID: -3506890446094672666}
+  newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
+--- !u!114 &643136428829999182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: b868e8b3-f3b5-43a7-8a9d-6af128717e93
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: "\xBFCuando ocurri\xF3 eso?"
+  children:
+  - a2441889-30fa-43f5-90f5-e5d547a97c0b
+  rect:
+    serializedVersion: 2
+    x: 529
+    y: 36
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &1716809579292053993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: e7b38566-7acf-4a81-8d7d-feb325fd5332
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Si la tienda de pociones no se hubiera quemado... quizas aun tendr\xEDamos
+    esperanza. "
+  children:
+  - 59c23ca4-4e57-4c05-aa50-1579fcb4f5a6
+  rect:
+    serializedVersion: 2
+    x: 6
+    y: 1
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
