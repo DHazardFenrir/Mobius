@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 8111665966397123031}
   - component: {fileID: 6267056848304760307}
   - component: {fileID: 2433855659396413849}
+  - component: {fileID: 1951967502679239982}
   m_Layer: 0
   m_Name: default
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,7 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - {fileID: 0}
-  conversantName: 
+  conversantName: Presero
   lightManager: {fileID: 0}
 --- !u!114 &8111665966397123031
 MonoBehaviour:
@@ -143,6 +144,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.9999992, y: 3.024237, z: 2.4402497}
   m_Center: {x: -0.00000045611148, y: 0.42242846, z: 0.22012556}
+--- !u!135 &1951967502679239982
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713568345560826522}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.5121185
+  m_Center: {x: -0.0000005066395, y: 0.4224285, z: 0}
 --- !u!1 &7658963479350655555
 GameObject:
   m_ObjectHideFlags: 0
@@ -154,7 +168,7 @@ GameObject:
   - component: {fileID: 6990090301164675321}
   m_Layer: 0
   m_Name: Presero
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
