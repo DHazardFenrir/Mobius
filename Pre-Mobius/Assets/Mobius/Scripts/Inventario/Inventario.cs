@@ -6,6 +6,7 @@ public class Inventario : MonoBehaviour
 {
 
     public List<Items> inventory;
+  
 
 
     private void Start()
@@ -38,6 +39,7 @@ public class Inventario : MonoBehaviour
         {
  
             inventory.Add(FindObjectOfType<ItemToPick>().item);
+         
             Destroy(FindObjectOfType<ItemToPick>().gameObject);
 
         }

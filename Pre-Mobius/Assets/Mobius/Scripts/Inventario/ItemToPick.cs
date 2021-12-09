@@ -7,6 +7,7 @@ public class ItemToPick : MonoBehaviour, IInteractable
     public Items item;
     [SerializeField] Inventario inventario;
     [SerializeField] GameObject particles;
+    [SerializeField] private AudioSource audioPlay;
 
     [SerializeField] float minD;
     
@@ -17,7 +18,7 @@ public class ItemToPick : MonoBehaviour, IInteractable
 
     private void Awake()
     {
-
+        audioPlay = GetComponent<AudioSource>();
     }
 
     private void Start()
@@ -25,6 +26,7 @@ public class ItemToPick : MonoBehaviour, IInteractable
      
 
         inventario = FindObjectOfType<Inventario>().GetComponent<Inventario>();
+       
         check();
         //thisMesh = GetComponentInChildren<MeshFilter>();
     }
@@ -53,9 +55,18 @@ public class ItemToPick : MonoBehaviour, IInteractable
         if (Physics.Raycast(camera.transform.position, camera.transform.TransformDirection(Vector3.forward), out hit, minD, itemMask))
             {
             Debug.Log("Did Hit");
+            if (audioPlay != null)
+            { 
+                audioPlay.Play();
+                Debug.Log("Play");
+
+            }
+           
             inventario.inventory.Add(item);
             StartCoroutine(ActivarParticulas());
-            }       
+        }  
+        
+        audioPlay.Stop();
      }
     
     IEnumerator ActivarParticulas()
