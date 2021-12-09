@@ -54,17 +54,16 @@ public class ItemToPick : MonoBehaviour, IInteractable
             {
             Debug.Log("Did Hit");
             inventario.inventory.Add(item);
-            StartCoroutine(ActivarParticulas());
+            ActivarParticulas();
             }       
      }
     
-    IEnumerator ActivarParticulas()
+    void ActivarParticulas()
     {
         GameObject particulas = Instantiate(particles, transform.position, transform.rotation);
         var sh = particulas.GetComponent<ParticleSystem>().shape;
         sh.shapeType = ParticleSystemShapeType.Mesh;
         sh.mesh = myMesh;
-        yield return new WaitForSeconds(1f);
         particulas.SetActive(true);
         particulas.GetComponent<ParticleSystem>().Play();
         Destroy(particulas, 2f);
