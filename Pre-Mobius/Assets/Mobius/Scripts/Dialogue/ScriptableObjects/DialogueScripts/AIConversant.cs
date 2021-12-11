@@ -14,17 +14,33 @@ namespace DialogueSystem.AIDialogue
         PlayerConversant dialogueIsFinished;
         int i;
         [SerializeField]private LightingManager lightManager;
+
+        [SerializeField] bool needEnergy;
+        [SerializeField] float energyRequired;
+
+        PlayerEnergy playerE;
    
         private void Awake()
         {
             dialogueIsFinished = GameObject.FindObjectOfType<PlayerConversant>();
             lightManager = GameObject.FindObjectOfType<LightingManager>();
+            playerE = FindObjectOfType<PlayerEnergy>();
            
         }
 
         public void Interact()
         {
-            Talk();
+            if(needEnergy)
+            {
+                if(playerE.energy >= energyRequired)
+                {
+                Talk();
+                }
+            }
+            else
+            {
+                Talk();
+            }
         }
 
 
