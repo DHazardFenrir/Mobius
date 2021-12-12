@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8552597388022616202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 2b02e253-edf9-4341-87ec-ae367403513a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "S\xF3lo recuerdo dos runas... una extra\xF1a runa morada y otra runa ros\xE1cea. "
+  children:
+  - eb0429c6-ef60-47a3-84c4-4b61e1e1a3fc
+  rect:
+    serializedVersion: 2
+    x: 463
+    y: 51
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-7081836231856652531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: c245b82e-9048-4208-9698-4356c0df6d2d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Mi marido se ha ido de la casa desde la madrugada y no ha vuelto. \xA1Estoy
+    muy preocupada por \xE9l! Antes de irse, estuvo murmurando varias cosas extra\xF1as
+    entre sue\xF1os..."
+  children:
+  - f1cf22f6-dc2a-4720-bfe9-ae8c280a31b9
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-3093840142859481484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: eb0429c6-ef60-47a3-84c4-4b61e1e1a3fc
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Es tan injusto... si tan s\xF3lo pudiera... "
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 713
+    y: 51
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
+  m_Name: Emyra_Esposa_Sacerdote_Poseidon
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -7081836231856652531}
+  - {fileID: 8653548473402166015}
+  - {fileID: -8552597388022616202}
+  - {fileID: -3093840142859481484}
+  newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
+--- !u!114 &8653548473402166015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: f1cf22f6-dc2a-4720-bfe9-ae8c280a31b9
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Oh por Poseid\xF3n... yo har\xEDa gustosa su trabajo para que \xE9l no tuviera
+    que velar por nosotros, pero apenas y si puedo aprenderme el rito..."
+  children:
+  - 2b02e253-edf9-4341-87ec-ae367403513a
+  rect:
+    serializedVersion: 2
+    x: 213
+    y: 51
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 

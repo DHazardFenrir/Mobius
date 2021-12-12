@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-152019418623059932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 855aa29d-0d53-486a-890f-1d7b2b55ed2e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Alguien lo suficientemente loco hubiera podido entrar y sacarla... pero
+    nadie quiere morir carbonizado entre las llamas. '
+  children:
+  - 59a69b4a-c8e1-453b-b271-1f5891fc2dde
+  rect:
+    serializedVersion: 2
+    x: 240
+    y: 58
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
+  m_Name: AcolitoPoseidon(Vali)
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 7519034697848078709}
+  - {fileID: -152019418623059932}
+  - {fileID: 4383224208434777595}
+  newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
+--- !u!114 &4383224208434777595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 59a69b4a-c8e1-453b-b271-1f5891fc2dde
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "El Sumo Sacerdote creo que se ha rendido, pues desde ese suceso, cree que 
+    nuestro Se\xF1or nos ha abandonado y cada hora del d\xEDa ruega por nuestro castigo."
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 490
+    y: 58
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &7519034697848078709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 8c5c4079-47cc-48da-9c2e-86e7994549f1
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Si la tienda de posiones no se hubiera quemado... quiz\xE1s el Sumo Sacerdote
+    podr\xEDa haberse comunicado con nuestro Se\xF1or para cerciorarse de que todo
+    estuviera bien... "
+  children:
+  - 855aa29d-0d53-486a-890f-1d7b2b55ed2e
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
