@@ -10,6 +10,9 @@ public class UnlockPlace : MonoBehaviour, IInteractable
     [SerializeField] GameObject forceField;
     [SerializeField] Mesh myMesh;
 
+    [SerializeField] bool beach;
+    [SerializeField] GameObject[] beachFF;
+
     PlayerEnergy playerE;
 
     private void Start()
@@ -20,16 +23,35 @@ public class UnlockPlace : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        
-        if (playerE.energy >= energyRequired)
+        if(!beach)
         {
-            UnlockWay();
-            playerE.EnergyLoose(energyRequired);
+            if (playerE.energy >= energyRequired)
+            {
+                UnlockWay();
+                playerE.EnergyLoose(energyRequired);
+            }
         }
         else
         {
+            UnlockBeach();
+        }
+          
+    }
 
-        }      
+    void UnlockBeach()
+    {
+        
+        for(int i=0;i<beachFF.Length;i++)
+        {
+            GameObject particulas = Instantiate(particles, beachFF[i].transform.position, beachFF[i].transform.rotation);
+            var sh = particulas.GetComponent<ParticleSystem>().shape;
+            sh.shapeType = ParticleSystemShapeType.Mesh;
+            sh.mesh = myMesh;
+            particulas.SetActive(true);
+            particulas.GetComponent<ParticleSystem>().Play();
+            Destroy(particulas, 2f);
+        }
+        Destroy(this.gameObject);
     }
 
     void UnlockWay()
@@ -41,7 +63,6 @@ public class UnlockPlace : MonoBehaviour, IInteractable
         particulas.SetActive(true);
         particulas.GetComponent<ParticleSystem>().Play();
         Destroy(particulas, 2f);
-        Destroy(forceField);
         Destroy(this.gameObject);
     }
 
