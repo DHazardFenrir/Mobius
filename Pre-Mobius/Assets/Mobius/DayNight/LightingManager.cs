@@ -25,6 +25,7 @@ public class LightingManager : MonoBehaviour
 
     private void Awake()
     {
+        this.enabled = true;
         if (player == null)
         {
             player = GameObject.Find("Player");
@@ -34,9 +35,12 @@ public class LightingManager : MonoBehaviour
 
     private void Start()
     {
+        this.enabled = true;
+
         player.transform.position = playerSpawn.position;
         loopLight.DOFade(0f, 2f);
         Debug.Log("doing fade");
+        
     }
 
 

@@ -8,6 +8,7 @@ public class PlayerSetUp : MonoBehaviour
     void Start()
     {
         lManager = FindObjectOfType<LightingManager>();
+        lManager.enabled = true;
         DestroyImpostor();
     }
    public void DestroyImpostor()
