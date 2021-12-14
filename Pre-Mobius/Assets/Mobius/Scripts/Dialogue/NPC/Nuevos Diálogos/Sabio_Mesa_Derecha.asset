@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
+  m_Name: Sabio_Mesa_Derecha
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 8334513506795462245}
+  newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
+--- !u!114 &8334513506795462245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: c7fc5eba-1352-4731-a7ab-03f513ab50e3
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "No s\xE9 si es porque mis o\xEDdos ya no funcionan como antes, pero siento
+    que el pueblo est\xE1 demasiado tranquilo a pesar de las festividades. "
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 

@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
+  m_Name: Sabio_Mesa_Izquierda
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 3367633298707406610}
+  - {fileID: 3091203835168225723}
+  - {fileID: 3317803727068834445}
+  - {fileID: 4055248612496211536}
+  newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
+--- !u!114 &3091203835168225723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: bd6b4c0f-3430-43e4-a95e-5ba5f658ce0f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Si te sirve de algo, s\xF3lo recuerdo la \xFAltima parte de su rito de runas.
+    Por si quisieras atreverte a hacer tu el ritual. Conf\xEDo en que tienes la capacidad
+    de hacerlo, Syril. "
+  children:
+  - 8ba2ed48-c7ca-4819-8733-ba0a98130ef6
+  rect:
+    serializedVersion: 2
+    x: 214
+    y: 28
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &3317803727068834445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 8ba2ed48-c7ca-4819-8733-ba0a98130ef6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Umm... si no mal recuerdo,  las \xFAltimas runas eran una runa verde y otra
+    de color azul. "
+  children:
+  - 08e6bace-5163-42c4-933a-6041c53ecf7d
+  rect:
+    serializedVersion: 2
+    x: 466
+    y: 27
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &3367633298707406610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: dc87cb50-cfc8-4958-a374-4e97c5b56c74
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Uhm... Ese Cassius es tan necio como siempre. No quiero juzgarlo, pero...
+  children:
+  - bd6b4c0f-3430-43e4-a95e-5ba5f658ce0f
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &4055248612496211536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 08e6bace-5163-42c4-933a-6041c53ecf7d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Ahhh... ya veo venir que Cassius se niegue a hacerlo. '
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 716
+    y: 27
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 

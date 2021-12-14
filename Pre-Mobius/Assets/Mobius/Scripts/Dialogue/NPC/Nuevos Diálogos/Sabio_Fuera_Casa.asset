@@ -1,0 +1,148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4877573328931480048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 4d52551e-a647-40f3-bbf9-77a01afdad6e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Espero que nada malo les pase a las ofrendas. '
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 947
+    y: 53
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-3320292946322904000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 17f2a424-f75e-436c-9785-0bf6b42a8538
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Y para nuestro Se\xF1or Poseid\xF3n, una concha mar\xEDntima cuya perla
+    se dice es la l\xE1grima de la Se\xF1ora Anf\xEDtrite, la perla m\xE1s preciosa
+    del mundo. "
+  children:
+  - 4d52551e-a647-40f3-bbf9-77a01afdad6e
+  rect:
+    serializedVersion: 2
+    x: 696
+    y: 54
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-3178795836868611998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 7a1586d8-e369-4e52-be65-541a516a9c1b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Ah... me atrapas en un momento reflexivo, Syril. Estaba pensando en las
+    ofrendas, justamente porque espero que las de este a\xF1o sean del agrado de
+    los dioses. "
+  children:
+  - deabb7d3-6ead-4d4b-9ecb-e76b5336b53b
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
+  m_Name: Sabio_Fuera_Casa
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -3178795836868611998}
+  - {fileID: 5407228208630012817}
+  - {fileID: 3173830703637843252}
+  - {fileID: -3320292946322904000}
+  - {fileID: -4877573328931480048}
+  newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
+--- !u!114 &3173830703637843252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 3053bdf5-0d05-4c45-a307-229206792bda
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Para nuestro Se\xF1or Hades, escogimos una cesta llena de frutas y verduras
+    diversas: un durazno, una alcaparra, un maiz y una berenjena. "
+  children:
+  - 17f2a424-f75e-436c-9785-0bf6b42a8538
+  rect:
+    serializedVersion: 2
+    x: 446
+    y: 54
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &5407228208630012817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: deabb7d3-6ead-4d4b-9ecb-e76b5336b53b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Para nuestra Se\xF1ora Demeter, escogimos la Hoz Dorada. Decidimos que es
+    tiempo de devolverla a su respectiva due\xF1a, d\xE1ndole gracias por sus ense\xF1anzas. "
+  children:
+  - 3053bdf5-0d05-4c45-a307-229206792bda
+  rect:
+    serializedVersion: 2
+    x: 196
+    y: 54
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 

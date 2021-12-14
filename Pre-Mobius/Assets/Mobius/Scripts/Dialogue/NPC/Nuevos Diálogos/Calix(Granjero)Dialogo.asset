@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5291119993496683186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 47383e98-700f-4fc7-8545-defd5113b066
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Umh... Dioh me preocupa. Lo vi durmiendo bajo un hermoso \xE1rbol de durazno.
+    Ten\xEDa algo brillante y dorado amarrado a su toga, pero despu\xE9s que se levant\xF3,
+    no lo vi m\xE1s."
+  children:
+  - 30bb61a7-14f5-40c3-b902-268c63020a5e
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 1
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-2381659541622843380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: fa40c640-9def-4051-a32f-4ac5ca2e7319
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "\xA1No se te olvide darme el cr\xE9dito si encuentras algo! "
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 455
+    y: 35
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
+  m_Name: Calix(Granjero)Dialogo
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -5291119993496683186}
+  - {fileID: 2427732616115926150}
+  - {fileID: -2381659541622843380}
+  newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
+--- !u!114 &2427732616115926150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 30bb61a7-14f5-40c3-b902-268c63020a5e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "\xBFSabes? Ir\xEDa al lugar yo mismo, pero tengo mucho trabajo aqu\xED,
+    alguien debe recoger la cosecha. \xBFPor qu\xE9 no vas y echas un vistazo por
+    ti mismo? "
+  children:
+  - fa40c640-9def-4051-a32f-4ac5ca2e7319
+  rect:
+    serializedVersion: 2
+    x: 209
+    y: 30
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 

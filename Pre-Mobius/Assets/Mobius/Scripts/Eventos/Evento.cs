@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System;
+using DG.Tweening;
 using UnityEngine;
+
 
 [ExecuteInEditMode]
 public class Evento : MonoBehaviour
@@ -20,7 +22,9 @@ public class Evento : MonoBehaviour
             diary = null;
            
 
-        }
+            }
+
+            
         diary = FindObjectOfType<PlayerDiary>();
 
     }

@@ -21,6 +21,7 @@ public class LightingManager : MonoBehaviour
 
     [SerializeField] CanvasGroup loopLight;
 
+    [SerializeField]PlayerEnergy playerE;
 
     private void Awake()
     {
@@ -64,6 +65,7 @@ public class LightingManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.R))
         {
+            playerE.LoseEnergyByLoop();
             StartCoroutine(LoopFade());
         }
 

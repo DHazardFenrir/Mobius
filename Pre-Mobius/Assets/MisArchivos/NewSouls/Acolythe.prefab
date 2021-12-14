@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4786258912881790080}
   m_Layer: 0
   m_Name: Acolythe
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,9 +46,10 @@ GameObject:
   - component: {fileID: 8663028239735223242}
   - component: {fileID: 4973569817237493622}
   - component: {fileID: 8976430472818820495}
+  - component: {fileID: 3585192149252098748}
   m_Layer: 0
   m_Name: default
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -174,3 +175,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.9999992, y: 3.024237, z: 2.4402497}
   m_Center: {x: -0.00000045611148, y: 0.42242846, z: 0.22012556}
+--- !u!135 &3585192149252098748
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360946768766029826}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.5121185
+  m_Center: {x: -0.0000005066395, y: 0.4224285, z: 0}

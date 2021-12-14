@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
+  m_Name: Mujer_Flores
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 6331798959496540827}
+  - {fileID: 5859542798526028280}
+  newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
+--- !u!114 &5859542798526028280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 08588134-c226-4b9b-977c-a0564d45f7fc
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Antes de ellos, esta isla era \xE1rida y sin ning\xFAn prospecto de vida.
+    Se me hace inconcebible que estos hermosos campos antes fueran tierra est\xE9ril. "
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 198
+    y: 64
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &6331798959496540827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 570b746d-ab1b-4312-9fe8-00ecbd81242b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Este campo de flores es precioso; seg\xFAn s\xE9, es un regalo de los dioses. "
+  children:
+  - 08588134-c226-4b9b-977c-a0564d45f7fc
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 

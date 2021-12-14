@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
+  m_Name: "Alexius_Ni\xF1o"
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 6835447839282495449}
+  newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
+--- !u!114 &6835447839282495449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 5fec240a-5bae-45eb-9164-3ae109eb9ac5
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "\xA1Enti\xE9rrala m\xE1s profundo en la arena! Que bueno que la sacamos
+    de la ofrenda del Se\xF1or Hades, \xA1una fruta tan horrible no deber\xEDa estar
+    ah\xED! "
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 23
+    y: 4
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 

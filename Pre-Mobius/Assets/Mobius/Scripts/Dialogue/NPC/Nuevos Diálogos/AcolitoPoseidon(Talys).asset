@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5384870757212958218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 5a93cf26-73ae-4667-8621-d1fe35a3c03c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Una de ellas era amarilla y la otra verde. '
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 294
+    y: 43
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
+  m_Name: AcolitoPoseidon(Talys)
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 2030976013703325271}
+  - {fileID: -5384870757212958218}
+  newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
+--- !u!114 &2030976013703325271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 52b2915d-2172-4528-a793-9c719b1ba606
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Te ayudar\xEDa, pero lo \xFAnico que recuerdo de la combinaci\xF3n son los
+    primeros colores de las sagradas runas. "
+  children:
+  - 5a93cf26-73ae-4667-8621-d1fe35a3c03c
+  rect:
+    serializedVersion: 2
+    x: 2
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 

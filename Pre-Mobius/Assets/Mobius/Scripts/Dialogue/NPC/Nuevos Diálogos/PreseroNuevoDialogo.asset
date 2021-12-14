@@ -1,0 +1,169 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6680731124930252359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 451e8e31-f681-4546-9c59-47e543b59e9c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "\xA1No me asustes! \xBFNo ves que estoy ocupado?"
+  children:
+  - 7bac0363-c7f8-4568-bbdd-5ba12cc81fc0
+  rect:
+    serializedVersion: 2
+    x: 712
+    y: 152
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-5556857040578683543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 703e8318-7da3-40a9-bf38-8318f7a1d415
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'N-no... no la pude perder.... claro que no... '
+  children:
+  - 38df383c-ed58-45a9-989e-9a8bbb43c7cc
+  rect:
+    serializedVersion: 2
+    x: 225
+    y: 69
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-3699742498194602863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 97935de2-1275-44f5-85a6-559997942121
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "No quiero que me rega\xF1en..."
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1212
+    y: 152
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-1882636713935549526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 7bac0363-c7f8-4568-bbdd-5ba12cc81fc0
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Y, de todos modos, \xA1eso no te incumbe! Um.. \xBFSe la habr\xE1 llevado
+    el r\xEDo...? \xBFLa habr\xE9 dejado en...? Oh... espero que no... "
+  children:
+  - 97935de2-1275-44f5-85a6-559997942121
+  rect:
+    serializedVersion: 2
+    x: 962
+    y: 152
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-239623673292100502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: c91c9f95-8437-4806-8a71-fc8df3e8815a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Mmm... Mmh...\xA1No! Oh por Zeus... \xA1No, no, no, no! No encuentro la
+    llave. \xA1Maldici\xF3n! \xA1No creo que las puertas aguanten mucho m\xE1s! Eh... "
+  children:
+  - 703e8318-7da3-40a9-bf38-8318f7a1d415
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be664bdbbaec46846a4314a3af1132e3, type: 3}
+  m_Name: PreseroNuevoDialogo
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -239623673292100502}
+  - {fileID: -5556857040578683543}
+  - {fileID: 8086151132250416981}
+  - {fileID: -6680731124930252359}
+  - {fileID: -1882636713935549526}
+  - {fileID: -3699742498194602863}
+  newNodeOffset: {x: 250, y: 0}
+  maxTime: 0
+  minTime: 0
+--- !u!114 &8086151132250416981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 38df383c-ed58-45a9-989e-9a8bbb43c7cc
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: "\xBFQu\xE9 est\xE1s haciendo?"
+  children:
+  - 451e8e31-f681-4546-9c59-47e543b59e9c
+  rect:
+    serializedVersion: 2
+    x: 475
+    y: 69
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 

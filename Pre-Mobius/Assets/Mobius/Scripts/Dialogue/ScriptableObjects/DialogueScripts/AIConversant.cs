@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 using DialogueSystem.API;
 
 
@@ -14,17 +14,44 @@ namespace DialogueSystem.AIDialogue
         PlayerConversant dialogueIsFinished;
         int i;
         [SerializeField]private LightingManager lightManager;
+
+        [SerializeField] bool needEnergy;
+        [SerializeField] float energyRequired;
+
+        TextMeshPro text;
+
+        PlayerEnergy playerE;
    
         private void Awake()
         {
             dialogueIsFinished = GameObject.FindObjectOfType<PlayerConversant>();
             lightManager = GameObject.FindObjectOfType<LightingManager>();
-           
+            playerE = FindObjectOfType<PlayerEnergy>();
+
+        }
+
+        private void Start()
+        {
+            if (needEnergy)
+            {
+                text = GetComponentInChildren<TextMeshPro>();
+                text.text = "" + energyRequired;
+            }
         }
 
         public void Interact()
         {
-            Talk();
+            if(needEnergy)
+            {
+                if(playerE.energy >= energyRequired)
+                {
+                Talk();
+                }
+            }
+            else
+            {
+                Talk();
+            }
         }
 
 
