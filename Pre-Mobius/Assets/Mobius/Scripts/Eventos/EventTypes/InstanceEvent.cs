@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,7 +10,10 @@ public class InstanceEvent : Evento
     [SerializeField] GameObject particles;
     [SerializeField] AudioSource audio;
 
-
+    private void Awake()
+    {
+        audio = GetComponent<AudioSource>();
+    }
 
     protected override void ActiveEvent()
     {
