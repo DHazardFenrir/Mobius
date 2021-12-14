@@ -54,4 +54,13 @@ public class PlayerEnergy : MonoBehaviour
         }
     }
 
+    public void GainEnergy(float energyGained)
+    {
+        energy += energyGained;
+        if (energy >= maxEnergy)
+        {
+            energy = maxEnergy;
+        }
+    }
+
 }
