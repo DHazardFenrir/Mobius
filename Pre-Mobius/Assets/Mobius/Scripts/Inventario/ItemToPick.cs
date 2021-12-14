@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class ItemToPick : MonoBehaviour, IInteractable
 {
@@ -14,10 +15,11 @@ public class ItemToPick : MonoBehaviour, IInteractable
     RaycastHit hit;
 
     [SerializeField]Mesh myMesh;
+    [SerializeField] private AudioSource audio;
 
     private void Awake()
     {
-
+        audio = FindObjectOfType<RigidbodyFirstPersonController>().GetComponent<AudioSource>();
     }
 
     private void Start()
@@ -53,6 +55,7 @@ public class ItemToPick : MonoBehaviour, IInteractable
         if (Physics.Raycast(camera.transform.position, camera.transform.TransformDirection(Vector3.forward), out hit, minD, itemMask))
             {
             Debug.Log("Did Hit");
+            audio.Play();
             inventario.inventory.Add(item);
             ActivarParticulas();
             }       

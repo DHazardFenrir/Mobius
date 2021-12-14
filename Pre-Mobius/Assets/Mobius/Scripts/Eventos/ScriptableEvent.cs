@@ -7,5 +7,6 @@ public class ScriptableEvent : ScriptableObject
 {
     public string entradaDelDiario;
     [Range(0,600)] public float horaDeActivacion;
+   
      
 }
