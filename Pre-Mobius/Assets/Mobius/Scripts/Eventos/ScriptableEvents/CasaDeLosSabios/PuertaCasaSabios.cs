@@ -35,15 +35,15 @@ public class PuertaCasaSabios : MonoBehaviour, IInteractable
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    
+    private void OnCollisionEnter(Collision collision)
     {
-        if(other.CompareTag("Alma"))
+        if(collision.collider.CompareTag("Alma"))
         {
             anim.SetBool("Abierta", true);
             soulTrigger = true;
             opened = true;
         }
     }
-
 
 }
