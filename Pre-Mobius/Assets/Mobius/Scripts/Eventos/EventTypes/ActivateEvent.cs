@@ -14,7 +14,7 @@ public class ActivateEvent : Evento
     {
 
         gameObj.SetActive(true);
-        if(audio != null && active)
+        if(audio != null)
         {
             audio.Play();
         }
