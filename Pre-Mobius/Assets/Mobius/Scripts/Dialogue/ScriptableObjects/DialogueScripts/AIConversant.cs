@@ -45,7 +45,8 @@ namespace DialogueSystem.AIDialogue
             {
                 if(playerE.energy >= energyRequired)
                 {
-                Talk();
+                    Talk();
+                    playerE.EnergyLoose(energyRequired);
                 }
             }
             else
