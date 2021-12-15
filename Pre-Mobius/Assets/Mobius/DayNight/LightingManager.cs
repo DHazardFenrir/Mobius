@@ -30,6 +30,7 @@ public class LightingManager : MonoBehaviour
         {
             player = GameObject.Find("Player");
             loopLight = GameObject.Find("Destello").GetComponent<CanvasGroup>();
+            playerE = FindObjectOfType<PlayerEnergy>();
         }
     }
 
@@ -86,6 +87,7 @@ public class LightingManager : MonoBehaviour
     public void Loop()
     {
         loopLight.DOFade(1f, 2f);
+        playerE.LoseEnergyByLoop();
         DontDestroyOnLoad(player);
         DontDestroyOnLoad(loopLight);
         SceneManager.LoadScene(1);
