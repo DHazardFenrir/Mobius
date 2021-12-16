@@ -6,12 +6,14 @@ public class DoorCasaLago : MonoBehaviour, IInteractable
 {
     [SerializeField] Animator anim;
     [SerializeField] Items llave;
+    [SerializeField] private AudioSource audio;
     Inventario inventario;
     bool opened;
 
     private void Start()
     {
-        inventario=FindObjectOfType<Inventario>();    
+        inventario=FindObjectOfType<Inventario>();
+        audio = GetComponent<AudioSource>();
     }  
 
     public void Interact()
@@ -25,6 +27,7 @@ public class DoorCasaLago : MonoBehaviour, IInteractable
             else
             {
                 anim.SetBool("Abierta", true);
+                audio.Play();
             }
         }
 
