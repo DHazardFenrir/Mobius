@@ -9,10 +9,14 @@ public class FootstepSound : MonoBehaviour
 {
     [SerializeField] private RigidbodyFirstPersonController rb;
     [SerializeField] private AudioSource audio;
+    [SerializeField] private Animator anim;
+    [SerializeField] private GameManager gm;
 
     private void Awake()
     {
         rb = GetComponent<RigidbodyFirstPersonController>();
+        anim = GetComponent<Animator>();
+        
     }
 
 
@@ -25,15 +29,27 @@ public class FootstepSound : MonoBehaviour
 
     void PlaySoundFootsteps()
     {
-        if (rb.Grounded == true && audio.isPlaying==false && rb.Velocity.magnitude > 2f)
+        if (rb.Grounded == true && audio.isPlaying == false && rb.Velocity.magnitude > 2f)
         {
             audio.volume = Random.Range(0.8f, 1);
             audio.pitch = Random.Range(0.8f, 1.1f);
-            
+
             audio.Play();
-        }else if (rb.Grounded == true && audio.isPlaying == true && rb.Velocity.magnitude <= 1f)
+        }
+        else if (rb.Grounded == true && audio.isPlaying == true && rb.Velocity.magnitude <= 1f)
         {
             audio.Stop();
         }
+        if (anim.isActiveAndEnabled)
+        {
+            audio.Stop();
+
+        }
+
+        if (gm.isPaused)
+        {
+            audio.Stop();
+        }
+        
     }
 }
