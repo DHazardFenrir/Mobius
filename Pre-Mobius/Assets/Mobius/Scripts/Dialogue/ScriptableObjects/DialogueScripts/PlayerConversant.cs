@@ -33,9 +33,10 @@ namespace DialogueSystem.API
 
         }
 
-
-
-
+        private void Update()
+        {
+            End();
+        }
 
         public event Action onConversationUpdated;
 
@@ -189,6 +190,29 @@ namespace DialogueSystem.API
             return canAdvance;
         }
 
+
+        void End()
+        {
+            if (isDialogueFinished())
+            {
+                StartCoroutine(Over());
+            }
+        }
+
+        IEnumerator Over()
+        {
+            yield return new WaitForSeconds(2.5f);
+            currentDialogue = null;
+            TriggerExitAction();
+            currentNode = null;
+            isChoosing = false;
+            currentConversant = null;
+            onConversationUpdated();
+            GetComponent<RigidbodyFirstPersonController>().enabled = true;
+            gm.OnUI();
+
+           
+        }
 
     }
 }
