@@ -5,6 +5,7 @@ using UnityEngine;
 public class RemoveEvent : Evento
 {
     [SerializeField] GameObject gameObj;
+    
     protected override void ActiveEvent()
     {
         Destroy(gameObj);
