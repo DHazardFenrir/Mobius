@@ -9,6 +9,7 @@ public class PuertaCasaSabios : MonoBehaviour, IInteractable
     [SerializeField] bool soulTrigger;
     bool opened;
 
+
     private void Start()
     {
         anim = GetComponentInParent<Animator>();
@@ -35,15 +36,32 @@ public class PuertaCasaSabios : MonoBehaviour, IInteractable
         }
     }
 
-    
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if(collision.collider.CompareTag("Alma"))
+        if(other.CompareTag("Alma"))
         {
             anim.SetBool("Abierta", true);
             soulTrigger = true;
             opened = true;
         }
     }
+    //private void OnCollisionExit(Collision collision)
+    //{
+    //    if (collision.collider.CompareTag("Alma"))
+    //    {
+    //        anim.SetBool("Abierta", true);
+    //        soulTrigger = true;
+    //        opened = true;
+    //    }
+    //}
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    if(collision.collider.CompareTag("Alma"))
+    //    {
+    //        anim.SetBool("Abierta", true);
+    //        soulTrigger = true;
+    //        opened = true;
+    //    }
+    //}
 
 }

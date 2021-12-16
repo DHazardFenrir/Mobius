@@ -11,8 +11,10 @@ public class PlayerSetUp : MonoBehaviour
         lManager.enabled = true;
         DestroyImpostor();
     }
+
    public void DestroyImpostor()
     {
+        
         if (lManager.player != this.gameObject)
         {
             Destroy(this.gameObject);

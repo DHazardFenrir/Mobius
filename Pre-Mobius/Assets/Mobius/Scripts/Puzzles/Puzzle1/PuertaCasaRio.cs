@@ -26,8 +26,9 @@ public class PuertaCasaRio : MonoBehaviour, IInteractable
 
     void OpenDoor()
     {
-        Animator anim = GetComponent<Animator>();
-        anim.SetBool("Active", true);
+        Animator anim = GetComponentInParent<Animator>();
+        anim.SetBool("Abierta", true);
+        Destroy(this);
     }
 
 }

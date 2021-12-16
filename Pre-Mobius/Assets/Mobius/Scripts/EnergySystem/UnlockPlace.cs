@@ -12,7 +12,7 @@ public class UnlockPlace : MonoBehaviour, IInteractable
 
     [SerializeField] bool beach;
     [SerializeField] GameObject[] beachFF;
-
+    [SerializeField] AudioSource unlockSound;
     PlayerEnergy playerE;
 
     private void Start()
@@ -51,6 +51,7 @@ public class UnlockPlace : MonoBehaviour, IInteractable
             particulas.GetComponent<ParticleSystem>().Play();
             Destroy(particulas, 2f);
         }
+        unlockSound.Play();
         Destroy(this.gameObject);
     }
 
@@ -62,6 +63,7 @@ public class UnlockPlace : MonoBehaviour, IInteractable
         sh.mesh = myMesh;
         particulas.SetActive(true);
         particulas.GetComponent<ParticleSystem>().Play();
+        unlockSound.Play();
         Destroy(particulas, 2f);
         Destroy(this.gameObject);
     }
