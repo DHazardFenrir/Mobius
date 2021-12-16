@@ -10,14 +10,19 @@ public class PlayVideoAndStop : MonoBehaviour
     [SerializeField] private VideoPlayer video;
     [SerializeField] private GameObject videoPlayer;
     [SerializeField] private AudioSource audio;
+    [SerializeField] private AudioSource fondoAudio;
     [SerializeField]private float fadeVelocity;
     
     [SerializeField]private float volumeRampSpeed;
     void Awake()
     {
-        audio = FindObjectOfType<AudioSource>();
+       
+        audio = GetComponent<AudioSource>();
         video = GetComponent<VideoPlayer>();
+        fondoAudio.volume = 0.025f;
         video.Play();
+        audio.Play();
+        
        
         video.loopPointReached += GoToGame;
     }

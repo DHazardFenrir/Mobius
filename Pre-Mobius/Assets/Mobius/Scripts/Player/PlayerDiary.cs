@@ -6,7 +6,7 @@ using TMPro;
 public class PlayerDiary : MonoBehaviour
 {
     
-    public TextMeshProUGUI textEvent;
+    public TMP_Text textEvent;
     [SerializeField] ScriptableEvent eventos;
 
     [SerializeField] GameObject diaryCanvas;
