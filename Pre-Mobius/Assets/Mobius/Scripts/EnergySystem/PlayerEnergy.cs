@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 public class PlayerEnergy : MonoBehaviour
 {
@@ -8,11 +10,15 @@ public class PlayerEnergy : MonoBehaviour
     [SerializeField] float maxEnergy;
     [SerializeField] float energyDelay;
     [SerializeField] float energyPerSecond;
+    public TextMeshProUGUI energyText;
+    
+    
     bool active;
 
     private void Start()
     {
         StartCoroutine(RegenerateEnergy());
+        energyText = GameObject.Find("EnergyAmount").GetComponent<TextMeshProUGUI>();
     }
 
 
@@ -24,6 +30,7 @@ public class PlayerEnergy : MonoBehaviour
         {
             yield return new WaitForSeconds(energyDelay);
             energy=energy+energyPerSecond;
+            energyText.text = "" + Mathf.Round(energy);
             if (energy >= maxEnergy)
             {
                 energy = maxEnergy;
@@ -60,6 +67,7 @@ public class PlayerEnergy : MonoBehaviour
         if (energy >= maxEnergy)
         {
             energy = maxEnergy;
+            energyText.text = "" + Mathf.Round(energy);
         }
     }
 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using DG.Tweening;
 
 [ExecuteAlways]
@@ -23,6 +24,8 @@ public class LightingManager : MonoBehaviour
 
     [SerializeField]PlayerEnergy playerE;
 
+    Image reloj;
+
     private void Awake()
     {
         this.enabled = true;
@@ -40,6 +43,7 @@ public class LightingManager : MonoBehaviour
         player.transform.position = playerSpawn.position;
         loopLight.DOFade(0f, 2f);
         Debug.Log("doing fade");
+        reloj = GameObject.FindGameObjectWithTag("Reloj").GetComponent<Image>();
         
     }
 
@@ -65,7 +69,7 @@ public class LightingManager : MonoBehaviour
         {
             StartCoroutine(LoopFade());
         }
-
+        Clock();
 
         if (Input.GetKeyDown(KeyCode.R))
         {
@@ -77,6 +81,11 @@ public class LightingManager : MonoBehaviour
     }
 
     
+    void Clock()
+    {
+        reloj.fillAmount = TimeOfDay/(60*DayInMinutes);
+    }
+
     public void StartLoopFadeForOthers()
     {
         StartCoroutine(LoopFade());
