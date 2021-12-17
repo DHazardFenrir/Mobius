@@ -39,7 +39,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
   text: 'Creo que es algo temprano para estar borracho. '
-  children: []
+  children:
+  - 2be29a6a-c68f-41a4-83de-8119f70f1bb6
   rect:
     serializedVersion: 2
     x: 604
@@ -64,9 +65,34 @@ MonoBehaviour:
   - {fileID: 3823724138893049242}
   - {fileID: -7266495804207469323}
   - {fileID: -3340577497514244896}
+  - {fileID: 2406021631883955183}
   newNodeOffset: {x: 250, y: 0}
   maxTime: 0
   minTime: 0
+--- !u!114 &2406021631883955183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 2be29a6a-c68f-41a4-83de-8119f70f1bb6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "\xA1Ni\xF1o insolente! Te hago una buena pregunta y lo primero que piensas
+    es que estoy ebrio..."
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 862
+    y: 51
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
 --- !u!114 &3823724138893049242
 MonoBehaviour:
   m_ObjectHideFlags: 0
