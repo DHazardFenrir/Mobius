@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.SceneManagement;
@@ -22,16 +24,33 @@ public class PlayVideoAndStop : MonoBehaviour
         fondoAudio.volume = 0.025f;
         video.Play();
         audio.Play();
-        
-       
-        video.loopPointReached += GoToGame;
+
+
+      
     }
 
-    void GoToGame(VideoPlayer vp)
+    private void Update()
     {
+       Check();
+    }
+
+
+    void Check()
+    {
+        StartCoroutine(goTo());
+
+        if (!audio.isPlaying)
+        {
+            StopCoroutine(goTo());
+        }
+    }
+    IEnumerator goTo()
+    {
+        yield return new WaitWhile(()=>audio.isPlaying);
         videoPlayer.gameObject.SetActive(false);
         audio.volume = 0.2f;
         SceneManager.LoadScene(1);
     }
+    
     
 }
