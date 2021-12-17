@@ -30,6 +30,8 @@ public class Columnas : MonoBehaviour, IInteractable
             ActivarColumna();
         else
             Debug.Log("Ya esta activada");
+
+        
     }
 
     void ActivarColumna()

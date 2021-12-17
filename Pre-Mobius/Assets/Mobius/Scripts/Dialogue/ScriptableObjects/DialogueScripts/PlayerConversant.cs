@@ -201,6 +201,7 @@ namespace DialogueSystem.API
         {
             if (gm.isPaused)
             {
+             
                 currentDialogue = null;
                 TriggerExitAction();
                 currentNode = null;
@@ -208,8 +209,10 @@ namespace DialogueSystem.API
                 currentConversant = null;
                 onConversationUpdated();
                 GetComponent<RigidbodyFirstPersonController>().enabled = true;
-                
+                gm.OnUI();
+              
             }
+          
         }
 
     }

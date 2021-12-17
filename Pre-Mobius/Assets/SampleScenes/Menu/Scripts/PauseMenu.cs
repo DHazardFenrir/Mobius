@@ -8,12 +8,14 @@ public class PauseMenu : MonoBehaviour
 	private float m_TimeScaleRef = 1f;
     private float m_VolumeRef = 1f;
     private bool m_Paused;
+    private GameManager gm;
 
 
     void Awake()
     {
         m_MenuToggle = GetComponent <Toggle> ();
-	}
+        gm = FindObjectOfType<GameManager>();
+    }
 
 
     private void MenuOn ()
@@ -54,8 +56,9 @@ public class PauseMenu : MonoBehaviour
 	{
 		if(Input.GetKeyUp(KeyCode.Escape))
 		{
-		    m_MenuToggle.isOn = !m_MenuToggle.isOn;
-            Cursor.visible = m_MenuToggle.isOn;//force the cursor visible if anythign had hidden it
+		   gm.OnUI();
+            //Cursor.visible = m_MenuToggle.isOn;//force the cursor visible if anythign had hidden it
+           
 		}
 	}
 #endif
