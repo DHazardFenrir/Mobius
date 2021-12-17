@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 6267056848304760307}
   - component: {fileID: 2433855659396413849}
   - component: {fileID: 1951967502679239982}
+  - component: {fileID: 204350944734778863}
+  - component: {fileID: 6332591634159104907}
   m_Layer: 0
   m_Name: default
   m_TagString: Interactable
@@ -160,6 +162,40 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.5121185
   m_Center: {x: -0.0000005066395, y: 0.4224285, z: 0}
+--- !u!95 &204350944734778863
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713568345560826522}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b3d29b19a709ad3468cf2a64cfebd654, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!111 &6332591634159104907
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713568345560826522}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: fb2b036305110864195f96798f0ed8d4, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &6943971840113268909
 GameObject:
   m_ObjectHideFlags: 0
