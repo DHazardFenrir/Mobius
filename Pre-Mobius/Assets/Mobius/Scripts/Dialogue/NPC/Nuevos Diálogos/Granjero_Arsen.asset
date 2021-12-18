@@ -16,7 +16,8 @@ MonoBehaviour:
   text: "Como debes saber, ellos no tienen una muy buena relaci\xF3n; es m\xE1s,
     dir\xEDa que no se llevan para nada bien, pero cuando se trata de contentar a
     la Se\xF1orita Pers\xE9fone, har\xE1n todo lo posible por hacerla feliz. "
-  children: []
+  children:
+  - 84c504af-2b14-4ba2-8eba-210288da0d4a
   rect:
     serializedVersion: 2
     x: 1547
@@ -38,14 +39,38 @@ MonoBehaviour:
   m_Name: d858eca6-5437-43cd-84ae-c017e0806aa6
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: "Como podr\xE1s adivinar por el color, se trata de granadas, las fruta preferida
-    de nuestro Se\xF1or Hades. "
+  text: "Como podr\xE1s adivinar por el color, se trata de granadas. "
   children:
   - 5c268bb8-bfe4-414d-babd-c4d3356994b9
   rect:
     serializedVersion: 2
     x: 797
     y: 14
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &-7426082911633838808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: d3930601-5a63-463f-b144-ea1b61d778d3
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "As\xED que reemplazamos la granada con una verdura ex\xF3tica, el ma\xEDz.
+    Espero que sea del agrado de nuestro se\xF1or... as\xED como el resto de los
+    frutos que preparamos."
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2040
+    y: 82
     width: 200
     height: 100
   onExitAction: 
@@ -87,14 +112,15 @@ MonoBehaviour:
   m_Name: 5c268bb8-bfe4-414d-babd-c4d3356994b9
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: "Us\xF3 las semillas de de granada para poder casarse con su amada Pers\xE9fone.
-    Usualmente las granadas tienen un crecimiento lento, lo que simboliza el amor
-    que la Se\xF1ora Pers\xE9fone por su esposo a lo largo de los a\xF1os. "
+  text: "Nuestro se\xF1os Hades us\xF3 las semillas de de granada para poder casarse
+    con su amada Pers\xE9fone. Usualmente las granadas tienen un crecimiento lento,
+    lo que simboliza el amor que la Se\xF1ora Pers\xE9fone por su esposo a lo largo
+    de los a\xF1os. "
   children:
   - 88d85178-a113-432e-a229-175d5cf20b4f
   rect:
     serializedVersion: 2
-    x: 1047
+    x: 1028
     y: 13
     width: 200
     height: 100
@@ -137,7 +163,7 @@ MonoBehaviour:
   m_Name: e512b58e-b005-491c-9a8a-9f05847a439f
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: "Oh, \xA1Hola Syril! \xBFTe gustar\xEDa saber lo que estamos cultivando? "
+  text: "Oh, \xA1Hola Syril! \xBFTe gustar\xEDa saber lo que estabamos cultivando? "
   children:
   - aee8892f-32f1-4cf8-9931-dc91b4dbc18b
   - 33d29c54-e887-493c-9ce3-ca2ffd489fbe
@@ -197,6 +223,8 @@ MonoBehaviour:
   - {fileID: -106723728949700022}
   - {fileID: -7888000498373876827}
   - {fileID: -2162799505006346930}
+  - {fileID: 8314507805075026666}
+  - {fileID: -7426082911633838808}
   newNodeOffset: {x: 250, y: 0}
   maxTime: 0
   minTime: 0
@@ -220,6 +248,31 @@ MonoBehaviour:
     serializedVersion: 2
     x: 250
     y: -2
+    width: 200
+    height: 100
+  onExitAction: 
+  onEnterAction: 
+--- !u!114 &8314507805075026666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d140756cb96b6dc428ec4bad202a3c12, type: 3}
+  m_Name: 84c504af-2b14-4ba2-8eba-210288da0d4a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: "Lamentablemente, esta cosecha no pudimos tener listas las granadas para
+    completar la  ofrenda de nuestro se\xF1or..."
+  children:
+  - d3930601-5a63-463f-b144-ea1b61d778d3
+  rect:
+    serializedVersion: 2
+    x: 1797
+    y: 13
     width: 200
     height: 100
   onExitAction: 
