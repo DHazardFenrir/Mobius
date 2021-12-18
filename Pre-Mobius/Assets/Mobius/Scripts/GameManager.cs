@@ -75,16 +75,18 @@ public class GameManager : MonoBehaviour
 
     public void Resume()
     {
+        
         isPaused = !isPaused;
         pauseMenu.SetActive(isPaused);
         Pause();
     }
 
     public void Menu()
-    {
+    {    isPaused = !isPaused;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene(0);
+        Time.timeScale = 1;
     }
 
     #endregion

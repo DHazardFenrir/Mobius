@@ -60,5 +60,11 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
+    public void goScene()
+    {
+        SceneManager.LoadScene(1);
+        
+    }
+
 
 }

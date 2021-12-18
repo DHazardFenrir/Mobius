@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using DG.Tweening;
+using DialogueSystem.API;
 
 [ExecuteAlways]
 public class LightingManager : MonoBehaviour
@@ -23,6 +24,7 @@ public class LightingManager : MonoBehaviour
     [SerializeField] CanvasGroup loopLight;
 
     [SerializeField]PlayerEnergy playerE;
+    [SerializeField] private PlayerConversant conversant;
 
     Image reloj;
 
@@ -34,6 +36,7 @@ public class LightingManager : MonoBehaviour
             player = GameObject.Find("Player");
             loopLight = GameObject.Find("Destello").GetComponent<CanvasGroup>();
             playerE = FindObjectOfType<PlayerEnergy>();
+            conversant = FindObjectOfType<PlayerConversant>();
         }
     }
 
@@ -68,6 +71,7 @@ public class LightingManager : MonoBehaviour
 
         if(TimeOfDay>=((60*DayInMinutes))-1)
         {
+            conversant.Quit();
             StartCoroutine(LoopFade());
         }
         Clock();
