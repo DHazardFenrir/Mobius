@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape) && !onOtherScreen)
+        if(Input.GetKeyDown(KeyCode.Escape) && !onOtherScreen && !inUI)
         {
             isPaused = !isPaused;
             Debug.Log(isPaused);
@@ -44,12 +44,14 @@ public class GameManager : MonoBehaviour
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
             puntero.SetActive(false);
+            Debug.Log("En UI");
         }
         else
         {
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
             puntero.SetActive(true);
+            Debug.Log("Fuera de UI");
         }
     }
 
@@ -59,7 +61,6 @@ public class GameManager : MonoBehaviour
     {
         if(isPaused)
         {
-
             OnUI();
             Time.timeScale = 0;
             isPaused = true;

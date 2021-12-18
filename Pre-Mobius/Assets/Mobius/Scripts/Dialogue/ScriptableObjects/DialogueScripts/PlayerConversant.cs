@@ -36,7 +36,7 @@ namespace DialogueSystem.API
         private void Update()
         {
             
-            Paused();
+            //Paused();
         }
 
         public event Action onConversationUpdated;
@@ -126,6 +126,7 @@ namespace DialogueSystem.API
 
             onConversationUpdated();
             GetComponent<RigidbodyFirstPersonController>().enabled = false;
+            GetComponent<Rigidbody>().isKinematic = true;
             gm.OnUI();
             
         }
@@ -146,6 +147,7 @@ namespace DialogueSystem.API
             onConversationUpdated();
             GetComponent<RigidbodyFirstPersonController>().enabled = true;
             gm.OnUI();
+            GetComponent<Rigidbody>().isKinematic = false;
 
 
 

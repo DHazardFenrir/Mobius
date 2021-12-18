@@ -21,6 +21,8 @@ namespace DialogueSystem.AIDialogue
         TextMeshPro text;
 
         PlayerEnergy playerE;
+
+        GameManager gm;
    
         private void Awake()
         {
