@@ -33,7 +33,10 @@ public class UnlockPlace : MonoBehaviour, IInteractable
         }
         else
         {
-            UnlockBeach();
+            if(playerE.energy >= energyRequired)
+            {
+                UnlockBeach();
+            }
         }
           
     }
