@@ -18,6 +18,8 @@ namespace DialogueSystem.AIDialogue
         [SerializeField] bool needEnergy;
         [SerializeField] float energyRequired;
 
+        Rigidbody playerGb;
+
         TextMeshPro text;
 
         PlayerEnergy playerE;
