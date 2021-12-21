@@ -33,15 +33,18 @@ public class UnlockPlace : MonoBehaviour, IInteractable
         }
         else
         {
-            UnlockBeach();
+            if(playerE.energy >= energyRequired)
+            {
+                UnlockBeach();
+            }
         }
           
     }
 
     void UnlockBeach()
     {
-        
-        for(int i=0;i<beachFF.Length;i++)
+        playerE.EnergyLoose(energyRequired);
+        for (int i=0;i<beachFF.Length;i++)
         {
             GameObject particulas = Instantiate(particles, beachFF[i].transform.position, beachFF[i].transform.rotation);
             var sh = particulas.GetComponent<ParticleSystem>().shape;

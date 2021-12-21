@@ -20,6 +20,8 @@ namespace DialogueSystem.API
         GameManager gm;
         
         public bool canAdvance;
+        Rigidbody playerRb;
+
 
         private void Awake()
         {
@@ -30,6 +32,7 @@ namespace DialogueSystem.API
         private void Start()
         {
             gm = FindObjectOfType<GameManager>();
+            playerRb = GetComponent<Rigidbody>();
 
         }
 
@@ -126,7 +129,7 @@ namespace DialogueSystem.API
 
             onConversationUpdated();
             GetComponent<RigidbodyFirstPersonController>().enabled = false;
-            GetComponent<Rigidbody>().isKinematic = true;
+            playerRb.isKinematic = true;
             gm.OnUI();
             
         }
@@ -147,7 +150,7 @@ namespace DialogueSystem.API
             onConversationUpdated();
             GetComponent<RigidbodyFirstPersonController>().enabled = true;
             gm.OnUI();
-            GetComponent<Rigidbody>().isKinematic = false;
+            playerRb.isKinematic = false;
 
 
 
