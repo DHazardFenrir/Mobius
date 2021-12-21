@@ -71,7 +71,7 @@ public class LightingManager : MonoBehaviour
 
         if(TimeOfDay>=((60*DayInMinutes))-1)
         {
-            conversant.Quit();
+           
             StartCoroutine(LoopFade());
         }
         Clock();
@@ -99,19 +99,23 @@ public class LightingManager : MonoBehaviour
 
     public void Loop()
     {
+        
         loopLight.DOFade(1f, 2f);
         playerE.LoseEnergyByLoop();
         DontDestroyOnLoad(player);
         DontDestroyOnLoad(loopLight);
         SceneManager.LoadScene(1);
+       
         player.transform.position = playerSpawn.position;
     }
 
     IEnumerator LoopFade()
     {
+        conversant.Quit();
         loopLight.DOFade(1f, 2f);
         yield return new WaitForSeconds(2f);
         Loop();
+       
     }
 
     private void UpdateLighting(float timePercent)
