@@ -17,6 +17,7 @@ namespace DialogueSystem.AIDialogue
 
         [SerializeField] bool needEnergy;
         [SerializeField] float energyRequired;
+        private Transform playerTransform;
 
 
         [SerializeField]TextMeshPro text;
@@ -24,12 +25,15 @@ namespace DialogueSystem.AIDialogue
         PlayerEnergy playerE;
 
         GameManager gm;
-   
+        [SerializeField] public Animator anim;
+
         private void Awake()
         {
             dialogueIsFinished = GameObject.FindObjectOfType<PlayerConversant>();
             lightManager = GameObject.FindObjectOfType<LightingManager>();
             playerE = FindObjectOfType<PlayerEnergy>();
+            anim = GetComponent<Animator>();
+            playerTransform = GameObject.FindWithTag("Player").GetComponent<Transform>();
 
         }
 
@@ -66,14 +70,17 @@ namespace DialogueSystem.AIDialogue
          if (dialogue != null)
          {
 
+             anim.enabled = false;
 
-
+             transform.LookAt(playerTransform);
+            
              StartCoroutine(NextDialogue());
                 
          
                
          }
-
+        
+        
             
 
         }

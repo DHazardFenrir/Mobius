@@ -144,7 +144,7 @@ namespace DialogueSystem.API
 
         public void Quit()
         {
-           
+            currentConversant.anim.enabled = true;
             currentDialogue = null;
             TriggerExitAction();
             currentNode = null;
@@ -153,10 +153,11 @@ namespace DialogueSystem.API
             onConversationUpdated();
             rbFPC.enabled = true;
             gm.OnUI();
+           
+
             playerRb.isKinematic = false;
             gm.onOtherScreen = false;
-
-
+          
 
 
         }
