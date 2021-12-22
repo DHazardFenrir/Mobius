@@ -98,8 +98,7 @@ public class LightingManager : MonoBehaviour
     }
 
     public void Loop()
-    {
-        
+    {        
         loopLight.DOFade(1f, 2f);
         playerE.LoseEnergyByLoop();
         DontDestroyOnLoad(player);

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 803242584595269158}
   - component: {fileID: 1772596529736399760}
   - component: {fileID: 6017599268979218247}
+  - component: {fileID: 2586565048608942048}
   m_Layer: 0
   m_Name: Costo
   m_TagString: Untagged
@@ -25,16 +26,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4700180793608865328}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0.22012305}
-  m_LocalScale: {x: 1.9130702, y: 1.9130702, z: 1.9130702}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.11506271}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1908100918913282353}
+  m_Father: {fileID: 4366433422458421785}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.057392232, y: 3.003521}
+  m_AnchoredPosition: {x: -0.030000798, y: 1.6207151}
   m_SizeDelta: {x: 6.611, y: 1.6181}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &1772596529736399760
@@ -170,6 +171,19 @@ MonoBehaviour:
   m_maskType: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+--- !u!114 &2586565048608942048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4700180793608865328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b79f085dc4270b8499900a02adebe511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
 --- !u!1 &7905051041715422374
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,6 +211,7 @@ Transform:
   m_LocalPosition: {x: -27.00077, y: 4.7715387, z: -25.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 803242584595269158}
   - {fileID: 1908100918913282353}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -236,10 +251,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.52272, y: 0.52272, z: 0.52272}
-  m_Children:
-  - {fileID: 803242584595269158}
+  m_Children: []
   m_Father: {fileID: 4366433422458421785}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &805696102409107
 MeshFilter:
@@ -308,6 +322,7 @@ MonoBehaviour:
   lightManager: {fileID: 0}
   needEnergy: 0
   energyRequired: 0
+  text: {fileID: 6017599268979218247}
 --- !u!114 &410859792632153685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -348,8 +363,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.9999992, y: 3.024237, z: 2.4402497}
-  m_Center: {x: -0.00000045611148, y: 0.42242846, z: 0.22012556}
+  m_Size: {x: 2.8625193, y: 3.024237, z: 2.9482722}
+  m_Center: {x: -0.04142587, y: 0.42242846, z: -0.033885207}
 --- !u!135 &5340133007199390883
 SphereCollider:
   m_ObjectHideFlags: 0

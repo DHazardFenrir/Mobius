@@ -19,7 +19,7 @@ namespace DialogueSystem.AIDialogue
         [SerializeField] float energyRequired;
 
 
-        TextMeshPro text;
+        [SerializeField]TextMeshPro text;
 
         PlayerEnergy playerE;
 
@@ -37,7 +37,7 @@ namespace DialogueSystem.AIDialogue
         {
             if (needEnergy)
             {
-                text = GetComponentInChildren<TextMeshPro>();
+                //text = GetComponentInParent<TextMeshPro>();
                 text.text = "" + energyRequired;
             }
         }

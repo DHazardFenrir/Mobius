@@ -27,6 +27,7 @@ Transform:
   m_LocalPosition: {x: -27.00077, y: 4.7715387, z: -25.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 3305409071960067623}
   - {fileID: 424707257122568432}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -66,10 +67,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.52272, y: 0.52272, z: 0.52272}
-  m_Children:
-  - {fileID: 3305409071960067623}
+  m_Children: []
   m_Father: {fileID: 4786258912881790080}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &59875379819543439
 MeshFilter:
@@ -138,6 +138,7 @@ MonoBehaviour:
   lightManager: {fileID: 0}
   needEnergy: 0
   energyRequired: 0
+  text: {fileID: 1470516293308649435}
 --- !u!114 &8663028239735223242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,8 +179,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.9999992, y: 3.024237, z: 2.4402497}
-  m_Center: {x: -0.00000045611148, y: 0.42242846, z: 0.22012556}
+  m_Size: {x: 3.179416, y: 3.024237, z: 2.8397756}
+  m_Center: {x: -0.08743976, y: 0.42242846, z: 0.020362642}
 --- !u!135 &3585192149252098748
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -252,16 +253,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2175994713911202396}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.92243, y: 0.92243, z: 0.92243}
+  m_LocalScale: {x: 0.48217258, y: 0.48217258, z: 0.48217258}
   m_Children: []
-  m_Father: {fileID: 424707257122568432}
+  m_Father: {fileID: 4786258912881790080}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.038262703, y: 2.5562434}
+  m_AnchoredPosition: {x: 0.01999984, y: 1.5522218}
   m_SizeDelta: {x: 6.2282, y: 2.533}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &7529702835672551866
@@ -325,7 +326,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0
+  m_text: '0
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f8519289f8f46944e831b6d456ea76e7, type: 2}
   m_sharedMaterial: {fileID: 7611914957629894477, guid: f8519289f8f46944e831b6d456ea76e7,
