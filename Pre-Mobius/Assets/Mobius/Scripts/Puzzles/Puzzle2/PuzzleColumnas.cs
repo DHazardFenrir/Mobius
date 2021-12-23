@@ -52,6 +52,8 @@ public class PuzzleColumnas : MonoBehaviour
 
     [SerializeField] AudioSource audio;
 
+    [SerializeField] UsarPocion usarP;
+
     void ComprobarClave()
     {
         Debug.Log("Comprobando");
@@ -63,7 +65,7 @@ public class PuzzleColumnas : MonoBehaviour
                 audio.Play();
             }
             altarAnim.SetBool("Abierto", true);
-            DesactivarCollidersColumnas();
+            usarP.DesactivarEfecto();
             Destroy(usarPocion);
             
 
@@ -73,23 +75,17 @@ public class PuzzleColumnas : MonoBehaviour
         else
         {
             Debug.Log("No jaló");
-            for (int j = 0; i < clave.Length; i++)
+            for (int i = 0; i < clave.Length; i++)
             {
-                columnas[j].DesactivarColumna();
-                clave[j] = 0;
-                i = 0;
+                clave[i] = 0;
             }
+            usarP.DesactivarEfecto();
+            usarP.StopAllCoroutines();
+            Debug.Log("Se desactivó el efecto");
             
         }
     }
 
-    void DesactivarCollidersColumnas()
-    {
-        for (int j = 0; i < clave.Length; i++)
-        {
-            columnas[j].GetComponent<BoxCollider>().enabled = false;
-        }
-    }
 
 
 }

@@ -6,7 +6,7 @@ public class Columnas : MonoBehaviour, IInteractable
 {
     public int num;
 
-    bool active = false;
+    [SerializeField]bool active = false;
 
     PuzzleColumnas manager;
 
@@ -54,8 +54,6 @@ public class Columnas : MonoBehaviour, IInteractable
     public void DesactivarColumna()
     {
         active = false;
-        meshR.enabled = true;
-        GetComponent<BoxCollider>().enabled = true;
 
     }
 

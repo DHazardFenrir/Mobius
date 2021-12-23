@@ -42,11 +42,12 @@ public class UsarPocion : MonoBehaviour, IInteractable
         {
             runas[i].GetComponent<MeshRenderer>().enabled=true;
             runas[i].GetComponent<BoxCollider>().enabled = true;
+            runas[i].GetComponent<Columnas>().DesactivarColumna();
         }
         GetComponent<BoxCollider>().enabled = false;
     }
 
-    void DesactivarEfecto()
+    public void DesactivarEfecto()
     {
         efectoActivo = false;
 
@@ -54,10 +55,10 @@ public class UsarPocion : MonoBehaviour, IInteractable
         {
             runas[i].GetComponent<MeshRenderer>().enabled = false;
             runas[i].GetComponent<BoxCollider>().enabled = false;
-
         }
         manager.ResetearClave();
         GetComponent<BoxCollider>().enabled = true;
+        audio.Stop();
         Debug.Log("Se acaba la pocion");
     }
 

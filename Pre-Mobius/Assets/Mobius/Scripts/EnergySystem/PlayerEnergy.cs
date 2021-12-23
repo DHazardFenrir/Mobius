@@ -39,7 +39,6 @@ public class PlayerEnergy : MonoBehaviour
             {
                 energy = 0;
             }
-            Debug.Log(energy);
         }
     }
 

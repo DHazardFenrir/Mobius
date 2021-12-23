@@ -104,13 +104,13 @@ public class LightingManager : MonoBehaviour
         DontDestroyOnLoad(player);
         DontDestroyOnLoad(loopLight);
         SceneManager.LoadScene(1);
-       
+        conversant.Quit();
         player.transform.position = playerSpawn.position;
     }
 
     IEnumerator LoopFade()
     {
-        conversant.Quit();
+        
         loopLight.DOFade(1f, 2f);
         yield return new WaitForSeconds(2f);
         Loop();
