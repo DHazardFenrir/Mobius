@@ -62,7 +62,7 @@ public class UsarPocion : MonoBehaviour, IInteractable
         Debug.Log("Se acaba la pocion");
     }
 
-    IEnumerator duracion()
+    public IEnumerator duracion()
     {
         Debug.Log("Duracion");
 
