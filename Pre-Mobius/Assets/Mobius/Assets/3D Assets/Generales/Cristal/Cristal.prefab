@@ -106,9 +106,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8685410386384149696}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -40.91, y: 5.635, z: 21.82}
-  m_LocalScale: {x: 0.44651, y: 0.44651, z: 0.44651}
+  m_LocalScale: {x: 0.92598253, y: 0.9259826, z: 0.9259828}
   m_Children:
   - {fileID: 3694085887308716552}
   m_Father: {fileID: 0}
@@ -125,7 +125,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.3906693, y: 2.0086787, z: 1.2399668}
+  m_Size: {x: 1.93, y: 2.75, z: 2.17}
   m_Center: {x: -0.01472035, y: 0.0817927, z: -0.02865017}
 --- !u!114 &8379421456044276721
 MonoBehaviour:
@@ -143,3 +143,4 @@ MonoBehaviour:
   particles: {fileID: 5271631310566671217, guid: 1ef60a9c8b2ea26478c20beac85654a4,
     type: 3}
   myMesh: {fileID: -2837682660325928517, guid: f3d668b9ec87a1443915b878d18bdf76, type: 3}
+  pickUpSound: {fileID: 0}
